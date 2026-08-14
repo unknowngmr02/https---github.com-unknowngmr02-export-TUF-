@@ -4,7 +4,7 @@ const fs = require("fs");
 const START = parseInt(process.env.START, 10);
 const END = parseInt(process.env.END, 10);
 
-const BASE_DIR = "speed time and distance";
+const BASE_DIR = "Trigonometry";
 const OUTPUT_DIR = "render";
 
 let success = [];
