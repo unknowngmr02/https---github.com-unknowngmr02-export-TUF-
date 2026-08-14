@@ -1,0 +1,18 @@
+[00:00.10 -> 00:01.14]  So welcome back again.
+[00:01.66 -> 00:03.18]  It's time to solve one more problem.
+[00:03.56 -> 00:06.26]  Now in this problem, we need to evaluate sec square theta
+[00:06.84 -> 00:08.08]  minus ten square theta.
+[00:08.52 -> 00:10.02]  This is not a calculation question.
+[00:10.46 -> 00:12.62]  This is a direct identity question.
+[00:13.16 -> 00:16.02]  So we only need to remember the standard trigonometric identity.
+[00:16.90 -> 00:18.80]  We know that sec square theta
+[00:19.24 -> 00:23.82]  is equal to one plus ten square theta. Now move ten square theta to the other side.
+[00:24.28 -> 00:25.26]  So sec square theta
+[00:25.66 -> 00:27.02]  minus ten square theta
+[00:27.58 -> 00:28.74]  is equal to one.
+[00:29.04 -> 00:30.94]  That is exactly what the question is asking.
+[00:31.38 -> 00:31.66]  Done.
+[00:32.16 -> 00:34.64]  No value of theta is needed here.
+[00:35.42 -> 00:35.80]  Hence,
+[00:36.22 -> 00:39.76]  sec square theta minus ten square theta is equal to one.
+[00:40.20 -> 00:42.64]  So the correct option is option C.

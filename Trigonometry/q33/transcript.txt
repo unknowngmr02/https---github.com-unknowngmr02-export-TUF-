@@ -1,0 +1,45 @@
+[00:00.10 -> 00:00.26]  So
+[00:00.70 -> 00:01.40]  welcome back again.
+[00:02.04 -> 00:03.94]  It's time to solve one more problem.
+[00:04.42 -> 00:09.46]  Now in this problem, a person is standing at a window which is ten meter above the ground.
+[00:09.95 -> 00:10.62]  From that window,
+[00:11.14 -> 00:13.18]  the angle of elevation to the top of the tower
+[00:13.84 -> 00:15.32]  is thirty degrees,
+[00:15.80 -> 00:18.12]  and the angle of depression to the foot of the tower
+[00:18.64 -> 00:19.96]  is forty-five degrees.
+[00:20.38 -> 00:21.40]  What do we need to find?
+[00:22.03 -> 00:24.12]  We need to find the total height of the tower.
+[00:24.56 -> 00:26.66]  A small diagram will make this very easy.
+[00:27.14 -> 00:29.08]  Draw the window ten meter above the ground.
+[00:29.66 -> 00:30.30]  From the window,
+[00:30.94 -> 00:33.31]  draw a line going down to the foot of the tower.
+[00:33.86 -> 00:37.96]  This makes an angle of depression of forty-five degrees.
+[00:38.54 -> 00:40.76]  Also, draw a line going up to the top of the tower.
+[00:41.36 -> 00:43.38]  This makes an angle of elevation of
+[00:43.78 -> 00:44.84]  thirty degrees.
+[00:45.74 -> 00:48.74]  Let the horizontal distance between the building and the tower be x.
+[00:49.26 -> 00:49.54]  First,
+[00:49.96 -> 00:52.06]  let us use the forty-five degree angle.
+[00:52.60 -> 00:54.70]  For the triangle formed with the foot of the tower,
+[00:55.32 -> 01:04.18]  tan forty-five degree equal to opposite side upon adjacent side here. The opposite side is equal to the height of window, which is ten meters,
+[01:04.62 -> 01:06.42]  and the adjacent side is x.
+[01:06.90 -> 01:10.14]  So one equals ten over x. This gives x equals ten meters.
+[01:10.80 -> 01:11.20]  Got it?
+[01:11.80 -> 01:12.22]  Perfect.
+[01:12.84 -> 01:19.90]  We have found the distance between the building and the tower. Now that we know the distance, we can use it to find the extra height of the tower
+[01:20.32 -> 01:23.08]  above the window level. Let that extra height be h.
+[01:23.46 -> 01:26.88]  Now for the thirty degree triangle, tan thirty degrees equals h upon ten.
+[01:27.44 -> 01:31.61]  We know that tan thirty degrees is equal to one upon root three,
+[01:32.24 -> 01:38.62]  so one upon root three is equal to h upon ten. After solving this, we get h equals ten upon root three meters.
+[01:39.22 -> 01:39.42]  Done.
+[01:39.96 -> 01:41.84]  But be very sure about one thing.
+[01:42.50 -> 01:44.50]  This is not the total height of the tower.
+[01:45.06 -> 01:46.62]  This is only the part of the tower
+[01:47.08 -> 01:48.80]  which is above the window.
+[01:49.32 -> 01:51.86]  The window itself is already ten meters above the ground,
+[01:52.38 -> 01:53.54]  so total tower height
+[01:54.02 -> 01:56.96]  becomes ten plus ten upon root three meters.
+[01:57.80 -> 01:58.18]  Hence,
+[01:58.67 -> 02:01.08]  the final answer will be ten plus ten
+[02:01.58 -> 02:03.74]  divided by the square root of three meters.
+[02:04.42 -> 02:06.20]  So the correct option is option A.

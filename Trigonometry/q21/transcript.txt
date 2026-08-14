@@ -1,0 +1,46 @@
+[00:00.08 -> 00:01.36]  So welcome back again.
+[00:01.92 -> 00:02.86]  It's time to solve
+[00:03.38 -> 00:04.42]  one more problem.
+[00:04.96 -> 00:05.72]  Now, in this problem,
+[00:06.32 -> 00:07.00]  we have a tower
+[00:07.60 -> 00:12.70]  and two points are on the same side of that tower. These two points are forty meter apart.
+[00:13.12 -> 00:14.04]  From the nearer point,
+[00:14.38 -> 00:17.18]  the angle of elevation is sixty degree,
+[00:17.70 -> 00:21.44]  and from the farther point, the angle of elevation is thirty degrees.
+[00:21.88 -> 00:23.76]  And we need to find the height of the tower.
+[00:24.22 -> 00:27.52]  Let the distance of the nearer point from the tower be x meter.
+[00:28.06 -> 00:31.50]  So the farther point will be x plus forty meters from the tower.
+[00:32.16 -> 00:32.30]  Here,
+[00:32.84 -> 00:34.58]  tangent is the most useful ratio.
+[00:35.02 -> 00:35.66]  Why tangent?
+[00:36.06 -> 00:38.42]  Because tangent connects height and base.
+[00:38.88 -> 00:41.40]  Tan theta is equal to height by base.
+[00:41.90 -> 00:43.04]  So from the nearer point,
+[00:43.46 -> 00:46.14]  tan sixty degrees is equal to h by x,
+[00:46.68 -> 00:47.20]  which gives
+[00:47.88 -> 00:49.48]  root three is equal to h by x.
+[00:49.97 -> 00:50.82]  That means
+[00:51.16 -> 00:52.96]  h is equal to x root three.
+[00:53.44 -> 00:53.60]  Okay,
+[00:54.10 -> 00:55.28]  keep this aside for a second.
+[00:55.70 -> 00:58.46]  We will use the same height from the other point also.
+[00:58.86 -> 01:00.00]  Now, from the farther point,
+[01:00.48 -> 01:03.94]  tan thirty degrees is equal to h by x plus forty.
+[01:04.38 -> 01:07.56]  So one by root three is equal to h by x plus forty.
+[01:08.00 -> 01:10.92]  But we already found that h is equal to x root three,
+[01:11.38 -> 01:13.68]  so put x root three in place of h.
+[01:14.08 -> 01:14.88]  Then it becomes
+[01:15.36 -> 01:17.26]  one by root three is equal to
+[01:17.58 -> 01:19.90]  x root three by x plus forty.
+[01:20.31 -> 01:21.49]  After cross-multiplication,
+[01:22.04 -> 01:24.32]  x plus forty is equal to three x.
+[01:24.80 -> 01:31.44]  So forty is equal to two x and x is equal to twenty. Done. We got the distance of the nearer point.
+[01:32.12 -> 01:32.54]  But wait,
+[01:33.02 -> 01:35.12]  the question is not asking for this distance.
+[01:35.52 -> 01:37.48]  The question is asking for the tower height.
+[01:37.90 -> 01:39.70]  So use h is equal to x root three.
+[01:40.24 -> 01:41.66]  H is equal to twenty root three
+[01:42.22 -> 01:42.52]  meter.
+[01:43.38 -> 01:43.72]  Hence,
+[01:44.16 -> 01:47.32]  the height of the tower is twenty root three meters.
+[01:47.88 -> 01:49.94]  So the correct option is option A. Option

@@ -1,0 +1,20 @@
+[00:00.10 -> 00:00.24]  So
+[00:00.70 -> 00:01.74]  welcome back again.
+[00:02.46 -> 00:03.40]  It's time to solve
+[00:03.98 -> 00:04.86]  one more problem.
+[00:05.50 -> 00:06.76]  Now in this problem, we are given
+[00:07.22 -> 00:08.98]  sine 30 degrees and cos
+[00:09.42 -> 00:10.04]  60 degrees.
+[00:10.62 -> 00:11.36]  The question is
+[00:11.78 -> 00:13.08]  asking us to find their sum.
+[00:13.74 -> 00:13.90]  Now,
+[00:14.20 -> 00:17.20]  the important point here is that these are standard trigonometric values.
+[00:17.72 -> 00:20.34]  We should remember them because they are used very often.
+[00:20.86 -> 00:22.84]  Sine 30 degree is equal to one by two,
+[00:23.36 -> 00:26.38]  and cos 60 degree is also equal to one by two.
+[00:27.14 -> 00:28.44]  Now that we know both values,
+[00:28.82 -> 00:33.44]  let us substitute them into the given expression. So we get one half plus one half,
+[00:34.20 -> 00:35.30]  which is equal to one.
+[00:35.92 -> 00:36.12]  Done.
+[00:36.58 -> 00:37.86]  So the final answer will be one.
+[00:38.70 -> 00:41.12]  Hence, the correct option is option B.

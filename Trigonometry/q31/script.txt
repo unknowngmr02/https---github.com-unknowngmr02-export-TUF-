@@ -1,0 +1,83 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+In this problem, we have a tower of height 50 mee-ter.
+
+From the foot of the second tower, the angle of elevation to the "top" of the first tower is 60 degrees.
+
+And from the top of the second tower, the angle of elevation to the "top" of the first tower is 30 degrees.
+
+The problem is asking us to find the height of the second tower.
+
+So, to understand this clearly, draw both towers and join the top of the first tower to the top and foot of the second tower.
+
+Let the distance between the two towers be x.
+
+And let the height of the second tower be h.
+
+Okey, everything is clear now. <break time="0.5s" />
+
+First, focus on the line going from the foot of the second tower to the top of the first tower.
+
+Why are we doing this first?
+
+Because here we already know the full height, which is 50 mee-ter.
+
+And this will help us find the distance x.
+
+So, using ten 60 degrees,
+
+tan 60° = Height upon Base
+
+Now we have,
+
+Root 3 = 50 upon x
+
+Then, after solving this, we get
+
+x = 50 upon root 3
+
+Got it? Perfect.
+
+Now keep this value with us. We will use it in the next step. <break time="0.2s" />
+
+Next, focus on the line joining the top of the second tower to the top of the first tower.
+
+The first tower is 50 mee-ter tall.
+
+And the second tower is h mee-ter tall.
+
+So, the vertical difference between their tops will be 50 minus h.
+
+This is very important.
+
+We are not using h directly.
+
+We are using the difference in heights, which is 50 minus h.
+
+Okey, now using ten 30 degrees,
+
+tan 30° equals 50 minus h <break time="0.2s" /> upon x
+
+Now we have,
+
+1 upon root 3 equals 50 minus h <break time="0.2s" /> upon x
+
+Then, substituting the value of x,
+
+1 upon root 3 equals 50 minus h <break time="0.2s" /> upon 50 by root 3
+
+After solving this, we get
+
+50 minus h equals 50 upon 3
+
+Then, simplifying further,
+
+h equals 100 upon 3 mee-ter. <break time="0.2s" />
+
+Done and dusted. <break time="0.6s" />
+
+So, the height of the other tower is
+
+100 by 3 mee-ter.
+
+Hence, the final answer will be Option C.

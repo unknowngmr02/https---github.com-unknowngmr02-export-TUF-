@@ -1,0 +1,34 @@
+[00:00.10 -> 00:01.02]  So welcome back again.
+[00:01.68 -> 00:02.58]  It's time to solve
+[00:03.00 -> 00:03.72]  one more problem.
+[00:04.36 -> 00:05.18]  Now in this problem,
+[00:05.82 -> 00:07.38]  we have a ladder of length
+[00:07.86 -> 00:08.50]  ten meters.
+[00:09.10 -> 00:10.66]  The ladder is making an angle of
+[00:11.20 -> 00:12.08]  sixty degrees
+[00:12.46 -> 00:13.04]  with the ground.
+[00:13.48 -> 00:17.76]  The question is asking us to find how high the ladder reaches on the wall.
+[00:18.56 -> 00:18.96]  First,
+[00:19.34 -> 00:20.60]  let us understand the picture.
+[00:21.30 -> 00:22.16]  Draw the ground.
+[00:22.54 -> 00:23.38]  Now draw the wall.
+[00:24.22 -> 00:25.04]  Place the ladder
+[00:25.58 -> 00:26.74]  leaning against the wall.
+[00:27.56 -> 00:29.88]  Since the wall and the ground are perpendicular,
+[00:30.54 -> 00:33.74]  this forms a right triangle.
+[00:34.34 -> 00:36.12]  The ladder is the longest side,
+[00:36.58 -> 00:38.36]  so it becomes the hypotenuse.
+[00:38.84 -> 00:41.24]  The height on the wall is the opposite side,
+[00:41.76 -> 00:43.62]  and the ground is the adjacent side.
+[00:44.08 -> 00:47.44]  We already know the hypotenuse, and we need the opposite side.
+[00:47.98 -> 00:52.52]  So sine theta is the correct trigonometric ratio.
+[00:52.98 -> 00:57.52]  Sine theta is equal to opposite side divided by hypotenuse.
+[00:58.02 -> 00:58.92]  Putting the values,
+[00:59.34 -> 01:03.08]  sine sixty degree is equal to height divided by ten.
+[01:03.68 -> 01:06.56]  We also know one standard trigonometric value.
+[01:07.16 -> 01:10.88]  Sine sixty degree is equal to root three divided by two.
+[01:11.50 -> 01:17.46]  So the root three divided by two is equal to height divided by ten. Multiply both sides by ten.
+[01:18.34 -> 01:22.22]  After simplifying, the height becomes five root three meter.
+[01:22.90 -> 01:23.34]  Hence,
+[01:23.86 -> 01:27.88]  the ladder reaches a height of five root three meter on the wall.
+[01:28.36 -> 01:30.42]  So the correct option is option A

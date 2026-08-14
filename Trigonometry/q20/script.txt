@@ -1,0 +1,50 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+Now in this problem, a person is standing 18 mee-ter away from a pole.
+
+The person’s eye level is 1.5 mee-ter above the ground, and the angle of elevation from the eye to the top of the pole is 45 degree.
+
+We need to find the full height of the pole.
+
+Let us take the height from the person’s eye level to the top of the pole as X mee-ter.
+
+Why are we taking only this upper part?
+
+Because the angle of elevation starts from the person’s eye, not from the ground.
+
+<break time="0.5s" />
+
+Now look at the right triangle.
+
+The horizontal distance between the person and the pole is 18 mee-ter, so this becomes the adjacent side.
+
+The vertical height from the eye level to the top is X mee-ter, so this becomes the opposite side.
+
+Using the tan formula:
+
+Tan theta is equal to opposite divided by adjacent.
+
+So, tan 45 degree is equal to X divided by 18.
+
+We know that tan 45 degree is equal to 1.
+
+Therefore, 1 is equal to X divided by 18.
+
+This gives us X equal to 18 mee-ter.
+
+Okay, we have found the height of the pole above the person’s eye level.
+<break time="0.2s" />
+
+Are we done? Not yet.
+
+The question asks for the "full height" of the pole.
+
+So we must also add the person’s eye level, which is 1.5 mee-ter.
+
+The full height is 18 pluss 1.5, which is 19.5 mee-ter.
+
+<break time="0.6s" />
+
+Hence, the height of the pole is "19.5 mee-ter".
+
+So the correct option is "D".

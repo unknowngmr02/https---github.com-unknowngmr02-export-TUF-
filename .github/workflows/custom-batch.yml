@@ -1,0 +1,79 @@
+name: Render Batch
+
+on:
+  workflow_dispatch:
+    inputs:
+      project_path:
+        description: "Folder containing q1, q2, q3..."
+        required: true
+        default: "Trigonometry"
+
+      output_path:
+        description: "Output folder"
+        required: true
+        default: "render"
+
+      start:
+        description: "Start Question"
+        required: true
+        default: "1"
+
+      end:
+        description: "End Question"
+        required: true
+        default: "10"
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+
+    env:
+      PROJECT_PATH: ${{ github.event.inputs.project_path }}
+      OUTPUT_PATH: ${{ github.event.inputs.output_path }}
+      START: ${{ github.event.inputs.start }}
+      END: ${{ github.event.inputs.end }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Verify Environment
+        run: |
+          node -v
+          npm -v
+          ffmpeg -version
+          ffprobe -version
+
+          echo "PROJECT_PATH=$PROJECT_PATH"
+          echo "OUTPUT_PATH=$OUTPUT_PATH"
+          echo "START=$START"
+          echo "END=$END"
+
+      - name: Create Output Folder
+        run: |
+          mkdir -p "$OUTPUT_PATH"
+
+      - name: Render Videos
+        run: |
+          node render-range.js
+
+      - name: Upload Videos
+        uses: actions/upload-artifact@v4
+        with:
+          name: rendered-videos-${{ env.START }}-${{ env.END }}
+          path: ${{ env.OUTPUT_PATH }}/
+          if-no-files-found: error

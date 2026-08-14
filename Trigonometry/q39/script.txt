@@ -1,0 +1,71 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+In this problem, we have a tower.
+
+From the ground, the angle of elevation to the top of the tower is 60 degrees.
+
+Then a person moves 20 mee-ter upward along the same vertical line.
+
+From there, the angle of elevation becomes 30 degrees.
+
+We need to find the height of the tower.
+
+Let the height of the tower be h mee-ter.
+
+And let the horizontal distance from the observer to the tower be d mee-ter.
+
+Notice one important thing.
+
+When the observer moves up by 20 mee-ter, <break time="0.2s" /> the horizontal distance d remains the same.
+
+Only the remaining height changes to h minus 20.
+
+<break time="0.5s" />
+
+So, using ten 60 degrees,
+
+ten 60 degrees <break time="0.2s" /> equal to h upon d.
+
+And we know that ten 60 degrees is equal to root 3.
+
+So, now we have,
+
+Root 3 <break time="0.2s" /> equal to h upon d.
+
+Rearranging this,
+
+d equal to h upon root 3.
+
+<break time="0.5s" />
+
+Now use the 30-degree angle.
+
+for remaining height is h minus 20.
+
+So,
+
+ten 30 degrees <break time="0.2s" /> equal to h minus 20 <break time="0.2s" /> upon d.
+
+And ten 30 degrees is equal to 1 upon root 3.
+
+Substituting the value of d,
+
+1 upon root 3 <break time="0.2s" /> equal to h minus 20 <break time="0.2s" /> upon h by root 3.
+
+After simplifying,
+
+2h <break time="0.2s" /> equal to 60.
+
+Therefore,
+
+h <break time="0.2s" /> equal to 30.
+
+<break time="0.6s" />
+
+Done and dusted.
+
+Hence, the height of the tower is
+
+30 mee-ter.
+
+So, Option C is the correct answer.

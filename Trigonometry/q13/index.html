@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="design-system.css">
+</head>
+<body>
+<div data-hf-id="hf-89uj" id="root" data-composition-id="root" data-start="0" data-width="1920" data-height="1080">
+
+  <!-- ══════ BACKGROUND LAYERS (always visible) ══════ -->
+  <div data-hf-id="hf-858h" class="dotted-grid"></div>
+  <div data-hf-id="hf-izuk" class="bottom-strip"></div>
+  <div data-hf-id="hf-ql9k" class="topic-name">Trigonometry</div>
+  <div data-hf-id="hf-e319" class="logo"></div>
+
+  <!-- ══════ VOICEOVER ══════ -->
+  <audio data-hf-id="hf-42cy" id="voiceover" class="clip" src="voiceover.wav" data-start="0" data-duration="60.2" data-track-index="0"></audio>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 1 - Question + Illustration (0-28.9s)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-vxkq" id="phase1" class="clip" data-start="0" data-duration="60.2" data-track-index="1" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:5;">
+
+    <div data-hf-id="hf-lxc5" id="q-full-card" class="q-card" style="position:absolute;left:50%;top:80px;width:1500px;transform:translateX(-50%);opacity:0;">
+      <div data-hf-id="hf-gdl0" class="q-text">
+        A kite string is <span data-hf-id="hf-u16h" class="num">50 m</span> long and makes an angle of <span data-hf-id="hf-b80t" class="num">30 degrees</span> with the ground. Find the <span data-hf-id="hf-opv4" class="num">height</span> of the kite.
+      </div>
+    </div>
+
+    <div data-hf-id="hf-w62k" id="serial-num" class="serial-num" style="left:60px;top:60px;opacity:0;">
+      <div data-hf-id="hf-yfde" class="digit">Q</div>
+    </div>
+
+    <!-- Illustration: ground anchor, slanted string (hypotenuse) up to kite,
+         vertical dashed height drop-line (opposite, unknown), right-angle
+         marker where the drop-line meets the ground, ground angle arc + "30°"
+         label at the anchor vertex. Anchor (30,260), kite at (230,150.3) so
+         base=200, height=200*tan(30deg)=115.47 -> 260-115.47=144.53. Using
+         (230,144.53) keeps the ground angle EXACT at 30deg (per penelty.txt
+         q10 standard: never eyeball the arc endpoint). -->
+    <div data-hf-id="hf-rr05" id="illustration" class="illustration" style="position:absolute;left:50%;top:480px;transform:translateX(-50%);width:300px;height:300px;">
+      <svg data-hf-id="hf-668g" id="kite-svg" viewBox="0 0 300 300" width="300" height="300" style="position:absolute;left:0;top:0;overflow:visible;transform:scale(2);transform-origin:center center;">
+        <!-- ground line -->
+        <line data-hf-id="hf-1nfe" id="gnd-line" x1="20" y1="260" x2="250" y2="260" stroke="#000000" stroke-width="3" stroke-dasharray="230" stroke-dashoffset="230" stroke-linecap="round" />
+        <!-- vertical dashed height drop-line (opposite side, unknown) -->
+        <line data-hf-id="hf-13t3" id="height-edge" x1="230" y1="260" x2="230" y2="144.53" stroke="#6373db" stroke-width="6" stroke-dasharray="6 6" stroke-dashoffset="0" stroke-linecap="round" opacity="0" />
+        <!-- slanted string (hypotenuse) -->
+        <line data-hf-id="hf-8tin" id="string-edge" x1="30" y1="260" x2="230" y2="144.53" stroke="#6373db" stroke-width="6" stroke-dasharray="231" stroke-dashoffset="231" stroke-linecap="round" />
+        <!-- right-angle marker at the drop-line/ground meeting point -->
+        <path data-hf-id="hf-i5wx" id="right-angle-mark" d="M 215 260 L 215 245 L 230 245" fill="none" stroke="#000000" stroke-width="2.5" opacity="0" />
+        <!-- 30-degree angle arc at the ground anchor, full-circle
+             stroke-dasharray technique (penelty.txt standard from q10
+             onward, unitless --angle per q12 fix): --angle: 30 exactly. -->
+        <circle data-hf-id="hf-ttg9" id="angle-arc" cx="30" cy="260" r="45" fill="transparent" stroke="#4eb85f" stroke-width="3" stroke-linecap="round" transform="translate(0, 520) scale(1,-1)" style="--angle: 30; stroke-dasharray: calc((var(--angle) / 360) * 282.74) 282.74;" opacity="0" />
+        <text data-hf-id="hf-1kxh" id="angle-label" x="82" y="248" font-family="'Google Sans Flex','Inter',sans-serif" font-size="16" fill="#4eb85f" opacity="0">30°</text>
+        <!-- ground anchor point (hand holding the string) -->
+        <circle data-hf-id="hf-40vk" id="anchor-point" cx="30" cy="260" r="6" fill="#000000" opacity="0" />
+        <!-- flat 2D kite icon -->
+        <g data-hf-id="hf-ju6o" id="kite-icon" opacity="0" transform="translate(230,144.53)">
+          <path data-hf-id="hf-ux51" d="M 0 -22 L 14 0 L 0 22 L -14 0 Z" fill="#6373db" />
+          <line data-hf-id="hf-f160" x1="0" y1="-22" x2="0" y2="22" stroke="#e2e5ff" stroke-width="1.5" />
+          <line data-hf-id="hf-mib6" x1="-14" y1="0" x2="14" y2="0" stroke="#e2e5ff" stroke-width="1.5" />
+        </g>
+      </svg>
+
+      <!-- Bordered chip labels -->
+      <div data-hf-id="hf-x32n" id="chip-string" style="position:absolute;left:90px;top:135px;opacity:0;">
+        <div data-hf-id="hf-rwpo" style="background:#fff;border:2px solid #6373db;border-radius:10px;padding:6px 14px;font-size:22px;color:#6373db;font-family:'Google Sans Flex','Inter',sans-serif;white-space:nowrap;">50 m</div>
+      </div>
+      <div data-hf-id="hf-x4qg" id="chip-hypotenuse" style="position:absolute;left:0px;top:230px;opacity:0;">
+        <div data-hf-id="hf-cdgg" style="background:#fff;border:2px solid #000;border-radius:10px;padding:6px 14px;font-size:20px;color:#000;font-family:'Google Sans Flex','Inter',sans-serif;white-space:nowrap;">Hypotenuse</div>
+      </div>
+      <div data-hf-id="hf-cnn0" id="chip-opposite" style="position:absolute;left:246px;top:190px;opacity:0;">
+        <div data-hf-id="hf-v1h1" style="background:#fff;border:2px solid #000;border-radius:10px;padding:6px 14px;font-size:20px;color:#000;font-family:'Google Sans Flex','Inter',sans-serif;white-space:nowrap;">Opposite</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 2 - Pinned question (28.9s onwards)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-5pl1" id="q-pinned" class="clip" data-start="28.9" data-duration="31.3" data-track-index="2" style="position:absolute;width:100%;top:0;left:0;z-index:6;opacity:0;">
+    <div data-hf-id="hf-9jf4" class="q-card pinned" style="position:absolute;left:385px;top:30px;width:1275px;">
+      <div data-hf-id="hf-lgeh" class="q-text">
+        Kite string <span data-hf-id="hf-zivh" class="num">50 m</span>, angle <span data-hf-id="hf-jhjo" class="num">30°</span> with ground. Find the <span data-hf-id="hf-vnig" class="num">height</span>.
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-aaoc" id="illus-pinned" class="clip" data-start="28.9" data-duration="31.3" data-track-index="3" style="position:absolute;left:280px;top:190px;width:1300px;height:210px;z-index:5;opacity:0;
+              display:flex;align-items:center;justify-content:center;">
+    <svg data-hf-id="hf-jbrq" id="illus-pinned-icon" viewBox="0 0 300 300" width="200" height="200">
+      <line data-hf-id="hf-ivpx" x1="20" y1="260" x2="250" y2="260" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+      <line data-hf-id="hf-dftp" x1="230" y1="260" x2="230" y2="144.53" stroke="#6373db" stroke-width="4" stroke-dasharray="5 5" stroke-linecap="round" />
+      <line data-hf-id="hf-fvwc" x1="30" y1="260" x2="230" y2="144.53" stroke="#6373db" stroke-width="4" stroke-linecap="round" />
+      <path data-hf-id="hf-wwxb" d="M 215 260 L 215 245 L 230 245" fill="none" stroke="#000000" stroke-width="1.8" />
+      <circle data-hf-id="hf-c4ft" cx="30" cy="260" r="30" fill="transparent" stroke="#4eb85f" stroke-width="4" stroke-linecap="round" transform="translate(0,520) scale(1,-1)" style="--angle:30; stroke-dasharray: calc((var(--angle) / 360) * 188.5) 188.5;" />
+      <text data-hf-id="hf-vy84" x="82" y="248" font-family="'Google Sans Flex','Inter',sans-serif" font-size="18" fill="#4eb85f">30°</text>
+      <g data-hf-id="hf-8u7l" transform="translate(230,144.53)">
+        <path data-hf-id="hf-t42r" d="M 0 -18 L 11 0 L 0 18 L -11 0 Z" fill="#6373db" />
+      </g>
+    </svg>
+    <div data-hf-id="hf-k1fr" style="font-family:'Google Sans Flex','Inter',sans-serif;font-size:24px;color:#000;margin-left:24px;">
+      Hypotenuse = <span data-hf-id="hf-njli" style="color:#6373db;">50 m</span><br data-hf-id="hf-x5px">Opposite = <span data-hf-id="hf-o30j" style="color:#6373db;">height</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SOLUTION CARDS (center)
+       ══════════════════════════════════════════════ -->
+
+  <!-- GIVEN: formula + substitution -->
+  <div data-hf-id="hf-z9a5" id="card-given" class="clip" data-start="32" data-duration="28.2" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-9mhg" class="solution-card" style="position:absolute;left:600px;top:440px;text-align:center;width:720px;">
+      <div data-hf-id="hf-3rv6" class="card-content">
+        <span data-hf-id="hf-7r0o" class="chip">Given</span>
+        <div data-hf-id="hf-8tlu" class="math">
+          <span data-hf-id="hf-zxd2" class="rv" data-t="31.90">sin</span> <span data-hf-id="hf-6smr" class="rv" data-t="32.10">θ</span> <span data-hf-id="hf-yj0o" class="rv" data-t="32.50">=</span>
+          <span data-hf-id="hf-ra0f" class="frac rv" data-t="33.00"><span data-hf-id="hf-px7q" class="top hi">Opposite</span><span data-hf-id="hf-tgp9" class="bot hi">Hypotenuse</span></span><br data-hf-id="hf-rsrt">
+          <span data-hf-id="hf-bq0d" class="rv" data-t="36.18">sin</span> <span data-hf-id="hf-wmee" class="rv" data-t="36.50">30°</span> <span data-hf-id="hf-ejmh" class="rv" data-t="37.10">=</span>
+          <span data-hf-id="hf-0ied" class="frac ans rv" data-t="37.60"><span data-hf-id="hf-t249" class="top">height</span><span data-hf-id="hf-er0h" class="bot">50</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 1: standard value -->
+  <div data-hf-id="hf-b0yl" id="card-step1" class="clip" data-start="40.5" data-duration="19.7" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-a1ig" class="solution-card" style="position:absolute;left:640px;top:460px;text-align:center;">
+      <div data-hf-id="hf-0yza" class="card-content">
+        <span data-hf-id="hf-3ife" class="chip">Step 1</span>
+        <div data-hf-id="hf-ng7a" class="math">
+          <span data-hf-id="hf-cxjo" class="rv" data-t="39.42">sin 30° = 1/2 (standard value)</span><br data-hf-id="hf-szow">
+          <span data-hf-id="hf-zxq3" class="rv" data-t="42.78">1</span> <span data-hf-id="hf-rzmv" class="rv" data-t="42.94">/</span> <span data-hf-id="hf-ll9l" class="rv" data-t="43.10">2</span> <span data-hf-id="hf-lkil" class="rv" data-t="43.40">=</span>
+          <span data-hf-id="hf-dcit" class="frac ans rv" data-t="44.00"><span data-hf-id="hf-eor1" class="top">height</span><span data-hf-id="hf-x7px" class="bot">50</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 2: cross-multiply and solve -->
+  <div data-hf-id="hf-71q2" id="card-step2" class="clip" data-start="47.4" data-duration="12.8" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-xgi9" class="solution-card" style="position:absolute;left:640px;top:470px;text-align:center;">
+      <div data-hf-id="hf-1dab" class="card-content">
+        <span data-hf-id="hf-3wqf" class="chip">Step 2</span>
+        <div data-hf-id="hf-nuib" class="math">
+          <span data-hf-id="hf-qgoq" class="rv" data-t="46.26">height</span> <span data-hf-id="hf-50fn" class="rv" data-t="46.70">=</span> <span data-hf-id="hf-q4s3" class="rv" data-t="46.90">50</span> <span data-hf-id="hf-49ko" class="rv" data-t="47.30">×</span>
+          <span data-hf-id="hf-cmh1" class="frac hi rv" data-t="49.80"><span data-hf-id="hf-ycvl" class="top">1</span><span data-hf-id="hf-kz0q" class="bot">2</span></span><br data-hf-id="hf-sldv">
+          <span data-hf-id="hf-d5yw" class="rv" data-t="51.20">height</span> <span data-hf-id="hf-fh5x" class="rv" data-t="51.90">=</span> <span data-hf-id="hf-ece1" class="ans rv" data-t="52.10">25 m</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       LEFT STACK CARDS
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-2d94" id="stack-given" class="clip" data-start="39.4" data-duration="20.8" data-track-index="11" style="position:absolute;left:100px;top:140px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-usjn" class="stack-card">
+      <div data-hf-id="hf-1rlc" class="card-content">
+        <span data-hf-id="hf-snhl" class="step-circle">G</span>
+        <div data-hf-id="hf-obv7" class="math">
+          sin θ = <span data-hf-id="hf-gq2t" class="frac"><span data-hf-id="hf-c6kw" class="top hi">Opp</span><span data-hf-id="hf-fyry" class="bot hi">Hyp</span></span><br data-hf-id="hf-qluq">
+          sin 30° = <span data-hf-id="hf-s3fd" class="frac"><span data-hf-id="hf-0qm8" class="top hi">height</span><span data-hf-id="hf-kijk" class="bot hi">50</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-jyb7" id="stack-step1" class="clip" data-start="46.3" data-duration="13.9" data-track-index="12" style="position:absolute;left:100px;top:310px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-3m9v" class="stack-card">
+      <div data-hf-id="hf-yzg5" class="card-content">
+        <span data-hf-id="hf-w2db" class="step-circle">1</span>
+        <div data-hf-id="hf-0y22" class="math">
+          sin 30° = <span data-hf-id="hf-s2fq" class="hi">1/2</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-kdbb" id="stack-step2" class="clip" data-start="53.7" data-duration="6.5" data-track-index="13" style="position:absolute;left:100px;top:420px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-37yu" class="stack-card">
+      <div data-hf-id="hf-zdr6" class="card-content">
+        <span data-hf-id="hf-vo2a" class="step-circle">2</span>
+        <div data-hf-id="hf-s4l6" class="math">
+          height = <span data-hf-id="hf-o2jx" class="ans">25 m</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-0krd" id="line-g-1" class="clip stack-line" data-start="46.3" data-duration="13.9" data-track-index="15" style="opacity:0;"></div>
+  <div data-hf-id="hf-53ap" id="line-1-2" class="clip stack-line" data-start="53.7" data-duration="6.5" data-track-index="16" style="opacity:0;"></div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 3 - OPTIONS REVEAL
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-4ght" id="options-reveal" class="clip" data-start="53.7" data-duration="6.5" data-track-index="10" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:8;opacity:0;">
+    <div data-hf-id="hf-2tfv" class="pinned-col" style="top:400px;">
+      <div data-hf-id="hf-6knj" class="options-grid">
+        <div data-hf-id="hf-f0mk" class="opt-btn correct"><span data-hf-id="hf-sfug" class="letter">A</span>25 m</div>
+        <div data-hf-id="hf-14m2" class="opt-btn"><span data-hf-id="hf-r8xd" class="letter">B</span>50 m</div>
+        <div data-hf-id="hf-a2ht" class="opt-btn"><span data-hf-id="hf-rn8e" class="letter">C</span>25√3 m</div>
+        <div data-hf-id="hf-96b4" class="opt-btn"><span data-hf-id="hf-qgbb" class="letter">D</span>100 m</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end root -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script src="animations.js"></script>
+<script>
+  apt.setStackLine("#line-g-1", "#stack-given .step-circle", "#stack-step1 .step-circle");
+  apt.setStackLine("#line-1-2", "#stack-step1 .step-circle", "#stack-step2 .step-circle");
+
+  const tl = gsap.timeline({ paused: true });
+
+  // PHASE 1 - Question reveal
+  const HERO_OFFSET_Y = 180;
+  const RISE_TIME = 3.56; // end of "one more problem" intro beat
+  apt.heroEnterLowered(tl, "#q-full-card", HERO_OFFSET_Y, RISE_TIME);
+
+  tl.fromTo("#serial-num",
+    { scale: 0, rotation: -45, opacity: 0, y: HERO_OFFSET_Y },
+    { scale: 1, rotation: 0, opacity: 1, duration: 0.55, ease: "back.out(2)", y: HERO_OFFSET_Y },
+    0.8);
+  tl.to("#serial-num", { y: 0, duration: 0.6, ease: "power2.inOut" }, RISE_TIME);
+
+  // Illustration build-in, timed to "kite string is" (6.2), "fifty meters long" (6.9),
+  // "thirty" (10.2), "find the height" (13.9)
+  tl.to("#gnd-line", { strokeDashoffset: 0, duration: 0.5, ease: "power2.out" }, 6.2);
+  tl.to("#string-edge", { strokeDashoffset: 0, duration: 0.7, ease: "power2.out" }, 6.6);
+  tl.to("#anchor-point", { opacity: 1, duration: 0.3 }, 6.6);
+  tl.to("#kite-icon", { opacity: 1, duration: 0.4 }, 6.9);
+  tl.to("#angle-arc", { opacity: 1, duration: 0.3 }, 10.2);
+  tl.to("#angle-label", { opacity: 1, duration: 0.3 }, 10.2);
+  tl.to("#right-angle-mark", { opacity: 1, duration: 0.3 }, 13.9);
+  tl.to("#height-edge", { opacity: 1, duration: 0.4 }, 13.9);
+
+  // Side-naming chip labels
+  tl.fromTo("#chip-string", { y: 10, opacity: 0, scale: 0.85 }, { y: 0, opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 6.9);
+  tl.fromTo("#chip-hypotenuse", { y: 10, opacity: 0, scale: 0.85 }, { y: 0, opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 19.68);
+  apt.emphasize(tl, "#string-edge", 19.68);
+  tl.fromTo("#chip-opposite", { y: 10, opacity: 0, scale: 0.85 }, { y: 0, opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 25.30);
+  apt.emphasize(tl, "#height-edge", 25.30);
+
+  // PHASE 2 - Pin, right after "opposite side to thirty degree" finishes (28.9)
+  const PIN_TIME = 28.9;
+  const GIVEN_TIME = 32.0; // "sine theta is equal to..." - its own transcript timestamp
+
+  apt.pinFlow(tl, "#q-full-card", "#q-pinned", PIN_TIME);
+  apt.pinFlow(tl, "#illustration", "#illus-pinned", PIN_TIME);
+  apt.fadeOut(tl, "#serial-num", PIN_TIME, 0.5);
+
+  apt.cardEnter(tl, "#card-given .solution-card", GIVEN_TIME);
+  apt.textReveal(tl, "#card-given .math");
+
+  // STEP 1 - morph Given into stack, standard value 39.42-45.78
+  apt.morphToStack(tl, "#card-given .solution-card", "#stack-given .stack-card", 39.4);
+  apt.cardEnter(tl, "#card-step1 .solution-card", 40.5);
+  apt.textReveal(tl, "#card-step1 .math");
+
+  // STEP 2 - morph Step1 into stack, cross-multiply + answer 46.26-52.92
+  apt.morphToStack(tl, "#card-step1 .solution-card", "#stack-step1 .stack-card", 46.3);
+  apt.stackLineGrow(tl, "#line-g-1", 46.3);
+  apt.cardEnter(tl, "#card-step2 .solution-card", 47.4);
+  apt.textReveal(tl, "#card-step2 .math");
+
+  // Recenter + Options - after final-answer confirmation (53.7), option A reveal 53.72-58.58
+  const RECENTER_TIME = 53.7;
+  apt.morphToStack(tl, "#card-step2 .solution-card", "#stack-step2 .stack-card", RECENTER_TIME);
+  apt.stackLineGrow(tl, "#line-1-2", RECENTER_TIME);
+  apt.fadeOut(tl, "#illus-pinned", RECENTER_TIME);
+  apt.recenterForOptions(tl, "#q-pinned", 160, 180, RECENTER_TIME);
+
+  apt.fadeIn(tl, "#options-reveal", 54.4);
+  apt.optionsStagger(tl, ".opt-btn", 54.8);
+  apt.correctPulse(tl, ".opt-btn.correct", 56.3);
+
+  const END_FADE_TIME = 58;
+  apt.fadeOut(tl, "#root > div", END_FADE_TIME, 1.2);
+
+  tl.set({},{},60.2)
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines["root"] = tl;
+</script>
+</body>
+</html>

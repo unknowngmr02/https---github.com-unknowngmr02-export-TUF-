@@ -1,0 +1,37 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+Now in this problem, we are given that "ten of theta" is equal to "five divided by twelve", and theta is an acute angle.
+
+The question is asking us to find the value of "sign theta".
+
+<break time="0.5s" />
+
+"Ten of theta" means "opposite side divided by adjacent side."
+
+So we can say,
+
+"Opposite side divided by adjacent side is equal to five divided by twelve."
+
+This means we can take the opposite side as 5 units and the adjacent side as 12 units.
+
+<break time="0.2s" />
+
+Since we know these two sides, we can find the high-pot-en-use using the Pythagoras Theorem.
+
+The high-pot-en-use is equal to the square root of "five square pluss twelve square."
+
+After simplifying this, the high-pot-en-use is equal to 13.
+
+<break time="0.2s" />
+
+We needed this value because "sign theta" means "opposite side divided by high-pot-en-use."
+
+So,
+
+"Sign theta is equal to five divided by thirteen."
+
+<break time="0.6s" />
+
+Hence, the value of "sign theta" is "five by thirteen."
+
+So the correct option is "Option C".

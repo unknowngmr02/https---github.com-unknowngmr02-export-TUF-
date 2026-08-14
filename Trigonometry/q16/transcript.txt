@@ -1,0 +1,19 @@
+[00:00.10 -> 00:01.42]  So welcome back again.
+[00:01.98 -> 00:04.30]  It's time to solve one more problem.
+[00:04.76 -> 00:07.48]  Now in this problem, we are given two tangent values.
+[00:07.90 -> 00:08.92]  One is ten thirty degree,
+[00:09.36 -> 00:10.84]  the other is ten sixty degree.
+[00:11.34 -> 00:12.08]  The question is
+[00:12.54 -> 00:14.10]  asking us to find their product.
+[00:14.46 -> 00:14.98]  That means
+[00:15.52 -> 00:19.14]  we simply need to multiply ten thirty degree and ten sixty degree.
+[00:19.84 -> 00:21.22]  Now we know the standard values.
+[00:21.56 -> 00:23.84]  Ten thirty degree is equal to one by root three,
+[00:24.32 -> 00:26.32]  and ten sixty degree is equal to root three.
+[00:26.88 -> 00:30.78]  So their product becomes one by root three multiplied by root three.
+[00:31.62 -> 00:31.88]  Here,
+[00:32.38 -> 00:36.50]  root three in numerator and root three in denominator will cancel,
+[00:36.96 -> 00:38.12]  so the answer becomes one.
+[00:38.90 -> 00:39.32]  Hence,
+[00:39.90 -> 00:43.72]  the product of ten thirty degree and ten sixty degree is one.
+[00:44.32 -> 00:46.62]  So the correct option is option D.

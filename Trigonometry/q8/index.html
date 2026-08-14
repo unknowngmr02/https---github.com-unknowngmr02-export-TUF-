@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="design-system.css">
+</head>
+<body>
+<div data-hf-id="hf-89uj" id="root" data-composition-id="root" data-start="0" data-width="1920" data-height="1080">
+
+  <!-- ══════ BACKGROUND LAYERS (always visible) ══════ -->
+  <div data-hf-id="hf-858h" class="dotted-grid"></div>
+  <div data-hf-id="hf-izuk" class="bottom-strip"></div>
+  <div data-hf-id="hf-pcpi" class="topic-name">Trigonometry</div>
+  <div data-hf-id="hf-e319" class="logo"></div>
+
+  <!-- ══════ VOICEOVER ══════ -->
+  <audio data-hf-id="hf-ktug" id="voiceover" class="clip" src="voiceover.wav" data-start="0" data-duration="77.4" data-track-index="0"></audio>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 1 - Question + Illustration (0-31.8s)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-4nf2" id="phase1" class="clip" data-start="0" data-duration="31.8" data-track-index="1" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:5;">
+
+    <div data-hf-id="hf-lxc5" id="q-full-card" class="q-card" style="position:absolute;left:50%;top:80px;width:1500px;transform:translateX(-50%);opacity:0;">
+      <div data-hf-id="hf-isat" class="q-text">
+        From a point <span data-hf-id="hf-1j7y" class="num">10√3 m</span> away from a tower, the angle of elevation of the top is <span data-hf-id="hf-j3n8" class="num">60 degrees</span>. Find the tower height.
+      </div>
+    </div>
+
+    <div data-hf-id="hf-w62k" id="serial-num" class="serial-num" style="left:60px;top:60px;opacity:0;">
+      <div data-hf-id="hf-yfde" class="digit">Q</div>
+    </div>
+
+    <!-- Illustration area -->
+    <div data-hf-id="hf-zovx" id="illustration" class="illustration" style="position:absolute;left:50%;top:480px;transform:translateX(-50%);
+                width:1400px;height:300px;display:flex;align-items:center;justify-content:center;">
+      <svg data-hf-id="hf-eh04" id="tower-svg" viewBox="0 0 340 300" width="340" height="300">
+        <!-- ground line (adjacent side), length 140 -->
+        <line data-hf-id="hf-p74s" id="gnd-line" x1="40" y1="260" x2="180" y2="260" stroke="#6373db" stroke-width="4" stroke-dasharray="140" stroke-dashoffset="140" stroke-linecap="round" />
+        <!-- tower (opposite side), height = 140*tan60deg = 242.5, so the drawn angle is a true 60deg -->
+        <line data-hf-id="hf-ygjy" id="tower-line" x1="180" y1="260" x2="180" y2="17.5" stroke="#6373db" stroke-width="4" stroke-dasharray="242.5" stroke-dashoffset="242.5" stroke-linecap="round" />
+        <!-- flag cap on tower -->
+        <path data-hf-id="hf-rxfd" id="tower-flag" d="M 180 17.5 L 215 27.5 L 180 37.5 Z" fill="#6373db" opacity="0" />
+        <!-- line of sight (hypotenuse) -->
+        <line data-hf-id="hf-0h0i" id="los-line" x1="40" y1="260" x2="180" y2="17.5" stroke="#000000" stroke-width="3" stroke-dasharray="280" stroke-dashoffset="280" stroke-linecap="round" />
+        <!-- observation point -->
+        <circle data-hf-id="hf-qzz4" id="obs-point" cx="40" cy="260" r="6" fill="#000000" opacity="0" />
+        <!-- right-angle marker at tower base -->
+        <path data-hf-id="hf-d6f3" id="right-angle-mark" d="M 165 260 L 165 245 L 180 245" fill="none" stroke="#000000" stroke-width="2.5" opacity="0" />
+        <!-- angle arc at observation point - radius 45, endpoint computed at exactly 60deg from the ground line so it matches the line-of-sight slope precisely -->
+        <path data-hf-id="hf-ueym" id="angle-arc" d="M 85 260 A 45 45 0 0 0 62.5 221.03" fill="none" stroke="#4eb85f" stroke-width="4" opacity="0" />
+        <text data-hf-id="hf-6m8r" id="angle-label" x="86" y="234" font-family="Google Sans Flex, Inter, sans-serif" font-size="22" fill="#4eb85f" opacity="0">60°</text>
+        <text data-hf-id="hf-6yf2" id="dist-label" x="180" y="290" font-family="Google Sans Flex, Inter, sans-serif" font-size="24" fill="#000000" text-anchor="middle" opacity="0">10√3 m</text>
+        <text data-hf-id="hf-au4q" id="height-label" x="190" y="145" font-family="Google Sans Flex, Inter, sans-serif" font-size="26" fill="#6373db" font-weight="600" opacity="0">h</text>
+        <text data-hf-id="hf-21dt" id="opp-label" x="190" y="115" font-family="Google Sans Flex, Inter, sans-serif" font-size="20" fill="#6373db" opacity="0">Opposite</text>
+        <text data-hf-id="hf-3iu8" id="adj-label" x="90" y="280" font-family="Google Sans Flex, Inter, sans-serif" font-size="20" fill="#6373db" text-anchor="middle" opacity="0">Adjacent</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 2 - Pinned question (31s onwards)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-ixdu" id="q-pinned" class="clip" data-start="31" data-duration="48" data-track-index="2" style="position:absolute;width:100%;top:0;left:0;z-index:6;opacity:0;">
+    <div data-hf-id="hf-9jf4" class="q-card pinned" style="position:absolute;left:385px;top:30px;width:1275px;">
+      <div data-hf-id="hf-4pfg" class="q-text">
+        Point <span data-hf-id="hf-8qdu" class="num">10√3 m</span> from tower, elevation angle <span data-hf-id="hf-1efn" class="num">60°</span>. Find height.
+      </div>
+    </div>
+  </div>
+
+  <!-- Pinned illustration (smaller) -->
+  <div data-hf-id="hf-1qx7" id="illus-pinned" class="clip" data-start="31" data-duration="39" data-track-index="3" style="position:absolute;left:280px;top:190px;width:1300px;height:210px;z-index:5;opacity:0;
+              display:flex;align-items:center;justify-content:center;">
+    <svg data-hf-id="hf-d4mi" id="illus-pinned-icon" viewBox="0 0 340 300" width="230" height="203">
+      <line data-hf-id="hf-m7hu" x1="40" y1="260" x2="180" y2="260" stroke="#6373db" stroke-width="4" stroke-linecap="round" />
+      <line data-hf-id="hf-axji" x1="180" y1="260" x2="180" y2="17.5" stroke="#6373db" stroke-width="4" stroke-linecap="round" />
+      <path data-hf-id="hf-aa3h" d="M 180 17.5 L 215 27.5 L 180 37.5 Z" fill="#6373db" />
+      <line data-hf-id="hf-d0mz" x1="40" y1="260" x2="180" y2="17.5" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+      <circle data-hf-id="hf-l95l" cx="40" cy="260" r="6" fill="#000000" />
+      <path data-hf-id="hf-m4er" d="M 165 260 L 165 245 L 180 245" fill="none" stroke="#000000" stroke-width="2.5" />
+      <path data-hf-id="hf-x7aq" d="M 85 260 A 45 45 0 0 0 62.5 221.03" fill="none" stroke="#4eb85f" stroke-width="4" />
+      <text data-hf-id="hf-z05z" x="86" y="234" font-family="Google Sans Flex, Inter, sans-serif" font-size="22" fill="#4eb85f">60°</text>
+    </svg>
+    <div data-hf-id="hf-jij9" style="font-family:'Google Sans Flex',Inter,sans-serif;font-size:24px;color:#000;margin-left:24px;">
+      Angle = <span data-hf-id="hf-8fwa" style="color:#6373db;">60°</span><br data-hf-id="hf-x5px">Adjacent = <span data-hf-id="hf-qrel" style="color:#6373db;">10√3 m</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SOLUTION CARDS (one per step, center)
+       ══════════════════════════════════════════════ -->
+
+  <!-- GIVEN -->
+  <div data-hf-id="hf-v66w" id="card-given" class="clip" data-start="31" data-duration="7.4" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-a1ig" class="solution-card" style="position:absolute;left:640px;top:460px;text-align:center;">
+      <div data-hf-id="hf-3rv6" class="card-content">
+        <span data-hf-id="hf-7r0o" class="chip">Given</span>
+        <div data-hf-id="hf-8tlu" class="math">
+          <span data-hf-id="hf-6p44" class="rv" data-t="31.60">Angle</span> <span data-hf-id="hf-jrgj" class="rv" data-t="31.90">=</span> <span data-hf-id="hf-f2bg" class="hi rv" data-t="32.10">60°</span><br data-hf-id="hf-rsrt">
+          <span data-hf-id="hf-g97y" class="rv" data-t="32.60">Adjacent</span> <span data-hf-id="hf-gqjs" class="rv" data-t="33.00">=</span> <span data-hf-id="hf-pfia" class="hi rv" data-t="33.30">10√3 m</span><br data-hf-id="hf-szow">
+          <span data-hf-id="hf-yui7" class="rv" data-t="34.00">Height</span> <span data-hf-id="hf-bh9r" class="rv" data-t="34.30">h</span> <span data-hf-id="hf-90nl" class="rv" data-t="34.60">=</span> <span data-hf-id="hf-ixvp" class="hi rv" data-t="34.90">Opposite (?)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 1 -->
+  <div data-hf-id="hf-find" id="card-step1" class="clip" data-start="38" data-duration="13.3" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-mnss" class="solution-card" style="position:absolute;left:560px;top:400px;text-align:center;width:800px;">
+      <div data-hf-id="hf-0yza" class="card-content">
+        <span data-hf-id="hf-3ife" class="chip">Step 1</span>
+        <div data-hf-id="hf-ng7a" class="math">
+          <span data-hf-id="hf-0uat" class="rv" data-t="38.60">tan θ</span> <span data-hf-id="hf-7t5t" class="rv" data-t="38.86">=</span>
+          <span data-hf-id="hf-uw11" class="frac rv" data-t="39.08"><span data-hf-id="hf-ccjl" class="top hi">Opposite Side</span><span data-hf-id="hf-5lna" class="bot hi">Adjacent Side</span></span><br data-hf-id="hf-sldv">
+          <span data-hf-id="hf-8m8v" class="rv" data-t="42.52">tan</span> <span data-hf-id="hf-p3rw" class="rv" data-t="42.98">60°</span> <span data-hf-id="hf-n22b" class="rv" data-t="43.46">=</span>
+          <span data-hf-id="hf-8c7h" class="frac rv" data-t="44.22"><span data-hf-id="hf-c3bp" class="top hi">h</span><span data-hf-id="hf-y6jv" class="bot hi">10√3</span></span><br data-hf-id="hf-qluq">
+          <span data-hf-id="hf-ly08" class="rv" data-t="47.76">tan</span> <span data-hf-id="hf-6n48" class="rv" data-t="48.12">60°</span> <span data-hf-id="hf-0fx5" class="rv" data-t="48.70">=</span> <span data-hf-id="hf-xfaf" class="ans rv" data-t="49.44">√3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 2 -->
+  <div data-hf-id="hf-9h3m" id="card-step2" class="clip" data-start="50.46" data-duration="9.2" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-8hiu" class="solution-card" style="position:absolute;left:600px;top:420px;text-align:center;width:720px;">
+      <div data-hf-id="hf-1dab" class="card-content">
+        <span data-hf-id="hf-3wqf" class="chip">Step 2</span>
+        <div data-hf-id="hf-nuib" class="math">
+          <span data-hf-id="hf-9bm4" class="rv" data-t="51.46">√3</span> <span data-hf-id="hf-5c7n" class="rv" data-t="53.36">=</span>
+          <span data-hf-id="hf-4ekz" class="frac rv" data-t="54.36"><span data-hf-id="hf-7evd" class="top hi">h</span><span data-hf-id="hf-ovij" class="bot hi">10√3</span></span><br data-hf-id="hf-q7jp">
+          <span data-hf-id="hf-g83q" class="rv" data-t="56.26">Multiply both sides by 10√3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 3 -->
+  <div data-hf-id="hf-rrvv" id="card-step3" class="clip" data-start="58.88" data-duration="12" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-5sox" class="solution-card" style="position:absolute;left:600px;top:410px;text-align:center;width:720px;">
+      <div data-hf-id="hf-1rlc" class="card-content">
+        <span data-hf-id="hf-4b1g" class="chip">Step 3</span>
+        <div data-hf-id="hf-o8tc" class="math">
+          <span data-hf-id="hf-5ok7" class="rv" data-t="59.88">h</span> <span data-hf-id="hf-gs21" class="rv" data-t="60.14">=</span> <span data-hf-id="hf-44j1" class="hi rv" data-t="60.66">√3</span> <span data-hf-id="hf-3p7z" class="rv" data-t="61.22">×</span> <span data-hf-id="hf-tbjq" class="hi rv" data-t="61.96">10√3</span><br data-hf-id="hf-regs">
+          <span data-hf-id="hf-q2f2" class="rv" data-t="64.94">h</span> <span data-hf-id="hf-cui0" class="rv" data-t="65.18">=</span> <span data-hf-id="hf-5v0j" class="hi rv" data-t="65.54">10</span> <span data-hf-id="hf-fyn0" class="rv" data-t="65.78">×</span> <span data-hf-id="hf-3ie3" class="hi rv" data-t="66.60">3</span><br data-hf-id="hf-r05r">
+          <span data-hf-id="hf-c6cd" class="rv" data-t="67.10">h</span> <span data-hf-id="hf-925x" class="rv" data-t="67.28">=</span> <span data-hf-id="hf-gj4n" class="ans rv" data-t="67.72">30 m</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       LEFT STACK CARDS (completed steps)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-kheg" id="stack-given" class="clip" data-start="38" data-duration="41" data-track-index="11" style="position:absolute;left:100px;top:140px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-usjn" class="stack-card">
+      <div data-hf-id="hf-yzg5" class="card-content">
+        <span data-hf-id="hf-snhl" class="step-circle">G</span>
+        <div data-hf-id="hf-21b3" class="math">
+          Angle = <span data-hf-id="hf-gkw6" class="hi">60°</span><br data-hf-id="hf-p0mm">
+          Adjacent = <span data-hf-id="hf-9bcx" class="hi">10√3 m</span><br data-hf-id="hf-ombl">
+          Height h = <span data-hf-id="hf-0wjt" class="hi">Opposite (?)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-raoo" id="stack-step1" class="clip" data-start="50.46" data-duration="27" data-track-index="12" style="position:absolute;left:100px;top:320px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-3m9v" class="stack-card">
+      <div data-hf-id="hf-zdr6" class="card-content">
+        <span data-hf-id="hf-w2db" class="step-circle">1</span>
+        <div data-hf-id="hf-2i44" class="math">
+          tan θ =
+          <span data-hf-id="hf-gq2t" class="frac"><span data-hf-id="hf-c6kw" class="top hi">Opp</span><span data-hf-id="hf-ggie" class="bot hi">Adj</span></span><br data-hf-id="hf-qsyj">
+          tan 60° = <span data-hf-id="hf-g2h0" class="ans">√3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-fdsx" id="stack-step2" class="clip" data-start="58.88" data-duration="19" data-track-index="13" style="position:absolute;left:100px;top:470px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-37yu" class="stack-card">
+      <div data-hf-id="hf-zs27" class="card-content">
+        <span data-hf-id="hf-vo2a" class="step-circle">2</span>
+        <div data-hf-id="hf-7h56" class="math">
+          √3 =
+          <span data-hf-id="hf-s3fd" class="frac"><span data-hf-id="hf-8lsg" class="top hi">h</span><span data-hf-id="hf-oh7i" class="bot hi">10√3</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-01ip" id="stack-step3" class="clip" data-start="69.24" data-duration="8.5" data-track-index="14" style="position:absolute;left:100px;top:620px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-2tnt" class="stack-card">
+      <div data-hf-id="hf-06d8" class="card-content">
+        <span data-hf-id="hf-v9r9" class="step-circle">3</span>
+        <div data-hf-id="hf-6vos" class="math">
+          h = √3 × 10√3<br data-hf-id="hf-r79k">
+          = <span data-hf-id="hf-c34r" class="ans">30 m</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-ybpp" id="line-g-1" class="clip stack-line" data-start="50.46" data-duration="27" data-track-index="15" style="opacity:0;"></div>
+  <div data-hf-id="hf-73k6" id="line-1-2" class="clip stack-line" data-start="58.88" data-duration="19" data-track-index="16" style="opacity:0;"></div>
+  <div data-hf-id="hf-vycu" id="line-2-3" class="clip stack-line" data-start="69.24" data-duration="8.5" data-track-index="17" style="opacity:0;"></div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 3 - OPTIONS REVEAL (69-77.4s)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-8i0k" id="options-reveal" class="clip" data-start="69.24" data-duration="8.2" data-track-index="10" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:8;opacity:0;">
+    <div data-hf-id="hf-2tfv" class="pinned-col" style="top:400px;">
+      <div data-hf-id="hf-6knj" class="options-grid">
+        <div data-hf-id="hf-lfp2" class="opt-btn"><span data-hf-id="hf-sfug" class="letter">A</span>10 m</div>
+        <div data-hf-id="hf-t321" class="opt-btn"><span data-hf-id="hf-r8xd" class="letter">B</span>10√3 m</div>
+        <div data-hf-id="hf-ie0u" class="opt-btn"><span data-hf-id="hf-rn8e" class="letter">C</span>20√3 m</div>
+        <div data-hf-id="hf-o6xy" class="opt-btn correct"><span data-hf-id="hf-qgbb" class="letter">D</span>30 m</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end root -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script src="animations.js"></script>
+<script>
+  apt.setStackLine("#line-g-1", "#stack-given .step-circle", "#stack-step1 .step-circle");
+  apt.setStackLine("#line-1-2", "#stack-step1 .step-circle", "#stack-step2 .step-circle");
+  apt.setStackLine("#line-2-3", "#stack-step2 .step-circle", "#stack-step3 .step-circle");
+
+  const tl = gsap.timeline({ paused: true });
+
+  // PHASE 1 - Question reveal
+  const HERO_OFFSET_Y = 180;
+  const RISE_TIME = 4.3;
+  apt.heroEnterLowered(tl, "#q-full-card", HERO_OFFSET_Y, RISE_TIME);
+
+  tl.fromTo("#serial-num",
+    { scale: 0, rotation: -45, opacity: 0, y: HERO_OFFSET_Y },
+    { scale: 1, rotation: 0, opacity: 1, duration: 0.55, ease: "back.out(2)", y: HERO_OFFSET_Y },
+    0.8);
+  tl.to("#serial-num", { y: 0, duration: 0.6, ease: "power2.inOut" }, RISE_TIME);
+
+  // Illustration build-in
+  tl.to("#gnd-line", { strokeDashoffset: 0, duration: 0.7, ease: "power2.out" }, 4.9);
+  tl.to("#obs-point", { opacity: 1, duration: 0.3 }, 4.9);
+  tl.to("#tower-line", { strokeDashoffset: 0, duration: 0.7, ease: "power2.out" }, 5.8);
+  tl.to("#tower-flag", { opacity: 1, duration: 0.3 }, 6.4);
+  tl.to("#los-line", { strokeDashoffset: 0, duration: 0.6, ease: "power2.out" }, 6.6);
+  tl.to("#right-angle-mark", { opacity: 1, duration: 0.3 }, 6.8);
+  tl.fromTo("#dist-label", { y: 6, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" }, 7.02);
+  tl.to("#angle-arc", { opacity: 1, duration: 0.4 }, 12.7);
+  tl.to("#angle-label", { opacity: 1, duration: 0.4 }, 12.7);
+  tl.to("#height-label", { opacity: 1, duration: 0.4 }, 19.24);
+  tl.to("#opp-label", { opacity: 1, duration: 0.4 }, 23.08);
+  tl.to("#adj-label", { opacity: 1, duration: 0.4 }, 25.96);
+
+  // PHASE 2 - Pin, then Given
+  const PIN_TIME = 31.0;
+  const GIVEN_TIME = 31.5;
+
+  apt.pinFlow(tl, "#q-full-card", "#q-pinned", PIN_TIME);
+  apt.pinFlow(tl, "#illustration", "#illus-pinned", PIN_TIME);
+  apt.fadeOut(tl, "#serial-num", PIN_TIME, 0.5);
+
+  apt.cardEnter(tl, "#card-given .solution-card", GIVEN_TIME);
+  apt.textReveal(tl, "#card-given .math");
+
+  // STEP 1
+  apt.morphToStack(tl, "#card-given .solution-card", "#stack-given .stack-card", 37.6);
+  apt.cardEnter(tl, "#card-step1 .solution-card", 38.6);
+  apt.textReveal(tl, "#card-step1 .math");
+
+  // STEP 2
+  apt.morphToStack(tl, "#card-step1 .solution-card", "#stack-step1 .stack-card", 50.46);
+  apt.stackLineGrow(tl, "#line-g-1", 50.46);
+  apt.cardEnter(tl, "#card-step2 .solution-card", 51.46);
+  apt.textReveal(tl, "#card-step2 .math");
+
+  // STEP 3
+  apt.morphToStack(tl, "#card-step2 .solution-card", "#stack-step2 .stack-card", 58.88);
+  apt.stackLineGrow(tl, "#line-1-2", 58.88);
+  apt.cardEnter(tl, "#card-step3 .solution-card", 59.88);
+  apt.textReveal(tl, "#card-step3 .math");
+
+  // Recenter before options
+  const RECENTER_TIME = 69.24;
+  apt.fadeOut(tl, "#illus-pinned", RECENTER_TIME);
+  apt.recenterForOptions(tl, "#q-pinned", 160, 180, RECENTER_TIME);
+
+  // PHASE 3 - Options reveal
+  apt.morphToStack(tl, "#card-step3 .solution-card", "#stack-step3 .stack-card", RECENTER_TIME);
+  apt.stackLineGrow(tl, "#line-2-3", RECENTER_TIME);
+  apt.fadeIn(tl, "#options-reveal", 69.9);
+  apt.optionsStagger(tl, ".opt-btn", 70.4);
+  apt.correctPulse(tl, ".opt-btn.correct", 74.9);
+
+  const END_FADE_TIME = 76.2;
+  apt.fadeOut(tl, "#root > div", END_FADE_TIME, 1.2);
+
+  tl.set({},{},79)
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines["root"] = tl;
+</script>
+</body>
+</html>

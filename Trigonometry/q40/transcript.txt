@@ -1,0 +1,41 @@
+[00:00.10 -> 00:01.28]  So welcome back again.
+[00:01.76 -> 00:03.08]  It's time to solve one more problem.
+[00:03.48 -> 00:06.64]  In this problem, we are given that ten theta plus
+[00:07.04 -> 00:07.64]  cot theta
+[00:08.12 -> 00:09.22]  is equal to ten by three,
+[00:09.78 -> 00:12.46]  and we need to find sine theta into
+[00:12.94 -> 00:13.92]  cos theta.
+[00:14.46 -> 00:14.62]  Now,
+[00:15.28 -> 00:17.04]  instead of using formulas directly,
+[00:17.56 -> 00:19.48]  let us solve this using P, B, and H.
+[00:20.16 -> 00:20.60]  Suppose
+[00:21.16 -> 00:22.02]  in a right triangle,
+[00:22.58 -> 00:23.72]  perpendicular is P,
+[00:24.26 -> 00:25.02]  base is B,
+[00:25.50 -> 00:26.62]  and hypotenuse is
+[00:27.26 -> 00:27.34]  H.
+[00:27.76 -> 00:29.36]  We know that ten theta
+[00:29.76 -> 00:31.96]  is equal to P upon B and
+[00:32.42 -> 00:34.86]  cot theta is equal to B upon P.
+[00:35.26 -> 00:37.00]  So putting these into the given equation,
+[00:37.38 -> 00:38.74]  P upon B plus
+[00:39.32 -> 00:41.52]  B upon P equal to ten by three.
+[00:41.90 -> 00:42.40]  Now take the
+[00:42.70 -> 00:43.34]  LCM,
+[00:43.86 -> 00:44.68]  P square plus
+[00:45.22 -> 00:45.68]  B square
+[00:46.00 -> 00:46.30]  upon
+[00:46.80 -> 00:48.62]  PB equal to ten by three.
+[00:49.08 -> 00:51.46]  Now, here comes the important observation.
+[00:51.94 -> 01:03.56]  We know from the Pythagoras Theorem that P square plus B square is equal to H square. So the equation becomes H square upon PB equal to ten by three. Now, what do we have to find?
+[01:04.04 -> 01:06.52]  We need sine theta into cos theta.
+[01:07.02 -> 01:07.28]  Using
+[01:07.72 -> 01:07.92]  PB and
+[01:08.26 -> 01:08.36]  H,
+[01:08.76 -> 01:13.58]  sine theta equal to P upon H and cos theta equal to B upon H.
+[01:14.06 -> 01:15.00]  Multiplying both,
+[01:15.42 -> 01:19.98]  sine theta into cos theta equal to PB upon H square. Now look carefully.
+[01:20.40 -> 01:33.82]  From the previous equation, H square upon PB is equal to ten by three. So taking the reciprocal PB upon H square is equal to three by ten, and this is exactly sine theta into cos theta.
+[01:34.60 -> 01:35.44]  Done and dusted.
+[01:35.80 -> 01:39.56]  Hence, the value of sine theta into cos theta is three by ten.
+[01:40.06 -> 01:42.46]  So the correct option is option D.

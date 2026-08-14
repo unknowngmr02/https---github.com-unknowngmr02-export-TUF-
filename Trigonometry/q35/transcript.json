@@ -1,0 +1,3473 @@
+{
+  "duration": 101.859,
+  "phrases": [
+    {
+      "start": 0.099,
+      "end": 0.259,
+      "text": "So"
+    },
+    {
+      "start": 0.599,
+      "end": 1.279,
+      "text": "welcome back again."
+    },
+    {
+      "start": 1.899,
+      "end": 3.279,
+      "text": "It's time to solve one more problem."
+    },
+    {
+      "start": 3.72,
+      "end": 4.38,
+      "text": "In this problem,"
+    },
+    {
+      "start": 4.699,
+      "end": 5.96,
+      "text": "we have given ten theta"
+    },
+    {
+      "start": 6.379,
+      "end": 7.579,
+      "text": "is equal to two by three,"
+    },
+    {
+      "start": 8.139,
+      "end": 10.719,
+      "text": "and we need to find one plus ten square theta,"
+    },
+    {
+      "start": 11.119,
+      "end": 11.8,
+      "text": "divided by"
+    },
+    {
+      "start": 12.34,
+      "end": 13.819,
+      "text": "one plus cot squared theta."
+    },
+    {
+      "start": 14.319,
+      "end": 15.639,
+      "text": "What does this mean in simple words?"
+    },
+    {
+      "start": 16.219,
+      "end": 18.159,
+      "text": "We already know the value of ten theta,"
+    },
+    {
+      "start": 18.719,
+      "end": 23.499,
+      "text": "so our job is just to find ten squared theta and cot squared theta,"
+    },
+    {
+      "start": 23.899,
+      "end": 25.559,
+      "text": "then put them into the expression."
+    },
+    {
+      "start": 26.279,
+      "end": 29.76,
+      "text": "Now, we have given that ten theta is equal to two by three,"
+    },
+    {
+      "start": 30.199,
+      "end": 33.299,
+      "text": "so ten squared theta will be two by three"
+    },
+    {
+      "start": 33.739,
+      "end": 34.279,
+      "text": "whole square,"
+    },
+    {
+      "start": 34.68,
+      "end": 36.059,
+      "text": "which is equal to four by nine."
+    },
+    {
+      "start": 36.479,
+      "end": 36.759,
+      "text": "Done."
+    },
+    {
+      "start": 37.38,
+      "end": 39.499,
+      "text": "Now that we have found ten squared theta,"
+    },
+    {
+      "start": 39.939,
+      "end": 42.18,
+      "text": "we also need cot squared theta."
+    },
+    {
+      "start": 42.599,
+      "end": 46.659,
+      "text": "We know one simple thing, cot theta is just the reverse of ten theta."
+    },
+    {
+      "start": 47.2,
+      "end": 49.079,
+      "text": "If ten theta is two by three,"
+    },
+    {
+      "start": 49.419,
+      "end": 51.299,
+      "text": "then cot theta will be three by two."
+    },
+    {
+      "start": 51.819,
+      "end": 55.639,
+      "text": "So cot squared theta becomes three by two whole square,"
+    },
+    {
+      "start": 56.02,
+      "end": 57.759,
+      "text": "which is equal to nine by four."
+    },
+    {
+      "start": 58.119,
+      "end": 58.519,
+      "text": "Got it?"
+    },
+    {
+      "start": 58.979,
+      "end": 59.359,
+      "text": "Perfect."
+    },
+    {
+      "start": 59.919,
+      "end": 67.519,
+      "text": "Now let us put these values into the expression. One plus four by nine upon one plus nine by four."
+    },
+    {
+      "start": 67.959,
+      "end": 74.719,
+      "text": "The numerator becomes 13 by nine and the denominator becomes 13 by 4."
+    },
+    {
+      "start": 75.259,
+      "end": 79.199,
+      "text": "So this becomes 13 by nine upon 13 by four."
+    },
+    {
+      "start": 79.72,
+      "end": 81.619,
+      "text": "Now, this is where the question becomes easy."
+    },
+    {
+      "start": 82.099,
+      "end": 101.859,
+      "text": "When we divide fractions, we keep the first fraction as it is and multiply by the reciprocal of the second fraction. So we get 13 upon nine times four upon 13. The 13 gets canceled with 13. Hence, the final answer will be four by nine. So the correct option is option C."
+    }
+  ],
+  "words": [
+    {
+      "text": "So",
+      "start": 0.099,
+      "end": 0.259,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 0.259,
+      "end": 0.599,
+      "type": "spacing"
+    },
+    {
+      "text": "welcome",
+      "start": 0.599,
+      "end": 0.839,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 0.839,
+      "end": 0.899,
+      "type": "spacing"
+    },
+    {
+      "text": "back",
+      "start": 0.899,
+      "end": 1.0,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 1.0,
+      "end": 1.059,
+      "type": "spacing"
+    },
+    {
+      "text": "again.",
+      "start": 1.059,
+      "end": 1.279,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 1.279,
+      "end": 1.899,
+      "type": "spacing"
+    },
+    {
+      "text": "It's",
+      "start": 1.899,
+      "end": 2.039,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 2.039,
+      "end": 2.059,
+      "type": "spacing"
+    },
+    {
+      "text": "time",
+      "start": 2.059,
+      "end": 2.22,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 2.22,
+      "end": 2.259,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 2.259,
+      "end": 2.339,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 2.339,
+      "end": 2.399,
+      "type": "spacing"
+    },
+    {
+      "text": "solve",
+      "start": 2.399,
+      "end": 2.599,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 2.599,
+      "end": 2.679,
+      "type": "spacing"
+    },
+    {
+      "text": "one",
+      "start": 2.679,
+      "end": 2.759,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 2.759,
+      "end": 2.819,
+      "type": "spacing"
+    },
+    {
+      "text": "more",
+      "start": 2.819,
+      "end": 2.939,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 2.939,
+      "end": 2.979,
+      "type": "spacing"
+    },
+    {
+      "text": "problem.",
+      "start": 2.98,
+      "end": 3.279,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 3.279,
+      "end": 3.72,
+      "type": "spacing"
+    },
+    {
+      "text": "In",
+      "start": 3.72,
+      "end": 3.799,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 3.799,
+      "end": 3.859,
+      "type": "spacing"
+    },
+    {
+      "text": "this",
+      "start": 3.859,
+      "end": 3.979,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 3.979,
+      "end": 4.059,
+      "type": "spacing"
+    },
+    {
+      "text": "problem,",
+      "start": 4.059,
+      "end": 4.38,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 4.38,
+      "end": 4.699,
+      "type": "spacing"
+    },
+    {
+      "text": "we",
+      "start": 4.699,
+      "end": 4.759,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 4.759,
+      "end": 4.799,
+      "type": "spacing"
+    },
+    {
+      "text": "have",
+      "start": 4.799,
+      "end": 4.94,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 4.94,
+      "end": 5.0,
+      "type": "spacing"
+    },
+    {
+      "text": "given",
+      "start": 5.0,
+      "end": 5.199,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 5.199,
+      "end": 5.379,
+      "type": "spacing"
+    },
+    {
+      "text": "ten",
+      "start": 5.38,
+      "end": 5.5,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 5.5,
+      "end": 5.639,
+      "type": "spacing"
+    },
+    {
+      "text": "theta",
+      "start": 5.639,
+      "end": 5.96,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 5.96,
+      "end": 6.379,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 6.379,
+      "end": 6.559,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 6.559,
+      "end": 6.679,
+      "type": "spacing"
+    },
+    {
+      "text": "equal",
+      "start": 6.679,
+      "end": 6.879,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 6.879,
+      "end": 6.939,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 6.94,
+      "end": 7.039,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 7.039,
+      "end": 7.079,
+      "type": "spacing"
+    },
+    {
+      "text": "two",
+      "start": 7.079,
+      "end": 7.179,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 7.179,
+      "end": 7.219,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 7.219,
+      "end": 7.399,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 7.399,
+      "end": 7.419,
+      "type": "spacing"
+    },
+    {
+      "text": "three,",
+      "start": 7.419,
+      "end": 7.579,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 7.579,
+      "end": 8.139,
+      "type": "spacing"
+    },
+    {
+      "text": "and",
+      "start": 8.139,
+      "end": 8.239,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 8.239,
+      "end": 8.3,
+      "type": "spacing"
+    },
+    {
+      "text": "we",
+      "start": 8.3,
+      "end": 8.359,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 8.359,
+      "end": 8.439,
+      "type": "spacing"
+    },
+    {
+      "text": "need",
+      "start": 8.439,
+      "end": 8.56,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 8.56,
+      "end": 8.599,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 8.599,
+      "end": 8.659,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 8.659,
+      "end": 8.739,
+      "type": "spacing"
+    },
+    {
+      "text": "find",
+      "start": 8.739,
+      "end": 8.96,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 8.96,
+      "end": 9.059,
+      "type": "spacing"
+    },
+    {
+      "text": "one",
+      "start": 9.059,
+      "end": 9.239,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 9.239,
+      "end": 9.359,
+      "type": "spacing"
+    },
+    {
+      "text": "plus",
+      "start": 9.359,
+      "end": 9.699,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 9.699,
+      "end": 9.779,
+      "type": "spacing"
+    },
+    {
+      "text": "ten",
+      "start": 9.779,
+      "end": 10.019,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 10.019,
+      "end": 10.079,
+      "type": "spacing"
+    },
+    {
+      "text": "square",
+      "start": 10.079,
+      "end": 10.3,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 10.3,
+      "end": 10.38,
+      "type": "spacing"
+    },
+    {
+      "text": "theta,",
+      "start": 10.38,
+      "end": 10.719,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 10.719,
+      "end": 11.119,
+      "type": "spacing"
+    },
+    {
+      "text": "divided",
+      "start": 11.119,
+      "end": 11.579,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 11.579,
+      "end": 11.639,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 11.639,
+      "end": 11.8,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 11.8,
+      "end": 12.34,
+      "type": "spacing"
+    },
+    {
+      "text": "one",
+      "start": 12.34,
+      "end": 12.559,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 12.559,
+      "end": 12.599,
+      "type": "spacing"
+    },
+    {
+      "text": "plus",
+      "start": 12.599,
+      "end": 12.819,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 12.819,
+      "end": 12.939,
+      "type": "spacing"
+    },
+    {
+      "text": "cot",
+      "start": 12.939,
+      "end": 13.139,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 13.139,
+      "end": 13.219,
+      "type": "spacing"
+    },
+    {
+      "text": "squared",
+      "start": 13.219,
+      "end": 13.46,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 13.46,
+      "end": 13.539,
+      "type": "spacing"
+    },
+    {
+      "text": "theta.",
+      "start": 13.539,
+      "end": 13.819,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 13.819,
+      "end": 14.319,
+      "type": "spacing"
+    },
+    {
+      "text": "What",
+      "start": 14.319,
+      "end": 14.4,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 14.4,
+      "end": 14.42,
+      "type": "spacing"
+    },
+    {
+      "text": "does",
+      "start": 14.42,
+      "end": 14.519,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 14.519,
+      "end": 14.559,
+      "type": "spacing"
+    },
+    {
+      "text": "this",
+      "start": 14.559,
+      "end": 14.679,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 14.679,
+      "end": 14.739,
+      "type": "spacing"
+    },
+    {
+      "text": "mean",
+      "start": 14.739,
+      "end": 14.819,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 14.819,
+      "end": 14.859,
+      "type": "spacing"
+    },
+    {
+      "text": "in",
+      "start": 14.859,
+      "end": 14.939,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 14.939,
+      "end": 15.0,
+      "type": "spacing"
+    },
+    {
+      "text": "simple",
+      "start": 15.0,
+      "end": 15.239,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 15.239,
+      "end": 15.299,
+      "type": "spacing"
+    },
+    {
+      "text": "words?",
+      "start": 15.299,
+      "end": 15.639,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 15.639,
+      "end": 16.219,
+      "type": "spacing"
+    },
+    {
+      "text": "We",
+      "start": 16.219,
+      "end": 16.34,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 16.34,
+      "end": 16.399,
+      "type": "spacing"
+    },
+    {
+      "text": "already",
+      "start": 16.399,
+      "end": 16.699,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 16.699,
+      "end": 16.799,
+      "type": "spacing"
+    },
+    {
+      "text": "know",
+      "start": 16.799,
+      "end": 16.899,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 16.899,
+      "end": 16.959,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 16.959,
+      "end": 17.02,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 17.02,
+      "end": 17.079,
+      "type": "spacing"
+    },
+    {
+      "text": "value",
+      "start": 17.079,
+      "end": 17.34,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 17.34,
+      "end": 17.399,
+      "type": "spacing"
+    },
+    {
+      "text": "of",
+      "start": 17.399,
+      "end": 17.479,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 17.479,
+      "end": 17.6,
+      "type": "spacing"
+    },
+    {
+      "text": "ten",
+      "start": 17.6,
+      "end": 17.76,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 17.76,
+      "end": 17.84,
+      "type": "spacing"
+    },
+    {
+      "text": "theta,",
+      "start": 17.84,
+      "end": 18.159,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 18.159,
+      "end": 18.719,
+      "type": "spacing"
+    },
+    {
+      "text": "so",
+      "start": 18.719,
+      "end": 18.799,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 18.799,
+      "end": 18.899,
+      "type": "spacing"
+    },
+    {
+      "text": "our",
+      "start": 18.899,
+      "end": 19.1,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 19.1,
+      "end": 19.18,
+      "type": "spacing"
+    },
+    {
+      "text": "job",
+      "start": 19.18,
+      "end": 19.439,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 19.439,
+      "end": 19.499,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 19.5,
+      "end": 19.6,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 19.6,
+      "end": 19.68,
+      "type": "spacing"
+    },
+    {
+      "text": "just",
+      "start": 19.68,
+      "end": 19.859,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 19.859,
+      "end": 19.919,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 19.92,
+      "end": 20.019,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 20.019,
+      "end": 20.1,
+      "type": "spacing"
+    },
+    {
+      "text": "find",
+      "start": 20.1,
+      "end": 20.879,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 20.879,
+      "end": 20.959,
+      "type": "spacing"
+    },
+    {
+      "text": "ten",
+      "start": 20.959,
+      "end": 21.139,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 21.139,
+      "end": 21.279,
+      "type": "spacing"
+    },
+    {
+      "text": "squared",
+      "start": 21.279,
+      "end": 21.559,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 21.559,
+      "end": 21.619,
+      "type": "spacing"
+    },
+    {
+      "text": "theta",
+      "start": 21.619,
+      "end": 22.059,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 22.059,
+      "end": 22.139,
+      "type": "spacing"
+    },
+    {
+      "text": "and",
+      "start": 22.139,
+      "end": 22.26,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 22.26,
+      "end": 22.399,
+      "type": "spacing"
+    },
+    {
+      "text": "cot",
+      "start": 22.399,
+      "end": 22.639,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 22.639,
+      "end": 22.719,
+      "type": "spacing"
+    },
+    {
+      "text": "squared",
+      "start": 22.719,
+      "end": 23.019,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 23.019,
+      "end": 23.099,
+      "type": "spacing"
+    },
+    {
+      "text": "theta,",
+      "start": 23.1,
+      "end": 23.499,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 23.499,
+      "end": 23.899,
+      "type": "spacing"
+    },
+    {
+      "text": "then",
+      "start": 23.899,
+      "end": 24.019,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 24.019,
+      "end": 24.139,
+      "type": "spacing"
+    },
+    {
+      "text": "put",
+      "start": 24.139,
+      "end": 24.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 24.299,
+      "end": 24.34,
+      "type": "spacing"
+    },
+    {
+      "text": "them",
+      "start": 24.34,
+      "end": 24.459,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 24.459,
+      "end": 24.519,
+      "type": "spacing"
+    },
+    {
+      "text": "into",
+      "start": 24.519,
+      "end": 24.699,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 24.699,
+      "end": 24.759,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 24.76,
+      "end": 24.819,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 24.819,
+      "end": 24.939,
+      "type": "spacing"
+    },
+    {
+      "text": "expression.",
+      "start": 24.939,
+      "end": 25.559,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 25.559,
+      "end": 26.279,
+      "type": "spacing"
+    },
+    {
+      "text": "Now,",
+      "start": 26.279,
+      "end": 26.42,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 26.42,
+      "end": 26.479,
+      "type": "spacing"
+    },
+    {
+      "text": "we",
+      "start": 26.479,
+      "end": 26.559,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 26.559,
+      "end": 26.619,
+      "type": "spacing"
+    },
+    {
+      "text": "have",
+      "start": 26.619,
+      "end": 26.739,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 26.739,
+      "end": 26.799,
+      "type": "spacing"
+    },
+    {
+      "text": "given",
+      "start": 26.799,
+      "end": 27.059,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 27.059,
+      "end": 27.099,
+      "type": "spacing"
+    },
+    {
+      "text": "that",
+      "start": 27.099,
+      "end": 27.259,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 27.259,
+      "end": 27.379,
+      "type": "spacing"
+    },
+    {
+      "text": "ten",
+      "start": 27.379,
+      "end": 27.5,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 27.5,
+      "end": 27.599,
+      "type": "spacing"
+    },
+    {
+      "text": "theta",
+      "start": 27.599,
+      "end": 27.939,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 27.939,
+      "end": 28.079,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 28.079,
+      "end": 28.26,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 28.26,
+      "end": 28.399,
+      "type": "spacing"
+    },
+    {
+      "text": "equal",
+      "start": 28.399,
+      "end": 28.699,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 28.699,
+      "end": 28.739,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 28.739,
+      "end": 28.799,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 28.799,
+      "end": 28.959,
+      "type": "spacing"
+    },
+    {
+      "text": "two",
+      "start": 28.959,
+      "end": 29.059,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 29.059,
+      "end": 29.139,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 29.139,
+      "end": 29.359,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 29.359,
+      "end": 29.399,
+      "type": "spacing"
+    },
+    {
+      "text": "three,",
+      "start": 29.399,
+      "end": 29.76,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 29.76,
+      "end": 30.199,
+      "type": "spacing"
+    },
+    {
+      "text": "so",
+      "start": 30.199,
+      "end": 30.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 30.299,
+      "end": 30.439,
+      "type": "spacing"
+    },
+    {
+      "text": "ten",
+      "start": 30.439,
+      "end": 30.559,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 30.559,
+      "end": 30.699,
+      "type": "spacing"
+    },
+    {
+      "text": "squared",
+      "start": 30.699,
+      "end": 31.059,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 31.059,
+      "end": 31.099,
+      "type": "spacing"
+    },
+    {
+      "text": "theta",
+      "start": 31.099,
+      "end": 31.959,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 31.959,
+      "end": 32.059,
+      "type": "spacing"
+    },
+    {
+      "text": "will",
+      "start": 32.059,
+      "end": 32.219,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 32.219,
+      "end": 32.319,
+      "type": "spacing"
+    },
+    {
+      "text": "be",
+      "start": 32.319,
+      "end": 32.399,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 32.399,
+      "end": 32.559,
+      "type": "spacing"
+    },
+    {
+      "text": "two",
+      "start": 32.559,
+      "end": 32.719,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 32.719,
+      "end": 32.799,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 32.799,
+      "end": 33.02,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 33.02,
+      "end": 33.059,
+      "type": "spacing"
+    },
+    {
+      "text": "three",
+      "start": 33.059,
+      "end": 33.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 33.299,
+      "end": 33.739,
+      "type": "spacing"
+    },
+    {
+      "text": "whole",
+      "start": 33.739,
+      "end": 33.899,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 33.899,
+      "end": 33.999,
+      "type": "spacing"
+    },
+    {
+      "text": "square,",
+      "start": 34.0,
+      "end": 34.279,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 34.279,
+      "end": 34.68,
+      "type": "spacing"
+    },
+    {
+      "text": "which",
+      "start": 34.68,
+      "end": 34.779,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 34.779,
+      "end": 34.819,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 34.819,
+      "end": 34.899,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 34.899,
+      "end": 34.999,
+      "type": "spacing"
+    },
+    {
+      "text": "equal",
+      "start": 35.0,
+      "end": 35.18,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 35.18,
+      "end": 35.219,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 35.219,
+      "end": 35.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 35.299,
+      "end": 35.38,
+      "type": "spacing"
+    },
+    {
+      "text": "four",
+      "start": 35.38,
+      "end": 35.52,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 35.52,
+      "end": 35.579,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 35.579,
+      "end": 35.68,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 35.68,
+      "end": 35.779,
+      "type": "spacing"
+    },
+    {
+      "text": "nine.",
+      "start": 35.779,
+      "end": 36.059,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 36.059,
+      "end": 36.479,
+      "type": "spacing"
+    },
+    {
+      "text": "Done.",
+      "start": 36.479,
+      "end": 36.759,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 36.759,
+      "end": 37.38,
+      "type": "spacing"
+    },
+    {
+      "text": "Now",
+      "start": 37.38,
+      "end": 37.459,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 37.459,
+      "end": 37.52,
+      "type": "spacing"
+    },
+    {
+      "text": "that",
+      "start": 37.52,
+      "end": 37.619,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 37.619,
+      "end": 37.68,
+      "type": "spacing"
+    },
+    {
+      "text": "we",
+      "start": 37.68,
+      "end": 37.739,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 37.739,
+      "end": 37.799,
+      "type": "spacing"
+    },
+    {
+      "text": "have",
+      "start": 37.799,
+      "end": 37.899,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 37.899,
+      "end": 37.979,
+      "type": "spacing"
+    },
+    {
+      "text": "found",
+      "start": 37.979,
+      "end": 38.319,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 38.319,
+      "end": 38.379,
+      "type": "spacing"
+    },
+    {
+      "text": "ten",
+      "start": 38.379,
+      "end": 38.599,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 38.599,
+      "end": 38.659,
+      "type": "spacing"
+    },
+    {
+      "text": "squared",
+      "start": 38.659,
+      "end": 39.0,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 39.0,
+      "end": 39.119,
+      "type": "spacing"
+    },
+    {
+      "text": "theta,",
+      "start": 39.119,
+      "end": 39.499,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 39.499,
+      "end": 39.939,
+      "type": "spacing"
+    },
+    {
+      "text": "we",
+      "start": 39.939,
+      "end": 40.02,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 40.02,
+      "end": 40.099,
+      "type": "spacing"
+    },
+    {
+      "text": "also",
+      "start": 40.099,
+      "end": 40.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 40.299,
+      "end": 40.379,
+      "type": "spacing"
+    },
+    {
+      "text": "need",
+      "start": 40.379,
+      "end": 40.52,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 40.52,
+      "end": 40.719,
+      "type": "spacing"
+    },
+    {
+      "text": "cot",
+      "start": 40.719,
+      "end": 41.079,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 41.079,
+      "end": 41.139,
+      "type": "spacing"
+    },
+    {
+      "text": "squared",
+      "start": 41.139,
+      "end": 41.759,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 41.759,
+      "end": 41.799,
+      "type": "spacing"
+    },
+    {
+      "text": "theta.",
+      "start": 41.799,
+      "end": 42.18,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 42.18,
+      "end": 42.599,
+      "type": "spacing"
+    },
+    {
+      "text": "We",
+      "start": 42.599,
+      "end": 42.659,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 42.659,
+      "end": 42.719,
+      "type": "spacing"
+    },
+    {
+      "text": "know",
+      "start": 42.719,
+      "end": 42.84,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 42.84,
+      "end": 42.919,
+      "type": "spacing"
+    },
+    {
+      "text": "one",
+      "start": 42.919,
+      "end": 43.059,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 43.059,
+      "end": 43.119,
+      "type": "spacing"
+    },
+    {
+      "text": "simple",
+      "start": 43.119,
+      "end": 43.379,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 43.379,
+      "end": 43.439,
+      "type": "spacing"
+    },
+    {
+      "text": "thing,",
+      "start": 43.439,
+      "end": 44.099,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 44.099,
+      "end": 44.18,
+      "type": "spacing"
+    },
+    {
+      "text": "cot",
+      "start": 44.18,
+      "end": 44.379,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 44.379,
+      "end": 44.439,
+      "type": "spacing"
+    },
+    {
+      "text": "theta",
+      "start": 44.439,
+      "end": 44.859,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 44.859,
+      "end": 44.939,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 44.939,
+      "end": 45.099,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 45.099,
+      "end": 45.159,
+      "type": "spacing"
+    },
+    {
+      "text": "just",
+      "start": 45.159,
+      "end": 45.319,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 45.319,
+      "end": 45.379,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 45.379,
+      "end": 45.419,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 45.419,
+      "end": 45.479,
+      "type": "spacing"
+    },
+    {
+      "text": "reverse",
+      "start": 45.479,
+      "end": 45.799,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 45.799,
+      "end": 45.86,
+      "type": "spacing"
+    },
+    {
+      "text": "of",
+      "start": 45.86,
+      "end": 45.959,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 45.959,
+      "end": 46.02,
+      "type": "spacing"
+    },
+    {
+      "text": "ten",
+      "start": 46.02,
+      "end": 46.179,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 46.179,
+      "end": 46.219,
+      "type": "spacing"
+    },
+    {
+      "text": "theta.",
+      "start": 46.219,
+      "end": 46.659,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 46.659,
+      "end": 47.2,
+      "type": "spacing"
+    },
+    {
+      "text": "If",
+      "start": 47.2,
+      "end": 47.359,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 47.359,
+      "end": 47.419,
+      "type": "spacing"
+    },
+    {
+      "text": "ten",
+      "start": 47.419,
+      "end": 47.52,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 47.52,
+      "end": 47.659,
+      "type": "spacing"
+    },
+    {
+      "text": "theta",
+      "start": 47.659,
+      "end": 48.039,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 48.039,
+      "end": 48.099,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 48.099,
+      "end": 48.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 48.299,
+      "end": 48.36,
+      "type": "spacing"
+    },
+    {
+      "text": "two",
+      "start": 48.36,
+      "end": 48.439,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 48.439,
+      "end": 48.539,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 48.539,
+      "end": 48.739,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 48.739,
+      "end": 48.779,
+      "type": "spacing"
+    },
+    {
+      "text": "three,",
+      "start": 48.779,
+      "end": 49.079,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 49.079,
+      "end": 49.419,
+      "type": "spacing"
+    },
+    {
+      "text": "then",
+      "start": 49.419,
+      "end": 49.579,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 49.579,
+      "end": 49.619,
+      "type": "spacing"
+    },
+    {
+      "text": "cot",
+      "start": 49.619,
+      "end": 49.819,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 49.819,
+      "end": 49.86,
+      "type": "spacing"
+    },
+    {
+      "text": "theta",
+      "start": 49.86,
+      "end": 50.119,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 50.119,
+      "end": 50.18,
+      "type": "spacing"
+    },
+    {
+      "text": "will",
+      "start": 50.18,
+      "end": 50.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 50.299,
+      "end": 50.34,
+      "type": "spacing"
+    },
+    {
+      "text": "be",
+      "start": 50.34,
+      "end": 50.499,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 50.499,
+      "end": 50.559,
+      "type": "spacing"
+    },
+    {
+      "text": "three",
+      "start": 50.559,
+      "end": 50.7,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 50.7,
+      "end": 50.819,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 50.819,
+      "end": 51.039,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 51.039,
+      "end": 51.079,
+      "type": "spacing"
+    },
+    {
+      "text": "two.",
+      "start": 51.079,
+      "end": 51.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 51.299,
+      "end": 51.819,
+      "type": "spacing"
+    },
+    {
+      "text": "So",
+      "start": 51.819,
+      "end": 51.979,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 51.979,
+      "end": 52.039,
+      "type": "spacing"
+    },
+    {
+      "text": "cot",
+      "start": 52.039,
+      "end": 52.659,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 52.659,
+      "end": 52.719,
+      "type": "spacing"
+    },
+    {
+      "text": "squared",
+      "start": 52.719,
+      "end": 53.059,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 53.059,
+      "end": 53.099,
+      "type": "spacing"
+    },
+    {
+      "text": "theta",
+      "start": 53.099,
+      "end": 53.379,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 53.379,
+      "end": 53.439,
+      "type": "spacing"
+    },
+    {
+      "text": "becomes",
+      "start": 53.439,
+      "end": 53.799,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 53.799,
+      "end": 53.86,
+      "type": "spacing"
+    },
+    {
+      "text": "three",
+      "start": 53.86,
+      "end": 54.059,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 54.059,
+      "end": 54.099,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 54.099,
+      "end": 54.34,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 54.34,
+      "end": 54.379,
+      "type": "spacing"
+    },
+    {
+      "text": "two",
+      "start": 54.379,
+      "end": 54.959,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 54.959,
+      "end": 55.02,
+      "type": "spacing"
+    },
+    {
+      "text": "whole",
+      "start": 55.02,
+      "end": 55.239,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 55.239,
+      "end": 55.299,
+      "type": "spacing"
+    },
+    {
+      "text": "square,",
+      "start": 55.299,
+      "end": 55.639,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 55.639,
+      "end": 56.02,
+      "type": "spacing"
+    },
+    {
+      "text": "which",
+      "start": 56.02,
+      "end": 56.119,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 56.119,
+      "end": 56.159,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 56.159,
+      "end": 56.239,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 56.239,
+      "end": 56.379,
+      "type": "spacing"
+    },
+    {
+      "text": "equal",
+      "start": 56.379,
+      "end": 56.559,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 56.559,
+      "end": 56.599,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 56.599,
+      "end": 56.759,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 56.759,
+      "end": 56.819,
+      "type": "spacing"
+    },
+    {
+      "text": "nine",
+      "start": 56.819,
+      "end": 57.159,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 57.159,
+      "end": 57.219,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 57.219,
+      "end": 57.439,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 57.439,
+      "end": 57.5,
+      "type": "spacing"
+    },
+    {
+      "text": "four.",
+      "start": 57.5,
+      "end": 57.759,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 57.759,
+      "end": 58.119,
+      "type": "spacing"
+    },
+    {
+      "text": "Got",
+      "start": 58.119,
+      "end": 58.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 58.299,
+      "end": 58.34,
+      "type": "spacing"
+    },
+    {
+      "text": "it?",
+      "start": 58.34,
+      "end": 58.519,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 58.519,
+      "end": 58.979,
+      "type": "spacing"
+    },
+    {
+      "text": "Perfect.",
+      "start": 58.979,
+      "end": 59.359,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 59.359,
+      "end": 59.919,
+      "type": "spacing"
+    },
+    {
+      "text": "Now",
+      "start": 59.919,
+      "end": 59.979,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 59.979,
+      "end": 60.02,
+      "type": "spacing"
+    },
+    {
+      "text": "let",
+      "start": 60.02,
+      "end": 60.119,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 60.119,
+      "end": 60.18,
+      "type": "spacing"
+    },
+    {
+      "text": "us",
+      "start": 60.18,
+      "end": 60.239,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 60.239,
+      "end": 60.319,
+      "type": "spacing"
+    },
+    {
+      "text": "put",
+      "start": 60.319,
+      "end": 60.439,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 60.439,
+      "end": 60.479,
+      "type": "spacing"
+    },
+    {
+      "text": "these",
+      "start": 60.479,
+      "end": 60.639,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 60.639,
+      "end": 60.719,
+      "type": "spacing"
+    },
+    {
+      "text": "values",
+      "start": 60.719,
+      "end": 61.039,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 61.039,
+      "end": 61.099,
+      "type": "spacing"
+    },
+    {
+      "text": "into",
+      "start": 61.099,
+      "end": 61.259,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 61.259,
+      "end": 61.299,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 61.299,
+      "end": 61.34,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 61.34,
+      "end": 61.419,
+      "type": "spacing"
+    },
+    {
+      "text": "expression.",
+      "start": 61.419,
+      "end": 62.539,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 62.539,
+      "end": 62.659,
+      "type": "spacing"
+    },
+    {
+      "text": "One",
+      "start": 62.659,
+      "end": 62.939,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 62.939,
+      "end": 63.0,
+      "type": "spacing"
+    },
+    {
+      "text": "plus",
+      "start": 63.0,
+      "end": 63.399,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 63.399,
+      "end": 63.459,
+      "type": "spacing"
+    },
+    {
+      "text": "four",
+      "start": 63.459,
+      "end": 64.159,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 64.159,
+      "end": 64.239,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 64.239,
+      "end": 64.439,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 64.439,
+      "end": 64.519,
+      "type": "spacing"
+    },
+    {
+      "text": "nine",
+      "start": 64.519,
+      "end": 65.099,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 65.099,
+      "end": 65.18,
+      "type": "spacing"
+    },
+    {
+      "text": "upon",
+      "start": 65.18,
+      "end": 65.939,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 65.939,
+      "end": 66.039,
+      "type": "spacing"
+    },
+    {
+      "text": "one",
+      "start": 66.04,
+      "end": 66.26,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 66.26,
+      "end": 66.299,
+      "type": "spacing"
+    },
+    {
+      "text": "plus",
+      "start": 66.299,
+      "end": 66.659,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 66.659,
+      "end": 66.719,
+      "type": "spacing"
+    },
+    {
+      "text": "nine",
+      "start": 66.72,
+      "end": 66.939,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 66.939,
+      "end": 66.999,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 67.0,
+      "end": 67.18,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 67.18,
+      "end": 67.239,
+      "type": "spacing"
+    },
+    {
+      "text": "four.",
+      "start": 67.239,
+      "end": 67.519,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 67.519,
+      "end": 67.959,
+      "type": "spacing"
+    },
+    {
+      "text": "The",
+      "start": 67.959,
+      "end": 68.019,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 68.019,
+      "end": 68.099,
+      "type": "spacing"
+    },
+    {
+      "text": "numerator",
+      "start": 68.099,
+      "end": 68.58,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 68.58,
+      "end": 68.619,
+      "type": "spacing"
+    },
+    {
+      "text": "becomes",
+      "start": 68.619,
+      "end": 69.379,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 69.379,
+      "end": 69.459,
+      "type": "spacing"
+    },
+    {
+      "text": "13",
+      "start": 69.459,
+      "end": 69.959,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 69.959,
+      "end": 70.019,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 70.019,
+      "end": 70.18,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 70.18,
+      "end": 70.239,
+      "type": "spacing"
+    },
+    {
+      "text": "nine",
+      "start": 70.239,
+      "end": 70.979,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 70.979,
+      "end": 70.999,
+      "type": "spacing"
+    },
+    {
+      "text": "and",
+      "start": 71.0,
+      "end": 71.079,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 71.079,
+      "end": 71.119,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 71.119,
+      "end": 71.199,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 71.199,
+      "end": 71.259,
+      "type": "spacing"
+    },
+    {
+      "text": "denominator",
+      "start": 71.26,
+      "end": 72.419,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 72.419,
+      "end": 72.479,
+      "type": "spacing"
+    },
+    {
+      "text": "becomes",
+      "start": 72.479,
+      "end": 73.379,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 73.379,
+      "end": 73.459,
+      "type": "spacing"
+    },
+    {
+      "text": "13",
+      "start": 73.459,
+      "end": 73.979,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 73.979,
+      "end": 74.079,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 74.08,
+      "end": 74.339,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 74.339,
+      "end": 74.619,
+      "type": "spacing"
+    },
+    {
+      "text": "4.",
+      "start": 74.619,
+      "end": 74.719,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 74.719,
+      "end": 75.259,
+      "type": "spacing"
+    },
+    {
+      "text": "So",
+      "start": 75.259,
+      "end": 75.319,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 75.319,
+      "end": 75.36,
+      "type": "spacing"
+    },
+    {
+      "text": "this",
+      "start": 75.36,
+      "end": 75.54,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 75.54,
+      "end": 75.599,
+      "type": "spacing"
+    },
+    {
+      "text": "becomes",
+      "start": 75.599,
+      "end": 75.959,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 75.959,
+      "end": 76.019,
+      "type": "spacing"
+    },
+    {
+      "text": "13",
+      "start": 76.019,
+      "end": 76.439,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 76.439,
+      "end": 76.499,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 76.5,
+      "end": 76.639,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 76.639,
+      "end": 76.699,
+      "type": "spacing"
+    },
+    {
+      "text": "nine",
+      "start": 76.699,
+      "end": 77.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 77.299,
+      "end": 77.359,
+      "type": "spacing"
+    },
+    {
+      "text": "upon",
+      "start": 77.36,
+      "end": 78.139,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 78.139,
+      "end": 78.199,
+      "type": "spacing"
+    },
+    {
+      "text": "13",
+      "start": 78.199,
+      "end": 78.58,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 78.58,
+      "end": 78.639,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 78.639,
+      "end": 78.819,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 78.819,
+      "end": 78.9,
+      "type": "spacing"
+    },
+    {
+      "text": "four.",
+      "start": 78.9,
+      "end": 79.199,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 79.199,
+      "end": 79.719,
+      "type": "spacing"
+    },
+    {
+      "text": "Now,",
+      "start": 79.72,
+      "end": 79.779,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 79.779,
+      "end": 79.819,
+      "type": "spacing"
+    },
+    {
+      "text": "this",
+      "start": 79.819,
+      "end": 79.899,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 79.899,
+      "end": 79.959,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 79.959,
+      "end": 80.019,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 80.019,
+      "end": 80.059,
+      "type": "spacing"
+    },
+    {
+      "text": "where",
+      "start": 80.059,
+      "end": 80.159,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 80.159,
+      "end": 80.199,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 80.199,
+      "end": 80.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 80.299,
+      "end": 80.339,
+      "type": "spacing"
+    },
+    {
+      "text": "question",
+      "start": 80.339,
+      "end": 80.68,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 80.68,
+      "end": 80.739,
+      "type": "spacing"
+    },
+    {
+      "text": "becomes",
+      "start": 80.739,
+      "end": 81.159,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 81.159,
+      "end": 81.279,
+      "type": "spacing"
+    },
+    {
+      "text": "easy.",
+      "start": 81.279,
+      "end": 81.619,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 81.619,
+      "end": 82.099,
+      "type": "spacing"
+    },
+    {
+      "text": "When",
+      "start": 82.099,
+      "end": 82.219,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 82.219,
+      "end": 82.279,
+      "type": "spacing"
+    },
+    {
+      "text": "we",
+      "start": 82.279,
+      "end": 82.379,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 82.379,
+      "end": 82.439,
+      "type": "spacing"
+    },
+    {
+      "text": "divide",
+      "start": 82.439,
+      "end": 82.759,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 82.759,
+      "end": 82.839,
+      "type": "spacing"
+    },
+    {
+      "text": "fractions,",
+      "start": 82.839,
+      "end": 83.659,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 83.659,
+      "end": 83.72,
+      "type": "spacing"
+    },
+    {
+      "text": "we",
+      "start": 83.72,
+      "end": 83.799,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 83.799,
+      "end": 83.859,
+      "type": "spacing"
+    },
+    {
+      "text": "keep",
+      "start": 83.86,
+      "end": 83.979,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 83.979,
+      "end": 84.019,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 84.019,
+      "end": 84.139,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 84.139,
+      "end": 84.199,
+      "type": "spacing"
+    },
+    {
+      "text": "first",
+      "start": 84.199,
+      "end": 84.439,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 84.439,
+      "end": 84.499,
+      "type": "spacing"
+    },
+    {
+      "text": "fraction",
+      "start": 84.5,
+      "end": 84.879,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 84.879,
+      "end": 84.979,
+      "type": "spacing"
+    },
+    {
+      "text": "as",
+      "start": 84.979,
+      "end": 85.079,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 85.079,
+      "end": 85.139,
+      "type": "spacing"
+    },
+    {
+      "text": "it",
+      "start": 85.139,
+      "end": 85.259,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 85.259,
+      "end": 85.319,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 85.319,
+      "end": 85.899,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 85.899,
+      "end": 85.979,
+      "type": "spacing"
+    },
+    {
+      "text": "and",
+      "start": 85.979,
+      "end": 86.139,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 86.139,
+      "end": 86.199,
+      "type": "spacing"
+    },
+    {
+      "text": "multiply",
+      "start": 86.199,
+      "end": 86.68,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 86.68,
+      "end": 86.739,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 86.739,
+      "end": 86.819,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 86.819,
+      "end": 86.86,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 86.86,
+      "end": 86.939,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 86.939,
+      "end": 86.999,
+      "type": "spacing"
+    },
+    {
+      "text": "reciprocal",
+      "start": 87.0,
+      "end": 87.939,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 87.939,
+      "end": 88.019,
+      "type": "spacing"
+    },
+    {
+      "text": "of",
+      "start": 88.019,
+      "end": 88.159,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 88.159,
+      "end": 88.199,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 88.199,
+      "end": 88.319,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 88.319,
+      "end": 88.4,
+      "type": "spacing"
+    },
+    {
+      "text": "second",
+      "start": 88.4,
+      "end": 88.659,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 88.659,
+      "end": 88.739,
+      "type": "spacing"
+    },
+    {
+      "text": "fraction.",
+      "start": 88.739,
+      "end": 89.579,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 89.579,
+      "end": 89.639,
+      "type": "spacing"
+    },
+    {
+      "text": "So",
+      "start": 89.639,
+      "end": 89.699,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 89.699,
+      "end": 89.739,
+      "type": "spacing"
+    },
+    {
+      "text": "we",
+      "start": 89.739,
+      "end": 89.819,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 89.819,
+      "end": 89.879,
+      "type": "spacing"
+    },
+    {
+      "text": "get",
+      "start": 89.879,
+      "end": 90.019,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 90.019,
+      "end": 90.099,
+      "type": "spacing"
+    },
+    {
+      "text": "13",
+      "start": 90.099,
+      "end": 90.439,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 90.439,
+      "end": 90.499,
+      "type": "spacing"
+    },
+    {
+      "text": "upon",
+      "start": 90.5,
+      "end": 90.739,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 90.739,
+      "end": 90.819,
+      "type": "spacing"
+    },
+    {
+      "text": "nine",
+      "start": 90.819,
+      "end": 91.4,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 91.4,
+      "end": 91.459,
+      "type": "spacing"
+    },
+    {
+      "text": "times",
+      "start": 91.459,
+      "end": 92.259,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 92.259,
+      "end": 92.339,
+      "type": "spacing"
+    },
+    {
+      "text": "four",
+      "start": 92.339,
+      "end": 92.459,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 92.459,
+      "end": 92.54,
+      "type": "spacing"
+    },
+    {
+      "text": "upon",
+      "start": 92.54,
+      "end": 92.739,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 92.739,
+      "end": 92.759,
+      "type": "spacing"
+    },
+    {
+      "text": "13.",
+      "start": 92.759,
+      "end": 93.999,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 93.999,
+      "end": 94.039,
+      "type": "spacing"
+    },
+    {
+      "text": "The",
+      "start": 94.04,
+      "end": 94.099,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 94.099,
+      "end": 94.119,
+      "type": "spacing"
+    },
+    {
+      "text": "13",
+      "start": 94.119,
+      "end": 94.159,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 94.159,
+      "end": 94.179,
+      "type": "spacing"
+    },
+    {
+      "text": "gets",
+      "start": 94.18,
+      "end": 94.379,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 94.379,
+      "end": 94.419,
+      "type": "spacing"
+    },
+    {
+      "text": "canceled",
+      "start": 94.419,
+      "end": 94.799,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 94.799,
+      "end": 94.839,
+      "type": "spacing"
+    },
+    {
+      "text": "with",
+      "start": 94.839,
+      "end": 96.599,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 96.599,
+      "end": 96.619,
+      "type": "spacing"
+    },
+    {
+      "text": "13.",
+      "start": 96.619,
+      "end": 96.659,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 96.659,
+      "end": 96.699,
+      "type": "spacing"
+    },
+    {
+      "text": "Hence,",
+      "start": 96.699,
+      "end": 97.559,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 97.559,
+      "end": 97.599,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 97.599,
+      "end": 97.659,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 97.659,
+      "end": 97.719,
+      "type": "spacing"
+    },
+    {
+      "text": "final",
+      "start": 97.72,
+      "end": 97.979,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 97.979,
+      "end": 98.059,
+      "type": "spacing"
+    },
+    {
+      "text": "answer",
+      "start": 98.059,
+      "end": 98.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 98.299,
+      "end": 98.339,
+      "type": "spacing"
+    },
+    {
+      "text": "will",
+      "start": 98.339,
+      "end": 98.439,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 98.439,
+      "end": 98.499,
+      "type": "spacing"
+    },
+    {
+      "text": "be",
+      "start": 98.5,
+      "end": 98.639,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 98.639,
+      "end": 98.659,
+      "type": "spacing"
+    },
+    {
+      "text": "four",
+      "start": 98.659,
+      "end": 98.779,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 98.779,
+      "end": 98.839,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 98.839,
+      "end": 98.959,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 98.959,
+      "end": 99.019,
+      "type": "spacing"
+    },
+    {
+      "text": "nine.",
+      "start": 99.019,
+      "end": 99.679,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 99.679,
+      "end": 99.739,
+      "type": "spacing"
+    },
+    {
+      "text": "So",
+      "start": 99.739,
+      "end": 99.819,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 99.819,
+      "end": 99.879,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 99.879,
+      "end": 99.939,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 99.939,
+      "end": 99.999,
+      "type": "spacing"
+    },
+    {
+      "text": "correct",
+      "start": 100.0,
+      "end": 100.279,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 100.279,
+      "end": 100.339,
+      "type": "spacing"
+    },
+    {
+      "text": "option",
+      "start": 100.339,
+      "end": 100.599,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 100.599,
+      "end": 100.659,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 100.659,
+      "end": 101.099,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 101.099,
+      "end": 101.119,
+      "type": "spacing"
+    },
+    {
+      "text": "option",
+      "start": 101.119,
+      "end": 101.819,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 101.819,
+      "end": 101.839,
+      "type": "spacing"
+    },
+    {
+      "text": "C.",
+      "start": 101.839,
+      "end": 101.859,
+      "type": "word"
+    }
+  ]
+}

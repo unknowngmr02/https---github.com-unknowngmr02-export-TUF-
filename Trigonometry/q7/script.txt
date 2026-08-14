@@ -1,0 +1,17 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+Now in this problem, we need to find sign square 30 degree pluss kos square 30 degree.
+
+Here, both sign and kos have the same angle, which is 30 degree. <break time="0.5s" />
+
+Whenever the angle is the same, we can use the identity:
+
+Sign square theta pluss kos square thee-ta is equal to 1.
+
+So directly, sign square 30 degree pluss kos square 30 degree is equal to 1.
+
+We do not need to find the values of sign 30 degree and kos 30 degree separately. <break time="0.6s" />
+
+Hence, the required answer is "1".
+
+So the correct option is "C".

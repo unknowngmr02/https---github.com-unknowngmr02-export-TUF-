@@ -1,0 +1,27 @@
+[00:00.12 -> 00:00.34]  So
+[00:01.18 -> 00:02.16]  welcome back again.
+[00:02.74 -> 00:04.58]  It's time to solve one more problem.
+[00:05.20 -> 00:05.88]  In this problem,
+[00:06.40 -> 00:11.06]  a road rises ten meters for every ten root three meters of horizontal distance.
+[00:11.64 -> 00:13.04]  What does this mean in simple words?
+[00:13.58 -> 00:15.70]  It means if we draw the road and the ground,
+[00:16.12 -> 00:17.08]  they form a right
+[00:17.40 -> 00:17.90]  triangle.
+[00:18.44 -> 00:20.16]  The upward rise becomes the height,
+[00:20.54 -> 00:21.58]  which is ten meters,
+[00:22.08 -> 00:24.32]  and the horizontal distance becomes the base,
+[00:24.78 -> 00:26.90]  which is ten root three meters.
+[00:27.22 -> 00:28.92]  And the problem is asking us to find
+[00:29.38 -> 00:32.40]  the angle made by the road with the ground.
+[00:32.74 -> 00:34.30]  So let us call this angle theta.
+[00:35.00 -> 00:36.28]  Here we know two things already.
+[00:36.82 -> 00:39.10]  We know the height and we know the base.
+[00:39.62 -> 00:46.38]  Whenever height and base are given, the trigonometric ratio that connects them is tan theta,
+[00:47.12 -> 00:56.36]  as tan theta equals height upon base, so tan theta equals ten upon ten root three. After simplifying this, the ten gets canceled.
+[00:56.72 -> 01:00.02]  This becomes tan theta equals one upon root three.
+[01:00.36 -> 01:02.18]  Now this is where the question becomes easy.
+[01:02.74 -> 01:04.64]  We already know one standard value.
+[01:05.02 -> 01:09.70]  Tan thirty degree is equal to one upon root three, so theta must be thirty degree.
+[01:10.08 -> 01:11.10]  Got it? Perfect.
+[01:11.80 -> 01:15.30]  Hence, the angle of inclination of the road is thirty degrees.
+[01:15.84 -> 01:18.96]  So the final answer will be option A, thirty degrees.

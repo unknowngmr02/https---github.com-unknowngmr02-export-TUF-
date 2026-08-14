@@ -1,0 +1,1517 @@
+{
+  "duration": 41.119,
+  "phrases": [
+    {
+      "start": 0.099,
+      "end": 0.239,
+      "text": "So"
+    },
+    {
+      "start": 0.699,
+      "end": 1.74,
+      "text": "welcome back again."
+    },
+    {
+      "start": 2.46,
+      "end": 3.399,
+      "text": "It's time to solve"
+    },
+    {
+      "start": 3.98,
+      "end": 4.859,
+      "text": "one more problem."
+    },
+    {
+      "start": 5.5,
+      "end": 6.759,
+      "text": "Now in this problem, we are given"
+    },
+    {
+      "start": 7.219,
+      "end": 8.979,
+      "text": "sine 30 degrees and cos"
+    },
+    {
+      "start": 9.42,
+      "end": 10.039,
+      "text": "60 degrees."
+    },
+    {
+      "start": 10.619,
+      "end": 11.359,
+      "text": "The question is"
+    },
+    {
+      "start": 11.779,
+      "end": 13.079,
+      "text": "asking us to find their sum."
+    },
+    {
+      "start": 13.739,
+      "end": 13.899,
+      "text": "Now,"
+    },
+    {
+      "start": 14.199,
+      "end": 17.199,
+      "text": "the important point here is that these are standard trigonometric values."
+    },
+    {
+      "start": 17.719,
+      "end": 20.34,
+      "text": "We should remember them because they are used very often."
+    },
+    {
+      "start": 20.859,
+      "end": 22.84,
+      "text": "Sine 30 degree is equal to one by two,"
+    },
+    {
+      "start": 23.359,
+      "end": 26.379,
+      "text": "and cos 60 degree is also equal to one by two."
+    },
+    {
+      "start": 27.139,
+      "end": 28.439,
+      "text": "Now that we know both values,"
+    },
+    {
+      "start": 28.819,
+      "end": 33.439,
+      "text": "let us substitute them into the given expression. So we get one half plus one half,"
+    },
+    {
+      "start": 34.2,
+      "end": 35.299,
+      "text": "which is equal to one."
+    },
+    {
+      "start": 35.919,
+      "end": 36.119,
+      "text": "Done."
+    },
+    {
+      "start": 36.579,
+      "end": 37.86,
+      "text": "So the final answer will be one."
+    },
+    {
+      "start": 38.7,
+      "end": 41.119,
+      "text": "Hence, the correct option is option B."
+    }
+  ],
+  "words": [
+    {
+      "text": "So",
+      "start": 0.099,
+      "end": 0.239,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 0.239,
+      "end": 0.699,
+      "type": "spacing"
+    },
+    {
+      "text": "welcome",
+      "start": 0.699,
+      "end": 0.979,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 0.979,
+      "end": 1.059,
+      "type": "spacing"
+    },
+    {
+      "text": "back",
+      "start": 1.059,
+      "end": 1.279,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 1.279,
+      "end": 1.419,
+      "type": "spacing"
+    },
+    {
+      "text": "again.",
+      "start": 1.419,
+      "end": 1.74,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 1.74,
+      "end": 2.459,
+      "type": "spacing"
+    },
+    {
+      "text": "It's",
+      "start": 2.46,
+      "end": 2.619,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 2.619,
+      "end": 2.659,
+      "type": "spacing"
+    },
+    {
+      "text": "time",
+      "start": 2.659,
+      "end": 2.879,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 2.879,
+      "end": 2.919,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 2.919,
+      "end": 3.019,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 3.019,
+      "end": 3.079,
+      "type": "spacing"
+    },
+    {
+      "text": "solve",
+      "start": 3.079,
+      "end": 3.399,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 3.399,
+      "end": 3.979,
+      "type": "spacing"
+    },
+    {
+      "text": "one",
+      "start": 3.98,
+      "end": 4.099,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 4.099,
+      "end": 4.219,
+      "type": "spacing"
+    },
+    {
+      "text": "more",
+      "start": 4.219,
+      "end": 4.42,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 4.42,
+      "end": 4.48,
+      "type": "spacing"
+    },
+    {
+      "text": "problem.",
+      "start": 4.48,
+      "end": 4.859,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 4.859,
+      "end": 5.5,
+      "type": "spacing"
+    },
+    {
+      "text": "Now",
+      "start": 5.5,
+      "end": 5.579,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 5.579,
+      "end": 5.639,
+      "type": "spacing"
+    },
+    {
+      "text": "in",
+      "start": 5.639,
+      "end": 5.699,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 5.699,
+      "end": 5.759,
+      "type": "spacing"
+    },
+    {
+      "text": "this",
+      "start": 5.759,
+      "end": 5.879,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 5.879,
+      "end": 5.939,
+      "type": "spacing"
+    },
+    {
+      "text": "problem,",
+      "start": 5.94,
+      "end": 6.219,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 6.219,
+      "end": 6.299,
+      "type": "spacing"
+    },
+    {
+      "text": "we",
+      "start": 6.299,
+      "end": 6.339,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 6.339,
+      "end": 6.379,
+      "type": "spacing"
+    },
+    {
+      "text": "are",
+      "start": 6.379,
+      "end": 6.46,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 6.46,
+      "end": 6.519,
+      "type": "spacing"
+    },
+    {
+      "text": "given",
+      "start": 6.519,
+      "end": 6.759,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 6.759,
+      "end": 7.219,
+      "type": "spacing"
+    },
+    {
+      "text": "sine",
+      "start": 7.219,
+      "end": 7.48,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 7.48,
+      "end": 7.779,
+      "type": "spacing"
+    },
+    {
+      "text": "30",
+      "start": 7.779,
+      "end": 7.879,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 7.879,
+      "end": 7.959,
+      "type": "spacing"
+    },
+    {
+      "text": "degrees",
+      "start": 7.96,
+      "end": 8.359,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 8.359,
+      "end": 8.42,
+      "type": "spacing"
+    },
+    {
+      "text": "and",
+      "start": 8.42,
+      "end": 8.519,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 8.519,
+      "end": 8.619,
+      "type": "spacing"
+    },
+    {
+      "text": "cos",
+      "start": 8.619,
+      "end": 8.979,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 8.979,
+      "end": 9.419,
+      "type": "spacing"
+    },
+    {
+      "text": "60",
+      "start": 9.42,
+      "end": 9.52,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 9.52,
+      "end": 9.579,
+      "type": "spacing"
+    },
+    {
+      "text": "degrees.",
+      "start": 9.579,
+      "end": 10.039,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 10.039,
+      "end": 10.619,
+      "type": "spacing"
+    },
+    {
+      "text": "The",
+      "start": 10.619,
+      "end": 10.699,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 10.699,
+      "end": 10.76,
+      "type": "spacing"
+    },
+    {
+      "text": "question",
+      "start": 10.76,
+      "end": 11.099,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 11.099,
+      "end": 11.179,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 11.179,
+      "end": 11.359,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 11.359,
+      "end": 11.779,
+      "type": "spacing"
+    },
+    {
+      "text": "asking",
+      "start": 11.779,
+      "end": 12.1,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 12.1,
+      "end": 12.159,
+      "type": "spacing"
+    },
+    {
+      "text": "us",
+      "start": 12.159,
+      "end": 12.259,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 12.259,
+      "end": 12.299,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 12.3,
+      "end": 12.38,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 12.38,
+      "end": 12.439,
+      "type": "spacing"
+    },
+    {
+      "text": "find",
+      "start": 12.439,
+      "end": 12.639,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 12.639,
+      "end": 12.679,
+      "type": "spacing"
+    },
+    {
+      "text": "their",
+      "start": 12.679,
+      "end": 12.799,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 12.799,
+      "end": 12.879,
+      "type": "spacing"
+    },
+    {
+      "text": "sum.",
+      "start": 12.88,
+      "end": 13.079,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 13.079,
+      "end": 13.739,
+      "type": "spacing"
+    },
+    {
+      "text": "Now,",
+      "start": 13.739,
+      "end": 13.899,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 13.899,
+      "end": 14.199,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 14.199,
+      "end": 14.259,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 14.259,
+      "end": 14.279,
+      "type": "spacing"
+    },
+    {
+      "text": "important",
+      "start": 14.279,
+      "end": 14.659,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 14.659,
+      "end": 14.699,
+      "type": "spacing"
+    },
+    {
+      "text": "point",
+      "start": 14.699,
+      "end": 14.859,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 14.859,
+      "end": 14.899,
+      "type": "spacing"
+    },
+    {
+      "text": "here",
+      "start": 14.899,
+      "end": 15.0,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 15.0,
+      "end": 15.039,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 15.039,
+      "end": 15.119,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 15.119,
+      "end": 15.179,
+      "type": "spacing"
+    },
+    {
+      "text": "that",
+      "start": 15.179,
+      "end": 15.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 15.299,
+      "end": 15.379,
+      "type": "spacing"
+    },
+    {
+      "text": "these",
+      "start": 15.38,
+      "end": 15.519,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 15.519,
+      "end": 15.539,
+      "type": "spacing"
+    },
+    {
+      "text": "are",
+      "start": 15.539,
+      "end": 15.619,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 15.619,
+      "end": 15.679,
+      "type": "spacing"
+    },
+    {
+      "text": "standard",
+      "start": 15.679,
+      "end": 16.059,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 16.059,
+      "end": 16.139,
+      "type": "spacing"
+    },
+    {
+      "text": "trigonometric",
+      "start": 16.139,
+      "end": 16.739,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 16.739,
+      "end": 16.819,
+      "type": "spacing"
+    },
+    {
+      "text": "values.",
+      "start": 16.819,
+      "end": 17.199,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 17.199,
+      "end": 17.719,
+      "type": "spacing"
+    },
+    {
+      "text": "We",
+      "start": 17.719,
+      "end": 17.779,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 17.779,
+      "end": 17.819,
+      "type": "spacing"
+    },
+    {
+      "text": "should",
+      "start": 17.819,
+      "end": 17.94,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 17.94,
+      "end": 17.979,
+      "type": "spacing"
+    },
+    {
+      "text": "remember",
+      "start": 17.979,
+      "end": 18.319,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 18.319,
+      "end": 18.359,
+      "type": "spacing"
+    },
+    {
+      "text": "them",
+      "start": 18.359,
+      "end": 18.479,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 18.479,
+      "end": 18.539,
+      "type": "spacing"
+    },
+    {
+      "text": "because",
+      "start": 18.539,
+      "end": 18.84,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 18.84,
+      "end": 18.92,
+      "type": "spacing"
+    },
+    {
+      "text": "they",
+      "start": 18.92,
+      "end": 19.0,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 19.0,
+      "end": 19.059,
+      "type": "spacing"
+    },
+    {
+      "text": "are",
+      "start": 19.059,
+      "end": 19.199,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 19.199,
+      "end": 19.359,
+      "type": "spacing"
+    },
+    {
+      "text": "used",
+      "start": 19.359,
+      "end": 19.639,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 19.639,
+      "end": 19.779,
+      "type": "spacing"
+    },
+    {
+      "text": "very",
+      "start": 19.779,
+      "end": 19.979,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 19.979,
+      "end": 20.059,
+      "type": "spacing"
+    },
+    {
+      "text": "often.",
+      "start": 20.059,
+      "end": 20.34,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 20.34,
+      "end": 20.859,
+      "type": "spacing"
+    },
+    {
+      "text": "Sine",
+      "start": 20.859,
+      "end": 21.02,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 21.02,
+      "end": 21.199,
+      "type": "spacing"
+    },
+    {
+      "text": "30",
+      "start": 21.199,
+      "end": 21.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 21.299,
+      "end": 21.34,
+      "type": "spacing"
+    },
+    {
+      "text": "degree",
+      "start": 21.34,
+      "end": 21.559,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 21.559,
+      "end": 21.6,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 21.6,
+      "end": 21.68,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 21.68,
+      "end": 21.779,
+      "type": "spacing"
+    },
+    {
+      "text": "equal",
+      "start": 21.779,
+      "end": 21.92,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 21.92,
+      "end": 21.959,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 21.959,
+      "end": 22.02,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 22.02,
+      "end": 22.139,
+      "type": "spacing"
+    },
+    {
+      "text": "one",
+      "start": 22.139,
+      "end": 22.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 22.299,
+      "end": 22.359,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 22.359,
+      "end": 22.579,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 22.579,
+      "end": 22.619,
+      "type": "spacing"
+    },
+    {
+      "text": "two,",
+      "start": 22.619,
+      "end": 22.84,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 22.84,
+      "end": 23.359,
+      "type": "spacing"
+    },
+    {
+      "text": "and",
+      "start": 23.359,
+      "end": 23.459,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 23.459,
+      "end": 23.579,
+      "type": "spacing"
+    },
+    {
+      "text": "cos",
+      "start": 23.579,
+      "end": 24.339,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 24.339,
+      "end": 24.6,
+      "type": "spacing"
+    },
+    {
+      "text": "60",
+      "start": 24.6,
+      "end": 24.68,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 24.68,
+      "end": 24.719,
+      "type": "spacing"
+    },
+    {
+      "text": "degree",
+      "start": 24.719,
+      "end": 24.939,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 24.939,
+      "end": 24.999,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 25.0,
+      "end": 25.059,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 25.059,
+      "end": 25.119,
+      "type": "spacing"
+    },
+    {
+      "text": "also",
+      "start": 25.119,
+      "end": 25.34,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 25.34,
+      "end": 25.42,
+      "type": "spacing"
+    },
+    {
+      "text": "equal",
+      "start": 25.42,
+      "end": 25.599,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 25.599,
+      "end": 25.679,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 25.68,
+      "end": 25.739,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 25.739,
+      "end": 25.819,
+      "type": "spacing"
+    },
+    {
+      "text": "one",
+      "start": 25.819,
+      "end": 25.939,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 25.939,
+      "end": 25.999,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 26.0,
+      "end": 26.199,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 26.199,
+      "end": 26.239,
+      "type": "spacing"
+    },
+    {
+      "text": "two.",
+      "start": 26.239,
+      "end": 26.379,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 26.379,
+      "end": 27.139,
+      "type": "spacing"
+    },
+    {
+      "text": "Now",
+      "start": 27.139,
+      "end": 27.219,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 27.219,
+      "end": 27.26,
+      "type": "spacing"
+    },
+    {
+      "text": "that",
+      "start": 27.26,
+      "end": 27.42,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 27.42,
+      "end": 27.479,
+      "type": "spacing"
+    },
+    {
+      "text": "we",
+      "start": 27.479,
+      "end": 27.539,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 27.539,
+      "end": 27.579,
+      "type": "spacing"
+    },
+    {
+      "text": "know",
+      "start": 27.579,
+      "end": 27.699,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 27.699,
+      "end": 27.759,
+      "type": "spacing"
+    },
+    {
+      "text": "both",
+      "start": 27.76,
+      "end": 27.939,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 27.939,
+      "end": 28.019,
+      "type": "spacing"
+    },
+    {
+      "text": "values,",
+      "start": 28.019,
+      "end": 28.439,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 28.439,
+      "end": 28.819,
+      "type": "spacing"
+    },
+    {
+      "text": "let",
+      "start": 28.819,
+      "end": 28.939,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 28.939,
+      "end": 28.999,
+      "type": "spacing"
+    },
+    {
+      "text": "us",
+      "start": 29.0,
+      "end": 29.079,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 29.079,
+      "end": 29.119,
+      "type": "spacing"
+    },
+    {
+      "text": "substitute",
+      "start": 29.119,
+      "end": 29.619,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 29.619,
+      "end": 29.679,
+      "type": "spacing"
+    },
+    {
+      "text": "them",
+      "start": 29.679,
+      "end": 29.779,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 29.779,
+      "end": 29.839,
+      "type": "spacing"
+    },
+    {
+      "text": "into",
+      "start": 29.84,
+      "end": 30.0,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 30.0,
+      "end": 30.059,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 30.059,
+      "end": 30.139,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 30.139,
+      "end": 30.279,
+      "type": "spacing"
+    },
+    {
+      "text": "given",
+      "start": 30.279,
+      "end": 30.539,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 30.539,
+      "end": 30.639,
+      "type": "spacing"
+    },
+    {
+      "text": "expression.",
+      "start": 30.639,
+      "end": 31.059,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 31.059,
+      "end": 31.119,
+      "type": "spacing"
+    },
+    {
+      "text": "So",
+      "start": 31.119,
+      "end": 31.179,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 31.179,
+      "end": 31.219,
+      "type": "spacing"
+    },
+    {
+      "text": "we",
+      "start": 31.219,
+      "end": 31.319,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 31.319,
+      "end": 31.359,
+      "type": "spacing"
+    },
+    {
+      "text": "get",
+      "start": 31.359,
+      "end": 31.899,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 31.899,
+      "end": 32.0,
+      "type": "spacing"
+    },
+    {
+      "text": "one",
+      "start": 32.0,
+      "end": 32.139,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 32.139,
+      "end": 32.18,
+      "type": "spacing"
+    },
+    {
+      "text": "half",
+      "start": 32.18,
+      "end": 32.459,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 32.459,
+      "end": 32.5,
+      "type": "spacing"
+    },
+    {
+      "text": "plus",
+      "start": 32.5,
+      "end": 32.879,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 32.879,
+      "end": 32.959,
+      "type": "spacing"
+    },
+    {
+      "text": "one",
+      "start": 32.959,
+      "end": 33.099,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 33.099,
+      "end": 33.159,
+      "type": "spacing"
+    },
+    {
+      "text": "half,",
+      "start": 33.159,
+      "end": 33.439,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 33.439,
+      "end": 34.2,
+      "type": "spacing"
+    },
+    {
+      "text": "which",
+      "start": 34.2,
+      "end": 34.36,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 34.36,
+      "end": 34.399,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 34.399,
+      "end": 34.619,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 34.619,
+      "end": 34.719,
+      "type": "spacing"
+    },
+    {
+      "text": "equal",
+      "start": 34.719,
+      "end": 34.919,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 34.919,
+      "end": 34.959,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 34.959,
+      "end": 35.02,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 35.02,
+      "end": 35.099,
+      "type": "spacing"
+    },
+    {
+      "text": "one.",
+      "start": 35.099,
+      "end": 35.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 35.299,
+      "end": 35.919,
+      "type": "spacing"
+    },
+    {
+      "text": "Done.",
+      "start": 35.919,
+      "end": 36.119,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 36.119,
+      "end": 36.579,
+      "type": "spacing"
+    },
+    {
+      "text": "So",
+      "start": 36.579,
+      "end": 36.639,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 36.639,
+      "end": 36.68,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 36.68,
+      "end": 36.739,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 36.739,
+      "end": 36.799,
+      "type": "spacing"
+    },
+    {
+      "text": "final",
+      "start": 36.799,
+      "end": 37.02,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 37.02,
+      "end": 37.079,
+      "type": "spacing"
+    },
+    {
+      "text": "answer",
+      "start": 37.079,
+      "end": 37.279,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 37.279,
+      "end": 37.319,
+      "type": "spacing"
+    },
+    {
+      "text": "will",
+      "start": 37.319,
+      "end": 37.419,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 37.419,
+      "end": 37.479,
+      "type": "spacing"
+    },
+    {
+      "text": "be",
+      "start": 37.479,
+      "end": 37.579,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 37.579,
+      "end": 37.679,
+      "type": "spacing"
+    },
+    {
+      "text": "one.",
+      "start": 37.68,
+      "end": 37.86,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 37.86,
+      "end": 38.7,
+      "type": "spacing"
+    },
+    {
+      "text": "Hence,",
+      "start": 38.7,
+      "end": 39.059,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 39.059,
+      "end": 39.099,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 39.099,
+      "end": 39.139,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 39.139,
+      "end": 39.219,
+      "type": "spacing"
+    },
+    {
+      "text": "correct",
+      "start": 39.219,
+      "end": 39.5,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 39.5,
+      "end": 39.579,
+      "type": "spacing"
+    },
+    {
+      "text": "option",
+      "start": 39.579,
+      "end": 39.84,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 39.84,
+      "end": 39.919,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 39.919,
+      "end": 40.399,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 40.399,
+      "end": 40.519,
+      "type": "spacing"
+    },
+    {
+      "text": "option",
+      "start": 40.52,
+      "end": 40.84,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 40.84,
+      "end": 41.059,
+      "type": "spacing"
+    },
+    {
+      "text": "B.",
+      "start": 41.059,
+      "end": 41.119,
+      "type": "word"
+    }
+  ]
+}

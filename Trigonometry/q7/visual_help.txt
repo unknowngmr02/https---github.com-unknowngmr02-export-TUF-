@@ -1,0 +1,25 @@
+🎬 Visual Help (Animation Timeline)
+Voice	Visual
+"find sign² 30 + cos-sign² 30"	Show the complete expression large at the center.
+"use a trigonometric identity"	Expression moves slightly upward. A title Important Identity fades in.
+"Sign square theta + cos-sign square theta = 1"	Animate the identity appearing below the question. Highlight = 1.
+"Notice one thing"	Glow around θ in the identity and 30° in the question.
+"replace theta with thirty degree"	Morph θ → 30° everywhere in the identity.
+"expression becomes one"	The question expression smoothly transforms into 1.
+"Option C"	Highlight Option C in green.
+⭐ Better Animation Idea
+
+Instead of showing two separate formulas, animate it like this:
+
+Sign² θ + Cos-sign² θ
+            │
+      Replace θ with 30°
+            │
+            ▼
+Sign² 30° + Cos-sign² 30°
+            │
+      Identity applies
+            ▼
+            1
+
+This creates a continuous transformation, so the canvas never feels static even though the solution takes only a few seconds.

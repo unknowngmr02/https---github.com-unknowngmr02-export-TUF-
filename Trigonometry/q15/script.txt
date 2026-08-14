@@ -1,0 +1,35 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+Now in this problem, a 13 mee-ter ladder is touching a window which is 12 mee-ter above the ground.
+
+The question is asking us to find how far the foot of the ladder is from the wall.
+
+Here, the ladder, the wall, and the ground make a right-angled triangle.
+The ladder will be the high-pot-en-use, because it is the slant side.
+The wall height is the per-pen-dicular.
+And the distance from the wall to the foot of the ladder is the base.
+<break time="0.5s" />
+
+Let the base be x mee-ter.
+
+Using Pythagoras theorem,
+
+high-pot-en-use square is equal to base square pluss per-pen-dicular square.
+
+So we can write,
+
+13 square is equal to x square pluss 12 square.
+
+That means,
+
+169 is equal to x square pluss 144.
+
+So x square is equal to 169 my-nus 144.
+
+After subtracting, x square is equal to 25.
+So x is equal to root 25, which is 5.
+<break time="0.6s" />
+
+Hence, the foot of the ladder is 5 mee-ter from the wall.
+
+So the correct option is option C.

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="design-system.css">
+</head>
+<body>
+<div data-hf-id="hf-89uj" id="root" data-composition-id="root" data-start="0" data-width="1920" data-height="1080">
+
+  <!-- ══════ BACKGROUND LAYERS (always visible) ══════ -->
+  <div data-hf-id="hf-858h" class="dotted-grid"></div>
+  <div data-hf-id="hf-izuk" class="bottom-strip"></div>
+  <div data-hf-id="hf-ql9k" class="topic-name">Trigonometry</div>
+  <div data-hf-id="hf-e319" class="logo"></div>
+
+  <!-- ══════ VOICEOVER ══════ -->
+  <audio data-hf-id="hf-7rth" id="voiceover" class="clip" src="voiceover.wav" data-start="0" data-duration="71.5" data-track-index="0"></audio>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 1 - Question + Illustration (0-35.9s). Given info (Opposite =
+       20 m, Adjacent = x) is managed INSIDE this phase via bordered chip
+       labels on the illustration itself, synced to the transcript - no
+       separate center "Given" solution-card.
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-0pvp" id="phase1" class="clip" data-start="0" data-duration="38.4" data-track-index="1" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:5;">
+
+    <div data-hf-id="hf-lxc5" id="q-full-card" class="q-card" style="position:absolute;left:50%;top:80px;width:1500px;transform:translateX(-50%);opacity:0;">
+      <div data-hf-id="hf-whl4" class="q-text">
+        The angle of elevation of a <span data-hf-id="hf-icee" class="num">20 m</span> tower from a point on level ground is <span data-hf-id="hf-n1e5" class="num">45 degrees</span>. Find the distance from the point to the tower.
+      </div>
+    </div>
+
+    <div data-hf-id="hf-w62k" id="serial-num" class="serial-num" style="left:60px;top:60px;opacity:0;">
+      <div data-hf-id="hf-yfde" class="digit">Q</div>
+    </div>
+
+    <!-- Illustration: ground, observer, tower (with flag cap), line of
+         sight, right-angle marker, 45deg angle arc - redrawn per
+         storyboard.md Scene 2 (bigger, readable canvas; angle vertex
+         stays leftmost so the arc's fixed 0deg start matches the ground
+         ray, per penelty.txt's standing arc-direction rule).
+
+         VERTICES (defined once, reused literally everywhere):
+           A = (90,380)  angle vertex (observer) - leftmost base vertex
+           B = (350,380) right-angle vertex (tower base)
+           C = (350,120) apex (tower top)
+         GROUND: y=380
+         RATIO CHECK: base(A-B)=260, opposite(B-C)=260 -> tan45 = 1 exact
+         ANGLE CHECK: atan2(260,260) = 45.00deg -> --angle: 45 matches exactly
+         LENGTH CHECK: hyp(A-C) = sqrt(260^2+260^2) = 367.7
+         VIEWBOX: x[0..620] y[0..480] -> "0 0 620 480" -->
+    <div data-hf-id="hf-3hxd" id="illustration" class="illustration" style="position:absolute;left:50%;top:290px;transform:translateX(-50%);width:620px;height:480px;">
+      <svg data-hf-id="hf-i7mo" id="tower-svg" viewBox="0 0 620 480" width="620" height="480" style="position:absolute;left:0;top:0;overflow:visible;">
+        <!-- ground line (adjacent side), len=260 -->
+        <line data-hf-id="hf-jmsa" id="gnd-line" x1="90" y1="380" x2="350" y2="380" stroke="#6373db" stroke-width="8" stroke-dasharray="260" stroke-dashoffset="260" stroke-linecap="round" />
+        <!-- tower (opposite side), len=260 -->
+        <line data-hf-id="hf-8fki" id="tower-line" x1="350" y1="380" x2="350" y2="120" stroke="#6373db" stroke-width="8" stroke-dasharray="260" stroke-dashoffset="260" stroke-linecap="round" />
+        <!-- flag cap on tower top, reads as a tower not a bare line -->
+        <path data-hf-id="hf-7q6t" id="tower-flag" d="M 350 120 L 410 140 L 350 160 Z" fill="#6373db" opacity="0" />
+        <!-- line of sight (hypotenuse), observer to tower top, len=sqrt(260^2+260^2)=367.7 -->
+        <line data-hf-id="hf-5qno" id="los-line" x1="90" y1="380" x2="350" y2="120" stroke="#000000" stroke-width="5" stroke-dasharray="367.7" stroke-dashoffset="367.7" stroke-linecap="round" />
+        <!-- observation point -->
+        <circle data-hf-id="hf-qzz4" id="obs-point" cx="90" cy="380" r="9" fill="#000000" opacity="0" />
+        <!-- right-angle marker at B=(350,380): rays -x (toward A) and -y (toward C), inset 28 -->
+        <path data-hf-id="hf-d6f3" id="right-angle-mark" d="M 322 380 L 322 352 L 350 352" fill="none" stroke="#000000" stroke-width="3.5" opacity="0" />
+        <!-- 45-degree elevation angle arc at the observer, full-circle
+             stroke-dasharray technique (penelty.txt standard from q10
+             onward): cx/cy=A exactly, r=85, C=2*pi*85=534.07, --angle
+             is the EXACT given angle (45deg), sibling green (#4eb85f),
+             bold stroke, translate(0,760) = 2*cy, opacity-only reveal. -->
+        <circle data-hf-id="hf-592v" id="angle-arc" cx="90" cy="380" r="85" fill="transparent" stroke="#4eb85f" stroke-width="9" stroke-linecap="round" transform="translate(0, 760) scale(1,-1)" style="--angle: 45; stroke-dasharray: calc((var(--angle) / 360) * 534.07) 534.07;" opacity="0" />
+        <text data-hf-id="hf-ijoi" id="angle-label" x="180" y="345" font-family="'Google Sans Flex','Inter',sans-serif" font-size="30" fill="#4eb85f" opacity="0">45°</text>
+        <!-- flat 2D person icon standing at the observation point -->
+        <g data-hf-id="hf-p4q2" id="person-icon" opacity="0">
+          <circle data-hf-id="hf-11nn" cx="90" cy="344" r="18" fill="#6373db" />
+          <rect data-hf-id="hf-91hc" x="72" y="356" width="36" height="42" rx="10" fill="#6373db" />
+        </g>
+      </svg>
+
+      <!-- Bordered chip labels - the Given info, managed inside Phase 1
+           instead of a separate center Given card. Same white-card /
+           colored-border style as the sibling questions' pole/shadow/
+           ladder chips, synced to the transcript beat that states each
+           value: opposite/tower height 24.68-29.32, adjacent/x 34.84-35.88. -->
+      <div data-hf-id="hf-lvto" id="chip-opposite" style="position:absolute;left:430px;top:205px;opacity:0;">
+        <div data-hf-id="hf-0yxl" style="background:#fff;border:2px solid #6373db;border-radius:10px;padding:7px 16px;font-size:26px;color:#6373db;font-family:'Google Sans Flex','Inter',sans-serif;white-space:nowrap;">Opposite = 20 m</div>
+      </div>
+      <div data-hf-id="hf-u9vh" id="chip-adjacent" style="position:absolute;left:55px;top:398px;opacity:0;">
+        <div data-hf-id="hf-jkcr" style="background:#fff;border:2px solid #6373db;border-radius:10px;padding:7px 16px;font-size:26px;color:#6373db;font-family:'Google Sans Flex','Inter',sans-serif;white-space:nowrap;">Adjacent = x</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 2 - Pinned question (35.9s onwards)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-8jki" id="q-pinned" class="clip" data-start="35.9" data-duration="35.7" data-track-index="2" style="position:absolute;width:100%;top:0;left:0;z-index:6;opacity:0;">
+    <div data-hf-id="hf-9jf4" class="q-card pinned" style="position:absolute;left:385px;top:30px;width:1275px;">
+      <div data-hf-id="hf-ct29" class="q-text">
+        20 m tower, angle of elevation <span data-hf-id="hf-n7k4" class="num">45°</span>. Find the <span data-hf-id="hf-juzs" class="num">distance</span> to the tower.
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-a2us" id="illus-pinned" class="clip" data-start="35.9" data-duration="32.3" data-track-index="3" style="position:absolute;left:280px;top:180px;width:1300px;height:240px;z-index:5;opacity:0;
+              display:flex;align-items:center;justify-content:center;">
+    <!-- exact coordinate copy of #tower-svg's viewBox and internal numbers; only width/height/stroke-width shrink -->
+    <svg data-hf-id="hf-d4mi" id="illus-pinned-icon" viewBox="0 0 620 480" width="300" height="232">
+      <line data-hf-id="hf-m7hu" x1="90" y1="380" x2="350" y2="380" stroke="#6373db" stroke-width="6" stroke-linecap="round" />
+      <line data-hf-id="hf-f77s" x1="350" y1="380" x2="350" y2="120" stroke="#6373db" stroke-width="6" stroke-linecap="round" />
+      <path data-hf-id="hf-bl75" d="M 350 120 L 410 140 L 350 160 Z" fill="#6373db" />
+      <line data-hf-id="hf-hz7v" x1="90" y1="380" x2="350" y2="120" stroke="#000000" stroke-width="4" stroke-linecap="round" />
+      <circle data-hf-id="hf-l95l" cx="90" cy="380" r="8" fill="#000000" />
+      <path data-hf-id="hf-m4er" d="M 322 380 L 322 352 L 350 352" fill="none" stroke="#000000" stroke-width="3" />
+      <circle data-hf-id="hf-ec8q" cx="90" cy="380" r="85" fill="transparent" stroke="#4eb85f" stroke-width="7" stroke-linecap="round" transform="translate(0,760) scale(1,-1)" style="--angle:45; stroke-dasharray: calc((var(--angle) / 360) * 534.07) 534.07;" />
+      <text data-hf-id="hf-w31u" x="180" y="345" font-family="'Google Sans Flex','Inter',sans-serif" font-size="26" fill="#4eb85f">45°</text>
+    </svg>
+    <div data-hf-id="hf-0x1r" style="font-family:'Google Sans Flex','Inter',sans-serif;font-size:24px;color:#000;margin-left:24px;">
+      Opposite = <span data-hf-id="hf-z8dl" style="color:#6373db;">20 m</span><br data-hf-id="hf-x5px">Adjacent = <span data-hf-id="hf-2fhc" style="color:#6373db;">x</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SOLUTION CARDS (center) - Given is not a center card here; it lives
+       as the illustration chip labels in Phase 1 (see above). Solving
+       starts directly at Step 1.
+       ══════════════════════════════════════════════ -->
+
+  <!-- STEP 1 - formula -->
+  <div data-hf-id="hf-ozlc" id="card-step1" class="clip" data-start="36.7" data-duration="11.3" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-xgi9" class="solution-card" style="position:absolute;left:640px;top:470px;text-align:center;">
+      <div data-hf-id="hf-3rv6" class="card-content">
+        <span data-hf-id="hf-3ife" class="chip">Step 1</span>
+        <div data-hf-id="hf-8tlu" class="math">
+          <span data-hf-id="hf-4ylu" class="rv" data-t="42.20">tan</span> <span data-hf-id="hf-9tff" class="rv" data-t="42.40">θ</span> <span data-hf-id="hf-nqxu" class="rv" data-t="43.30">=</span>
+          <span data-hf-id="hf-hvle" class="frac rv" data-t="43.64"><span data-hf-id="hf-px7q" class="top hi">Opposite</span><span data-hf-id="hf-gf3z" class="bot hi">Adjacent</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 2 - substitute + standard value -->
+  <div data-hf-id="hf-kwxp" id="card-step2" class="clip" data-start="46.5" data-duration="14.5" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-8hiu" class="solution-card" style="position:absolute;left:600px;top:420px;text-align:center;width:720px;">
+      <div data-hf-id="hf-0yza" class="card-content">
+        <span data-hf-id="hf-3wqf" class="chip">Step 2</span>
+        <div data-hf-id="hf-ng7a" class="math">
+          <span data-hf-id="hf-uaa0" class="rv" data-t="46.62">tan</span> <span data-hf-id="hf-sx5e" class="rv" data-t="47.50">45°</span> <span data-hf-id="hf-9go6" class="rv" data-t="47.92">=</span>
+          <span data-hf-id="hf-n2bf" class="frac rv" data-t="48.46"><span data-hf-id="hf-cyzp" class="top hi">20</span><span data-hf-id="hf-nlc7" class="bot hi">x</span></span><br data-hf-id="hf-rsrt">
+          <span data-hf-id="hf-huz0" class="rv" data-t="53.68">tan 45° = 1 (standard value)</span><br data-hf-id="hf-szow">
+          <span data-hf-id="hf-hpch" class="rv" data-t="56.20">1</span> <span data-hf-id="hf-95ai" class="rv" data-t="56.36">=</span>
+          <span data-hf-id="hf-3osr" class="frac ans rv" data-t="56.96"><span data-hf-id="hf-2g9k" class="top">20</span><span data-hf-id="hf-edos" class="bot">x</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 3 - cross-multiply -->
+  <div data-hf-id="hf-srob" id="card-step3" class="clip" data-start="59.5" data-duration="9.2" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-iiia" class="solution-card" style="position:absolute;left:640px;top:480px;text-align:center;">
+      <div data-hf-id="hf-1dab" class="card-content">
+        <span data-hf-id="hf-4b1g" class="chip">Step 3</span>
+        <div data-hf-id="hf-nuib" class="math">
+          <span data-hf-id="hf-4g6w" class="rv" data-t="60.78">x</span> <span data-hf-id="hf-ydtf" class="rv" data-t="60.96">=</span> <span data-hf-id="hf-k7jx" class="ans rv" data-t="61.60">20 m</span><br data-hf-id="hf-sldv">
+          <span data-hf-id="hf-nbxz" class="rv" data-t="62.64">Distance to the tower = 20 m</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       LEFT STACK CARDS
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-6nmx" id="stack-given" class="clip" data-start="35.9" data-duration="35.7" data-track-index="11" style="position:absolute;left:100px;top:140px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-usjn" class="stack-card">
+      <div data-hf-id="hf-1rlc" class="card-content">
+        <span data-hf-id="hf-snhl" class="step-circle">G</span>
+        <div data-hf-id="hf-ctev" class="math">
+          Opposite = <span data-hf-id="hf-z1od" class="hi">20 m</span><br data-hf-id="hf-qluq">
+          Adjacent = <span data-hf-id="hf-ls44" class="hi">x</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-p3zf" id="stack-step1" class="clip" data-start="45.4" data-duration="26.2" data-track-index="12" style="position:absolute;left:100px;top:290px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-3m9v" class="stack-card">
+      <div data-hf-id="hf-yzg5" class="card-content">
+        <span data-hf-id="hf-w2db" class="step-circle">1</span>
+        <div data-hf-id="hf-shli" class="math">
+          tan θ = <span data-hf-id="hf-gq2t" class="frac"><span data-hf-id="hf-c6kw" class="top hi">Opp</span><span data-hf-id="hf-ggie" class="bot hi">Adj</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-87vu" id="stack-step2" class="clip" data-start="58.4" data-duration="13.2" data-track-index="13" style="position:absolute;left:100px;top:440px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-37yu" class="stack-card">
+      <div data-hf-id="hf-zdr6" class="card-content">
+        <span data-hf-id="hf-vo2a" class="step-circle">2</span>
+        <div data-hf-id="hf-641x" class="math">
+          tan 45° = <span data-hf-id="hf-s3fd" class="frac"><span data-hf-id="hf-ool5" class="top hi">20</span><span data-hf-id="hf-lkh3" class="bot hi">x</span></span> = 1
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-mnxw" id="stack-step3" class="clip" data-start="66.1" data-duration="5.5" data-track-index="14" style="position:absolute;left:100px;top:590px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-2tnt" class="stack-card">
+      <div data-hf-id="hf-zs27" class="card-content">
+        <span data-hf-id="hf-v9r9" class="step-circle">3</span>
+        <div data-hf-id="hf-d6fp" class="math">
+          x = <span data-hf-id="hf-4vcm" class="ans">20 m</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-eilo" id="line-g-1" class="clip stack-line" data-start="45.4" data-duration="26.2" data-track-index="15" style="opacity:0;"></div>
+  <div data-hf-id="hf-rf58" id="line-1-2" class="clip stack-line" data-start="58.4" data-duration="13.2" data-track-index="16" style="opacity:0;"></div>
+  <div data-hf-id="hf-o9lv" id="line-2-3" class="clip stack-line" data-start="66.1" data-duration="5.5" data-track-index="17" style="opacity:0;"></div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 3 - OPTIONS REVEAL
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-lms8" id="options-reveal" class="clip" data-start="66.1" data-duration="5.5" data-track-index="10" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:8;opacity:0;">
+    <div data-hf-id="hf-2tfv" class="pinned-col" style="top:400px;">
+      <div data-hf-id="hf-6knj" class="options-grid">
+        <div data-hf-id="hf-lfp2" class="opt-btn"><span data-hf-id="hf-sfug" class="letter">A</span>10 m</div>
+        <div data-hf-id="hf-ie0u" class="opt-btn"><span data-hf-id="hf-r8xd" class="letter">B</span>20√3 m</div>
+        <div data-hf-id="hf-dty7" class="opt-btn"><span data-hf-id="hf-rn8e" class="letter">C</span>40 m</div>
+        <div data-hf-id="hf-mk23" class="opt-btn correct"><span data-hf-id="hf-qgbb" class="letter">D</span>20 m</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end root -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script src="animations.js"></script>
+<script>
+  apt.setStackLine("#line-g-1", "#stack-given .step-circle", "#stack-step1 .step-circle");
+  apt.setStackLine("#line-1-2", "#stack-step1 .step-circle", "#stack-step2 .step-circle");
+  apt.setStackLine("#line-2-3", "#stack-step2 .step-circle", "#stack-step3 .step-circle");
+
+  const tl = gsap.timeline({ paused: true });
+
+  // PHASE 1 - Question reveal
+  const HERO_OFFSET_Y = 180;
+  const RISE_TIME = 4.6; // end of "one more problem" intro beat
+  apt.heroEnterLowered(tl, "#q-full-card", HERO_OFFSET_Y, RISE_TIME);
+
+  tl.fromTo("#serial-num",
+    { scale: 0, rotation: -45, opacity: 0, y: HERO_OFFSET_Y },
+    { scale: 1, rotation: 0, opacity: 1, duration: 0.55, ease: "back.out(2)", y: HERO_OFFSET_Y },
+    0.8);
+  tl.to("#serial-num", { y: 0, duration: 0.6, ease: "power2.inOut" }, RISE_TIME);
+
+  // Illustration build-in, timed to "we have a" (7.46), "From a point on the
+  // ground" (9.06), "45 degrees" (14.22)
+  tl.to("#gnd-line", { strokeDashoffset: 0, duration: 0.6, ease: "power2.out" }, 7.5);
+  tl.to("#tower-line", { strokeDashoffset: 0, duration: 0.6, ease: "power2.out" }, 8.3);
+  tl.to("#tower-flag", { opacity: 1, duration: 0.3 }, 8.9);
+  tl.to("#los-line", { strokeDashoffset: 0, duration: 0.6, ease: "power2.out" }, 9.1);
+  tl.to("#obs-point", { opacity: 1, duration: 0.3 }, 9.1);
+  tl.to("#person-icon", { opacity: 1, duration: 0.4 }, 9.4);
+  tl.to("#right-angle-mark", { opacity: 1, duration: 0.3 }, 14.2);
+  tl.to("#angle-arc", { opacity: 1, duration: 0.3 }, 14.2);
+  tl.to("#angle-label", { opacity: 1, duration: 0.3 }, 14.2);
+
+  // Given info as bordered chip labels on the illustration itself, synced
+  // to the transcript beat that narrates each side, then a small emphasize
+  // pulse so each value visibly "lands" instead of just fading in flat:
+  // "the height of the tower becomes the opposite side, which is 20 meters" (24.68-29.32)
+  // "the distance from the person to the tower becomes the adjacent side. Let us call it X." (29.84-35.88)
+  tl.fromTo("#chip-opposite", { y: 10, opacity: 0, scale: 0.85 }, { y: 0, opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 24.68);
+  apt.emphasize(tl, "#chip-opposite", 28.66);
+  tl.fromTo("#chip-adjacent", { y: 10, opacity: 0, scale: 0.85 }, { y: 0, opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 34.84);
+  apt.emphasize(tl, "#chip-adjacent", 35.76);
+
+  // PHASE 2 - Pin at the end of Phase 1 (right after "Let us call it X." finishes, 35.88)
+  const PIN_TIME = 35.9;
+
+  apt.pinFlow(tl, "#q-full-card", "#q-pinned", PIN_TIME);
+  apt.pinFlow(tl, "#illustration", "#illus-pinned", PIN_TIME);
+  apt.fadeOut(tl, "#serial-num", PIN_TIME, 0.5);
+
+  // Given card is not re-entered as a center card - it lands directly in
+  // the stack the moment the pin completes, carrying forward the same
+  // chip-labeled values the viewer just saw on the illustration.
+  tl.set("#stack-given", { opacity: 1 }, PIN_TIME);
+  apt.stackEnter(tl, "#stack-given .stack-card", PIN_TIME + 0.3);
+
+  // Keep the pinned illustration's icon gently alive through the long
+  // solving stretch instead of sitting dead-static.
+  apt.ambientLoop(tl, "#illus-pinned-icon", PIN_TIME + 1, 66.1);
+
+  // STEP 1 - formula narrated 36.56-45.10, right as the pin glide lands (36.7)
+  apt.cardEnter(tl, "#card-step1 .solution-card", 36.7);
+  apt.textReveal(tl, "#card-step1 .math");
+
+  // STEP 2 - morph right after formula narration ends (45.4), substitution/standard-value 45.42-58.12
+  apt.morphToStack(tl, "#card-step1 .solution-card", "#stack-step1 .stack-card", 45.4);
+  apt.stackLineGrow(tl, "#line-g-1", 45.4);
+  apt.cardEnter(tl, "#card-step2 .solution-card", 46.5);
+  apt.textReveal(tl, "#card-step2 .math");
+
+  // STEP 3 - morph after cross-multiply setup (58.4), solve + confirm 58.44-65.70
+  apt.morphToStack(tl, "#card-step2 .solution-card", "#stack-step2 .stack-card", 58.4);
+  apt.stackLineGrow(tl, "#line-1-2", 58.4);
+  apt.cardEnter(tl, "#card-step3 .solution-card", 59.5);
+  apt.textReveal(tl, "#card-step3 .math");
+
+  // Recenter + Options - after final-answer confirmation (66.1), option D reveal 66.14-70.06
+  const RECENTER_TIME = 66.1;
+  apt.morphToStack(tl, "#card-step3 .solution-card", "#stack-step3 .stack-card", RECENTER_TIME);
+  apt.stackLineGrow(tl, "#line-2-3", RECENTER_TIME);
+  apt.fadeOut(tl, "#illus-pinned", RECENTER_TIME);
+  apt.recenterForOptions(tl, "#q-pinned", 160, 180, RECENTER_TIME);
+
+  apt.fadeIn(tl, "#options-reveal", 66.8);
+  apt.optionsStagger(tl, ".opt-btn", 67.2);
+  apt.correctPulse(tl, ".opt-btn.correct", 68.76);
+
+  const END_FADE_TIME = 70.4;
+  apt.fadeOut(tl, "#root > div", END_FADE_TIME, 1.2);
+
+  tl.set({},{},71.6)
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines["root"] = tl;
+</script>
+</body>
+</html>

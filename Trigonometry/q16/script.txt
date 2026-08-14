@@ -1,0 +1,29 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+Now in this problem, we are given two tangent values.
+
+One is ten 30 degree.
+The other is ten 60 degree.
+
+The question is asking us to find their product.
+That means we simply need to multiply ten 30 degree and ten 60 degree.
+<break time="0.5s" />
+
+Now we know the standard values.
+
+ten 30 degree is equal to 1 by root 3.
+
+And ten 60 degree is equal to root 3.
+
+So their product becomes,
+
+1 by root 3 multiplied by root 3.
+
+Here, root 3 in numerator and root 3 in denominator will cancel.
+
+So the answer becomes 1.
+<break time="0.6s" />
+
+Hence, the product of ten 30 degree and ten 60 degree is "1".
+
+So the correct option is option D.

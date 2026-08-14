@@ -1,0 +1,51 @@
+
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+Now in this problem, a point is 30 mee-ter away from a building.
+
+From that same point, the angle of elevation to the top of the building is 30 degree.
+And the angle of elevation to the top of the flagstaff is 60 degree.
+
+We need to find only the height of the flagstaff.
+
+Let the height of the building be h mee-ter.
+Let the height of the flagstaff be x mee-ter.
+
+So the total height up to the top of the flagstaff will be h pluss x.
+<break time="0.5s" />
+
+Using the tangent formula,
+
+ten theta is equal to opposite by adjacent.
+
+First, for the building,
+
+ten 30 degree is equal to h by 30.
+
+So h is equal to 30 by root 3.
+
+That means h is equal to 10 root 3 mee-ter.
+
+Now for the top of the flagstaff,
+
+ten 60 degree is equal to h pluss x by 30.
+
+So h pluss x is equal to 30 root 3.
+
+This is the total height, building plus flagstaff.
+<break time="0.2s" />
+
+Now we need only the flagstaff height.
+
+So,
+
+x is equal to total height my-nus building height.
+
+x is equal to 30 root 3 my-nus 10 root 3.
+
+So x is equal to 20 root 3 mee-ter.
+<break time="0.6s" />
+
+So the final answer will be "20 root 3 mee-ter".
+
+That means option C is correct.

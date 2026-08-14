@@ -1,0 +1,32 @@
+[00:00.10 -> 00:00.30]  So
+[00:00.84 -> 00:02.02]  welcome back again.
+[00:02.60 -> 00:04.30]  It's time to solve one more problem.
+[00:04.82 -> 00:05.64]  Now in this problem,
+[00:06.08 -> 00:08.44]  a point is thirty meters away from a building.
+[00:08.94 -> 00:09.96]  From that same point,
+[00:10.34 -> 00:13.02]  the angle of elevation to the top of the building is
+[00:13.46 -> 00:14.44]  thirty degrees,
+[00:14.88 -> 00:18.34]  and the angle of elevation to the top of the flagstaff is sixty degrees.
+[00:18.66 -> 00:21.28]  We need to find only the height of the flagstaff.
+[00:21.62 -> 00:22.98]  Let the height of the building be
+[00:23.28 -> 00:23.84]  h meter.
+[00:24.20 -> 00:25.76]  Let the height of the flagstaff be
+[00:26.10 -> 00:26.64]  x meter.
+[00:27.06 -> 00:30.48]  So the total height up to the top of the flagstaff will be h plus
+[00:30.82 -> 00:30.88]  x.
+[00:31.68 -> 00:33.14]  Using the tangent formula,
+[00:33.72 -> 00:36.12]  ten theta is equal to opposite by adjacent.
+[00:36.56 -> 00:37.76]  First, for the building,
+[00:38.18 -> 00:40.72]  ten thirty degrees is equal to h by thirty.
+[00:41.22 -> 00:43.50]  So h is equal to thirty by root three.
+[00:43.94 -> 00:46.40]  That means h is equal to ten root three meters.
+[00:46.78 -> 00:48.32]  Now, for the top of the flagstaff,
+[00:48.84 -> 00:52.28]  ten sixty degrees is equal to h plus x by thirty.
+[00:52.80 -> 00:55.62]  So h plus x is equal to thirty root three.
+[00:56.28 -> 00:59.58]  This is the total height, building plus flagstaff.
+[00:59.98 -> 01:01.62]  Now we need only the flagstaff height.
+[01:02.00 -> 01:02.24]  So
+[01:02.56 -> 01:09.40]  x is equal to total height minus building height. X is equal to thirty root three minus ten root three.
+[01:09.92 -> 01:13.10]  So x is equal to twenty root three meters.
+[01:13.92 -> 01:17.14]  So the final answer will be twenty root three meters.
+[01:17.58 -> 01:19.32]  That means option C is correct.

@@ -1,0 +1,67 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+Now in this problem, we are given that kos theetaa is equal to 4 by 5.
+
+Also, theetaa  is an acute angle.
+
+The problem is asking us to find sign thee-ta.
+
+<break time="0.5s" />
+
+Now before we start solving, let us first understand what this given value is telling us.
+
+We know that,
+
+kos theetaa  is equal to Adjacent upon High-pot-en-use.
+
+So when kos theetaa  is 4 by 5,
+
+we are sure about one fact.
+
+The adjacent side is 4 units,
+
+and the High-pot-en-use is 5 units.
+
+<break time="0.5s" />
+
+So let us find the opposite side first.<break time="0.5s" />
+
+Here we will use the Pythagoras Theorem.<break time="0.5s" />
+
+High-pot-en-use square is equal to Adjacent square pluss Opposite square.<break time="0.5s" />
+
+Now substitute the known values.<break time="0.5s" />
+
+5 square is equal to 4 square pluss Opposite square.
+
+After solving this,<break time="0.5s" />
+
+the opposite side becomes 3 units.<break time="0.5s" />
+
+Got it?<break time="0.5s" /> Perfect.
+
+<break time="0.5s" />
+
+Now we know all three sides of the triangle.<break time="0.5s" />
+
+So let us check the formula for sign.<break time="0.5s" />
+
+Sign thee-ta is equal to Opposite upon High-pot-en-use.<break time="0.5s" />
+
+Now substitute the values.<break time="0.5s" />
+
+This becomes,<break time="0.5s" />
+
+3 upon 5.
+
+<break time="0.4s" />
+
+Also, the question clearly says that thee-ta is an acute angle.<break time="0.5s" />
+
+So sign theetaa  will be positive.
+
+Hence, the final answer will be,
+
+3 by 5.
+
+Therefore, Option B is the correct answer.

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="design-system.css">
+<style>
+/* Figure labels - .chip in design-system.css is scoped to .solution-card/.stack-card,
+   so illustration labels need their own rule (per illustration_reference.md section 3). */
+.fig-chip {
+  display: inline-block;
+  background: #FFFFFF;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 4px 14px;
+  border-radius: 8px;
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.fig-chip-pinned {
+  display: inline-block;
+  background: #FFFFFF;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+/* Growing "Find:" equation row under the illustration (Phase 1 only) */
+#eq-find-row {
+  position: absolute; left: 50%; top: 950px; transform: translateX(-50%);
+  text-align: center; font-family: var(--font); font-size: 38px; color: var(--text);
+  white-space: nowrap; z-index: 2;
+}
+#eq-caption-find { opacity: 0; margin-right: 10px; }
+
+/* (fraction)² - parenthesised fraction with a proper top-aligned exponent,
+   instead of a bare "²" sitting flush against the frac's flex box (which
+   read as floating/misaligned next to the fraction bar). */
+.frac-pow { display: inline-flex; align-items: center; vertical-align: middle; margin: 0 6px; }
+.frac-pow .paren { font-size: 1.5em; font-weight: 300; line-height: 1; margin: 0 1px; }
+.frac-pow .pow { font-size: 0.62em; align-self: flex-start; margin-top: -4px; margin-left: 2px; }
+
+/* Extra vertical breathing room between stacked math rows that contain a
+   fraction - the default 1.55 line-height doesn't account for a frac's
+   real rendered height, which read as cramped/overlapping rows. */
+.solution-card .math .frac { margin-top: 4px; margin-bottom: 4px; }
+.solution-card .math .row-gap { display: block; height: 14px; }
+</style>
+</head>
+<body>
+<div data-hf-id="hf-89uj" id="root" data-composition-id="root" data-start="0" data-width="1920" data-height="1080">
+
+  <!-- ══════ BACKGROUND LAYERS (always visible) ══════ -->
+  <div data-hf-id="hf-858h" class="dotted-grid"></div>
+  <div data-hf-id="hf-izuk" class="bottom-strip"></div>
+  <div data-hf-id="hf-pcpi" class="topic-name">Trigonometry</div>
+  <div data-hf-id="hf-e319" class="logo"></div>
+
+  <!-- ══════ VOICEOVER ══════
+       TIMELINE_END = NARR_END(101.859) + 0.6 (END_FADE_TIME=102.459) + 1.2 (FADE_DUR) + 0.2 = 103.859 -->
+  <audio data-hf-id="hf-3wkh" id="voiceover" class="clip" src="voiceover.wav" data-start="0" data-duration="103.9" data-track-index="0"></audio>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 1 - Question + Illustration (0 - PIN_TIME 25.9s)
+       data-duration >= (25.9-0) + pinFlow(0.8) + buffer(1.5) = 28.2 -> 28.5
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-noyj" id="phase1" class="clip" data-start="0" data-duration="28.5" data-track-index="1" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:5;">
+
+    <div data-hf-id="hf-lxc5" id="q-full-card" class="q-card" style="position:absolute;left:50%;top:80px;width:1500px;transform:translateX(-50%);opacity:0;">
+      <div data-hf-id="hf-jcmj" class="q-text">
+        If <span data-hf-id="hf-judx" class="num">tan θ = 2/3</span>, find
+        <span data-hf-id="hf-qhm1" class="frac num"><span data-hf-id="hf-gxwx" class="top">1 + tan²θ</span><span data-hf-id="hf-nqym" class="bot">1 + cot²θ</span></span>.
+      </div>
+    </div>
+
+    <div data-hf-id="hf-w62k" id="serial-num" class="serial-num" style="left:60px;top:60px;opacity:0;">
+      <div data-hf-id="hf-yfde" class="digit">Q</div>
+    </div>
+
+    <!-- ══════════ ILLUSTRATION (full-size, Phase 1) ══════════
+    VERTICES (defined once, reused literally everywhere):
+      A = (160,290)  angle vertex - leftmost of the two base vertices
+      B = (340,290)  right-angle vertex
+      C = (340,170)  apex
+    RATIO CHECK:  adjacent(A-B) = 180, opposite(B-C) = 120 -> tan θ = 120/180 = 2/3 exact
+    ANGLE CHECK:  atan2(120,180) = 33.69deg -> --angle: 33.69 matches
+    LENGTH CHECK: hyp(A-C) = sqrt(180^2 + 120^2) = 216.33 -> dasharray 216.3
+    VIEWBOX:      x[0..580], y[0..500] -> "0 0 580 500"
+    No stylised distance here - every side drawn is a real side of the triangle,
+    all three lengths true to the 2:3 ratio. -->
+    <div data-hf-id="hf-1myc" id="illustration" style="position:absolute;left:50%;top:230px;transform:translateX(-50%);
+                width:1005px;height:866px;overflow:visible;">
+      <svg data-hf-id="hf-rtav" viewBox="0 0 580 500" width="1005" height="866" style="overflow:visible;">
+
+        <!-- Adjacent (base): A(160,290) to B(340,290), len=180 -->
+        <line data-hf-id="hf-uxx1" id="base-line" x1="160" y1="290" x2="340" y2="290" stroke="#6373db" stroke-width="4" stroke-linecap="round" stroke-dasharray="180" stroke-dashoffset="180" />
+
+        <!-- Opposite: B(340,290) to C(340,170), len=120 -->
+        <line data-hf-id="hf-ktaw" id="opp-line" x1="340" y1="290" x2="340" y2="170" stroke="#6373db" stroke-width="4" stroke-linecap="round" stroke-dasharray="120" stroke-dashoffset="120" />
+
+        <!-- Hypotenuse: A(160,290) to C(340,170), len=sqrt(180^2+120^2)=216.33 -->
+        <line data-hf-id="hf-i1so" id="hyp-line" x1="160" y1="290" x2="340" y2="170" stroke="#6373db" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="216.3" stroke-dashoffset="216.3" />
+
+        <!-- Right-angle marker at B=(340,290): rays -x toward A and -y toward C, inset 24 -->
+        <path data-hf-id="hf-b22e" id="right-angle" d="M 316 290 L 316 266 L 340 266" fill="none" stroke="#000000" stroke-width="3" opacity="0" />
+
+        <!-- Angle arc: cx/cy = vertex A exactly. r=70, C=2*PI*70=439.82. translate(0,580)=2*cy(290). --angle unitless. -->
+        <circle data-hf-id="hf-r370" id="angle-arc" cx="160" cy="290" r="70" fill="transparent" stroke="#4eb85f" stroke-width="8" stroke-linecap="round" transform="translate(0, 580) scale(1,-1)" style="--angle: 33.69; stroke-dasharray: calc((var(--angle) / 360) * 439.82) 439.82; opacity:0;" />
+
+        <text data-hf-id="hf-q3r4" id="theta-label" x="243" y="270" text-anchor="middle" font-family="var(--font)" font-size="30" fill="#4eb85f" opacity="0">θ</text>
+
+        <!-- Adjacent label "3" - below AB, centered -->
+        <text data-hf-id="hf-rbz8" id="label-adj" x="250" y="324" text-anchor="middle" font-family="var(--font)" font-size="32" fill="#000000" opacity="0">3</text>
+        <!-- Opposite label "2" - right of BC, mid-height -->
+        <text data-hf-id="hf-7a2o" id="label-opp" x="362" y="238" text-anchor="start" font-family="var(--font)" font-size="32" fill="#000000" opacity="0">2</text>
+
+        <foreignobject data-hf-id="hf-6t41" id="chip-tan" x="130" y="350" width="180" height="46" style="overflow:visible;opacity:0;">
+          <div data-hf-id="hf-enr8" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip">tan θ = 2/3</div>
+        </foreignobject>
+      </svg>
+    </div>
+
+    <!-- Growing "Find:" equation - sits below the illustration, safely within the frame -->
+    <div data-hf-id="hf-qx9u" id="eq-find-row">
+      <span data-hf-id="hf-9gkq" id="eq-caption-find">Find:</span>
+      <span data-hf-id="hf-r0ta" id="eq-find" class="frac" style="opacity:1;">
+        <span data-hf-id="hf-4z9k" class="top hi" id="eq-find-top" style="opacity:0;">1 + tan²θ</span>
+        <span data-hf-id="hf-q4w1" class="bot hi" id="eq-find-bot" style="opacity:0;">1 + cot²θ</span>
+      </span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 2 - Pinned question (PIN_TIME 25.9s onwards)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-d43d" id="q-pinned" class="clip" data-start="25.9" data-duration="78" data-track-index="2" style="position:absolute;width:100%;top:0;left:0;z-index:6;opacity:0;">
+    <div data-hf-id="hf-9jf4" class="q-card pinned" style="position:absolute;left:385px;top:30px;width:1275px;">
+      <div data-hf-id="hf-yi7y" class="q-text">
+        tan θ = <span data-hf-id="hf-dc8h" class="num">2/3</span>. Find
+        <span data-hf-id="hf-8bdp" class="frac num"><span data-hf-id="hf-fvdn" class="top">1+tan²θ</span><span data-hf-id="hf-9bac" class="bot">1+cot²θ</span></span>.
+      </div>
+    </div>
+  </div>
+
+  <!-- Pinned illustration - coordinate-exact copy of the full-size figure. Only outer
+       width/height and stroke widths shrink. Static/always visible (per section 7),
+       since Phase 1 has already narrated every value it shows. -->
+  <div data-hf-id="hf-kyie" id="illus-pinned" class="clip" data-start="25.9" data-duration="76.5" data-track-index="3" style="position:absolute;left:230px;top:50px;width:1400px;height:450px;z-index:5;opacity:0;
+              display:flex;align-items:center;justify-content:center;">
+    <svg data-hf-id="hf-g44y" viewBox="0 0 580 500" width="500" height="431" style="overflow:visible;">
+      <line data-hf-id="hf-eeqv" id="adj-line-pinned" x1="160" y1="290" x2="340" y2="290" stroke="#6373db" stroke-width="3" stroke-linecap="round" />
+      <line data-hf-id="hf-tyiy" id="opp-line-pinned" x1="340" y1="290" x2="340" y2="170" stroke="#6373db" stroke-width="3" stroke-linecap="round" />
+      <line data-hf-id="hf-5foi" id="hyp-line-pinned" x1="160" y1="290" x2="340" y2="170" stroke="#6373db" stroke-width="3" stroke-linecap="round" />
+      <circle data-hf-id="hf-xm9v" cx="160" cy="290" r="70" fill="transparent" stroke="#4eb85f" stroke-width="7" stroke-linecap="round" transform="translate(0, 580) scale(1,-1)" style="--angle: 33.69; stroke-dasharray: calc((var(--angle) / 360) * 439.82) 439.82;" />
+      <text data-hf-id="hf-c2n4" x="243" y="270" text-anchor="middle" font-family="var(--font)" font-size="26" fill="#4eb85f">θ</text>
+      <text data-hf-id="hf-11mw" id="label-adj-pinned" x="250" y="324" text-anchor="middle" font-family="var(--font)" font-size="28" fill="#000000">3</text>
+      <text data-hf-id="hf-i424" id="label-opp-pinned" x="362" y="238" text-anchor="start" font-family="var(--font)" font-size="28" fill="#000000">2</text>
+      <foreignobject data-hf-id="hf-nm9w" id="chip-tan-pinned" x="130" y="350" width="180" height="42" style="overflow:visible;">
+        <div data-hf-id="hf-klpl" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip-pinned">tan θ = 2/3</div>
+      </foreignobject>
+    </svg>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SOLUTION CARDS
+       ══════════════════════════════════════════════ -->
+
+  <!-- GIVEN. duration >= (29.5-26.3)+0.8+1.5 = 5.5 -->
+  <div data-hf-id="hf-syha" id="card-given" class="clip" data-start="26.3" data-duration="5.5" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-iiia" class="solution-card" style="position:absolute;left:640px;top:480px;text-align:center;">
+      <div data-hf-id="hf-3rv6" class="card-content">
+        <span data-hf-id="hf-7r0o" class="chip">Given</span>
+        <div data-hf-id="hf-8tlu" class="math">
+          <span data-hf-id="hf-5a3o" class="rv" data-t="27.38">tan</span> <span data-hf-id="hf-c6a6" class="rv" data-t="27.60">θ</span> <span data-hf-id="hf-p7qs" class="rv" data-t="28.08">=</span>
+          <span data-hf-id="hf-ovwd" class="frac hi rv" data-t="28.96"><span data-hf-id="hf-zjso" class="top">2</span><span data-hf-id="hf-kkpp" class="bot">3</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 1 - tan²θ. duration >= (37.0-30.3)+0.8+1.5 = 9.0 -->
+  <div data-hf-id="hf-gtyy" id="card-step1" class="clip" data-start="30.3" data-duration="9.0" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-z076" class="solution-card" style="position:absolute;left:600px;top:460px;text-align:center;width:720px;">
+      <div data-hf-id="hf-0yza" class="card-content">
+        <span data-hf-id="hf-3ife" class="chip">Step 1</span>
+        <div data-hf-id="hf-ng7a" class="math">
+          <span data-hf-id="hf-0h7d" class="rv" data-t="30.44">tan²θ</span> <span data-hf-id="hf-r3lz" class="rv" data-t="32.06">=</span>
+          <span data-hf-id="hf-qv9l" class="frac-pow rv" data-t="32.56"><span data-hf-id="hf-shqh" class="paren">(</span><span data-hf-id="hf-qi79" class="frac"><span data-hf-id="hf-lqds" class="top">2</span><span data-hf-id="hf-ln1t" class="bot">3</span></span><span data-hf-id="hf-sw1i" class="paren">)</span><span data-hf-id="hf-gu3e" class="pow">2</span></span>
+          <span data-hf-id="hf-re0p" class="rv" data-t="34.68">=</span>
+          <span data-hf-id="hf-jeqo" class="frac ans rv" data-t="35.38"><span data-hf-id="hf-x5yi" class="top">4</span><span data-hf-id="hf-ojrz" class="bot">9</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 2 - cot θ, cot²θ. duration >= (58.5-37.8)+0.8+1.5 = 23.0 -->
+  <div data-hf-id="hf-qczf" id="card-step2" class="clip" data-start="37.8" data-duration="23.0" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-xz05" class="solution-card" style="position:absolute;left:590px;top:430px;text-align:center;width:740px;">
+      <div data-hf-id="hf-1dab" class="card-content">
+        <span data-hf-id="hf-3wqf" class="chip">Step 2</span>
+        <div data-hf-id="hf-nuib" class="math">
+          <span data-hf-id="hf-3o7u" class="rv" data-t="44.18">cot</span> <span data-hf-id="hf-oixt" class="rv" data-t="44.44">θ</span> <span data-hf-id="hf-ra9f" class="rv" data-t="44.94">=</span>
+          <span data-hf-id="hf-ok76" class="frac rv" data-t="45.48"><span data-hf-id="hf-ycvl" class="top">1</span><span data-hf-id="hf-wn1b" class="bot">tan θ</span></span>
+          <span data-hf-id="hf-7xsn" class="rv" data-t="49.62">=</span>
+          <span data-hf-id="hf-fcba" class="frac hi rv" data-t="50.56"><span data-hf-id="hf-z5hn" class="top">3</span><span data-hf-id="hf-kz0q" class="bot">2</span></span><br data-hf-id="hf-x5px"><span data-hf-id="hf-bpyk" class="row-gap"></span>
+          <span data-hf-id="hf-cj1g" class="rv" data-t="52.04">cot²θ</span> <span data-hf-id="hf-evyu" class="rv" data-t="53.44">=</span>
+          <span data-hf-id="hf-qzsj" class="frac-pow rv" data-t="53.86"><span data-hf-id="hf-hmt9" class="paren">(</span><span data-hf-id="hf-rp4c" class="frac"><span data-hf-id="hf-ogyz" class="top">3</span><span data-hf-id="hf-mqdq" class="bot">2</span></span><span data-hf-id="hf-vyxm" class="paren">)</span><span data-hf-id="hf-am1f" class="pow">2</span></span>
+          <span data-hf-id="hf-pkwc" class="rv" data-t="56.16">=</span>
+          <span data-hf-id="hf-ck54" class="frac ans rv" data-t="56.82"><span data-hf-id="hf-1jbt" class="top">9</span><span data-hf-id="hf-ncuw" class="bot">4</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 3 - substitute. duration >= (79.9-59.9)+0.8+1.5 = 22.2 -> 22.5 -->
+  <div data-hf-id="hf-ctgd" id="card-step3" class="clip" data-start="59.9" data-duration="22.5" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-cy4c" class="solution-card" style="position:absolute;left:560px;top:410px;text-align:center;width:800px;">
+      <div data-hf-id="hf-1rlc" class="card-content">
+        <span data-hf-id="hf-4b1g" class="chip">Step 3</span>
+        <div data-hf-id="hf-o8tc" class="math">
+          <span data-hf-id="hf-0u5r" class="rv" data-t="62.66">
+            <span data-hf-id="hf-gq2t" class="frac"><span data-hf-id="hf-uybz" class="top hi">1 + <span data-hf-id="hf-s3fd" class="frac"><span data-hf-id="hf-c75a" class="top">4</span><span data-hf-id="hf-y7j3" class="bot">9</span></span></span><span data-hf-id="hf-imvh" class="bot hi">1 + <span data-hf-id="hf-tacg" class="frac"><span data-hf-id="hf-lael" class="top">9</span><span data-hf-id="hf-b4ts" class="bot">4</span></span></span></span>
+          </span><br data-hf-id="hf-rsrt">
+          <span data-hf-id="hf-qu6m" class="rv" data-t="68.10">Numerator = <span data-hf-id="hf-fdt4" class="hi">13/9</span></span><br data-hf-id="hf-szow">
+          <span data-hf-id="hf-p0i6" class="rv" data-t="71.26">Denominator = <span data-hf-id="hf-gkq7" class="hi">13/4</span></span><br data-hf-id="hf-sldv">
+          <span data-hf-id="hf-if61" class="rv" data-t="76.00">=
+            <span data-hf-id="hf-zchx" class="frac ans"><span data-hf-id="hf-stga" class="top"><span data-hf-id="hf-sw1f" class="frac"><span data-hf-id="hf-y5k6" class="top">13</span><span data-hf-id="hf-xt82" class="bot">9</span></span></span><span data-hf-id="hf-f75o" class="bot"><span data-hf-id="hf-qwia" class="frac"><span data-hf-id="hf-48iy" class="top">13</span><span data-hf-id="hf-9xwp" class="bot">4</span></span></span></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 4 - divide, cancel, answer. duration >= (100.3-82.0)+0.8+1.5 = 20.6 -> 21 -->
+  <div data-hf-id="hf-057v" id="card-step4" class="clip" data-start="82.0" data-duration="21.0" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-vssm" class="solution-card" style="position:absolute;left:590px;top:440px;text-align:center;width:740px;">
+      <div data-hf-id="hf-yzg5" class="card-content">
+        <span data-hf-id="hf-4pch" class="chip">Step 4</span>
+        <div data-hf-id="hf-lgo5" class="math">
+          <span data-hf-id="hf-e8d6" class="rv" data-t="82.10">Keep first, multiply by reciprocal</span><br data-hf-id="hf-qluq">
+          <span data-hf-id="hf-0byw" class="frac hi rv" data-t="90.10"><span data-hf-id="hf-4mtz" class="top">13</span><span data-hf-id="hf-xex1" class="bot">9</span></span>
+          <span data-hf-id="hf-1o6s" class="rv" data-t="91.46">×</span>
+          <span data-hf-id="hf-018s" class="frac hi rv" data-t="92.34"><span data-hf-id="hf-clgb" class="top">4</span><span data-hf-id="hf-gv64" class="bot">13</span></span><br data-hf-id="hf-q7jp">
+          <span data-hf-id="hf-6ci1" class="rv" data-t="94.04">13 cancels with 13</span><br data-hf-id="hf-regs">
+          <span data-hf-id="hf-pg3d" class="rv" data-t="98.66">= <span data-hf-id="hf-cb4p" class="frac ans"><span data-hf-id="hf-czrc" class="top">4</span><span data-hf-id="hf-0728" class="bot">9</span></span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       LEFT STACK CARDS (completed steps)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-07gd" id="stack-given" class="clip" data-start="29.5" data-duration="74.5" data-track-index="11" style="position:absolute;left:100px;top:140px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-usjn" class="stack-card">
+      <div data-hf-id="hf-zdr6" class="card-content">
+        <span data-hf-id="hf-snhl" class="step-circle">G</span>
+        <div data-hf-id="hf-shli" class="math">
+          tan θ = <span data-hf-id="hf-nyrw" class="hi">2/3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-5al7" id="stack-step1" class="clip" data-start="37.0" data-duration="67.0" data-track-index="12" style="position:absolute;left:100px;top:250px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-3m9v" class="stack-card">
+      <div data-hf-id="hf-zs27" class="card-content">
+        <span data-hf-id="hf-w2db" class="step-circle">1</span>
+        <div data-hf-id="hf-6nig" class="math">
+          tan²θ = <span data-hf-id="hf-i14p" class="ans">4/9</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-rkuo" id="stack-step2" class="clip" data-start="58.5" data-duration="45.5" data-track-index="13" style="position:absolute;left:100px;top:360px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-37yu" class="stack-card">
+      <div data-hf-id="hf-06d8" class="card-content">
+        <span data-hf-id="hf-vo2a" class="step-circle">2</span>
+        <div data-hf-id="hf-9tng" class="math">
+          cot θ = <span data-hf-id="hf-ph90" class="hi">3/2</span><br data-hf-id="hf-r05r">
+          cot²θ = <span data-hf-id="hf-f1ft" class="ans">9/4</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-v8t7" id="stack-step3" class="clip" data-start="79.9" data-duration="24.0" data-track-index="14" style="position:absolute;left:100px;top:500px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-2tnt" class="stack-card">
+      <div data-hf-id="hf-xe81" class="card-content">
+        <span data-hf-id="hf-v9r9" class="step-circle">3</span>
+        <div data-hf-id="hf-ihnl" class="math">
+          13/9 <span data-hf-id="hf-33pt" class="hi">/</span> 13/4
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-8z81" id="stack-step4" class="clip" data-start="100.3" data-duration="3.6" data-track-index="15" style="position:absolute;left:100px;top:610px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-2fcs" class="stack-card">
+      <div data-hf-id="hf-xsj2" class="card-content">
+        <span data-hf-id="hf-y1wg" class="step-circle">4</span>
+        <div data-hf-id="hf-dxcd" class="math">
+          = <span data-hf-id="hf-0qh9" class="ans">4/9</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stack connector lines - top/height set at runtime by apt.setStackLine() -->
+  <div data-hf-id="hf-oh2g" id="line-g-1" class="clip stack-line" data-start="37.0" data-duration="67.0" data-track-index="20" style="opacity:0;"></div>
+  <div data-hf-id="hf-kt8v" id="line-1-2" class="clip stack-line" data-start="58.5" data-duration="45.5" data-track-index="21" style="opacity:0;"></div>
+  <div data-hf-id="hf-dwrv" id="line-2-3" class="clip stack-line" data-start="79.9" data-duration="24.0" data-track-index="22" style="opacity:0;"></div>
+  <div data-hf-id="hf-vm7o" id="line-3-4" class="clip stack-line" data-start="100.3" data-duration="3.6" data-track-index="23" style="opacity:0;"></div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 3 - OPTIONS REVEAL
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-e36a" id="options-reveal" class="clip" data-start="101.0" data-duration="3.2" data-track-index="10" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:8;opacity:0;">
+    <div data-hf-id="hf-2tfv" class="pinned-col" style="top:400px;">
+      <div data-hf-id="hf-6knj" class="options-grid">
+        <div data-hf-id="hf-0tak" class="opt-btn"><span data-hf-id="hf-sfug" class="letter">A</span>9/4</div>
+        <div data-hf-id="hf-59a8" class="opt-btn"><span data-hf-id="hf-r8xd" class="letter">B</span>13/9</div>
+        <div data-hf-id="hf-z9a6" class="opt-btn correct"><span data-hf-id="hf-rn8e" class="letter">C</span>4/9</div>
+        <div data-hf-id="hf-5zvb" class="opt-btn"><span data-hf-id="hf-qgbb" class="letter">D</span>1</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end root -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script src="animations.js"></script>
+<script>
+  apt.setStackLine("#line-g-1", "#stack-given .step-circle", "#stack-step1 .step-circle");
+  apt.setStackLine("#line-1-2", "#stack-step1 .step-circle", "#stack-step2 .step-circle");
+  apt.setStackLine("#line-2-3", "#stack-step2 .step-circle", "#stack-step3 .step-circle");
+  apt.setStackLine("#line-3-4", "#stack-step3 .step-circle", "#stack-step4 .step-circle");
+
+  const tl = gsap.timeline({ paused: true });
+
+  // ── PHASE 1 - Question hero entrance
+  const HERO_OFFSET_Y = 180;
+  const RISE_TIME = 3.3; // "welcome back again. It's time to solve one more problem." ends 3.279
+  apt.heroEnterLowered(tl, "#q-full-card", HERO_OFFSET_Y, RISE_TIME);
+  tl.fromTo("#serial-num",
+    { scale: 0, rotation: -45, opacity: 0, y: HERO_OFFSET_Y },
+    { scale: 1, rotation: 0, opacity: 1, duration: 0.55, ease: "back.out(2)", y: HERO_OFFSET_Y },
+    0.8);
+  tl.to("#serial-num", { y: 0, duration: 0.6, ease: "power2.inOut" }, RISE_TIME);
+
+  // ── Illustration build (stroke-by-stroke, one beat per narration phrase)
+  tl.to("#base-line", { strokeDashoffset: 0, duration: 0.6, ease: "power2.out" }, 4.7);
+  tl.fromTo("#label-adj", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(1.6)" }, 5.0);
+  tl.to("#opp-line", { strokeDashoffset: 0, duration: 0.6, ease: "power2.out" }, 5.6);
+  tl.fromTo("#label-opp", { opacity: 0, x: 6 }, { opacity: 1, x: 0, duration: 0.35, ease: "back.out(1.6)" }, 6.0);
+  tl.to("#right-angle", { opacity: 1, duration: 0.3 }, 6.3);
+  tl.to("#hyp-line", { strokeDashoffset: 0, duration: 0.7, ease: "power2.out" }, 6.5);
+  tl.to("#angle-arc", { opacity: 1, duration: 0.4 }, 7.6);
+  tl.to("#theta-label", { opacity: 1, duration: 0.35 }, 7.9);
+  tl.to("#chip-tan", { opacity: 1, duration: 0.35, ease: "back.out(1.6)" }, 8.0);
+
+  // ── Growing "Find:" equation
+  tl.fromTo("#eq-caption-find", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(1.6)" }, 8.7);
+  tl.to("#eq-find-top", { opacity: 1, duration: 0.35, ease: "power2.out" }, 9.06);
+  tl.to("#eq-find-bot", { opacity: 1, duration: 0.35, ease: "power2.out" }, 12.34);
+
+  // ── Framing beat - re-emphasize instead of sitting idle
+  apt.emphasize(tl, "#chip-tan", 16.3);
+  apt.emphasize(tl, "#eq-find-top", 18.8);
+  apt.emphasize(tl, "#eq-find-bot", 22.4);
+  apt.emphasize(tl, "#eq-find", 24.0);
+
+  // ── PHASE 2 - Pin, then Given (separate timestamps)
+  const PIN_TIME = 25.9;
+  const GIVEN_TIME = 26.3;
+  apt.pinFlow(tl, "#q-full-card", "#q-pinned", PIN_TIME);
+  apt.pinFlow(tl, "#illustration", "#illus-pinned", PIN_TIME);
+  apt.fadeOut(tl, "#serial-num", PIN_TIME, 0.5);
+  apt.fadeOut(tl, "#eq-find-row", PIN_TIME, 0.4);
+
+  apt.cardEnter(tl, "#card-given .solution-card", GIVEN_TIME);
+  apt.textReveal(tl, "#card-given .math");
+
+  // ── STEP 1 - tan²θ
+  apt.morphToStack(tl, "#card-given .solution-card", "#stack-given .stack-card", 29.5);
+  apt.cardEnter(tl, "#card-step1 .solution-card", 30.3);
+  apt.textReveal(tl, "#card-step1 .math");
+  apt.emphasize(tl, "#chip-tan-pinned", 32.56);
+  tl.to("#adj-line-pinned, #opp-line-pinned", { stroke: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 35.38);
+
+  // ── STEP 2 - cot θ, cot²θ
+  apt.morphToStack(tl, "#card-step1 .solution-card", "#stack-step1 .stack-card", 37.0);
+  apt.stackLineGrow(tl, "#line-g-1", 37.0);
+  apt.cardEnter(tl, "#card-step2 .solution-card", 37.8);
+  apt.textReveal(tl, "#card-step2 .math");
+  tl.to("#label-adj-pinned, #label-opp-pinned", { fill: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 45.48);
+  apt.emphasize(tl, "#chip-tan-pinned", 50.56);
+  tl.to("#adj-line-pinned, #opp-line-pinned", { stroke: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 56.82);
+
+  // ── STEP 3 - substitute
+  apt.morphToStack(tl, "#card-step2 .solution-card", "#stack-step2 .stack-card", 58.5);
+  apt.stackLineGrow(tl, "#line-1-2", 58.5);
+  apt.cardEnter(tl, "#card-step3 .solution-card", 59.9);
+  apt.textReveal(tl, "#card-step3 .math");
+
+  // ── STEP 4 - divide, cancel, answer
+  apt.morphToStack(tl, "#card-step3 .solution-card", "#stack-step3 .stack-card", 79.9);
+  apt.stackLineGrow(tl, "#line-2-3", 79.9);
+  apt.cardEnter(tl, "#card-step4 .solution-card", 82.0);
+  apt.textReveal(tl, "#card-step4 .math");
+  // fill the "keep first, multiply by reciprocal" explanation gap (82.1 -> 90.1)
+  apt.emphasize(tl, "#card-step4 .rv:first-child", 83.86);
+  apt.emphasize(tl, "#card-step4 .rv:first-child", 86.2);
+  apt.emphasize(tl, "#card-step4 .rv:first-child", 87.0);
+  apt.emphasize(tl, "#card-step4 .rv:first-child", 88.4);
+  apt.emphasize(tl, "#card-step4 .rv:nth-child(7)", 96.6); // "13 cancels with 13" line
+  tl.to("#adj-line-pinned, #opp-line-pinned, #hyp-line-pinned", { stroke: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 98.66);
+  apt.emphasize(tl, "#chip-tan-pinned", 98.66);
+
+  const RECENTER_TIME = 100.3;
+  apt.morphToStack(tl, "#card-step4 .solution-card", "#stack-step4 .stack-card", RECENTER_TIME);
+  apt.stackLineGrow(tl, "#line-3-4", RECENTER_TIME);
+  apt.fadeOut(tl, "#illus-pinned", RECENTER_TIME);
+  apt.recenterForOptions(tl, "#q-pinned", 160, 180, RECENTER_TIME);
+
+  // ── PHASE 3 - Options reveal
+  apt.fadeIn(tl, "#options-reveal", 101.0);
+  apt.optionsStagger(tl, ".opt-btn", 101.6);
+  apt.correctPulse(tl, ".opt-btn.correct", 101.8);
+
+  // ── END FADE
+  const END_FADE_TIME = 102.459; // NARR_END(101.859) + 0.6
+  apt.fadeOut(tl, "#root > div", END_FADE_TIME, 1.2);
+
+  tl.set({}, {}, 105.859); // END_FADE_TIME(102.459) + 1.2 + 0.2 - nothing beyond this
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines["root"] = tl;
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+name: Render Batch 3 (q18-q22)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+
+    env:
+      START: 18
+      END: 22
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Verify Environment
+        run: |
+          echo "Node:"
+          node -v
+
+          echo "NPM:"
+          npm -v
+
+          echo "FFmpeg:"
+          ffmpeg -version
+
+          echo "FFprobe:"
+          ffprobe -version
+
+      - name: Create Render Folder
+        run: |
+          mkdir -p render
+
+      - name: Render q18-q22
+        run: |
+          node render-range.js
+
+      - name: Upload Rendered Videos
+        uses: actions/upload-artifact@v4
+        with:
+          name: batch-3-q18-q22
+          path: render/
+          if-no-files-found: error

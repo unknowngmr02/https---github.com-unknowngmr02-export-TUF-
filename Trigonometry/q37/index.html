@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="design-system.css">
+<style>
+  /* Figure labels. design-system.css .chip is scoped to .solution-card/.stack-card,
+     so illustration labels need their own rule (illustration_reference.md 3). */
+  .fig-chip {
+    display: inline-block;
+    background: #FFFFFF;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    white-space: nowrap;
+    opacity: 0.96;
+  }
+  .fig-chip.role { border-color: #000000; color: #000000; opacity: 0.9; }
+  .fig-chip-pinned {
+    display: inline-block;
+    background: #FFFFFF;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 2px 7px;
+    border-radius: 6px;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.2;
+    white-space: nowrap;
+    opacity: 0.96;
+  }
+  .fig-label { font-family: var(--font); font-weight: 400; fill: #000000; opacity: 0.92; }
+</style>
+</head>
+<body>
+<div data-hf-id="hf-q37r" id="root" data-composition-id="root" data-start="0" data-width="1920" data-height="1080">
+
+  <!-- ══════ BACKGROUND LAYERS (always visible) ══════ -->
+  <div data-hf-id="hf-q37a" class="dotted-grid"></div>
+  <div data-hf-id="hf-q37b" class="bottom-strip"></div>
+  <div data-hf-id="hf-q37c" class="topic-name">Trigonometry</div>
+  <div data-hf-id="hf-q37d" class="logo"></div>
+
+  <!-- ══════ VOICEOVER ══════ -->
+  <audio data-hf-id="hf-q37e" id="voiceover" class="clip" src="voiceover.wav" data-start="0" data-duration="113.56" data-track-index="0"></audio>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 1 - Question + Illustration (0 - 25.1s)
+       data-duration survives PIN_TIME(25.1) + pinFlow 0.8 + 1.5 buffer = 27.4
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-q37f" id="phase1" class="clip" data-start="0" data-duration="27.4" data-track-index="1" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:5;">
+
+    <div data-hf-id="hf-q37g" id="q-full-card" class="q-card" style="position:absolute;left:50%;top:80px;width:1500px;transform:translateX(-50%);opacity:0;">
+      <div data-hf-id="hf-q37h" class="q-text">
+        A drone is observed from two points on opposite sides of its foot at angles <span data-hf-id="hf-q37i" class="num">45°</span> and <span data-hf-id="hf-q37j" class="num">60°</span>. The two points are <span data-hf-id="hf-q37k" class="num">100 m</span> apart. Find the drone height.
+      </div>
+    </div>
+
+    <div data-hf-id="hf-q37l" id="serial-num" class="serial-num" style="left:60px;top:60px;opacity:0;">
+      <div data-hf-id="hf-q37m" class="digit">Q</div>
+    </div>
+
+    <!-- Illustration area (Phase 1, full size) -->
+    <div data-hf-id="hf-q37n" id="illustration" class="illustration" style="position:absolute;left:50%;top:300px;transform:translateX(-50%);
+                width:800px;height:714px;">
+
+      <!-- VERTICES (defined once, reused literally everywhere):
+             F = (300,400) foot of drone - shared right-angle vertex for BOTH triangles
+             D = (300,220) the drone, directly above F
+             P1 = (120,400) left observer, 45deg - leftmost of ITS pair (P1,F), base ray +x, standard case
+             P2 = (404,400) right observer, 60deg - rightmost of ITS pair (F,P2), base ray -x, arc needs rotate(180)
+           RATIO CHECK (left, 45deg):  adjacent(P1-F)=180, opposite(F-D)=180 -> tan45=1 exact
+           RATIO CHECK (right,60deg): adjacent(P2-F)=104, opposite(F-D)=180 -> tan60=180/104=1.7308 -> 1.732 match
+           ANGLE CHECK: atan2(180,180)=45.00deg -> --angle:45 matches
+                        atan2(180,104)=59.98deg -> --angle:60 matches (within 1deg)
+           LENGTH CHECK: hyp1(P1-D)=sqrt(180^2+180^2)=254.56 -> dasharray 255
+                         hyp2(P2-D)=sqrt(104^2+180^2)=207.90 -> dasharray 208
+                         ground(P1-P2)=404-120=284
+           GROUND: y = 400 (both observers stand here; F lies on it)
+           NOTE: h (segment F-D) is a REAL triangle side shared by both triangles -
+                 drawn true to scale (180 units), never stylised (illustration_reference.md 5).
+           VIEWBOX: x[70..470] y[170..480] + margin -> "0 0 560 500"
+      -->
+      <svg data-hf-id="hf-q37o" viewBox="0 0 560 500" width="800" height="714" style="overflow:visible;display:block;">
+
+        <!-- ground: len = sqrt((404-120)^2+0^2) = 284 -->
+        <line data-hf-id="hf-q37p" id="ground-line" x1="120" y1="400" x2="404" y2="400" stroke="#6373db" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="284" stroke-dashoffset="284" opacity="0.88" />
+
+        <!-- pole guide: the shared height h, F to D, true length 180 -->
+        <line data-hf-id="hf-q37q" id="pole-guide" x1="300" y1="400" x2="300" y2="220" stroke="#6373db" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6" opacity="0" />
+
+        <!-- flat 2D drone icon at D, centred exactly on (300,220): body + 4 thin rotor arms -->
+        <g data-hf-id="hf-q37r" id="drone-icon" opacity="0">
+          <rect data-hf-id="hf-q37s" x="288" y="215" width="24" height="10" rx="3" fill="none" stroke="#6373db" stroke-width="2.5" />
+          <line data-hf-id="hf-q37t" x1="291" y1="217" x2="272" y2="200" stroke="#6373db" stroke-width="2" stroke-linecap="round" />
+          <line data-hf-id="hf-q37u" x1="309" y1="217" x2="328" y2="200" stroke="#6373db" stroke-width="2" stroke-linecap="round" />
+          <line data-hf-id="hf-q37v" x1="291" y1="223" x2="272" y2="240" stroke="#6373db" stroke-width="2" stroke-linecap="round" />
+          <line data-hf-id="hf-q37w" x1="309" y1="223" x2="328" y2="240" stroke="#6373db" stroke-width="2" stroke-linecap="round" />
+          <circle data-hf-id="hf-q37x" cx="272" cy="200" r="5" fill="none" stroke="#6373db" stroke-width="2" />
+          <circle data-hf-id="hf-q37y" cx="328" cy="200" r="5" fill="none" stroke="#6373db" stroke-width="2" />
+          <circle data-hf-id="hf-q37z" cx="272" cy="240" r="5" fill="none" stroke="#6373db" stroke-width="2" />
+          <circle data-hf-id="hf-q371" cx="328" cy="240" r="5" fill="none" stroke="#6373db" stroke-width="2" />
+        </g>
+
+        <!-- observer P1: eye on a stick, centred exactly on vertex P1=(120,400) -->
+        <g data-hf-id="hf-q372" id="person-icon-1" opacity="0">
+          <line data-hf-id="hf-q373" x1="120" y1="400" x2="120" y2="416" stroke="#6373db" stroke-width="2.5" stroke-linecap="round" />
+          <ellipse data-hf-id="hf-q374" cx="120" cy="400" rx="11" ry="6" fill="#FFFFFF" stroke="#6373db" stroke-width="2" />
+          <circle data-hf-id="hf-q375" cx="120" cy="400" r="2.5" fill="#6373db" />
+        </g>
+        <!-- observer P2: eye on a stick, centred exactly on vertex P2=(404,400) -->
+        <g data-hf-id="hf-q376" id="person-icon-2" opacity="0">
+          <line data-hf-id="hf-q377" x1="404" y1="400" x2="404" y2="416" stroke="#6373db" stroke-width="2.5" stroke-linecap="round" />
+          <ellipse data-hf-id="hf-q378" cx="404" cy="400" rx="11" ry="6" fill="#FFFFFF" stroke="#6373db" stroke-width="2" />
+          <circle data-hf-id="hf-q379" cx="404" cy="400" r="2.5" fill="#6373db" />
+        </g>
+
+        <!-- right-angle markers, both at the SHARED vertex F=(300,400), each built
+             from F's real ray toward its own observer + the shared ray to D, inset 20 -->
+        <path data-hf-id="hf-q37aa" id="right-angle-1" d="M 280 400 L 280 380 L 300 380" fill="none" stroke="#000000" stroke-width="2.5" opacity="0" />
+        <path data-hf-id="hf-q37ab" id="right-angle-2" d="M 320 400 L 320 380 L 300 380" fill="none" stroke="#000000" stroke-width="2.5" opacity="0" />
+
+        <!-- sight lines (dashed, black) -->
+        <line data-hf-id="hf-q37ac" id="sightline-45" x1="120" y1="400" x2="300" y2="220" stroke="#000000" stroke-width="2.5" stroke-dasharray="6 6" stroke-linecap="round" opacity="0" />
+        <line data-hf-id="hf-q37ad" id="sightline-60" x1="404" y1="400" x2="300" y2="220" stroke="#000000" stroke-width="2.5" stroke-dasharray="6 6" stroke-linecap="round" opacity="0" />
+
+        <!-- angle arc at P1=(120,400): leftmost vertex, base ray +x (toward F), opens
+             upward toward D -> standard elevation-style flip. r=60, C=2*PI*60=376.99. -->
+        <circle data-hf-id="hf-q37ae" id="arc-45" cx="120" cy="400" r="60" fill="transparent" stroke="#4eb85f" stroke-width="5" stroke-linecap="round" transform="translate(0, 800) scale(1,-1)" style="--angle:45; stroke-dasharray: calc((var(--angle) / 360) * 376.99) 376.99; opacity:0;" />
+        <!-- angle arc at P2=(404,400): rightmost vertex, base ray -x (toward F). A plain
+             elevation flip assumes base ray +x, so it does not apply here. Composing the
+             "opens upward" flip with the "base ray reversed" flip is algebraically a single
+             180deg rotation about the vertex itself: point (cx+r*cos t, cy+r*sin t) maps to
+             (cx-r*cos t, cy-r*sin t), which at t=0 lands on the circle's LEFT point (the ray
+             toward F, matching the real base ray direction) and the immediate sweep moves
+             upward toward D, matching the real hypotenuse ray. r=45, C=2*PI*45=282.74. -->
+        <circle data-hf-id="hf-q37af" id="arc-60" cx="404" cy="400" r="45" fill="transparent" stroke="#4eb85f" stroke-width="5" stroke-linecap="round" transform="rotate(180, 404, 400)" style="--angle:60; stroke-dasharray: calc((var(--angle) / 360) * 282.74) 282.74; opacity:0;" />
+
+        <foreignobject data-hf-id="hf-q37ag" id="chip-45" x="152" y="338" width="70" height="40" style="overflow:visible;opacity:0;">
+          <div data-hf-id="hf-q37ah" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip">45°</div>
+        </foreignobject>
+        <foreignobject data-hf-id="hf-q37ai" id="chip-60" x="370" y="338" width="70" height="40" style="overflow:visible;opacity:0;">
+          <div data-hf-id="hf-q37aj" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip">60°</div>
+        </foreignobject>
+        <foreignobject data-hf-id="hf-q37ak" id="chip-h" x="312" y="298" width="70" height="40" style="overflow:visible;opacity:0;">
+          <div data-hf-id="hf-q37al" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip">h</div>
+        </foreignobject>
+        <foreignobject data-hf-id="hf-q37am" id="chip-x" x="176" y="408" width="60" height="38" style="overflow:visible;opacity:0;">
+          <div data-hf-id="hf-q37an" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip role">x</div>
+        </foreignobject>
+        <foreignobject data-hf-id="hf-q37ao" id="chip-y" x="326" y="408" width="60" height="38" style="overflow:visible;opacity:0;">
+          <div data-hf-id="hf-q37ap" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip role">y</div>
+        </foreignobject>
+
+        <!-- 100m double-headed measurement arrow along the ground, y = ground_y(400) + 60 -->
+        <g data-hf-id="hf-q37aq" id="arrow-100" opacity="0">
+          <line data-hf-id="hf-q37ar" x1="120" y1="460" x2="404" y2="460" stroke="#000000" stroke-width="2.5" stroke-linecap="round" />
+          <path data-hf-id="hf-q37as" d="M 135,450 L 120,460 L 135,470 Z" fill="#000000" />
+          <path data-hf-id="hf-q37at" d="M 389,450 L 404,460 L 389,470 Z" fill="#000000" />
+        </g>
+        <text data-hf-id="hf-q37au" id="label-100" class="fig-label" x="262" y="483" font-size="28" text-anchor="middle" opacity="0">100 m</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 2 - Pinned question (25.1s onwards)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-q37av" id="q-pinned" class="clip" data-start="25.1" data-duration="88.5" data-track-index="2" style="position:absolute;width:100%;top:0;left:0;z-index:6;opacity:0;">
+    <div data-hf-id="hf-q37aw" class="q-card pinned" style="position:absolute;left:385px;top:30px;width:1275px;">
+      <div data-hf-id="hf-q37ax" class="q-text">
+        Drone seen from two sides at <span data-hf-id="hf-q37ay" class="num">45°</span>, <span data-hf-id="hf-q37az" class="num">60°</span>; points <span data-hf-id="hf-q37b1" class="num">100 m</span> apart. Find drone height.
+      </div>
+    </div>
+  </div>
+
+  <!-- Pinned illustration - EXACT coordinate copy (same viewBox 0 0 560 500, same internal
+       numbers). Shared geometry (ground/pole/drone/persons/arcs/sightlines/markers/100m arrow)
+       is already-revealed so it renders static/visible. New elements not present in Phase 1
+       (x/y stay as-is; only the h-chip crossfades later) reveal on their own timestamps. -->
+  <div data-hf-id="hf-q37b2" id="illus-pinned" class="clip" data-start="25.1" data-duration="81.0" data-track-index="3" style="position:absolute;left:690px;top:-121px;width:720px;height:643px;z-index:5;opacity:0;
+              display:flex;align-items:flex-start;justify-content:center;">
+    <svg data-hf-id="hf-q37b3" viewBox="0 0 560 500" width="720" height="643" style="overflow:visible;display:block;">
+
+      <line data-hf-id="hf-q37b4" x1="120" y1="400" x2="404" y2="400" stroke="#6373db" stroke-width="3" stroke-linecap="round" opacity="0.88" />
+      <line data-hf-id="hf-q37b5" x1="300" y1="400" x2="300" y2="220" stroke="#6373db" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 5" />
+
+      <g data-hf-id="hf-q37b6" id="drone-pinned-icon">
+        <rect data-hf-id="hf-q37b7" x="288" y="215" width="24" height="10" rx="3" fill="none" stroke="#6373db" stroke-width="2" />
+        <line data-hf-id="hf-q37b8" x1="291" y1="217" x2="272" y2="200" stroke="#6373db" stroke-width="1.75" stroke-linecap="round" />
+        <line data-hf-id="hf-q37b9" x1="309" y1="217" x2="328" y2="200" stroke="#6373db" stroke-width="1.75" stroke-linecap="round" />
+        <line data-hf-id="hf-q37ba" x1="291" y1="223" x2="272" y2="240" stroke="#6373db" stroke-width="1.75" stroke-linecap="round" />
+        <line data-hf-id="hf-q37bb" x1="309" y1="223" x2="328" y2="240" stroke="#6373db" stroke-width="1.75" stroke-linecap="round" />
+        <circle data-hf-id="hf-q37bc" cx="272" cy="200" r="4.5" fill="none" stroke="#6373db" stroke-width="1.75" />
+        <circle data-hf-id="hf-q37bd" cx="328" cy="200" r="4.5" fill="none" stroke="#6373db" stroke-width="1.75" />
+        <circle data-hf-id="hf-q37be" cx="272" cy="240" r="4.5" fill="none" stroke="#6373db" stroke-width="1.75" />
+        <circle data-hf-id="hf-q37bf" cx="328" cy="240" r="4.5" fill="none" stroke="#6373db" stroke-width="1.75" />
+      </g>
+
+      <g data-hf-id="hf-q37bg" id="person-1-pinned">
+        <line data-hf-id="hf-q37bh" x1="120" y1="400" x2="120" y2="416" stroke="#6373db" stroke-width="2" stroke-linecap="round" />
+        <ellipse data-hf-id="hf-q37bi" cx="120" cy="400" rx="11" ry="6" fill="#FFFFFF" stroke="#6373db" stroke-width="1.75" />
+        <circle data-hf-id="hf-q37bj" cx="120" cy="400" r="2.5" fill="#6373db" />
+      </g>
+      <g data-hf-id="hf-q37bk" id="person-2-pinned">
+        <line data-hf-id="hf-q37bl" x1="404" y1="400" x2="404" y2="416" stroke="#6373db" stroke-width="2" stroke-linecap="round" />
+        <ellipse data-hf-id="hf-q37bm" cx="404" cy="400" rx="11" ry="6" fill="#FFFFFF" stroke="#6373db" stroke-width="1.75" />
+        <circle data-hf-id="hf-q37bn" cx="404" cy="400" r="2.5" fill="#6373db" />
+      </g>
+
+      <path data-hf-id="hf-q37bo" d="M 280 400 L 280 380 L 300 380" fill="none" stroke="#000000" stroke-width="2" />
+      <path data-hf-id="hf-q37bp" d="M 320 400 L 320 380 L 300 380" fill="none" stroke="#000000" stroke-width="2" />
+
+      <line data-hf-id="hf-q37bq" x1="120" y1="400" x2="300" y2="220" stroke="#000000" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="round" />
+      <line data-hf-id="hf-q37br" id="sightline-60-pinned" x1="404" y1="400" x2="300" y2="220" stroke="#000000" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="round" />
+
+      <circle data-hf-id="hf-q37bs" id="arc-45-pinned" cx="120" cy="400" r="60" fill="transparent" stroke="#4eb85f" stroke-width="4.5" stroke-linecap="round" transform="translate(0, 800) scale(1,-1)" style="--angle:45; stroke-dasharray: calc((var(--angle) / 360) * 376.99) 376.99;" />
+      <circle data-hf-id="hf-q37bt" id="arc-60-pinned" cx="404" cy="400" r="45" fill="transparent" stroke="#4eb85f" stroke-width="4.5" stroke-linecap="round" transform="rotate(180, 404, 400)" style="--angle:60; stroke-dasharray: calc((var(--angle) / 360) * 282.74) 282.74;" />
+
+      <foreignobject data-hf-id="hf-q37bu" x="152" y="338" width="70" height="40" style="overflow:visible;">
+        <div data-hf-id="hf-q37bv" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip-pinned">45°</div>
+      </foreignobject>
+      <foreignobject data-hf-id="hf-q37bw" x="370" y="338" width="70" height="40" style="overflow:visible;">
+        <div data-hf-id="hf-q37bx" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip-pinned">60°</div>
+      </foreignobject>
+      <foreignobject data-hf-id="hf-q37by" id="chip-x-pinned" x="176" y="408" width="60" height="38" style="overflow:visible;">
+        <div data-hf-id="hf-q37bz" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip-pinned role">x</div>
+      </foreignobject>
+      <foreignobject data-hf-id="hf-q37c1" id="chip-y-pinned" x="326" y="408" width="60" height="38" style="overflow:visible;">
+        <div data-hf-id="hf-q37c2" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip-pinned role">y</div>
+      </foreignobject>
+
+      <!-- h-chip: the ONLY figure element whose text content changes (crossfade
+           "h" -> the solved numeric value) at the Step3 payoff (98.14) -->
+      <foreignobject data-hf-id="hf-q37c3" id="chip-h-var-pinned" x="312" y="298" width="70" height="40" style="overflow:visible;">
+        <div data-hf-id="hf-q37c4" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip-pinned">h</div>
+      </foreignobject>
+      <foreignobject data-hf-id="hf-q37c5" id="chip-h-val-pinned" x="300" y="298" width="130" height="40" style="overflow:visible;opacity:0;">
+        <div data-hf-id="hf-q37c6" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip-pinned">50(3-√3) m</div>
+      </foreignobject>
+
+      <g data-hf-id="hf-q37c7" id="arrow-100-pinned">
+        <line data-hf-id="hf-q37c8" x1="120" y1="460" x2="404" y2="460" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+        <path data-hf-id="hf-q37c9" d="M 135,450 L 120,460 L 135,470 Z" fill="#000000" />
+        <path data-hf-id="hf-q37ca" d="M 389,450 L 404,460 L 389,470 Z" fill="#000000" />
+      </g>
+      <text data-hf-id="hf-q37cb" class="fig-label" x="262" y="483" font-size="24" text-anchor="middle">100 m</text>
+    </svg>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SOLUTION CARDS (one per step, center)
+       ══════════════════════════════════════════════ -->
+
+  <!-- GIVEN: GIVEN_TIME=25.6 is its own timestamp, separate from PIN_TIME=25.1.
+       duration survives GIVEN_MORPH(40.6)+0.8+1.5 = 42.9, start 25.6 -> 17.3 -->
+  <div data-hf-id="hf-q37cc" id="card-given" class="clip" data-start="25.6" data-duration="17.3" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-q37cd" class="solution-card" style="position:absolute;left:640px;top:520px;text-align:center;">
+      <div data-hf-id="hf-q37ce" class="card-content">
+        <span data-hf-id="hf-q37cf" class="chip">Given</span>
+        <div data-hf-id="hf-q37cg" class="math">
+          <span data-hf-id="hf-q37ch" class="rv" data-t="25.6">Height of drone = <span data-hf-id="hf-q37ci" class="hi">h</span></span><br data-hf-id="hf-q37cj">
+          <span data-hf-id="hf-q37ck" class="rv" data-t="28.8">Distances from foot = <span data-hf-id="hf-q37cl" class="hi">x</span>, <span data-hf-id="hf-q37cm" class="hi">y</span></span><br data-hf-id="hf-q37cn">
+          <span data-hf-id="hf-q37co" class="rv" data-t="34.5">x + y = 100 m</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 1: 45deg triangle, solve h=x. duration survives STEP1_MORPH(57.6)+0.8+1.5=59.9, start 41.6 -> 18.3 -->
+  <div data-hf-id="hf-q37cp" id="card-step1" class="clip" data-start="41.6" data-duration="18.3" data-track-index="5" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-q37cq" class="solution-card" style="position:absolute;left:610px;top:530px;text-align:center;width:700px;">
+      <div data-hf-id="hf-q37cr" class="card-content">
+        <span data-hf-id="hf-q37cs" class="chip">Step 1</span>
+        <div data-hf-id="hf-q37ct" class="math">
+          <span data-hf-id="hf-q37cu" class="rv" data-t="45.02">tan</span> <span data-hf-id="hf-q37cv" class="rv" data-t="45.3">45°</span> <span data-hf-id="hf-q37cw" class="rv" data-t="46.88">=</span>
+          <span data-hf-id="hf-q37cx" class="frac rv" data-t="47.28"><span data-hf-id="hf-q37cy" class="top hi">h</span><span data-hf-id="hf-q37cz" class="bot hi">x</span></span><br data-hf-id="hf-q37d1">
+          <span data-hf-id="hf-q37d2" class="rv" data-t="48.24">tan 45° = 1</span><br data-hf-id="hf-q37d3">
+          <span data-hf-id="hf-q37d4" class="ans rv" data-t="55.6">h = x</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 2: 60deg triangle, solve y=h/root3. duration survives STEP2_MORPH(76.0)+0.8+1.5=78.3, start 58.6 -> 19.7 -->
+  <div data-hf-id="hf-q37d5" id="card-step2" class="clip" data-start="58.6" data-duration="19.7" data-track-index="6" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-q37d6" class="solution-card" style="position:absolute;left:590px;top:530px;text-align:center;width:740px;">
+      <div data-hf-id="hf-q37d7" class="card-content">
+        <span data-hf-id="hf-q37d8" class="chip">Step 2</span>
+        <div data-hf-id="hf-q37d9" class="math">
+          <span data-hf-id="hf-q37da" class="rv" data-t="61.54">tan</span> <span data-hf-id="hf-q37db" class="rv" data-t="61.84">60°</span> <span data-hf-id="hf-q37dc" class="rv" data-t="63.12">=</span>
+          <span data-hf-id="hf-q37dd" class="frac rv" data-t="63.64"><span data-hf-id="hf-q37de" class="top hi">h</span><span data-hf-id="hf-q37df" class="bot hi">y</span></span><br data-hf-id="hf-q37dg">
+          <span data-hf-id="hf-q37dh" class="rv" data-t="64.7">tan 60° = √3</span><br data-hf-id="hf-q37di">
+          <span data-hf-id="hf-q37dj" class="rv" data-t="74.48">y</span> <span data-hf-id="hf-q37dk" class="rv" data-t="74.82">=</span>
+          <span data-hf-id="hf-q37dl" class="ans frac rv" data-t="75.08"><span data-hf-id="hf-q37dm" class="top hi">h</span><span data-hf-id="hf-q37dn" class="bot hi">√3</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 3: combine, solve h numerically. duration survives STEP3_MORPH(103.4)+0.8+1.5=105.7, start 76.6 -> 29.1 -->
+  <div data-hf-id="hf-q37do" id="card-step3" class="clip" data-start="76.9" data-duration="28.8" data-track-index="7" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-q37dp" class="solution-card" style="position:absolute;left:570px;top:520px;text-align:center;width:780px;">
+      <div data-hf-id="hf-q37dq" class="card-content">
+        <span data-hf-id="hf-q37dr" class="chip">Step 3</span>
+        <div data-hf-id="hf-q37ds" class="math">
+          <span data-hf-id="hf-q37dt" class="rv" data-t="76.9">Both x, y now in terms of h</span><br data-hf-id="hf-q37du">
+          <span data-hf-id="hf-q37dv" class="rv" data-t="81.72">x + y = 100</span><br data-hf-id="hf-q37dw">
+          <span data-hf-id="hf-q37dx" class="rv" data-t="85.98">h +
+            <span data-hf-id="hf-q37dy" class="frac"><span data-hf-id="hf-q37dz" class="top hi">h</span><span data-hf-id="hf-q37e1" class="bot hi">√3</span></span> = 100</span><br data-hf-id="hf-q37e2">
+          <span data-hf-id="hf-q37e3" class="rv" data-t="91.98">h ( 1 +
+            <span data-hf-id="hf-q37e4" class="frac"><span data-hf-id="hf-q37e5" class="top hi">1</span><span data-hf-id="hf-q37e6" class="bot hi">√3</span></span> ) = 100</span><br data-hf-id="hf-q37e7">
+          <span data-hf-id="hf-q37e8" class="ans rv" data-t="98.14">h = 50(3 - √3) m</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       LEFT STACK CARDS
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-q37e9" id="stack-given" class="clip" data-start="40.6" data-duration="73" data-track-index="11" style="position:absolute;left:100px;top:140px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-q37ea" class="stack-card">
+      <div data-hf-id="hf-q37eb" class="card-content">
+        <span data-hf-id="hf-q37ec" class="step-circle">G</span>
+        <div data-hf-id="hf-q37ed" class="math">h drone height; x + y = <span data-hf-id="hf-q37ee" class="hi">100 m</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-q37ef" id="stack-step1" class="clip" data-start="57.6" data-duration="56" data-track-index="12" style="position:absolute;left:100px;top:250px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-q37eg" class="stack-card">
+      <div data-hf-id="hf-q37eh" class="card-content">
+        <span data-hf-id="hf-q37ei" class="step-circle">1</span>
+        <div data-hf-id="hf-q37ej" class="math">
+          tan 45° = <span data-hf-id="hf-q37ek" class="frac"><span data-hf-id="hf-q37el" class="top hi">h</span><span data-hf-id="hf-q37em" class="bot hi">x</span></span> = 1<br data-hf-id="hf-q37en">
+          h = <span data-hf-id="hf-q37eo" class="ans">x</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-q37ep" id="stack-step2" class="clip" data-start="76.0" data-duration="37.6" data-track-index="13" style="position:absolute;left:100px;top:400px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-q37eq" class="stack-card">
+      <div data-hf-id="hf-q37er" class="card-content">
+        <span data-hf-id="hf-q37es" class="step-circle">2</span>
+        <div data-hf-id="hf-q37et" class="math">
+          tan 60° = <span data-hf-id="hf-q37eu" class="frac"><span data-hf-id="hf-q37ev" class="top hi">h</span><span data-hf-id="hf-q37ew" class="bot hi">y</span></span> = √3<br data-hf-id="hf-q37ex">
+          y = <span data-hf-id="hf-q37ey" class="ans frac"><span data-hf-id="hf-q37ez" class="top hi">h</span><span data-hf-id="hf-q37f1" class="bot hi">√3</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-q37f2" id="stack-step3" class="clip" data-start="103.4" data-duration="10.2" data-track-index="14" style="position:absolute;left:100px;top:530px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-q37f3" class="stack-card">
+      <div data-hf-id="hf-q37f4" class="card-content">
+        <span data-hf-id="hf-q37f5" class="step-circle">3</span>
+        <div data-hf-id="hf-q37f6" class="math">h = <span data-hf-id="hf-q37f7" class="ans">50(3 - √3) m</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-q37f8" id="line-g-1" class="clip stack-line" data-start="57.6" data-duration="56" data-track-index="15" style="opacity:0;"></div>
+  <div data-hf-id="hf-q37f9" id="line-1-2" class="clip stack-line" data-start="76.0" data-duration="37.6" data-track-index="16" style="opacity:0;"></div>
+  <div data-hf-id="hf-q37fa" id="line-2-3" class="clip stack-line" data-start="103.4" data-duration="10.2" data-track-index="17" style="opacity:0;"></div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 3 - OPTIONS REVEAL
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-q37fb" id="options-reveal" class="clip" data-start="104.5" data-duration="9.1" data-track-index="10" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:8;opacity:0;">
+    <div data-hf-id="hf-q37fc" class="pinned-col" style="top:400px;">
+      <div data-hf-id="hf-q37fd" class="options-grid">
+        <div data-hf-id="hf-q37fe" class="opt-btn correct"><span data-hf-id="hf-q37ff" class="letter">A</span>50(3 - √3) m</div>
+        <div data-hf-id="hf-q37fg" class="opt-btn"><span data-hf-id="hf-q37fh" class="letter">B</span>50(3 + √3) m</div>
+        <div data-hf-id="hf-q37fi" class="opt-btn"><span data-hf-id="hf-q37fj" class="letter">C</span><span data-hf-id="hf-q37fk" class="frac"><span data-hf-id="hf-q37fl" class="top">100</span><span data-hf-id="hf-q37fm" class="bot">√3 - 1</span></span> m</div>
+        <div data-hf-id="hf-q37fn" class="opt-btn"><span data-hf-id="hf-q37fo" class="letter">D</span>50√3 m</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end root -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script src="animations.js"></script>
+<script>
+  // Auto-space the stack column from REAL rendered heights, not hand-guessed
+  // `top` values. Lines containing a .frac component render taller than a
+  // plain text line (the fraction's top/bottom stack pushes the line box
+  // well past the CSS line-height), so a fixed top-spacing guess drifts
+  // short on fraction-heavy steps - the morphing card then lands crowded
+  // into/overlapping the card above instead of a clean gap. Measuring each
+  // card's actual height (still valid via getBoundingClientRect() while
+  // opacity:0 - only display:none would collapse it) and stacking
+  // cumulatively fixes this for any content, matching the same "measure
+  // real geometry, never guess" rule apt.setStackLine() already follows
+  // for the connector lines below.
+  (function autoSpaceStack() {
+    const GAP = 40;
+    const ids = ["stack-given", "stack-step1", "stack-step2", "stack-step3"];
+    let cursor = null;
+    ids.forEach(id => {
+      const wrapper = document.getElementById(id);
+      if (!wrapper) return;
+      if (cursor !== null) wrapper.style.top = cursor + "px";
+      const startTop = parseFloat(wrapper.style.top);
+      cursor = startTop + wrapper.getBoundingClientRect().height + GAP;
+    });
+  })();
+
+  apt.setStackLine("#line-g-1", "#stack-given .step-circle", "#stack-step1 .step-circle");
+  apt.setStackLine("#line-1-2", "#stack-step1 .step-circle", "#stack-step2 .step-circle");
+  apt.setStackLine("#line-2-3", "#stack-step2 .step-circle", "#stack-step3 .step-circle");
+
+  const tl = gsap.timeline({ paused: true });
+
+  // ── PHASE 1 - hero question, then illustration builds stroke by stroke
+  // in step with the question being read.
+  const HERO_OFFSET_Y = 180;
+  const RISE_TIME = 3.9; // "...one more problem." ends 3.78
+  apt.heroEnterLowered(tl, "#q-full-card", HERO_OFFSET_Y, RISE_TIME);
+  tl.fromTo("#serial-num",
+    { scale: 0, rotation: -45, opacity: 0, y: HERO_OFFSET_Y },
+    { scale: 1, rotation: 0, opacity: 1, duration: 0.55, ease: "back.out(2)" },
+    0.8);
+  tl.to("#serial-num", { y: 0, duration: 0.6, ease: "power2.inOut" }, RISE_TIME);
+
+  tl.to("#ground-line", { strokeDashoffset: 0, duration: 0.6, ease: "power2.out" }, 4.3);
+  tl.to("#pole-guide", { opacity: 0.85, duration: 0.5 }, 5.0);
+  tl.fromTo("#drone-icon", { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.4, ease: "back.out(1.6)" }, 5.8);
+  tl.fromTo("#person-icon-1", { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.4, ease: "back.out(1.6)" }, 7.0);
+  tl.fromTo("#person-icon-2", { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.4, ease: "back.out(1.6)" }, 7.6);
+  apt.emphasize(tl, "#drone-icon", 9.4);
+
+  tl.to("#right-angle-1", { opacity: 1, duration: 0.3 }, 10.9);
+  tl.to("#sightline-45", { opacity: 1, duration: 0.4 }, 11.3);
+  tl.to("#arc-45", { opacity: 1, duration: 0.4 }, 12.3);
+  tl.fromTo("#chip-45", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, 12.72);
+
+  tl.to("#right-angle-2", { opacity: 1, duration: 0.3 }, 13.6);
+  tl.to("#sightline-60", { opacity: 1, duration: 0.4 }, 14.0);
+  tl.to("#arc-60", { opacity: 1, duration: 0.4 }, 15.0);
+  tl.fromTo("#chip-60", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, 15.8);
+
+  tl.fromTo("#arrow-100", { opacity: 0, scaleX: 0.7 }, { opacity: 1, scaleX: 1, duration: 0.4, ease: "back.out(1.6)" }, 17.3);
+  tl.fromTo("#label-100", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(1.6)" }, 18.5);
+
+  apt.emphasize(tl, "#drone-icon", 20.4);
+  apt.emphasize(tl, "#pole-guide", 22.5);
+  tl.fromTo("#chip-h", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, 24.72);
+
+  // ── PHASE 2 - pin, then Given (two separate timestamps)
+  const PIN_TIME = 25.1;
+  const GIVEN_TIME = 25.6;
+  apt.pinFlow(tl, "#q-full-card", "#q-pinned", PIN_TIME);
+  apt.pinFlow(tl, "#illustration", "#illus-pinned", PIN_TIME);
+  apt.fadeOut(tl, "#serial-num", PIN_TIME, 0.5);
+
+  // Small ambient bob on the pinned drone so the right-side panel never sits
+  // dead-static through the long Given/Step1/Step2 stretches.
+  apt.ambientLoop(tl, "#drone-pinned-icon", PIN_TIME + 2, 103, { period: 2.0, amp: 5 });
+
+  apt.cardEnter(tl, "#card-given .solution-card", GIVEN_TIME);
+  apt.textReveal(tl, "#card-given .math");
+
+  apt.emphasize(tl, "#pole-guide", 26.7);
+  tl.fromTo("#chip-x-pinned", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(1.6)" }, 31.38);
+  tl.fromTo("#chip-y-pinned", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(1.6)" }, 31.74);
+
+  // LINK: x + y = 100, spoken in the Given card - pulse both figure chips
+  // and the 100m arrow together to tie the equation to the real distances.
+  apt.emphasize(tl, "#chip-x-pinned", 34.5);
+  apt.emphasize(tl, "#chip-y-pinned", 34.92);
+  tl.fromTo("#arrow-100-pinned line", { stroke: "#000000" }, { stroke: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 36.04);
+  apt.emphasize(tl, "#arrow-100-pinned", 37.5);
+  apt.emphasize(tl, "#chip-x-pinned", 39.0);
+  apt.emphasize(tl, "#chip-y-pinned", 39.0);
+
+  // GIVEN_MORPH -> Step 1
+  const GIVEN_MORPH = 40.6;
+  apt.morphToStack(tl, "#card-given .solution-card", "#stack-given .stack-card", GIVEN_MORPH);
+
+  const STEP1_TIME = 41.6;
+  apt.cardEnter(tl, "#card-step1 .solution-card", STEP1_TIME);
+  apt.textReveal(tl, "#card-step1 .math");
+
+  tl.fromTo("#arc-45-pinned", { strokeWidth: 4.5 }, { strokeWidth: 6.5, duration: 0.3, yoyo: true, repeat: 1 }, 43.62);
+  apt.emphasize(tl, "#chip-45", 43.62);
+
+  // LINK: h and x meet in the equation - pulse both figure chips together
+  apt.emphasize(tl, "#chip-h-var-pinned", 47.28);
+  apt.emphasize(tl, "#chip-x-pinned", 47.28);
+  tl.fromTo("#arc-45-pinned", { strokeWidth: 4.5 }, { strokeWidth: 6.5, duration: 0.3, yoyo: true, repeat: 1 }, 50.9);
+  apt.emphasize(tl, "#chip-h-var-pinned", 52.52);
+  apt.emphasize(tl, "#chip-x-pinned", 52.52);
+  apt.emphasize(tl, "#chip-h-var-pinned", 54.24);
+
+  // Confirm: h = x - pulse the x-chip green
+  tl.to("#chip-x-pinned", { color: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 55.6);
+  apt.emphasize(tl, "#card-step1 .ans", 57.26);
+
+  // STEP1_MORPH -> Step 2
+  const STEP1_MORPH = 57.6;
+  apt.morphToStack(tl, "#card-step1 .solution-card", "#stack-step1 .stack-card", STEP1_MORPH);
+  apt.stackLineGrow(tl, "#line-g-1", STEP1_MORPH);
+
+  const STEP2_TIME = 58.6;
+  apt.cardEnter(tl, "#card-step2 .solution-card", STEP2_TIME);
+  apt.textReveal(tl, "#card-step2 .math");
+
+  tl.fromTo("#arc-60-pinned", { strokeWidth: 4.5 }, { strokeWidth: 6.5, duration: 0.3, yoyo: true, repeat: 1 }, 60.24);
+  apt.emphasize(tl, "#chip-60", 60.24);
+
+  apt.emphasize(tl, "#chip-h-var-pinned", 63.64);
+  apt.emphasize(tl, "#chip-y-pinned", 63.64);
+  tl.fromTo("#arc-60-pinned", { strokeWidth: 4.5 }, { strokeWidth: 6.5, duration: 0.3, yoyo: true, repeat: 1 }, 66.56);
+  apt.emphasize(tl, "#chip-h-var-pinned", 68.28);
+  apt.emphasize(tl, "#chip-y-pinned", 68.28);
+  tl.fromTo("#arc-60-pinned", { strokeWidth: 4.5 }, { strokeWidth: 6.5, duration: 0.3, yoyo: true, repeat: 1 }, 70.12);
+  tl.fromTo("#sightline-60-pinned", { strokeWidth: 2 }, { strokeWidth: 3.2, duration: 0.3, yoyo: true, repeat: 1 }, 71.64);
+  apt.emphasize(tl, "#chip-h-var-pinned", 72.66);
+
+  // Confirm: y = h/root3 solved
+  tl.to("#chip-y-pinned", { color: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 75.08);
+
+  // STEP2_MORPH -> Step 3
+  const STEP2_MORPH = 76.0;
+  apt.morphToStack(tl, "#card-step2 .solution-card", "#stack-step2 .stack-card", STEP2_MORPH);
+  apt.stackLineGrow(tl, "#line-1-2", STEP2_MORPH);
+
+  const STEP3_TIME = 76.9;
+  apt.cardEnter(tl, "#card-step3 .solution-card", STEP3_TIME);
+  apt.textReveal(tl, "#card-step3 .math");
+
+  apt.emphasize(tl, "#chip-h-var-pinned", 78.5);
+  apt.emphasize(tl, "#chip-x-pinned", 81.72);
+  apt.emphasize(tl, "#chip-y-pinned", 82.68);
+  apt.emphasize(tl, "#chip-h-var-pinned", 84.38);
+  apt.emphasize(tl, "#chip-h-var-pinned", 88.84);
+  tl.fromTo("#arc-45-pinned", { strokeWidth: 4.5 }, { strokeWidth: 6.5, duration: 0.3, yoyo: true, repeat: 1 }, 90.02);
+  tl.fromTo("#arc-60-pinned", { strokeWidth: 4.5 }, { strokeWidth: 6.5, duration: 0.3, yoyo: true, repeat: 1 }, 90.02);
+  apt.emphasize(tl, "#chip-h-var-pinned", 96.32);
+
+  // FINAL LINK: h solved numerically - crossfade the chip and confirm the pole
+  tl.to("#chip-h-var-pinned", { opacity: 0, duration: 0.25 }, 98.14);
+  tl.fromTo("#chip-h-val-pinned", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 98.14);
+  tl.to("#pole-guide", { stroke: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 98.14);
+  tl.fromTo("#chip-h-val-pinned", { scale: 1 }, { scale: 1.08, duration: 0.3, ease: "power2.out", yoyo: true, repeat: 1 }, 100.4);
+  apt.emphasize(tl, "#card-step3 .ans", 101.46);
+
+  // STEP3_MORPH -> recenter -> options
+  const STEP3_MORPH = 103.4;
+  apt.morphToStack(tl, "#card-step3 .solution-card", "#stack-step3 .stack-card", STEP3_MORPH);
+  apt.stackLineGrow(tl, "#line-2-3", STEP3_MORPH);
+
+  const RECENTER_TIME = 104.2;
+  apt.fadeOut(tl, "#illus-pinned", RECENTER_TIME);
+  apt.recenterForOptions(tl, "#q-pinned", 160, 180, RECENTER_TIME);
+
+  apt.fadeIn(tl, "#options-reveal", 104.5);
+  apt.optionsStagger(tl, ".opt-btn", 105.2);
+  apt.emphasize(tl, ".opt-btn.correct", 109.5);
+  apt.correctPulse(tl, ".opt-btn.correct", 111.0);
+
+  // ── END FADE
+  const END_FADE_TIME = 112.16; // NARR_END 111.56 + 0.6
+  apt.fadeOut(tl, "#root > div", END_FADE_TIME, 1.2);
+
+  tl.set({}, {}, 114.56); // END_FADE_TIME(112.16) + 1.2 + 0.2
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines["root"] = tl;
+</script>
+</body>
+</html>

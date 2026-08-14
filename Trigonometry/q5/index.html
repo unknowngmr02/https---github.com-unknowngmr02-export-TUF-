@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="design-system.css">
+</head>
+<body>
+<div data-hf-id="hf-89uj" id="root" data-composition-id="root" data-start="0" data-duration="93" data-width="1920" data-height="1080">
+
+  <!-- ══════ BACKGROUND LAYERS (always visible) ══════ -->
+  <div data-hf-id="hf-858h" class="dotted-grid"></div>
+  <div data-hf-id="hf-izuk" class="bottom-strip"></div>
+  <div data-hf-id="hf-pcpi" class="topic-name">Trigonometry</div>
+  <div data-hf-id="hf-e319" class="logo"></div>
+
+  <!-- ══════ VOICEOVER ══════ -->
+  <audio data-hf-id="hf-qlqn" id="voiceover" class="clip" src="voiceover.wav" data-start="0" data-duration="91.9" data-track-index="0"></audio>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 1 - Question + Illustration (0-44.5s)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-agkp" id="phase1" class="clip" data-start="0" data-duration="44.5" data-track-index="1" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:5;">
+
+    <div data-hf-id="hf-lxc5" id="q-full-card" class="q-card" style="position:absolute;left:50%;top:80px;width:1500px;transform:translateX(-50%);opacity:0;">
+      <div data-hf-id="hf-1yf5" class="q-text">
+        A ladder of length <span data-hf-id="hf-5ofp" class="num">10 m</span> makes an angle of <span data-hf-id="hf-1efn" class="num">60°</span> with the ground.
+        How high does it reach on the wall?
+      </div>
+    </div>
+
+    <div data-hf-id="hf-w62k" id="serial-num" class="serial-num" style="left:60px;top:60px;opacity:0;">
+      <div data-hf-id="hf-yfde" class="digit">Q</div>
+    </div>
+
+    <!-- Illustration: ground, wall, ladder (with rungs), right-angle marker, angle arc -->
+    <div data-hf-id="hf-3v3i" id="illustration" class="illustration" style="position:absolute;left:50%;top:320px;transform:translateX(-50%);
+                width:1040px;height:360px;overflow:visible;">
+      <!-- ground line -->
+      <div data-hf-id="hf-ddm9" id="ground-line" style="position:absolute;left:0;top:300px;width:900px;height:0;border-top:6px solid #1b1b1b;transform-origin:left center;transform:scaleX(0);"></div>
+
+      <!-- plain straight lines - ground/wall/ladder representation -->
+      <svg data-hf-id="hf-8dzx" id="lines-svg" width="1040" height="360" style="position:absolute;left:0;top:0;overflow:visible;">
+        <line data-hf-id="hf-7to5" id="wall-line" x1="857" y1="60" x2="857" y2="300" stroke="#333" stroke-width="8" stroke-linecap="round" opacity="0" />
+        <line data-hf-id="hf-t5pc" id="ladder-line" x1="150" y1="300" x2="857" y2="65" stroke="#6373db" stroke-width="4" stroke-linecap="round" opacity="0" />
+      </svg>
+
+      <!-- right-angle marker + angle arc, independent of the ladder/wall icons -->
+      <svg data-hf-id="hf-rcvq" id="markers-svg" width="1040" height="360" style="position:absolute;left:0;top:0;overflow:visible;">
+        <!-- right-angle marker at wall-ground corner -->
+        <rect data-hf-id="hf-311y" id="right-angle" x="828" y="278" width="22" height="22" fill="none" stroke="#000" stroke-width="2.5" opacity="0" />
+        <!-- angle arc at ladder-ground vertex (150,300), sweeping up to ladder -->
+        <path data-hf-id="hf-5aj8" id="angle-arc" d="M 210 300 A 60 60 0 0 1 206.96 281.04" fill="none" stroke="#6373db" stroke-width="4" stroke-dasharray="30" stroke-dashoffset="30" opacity="0" />
+      </svg>
+
+      <!-- "10 m" label beside ladder -->
+      <div data-hf-id="hf-49sa" id="ladder-chip" style="position:absolute;left:380px;top:110px;opacity:0;transform:rotate(-18deg);">
+        <div data-hf-id="hf-xy0x" style="background:#fff;border:2px solid #6373db;border-radius:10px;padding:8px 16px;font-size:26px;color:#6373db;font-family:'Google Sans Flex',Inter,sans-serif;white-space:nowrap;">Ladder = 10 m</div>
+      </div>
+      <!-- "60°" angle label -->
+      <div data-hf-id="hf-fg8k" id="angle-chip" style="position:absolute;left:220px;top:255px;opacity:0;">
+        <div data-hf-id="hf-n11o" style="background:#fff;border:2px solid #6373db;border-radius:10px;padding:6px 14px;font-size:26px;color:#6373db;font-family:'Google Sans Flex',Inter,sans-serif;">60°</div>
+      </div>
+      <!-- side-name labels, revealed one at a time in Scene 4 -->
+      <div data-hf-id="hf-sn6y" id="hyp-chip" style="position:absolute;left:600px;top:60px;opacity:0;transform:rotate(-18deg);">
+        <div data-hf-id="hf-lftr" style="background:#fff;border:2px solid #f5b400;border-radius:10px;padding:6px 14px;font-size:24px;color:#a17a00;font-family:'Google Sans Flex',Inter,sans-serif;white-space:nowrap;">Hypotenuse</div>
+      </div>
+      <div data-hf-id="hf-xamo" id="opp-chip" style="position:absolute;left:875px;top:150px;opacity:0;">
+        <div data-hf-id="hf-5cr5" style="background:#fff;border:2px solid #4eb85f;border-radius:10px;padding:6px 14px;font-size:24px;color:#2f8a3d;font-family:'Google Sans Flex',Inter,sans-serif;white-space:nowrap;">Height = ?</div>
+      </div>
+      <div data-hf-id="hf-epqq" id="adj-chip" style="position:absolute;left:420px;top:312px;opacity:0;">
+        <div data-hf-id="hf-d7xw" style="background:#fff;border:2px solid #6373db;border-radius:10px;padding:6px 14px;font-size:24px;color:#6373db;font-family:'Google Sans Flex',Inter,sans-serif;white-space:nowrap;">Adjacent (Ground)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 2 - Pinned question (43.7s onwards)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-zdyg" id="q-pinned" class="clip" data-start="43" data-duration="48.9" data-track-index="2" style="position:absolute;width:100%;top:0;left:0;z-index:6;opacity:0;">
+    <div data-hf-id="hf-9jf4" class="q-card pinned" style="position:absolute;left:385px;top:30px;width:1275px;">
+      <div data-hf-id="hf-wzmf" class="q-text">
+        Ladder = <span data-hf-id="hf-6vxl" class="num">10 m</span>, angle = <span data-hf-id="hf-yz77" class="num">60°</span>. Find the height on the wall.
+      </div>
+    </div>
+  </div>
+
+  <!-- Pinned illustration - same triangle, scaled down -->
+  <div data-hf-id="hf-igjm" id="illus-pinned" class="clip" data-start="43" data-duration="45.5" data-track-index="3" style="position:absolute;left:50%;top:190px;width:686px;height:238px;transform:translateX(-50%);z-index:5;opacity:0;overflow:visible;">
+    <div data-hf-id="hf-ed4a" id="illus-pinned-inner" style="position:absolute;left:0;top:0;width:1040px;height:360px;transform:scale(0.66);transform-origin:top left;">
+      <div data-hf-id="hf-clkq" style="position:absolute;left:0;top:300px;width:900px;height:6px;background:#1b1b1b;"></div>
+      <svg data-hf-id="hf-4xtp" width="1040" height="360" style="position:absolute;left:0;top:0;overflow:visible;">
+        <line data-hf-id="hf-c0eu" x1="857" y1="60" x2="857" y2="300" stroke="#333" stroke-width="8" stroke-linecap="round" />
+        <line data-hf-id="hf-y7k5" x1="150" y1="300" x2="857" y2="65" stroke="#6373db" stroke-width="4" stroke-linecap="round" opacity="0.5" />
+        <rect data-hf-id="hf-r6q0" x="828" y="278" width="22" height="22" fill="none" stroke="#000" stroke-width="2.5" />
+        <path data-hf-id="hf-4nbk" d="M 210 300 A 60 60 0 0 1 206.96 281.04" fill="none" stroke="#6373db" stroke-width="4" />
+      </svg>
+    </div>
+    <!-- labels outside the 0.66 scale wrapper so text stays a real 20px+ -->
+    <div data-hf-id="hf-qu7t" id="pinned-hyp-chip" style="position:absolute;left:210px;top:30px;opacity:0;">
+      <div data-hf-id="hf-076i" style="background:#fff;border:2px solid #6373db;border-radius:8px;padding:3px 10px;font-size:21px;color:#6373db;font-family:'Google Sans Flex',Inter,sans-serif;white-space:nowrap;">Hypotenuse = 10 m</div>
+    </div>
+    <div data-hf-id="hf-wqlj" id="pinned-height-chip" style="position:absolute;left:580px;top:100px;opacity:0;">
+      <div data-hf-id="hf-3y8s" style="background:#fff;border:2px solid #4eb85f;border-radius:8px;padding:3px 10px;font-size:21px;color:#2f8a3d;font-family:'Google Sans Flex',Inter,sans-serif;white-space:nowrap;">Height = ?</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SOLUTION CARDS
+       ══════════════════════════════════════════════ -->
+
+  <!-- GIVEN (early recap, 6-16s, before illustration finishes building) -->
+  <div data-hf-id="hf-u96q" id="card-given" class="clip" data-start="5.8" data-duration="38.7" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-iiia" class="solution-card" style="position:absolute;left:640px;top:480px;text-align:center;">
+      <div data-hf-id="hf-3rv6" class="card-content">
+        <span data-hf-id="hf-7r0o" class="chip">Given</span>
+        <div data-hf-id="hf-8tlu" class="math">
+          <span data-hf-id="hf-sfdc" class="rv" data-t="5.82">Ladder</span> <span data-hf-id="hf-4qc5" class="rv" data-t="6.30">=</span> <span data-hf-id="hf-w3br" class="hi rv" data-t="6.50">10 m</span><br data-hf-id="hf-x5px">
+          <span data-hf-id="hf-31ew" class="rv" data-t="9.10">Angle</span> <span data-hf-id="hf-or6n" class="rv" data-t="9.60">=</span> <span data-hf-id="hf-efh2" class="hi rv" data-t="9.90">60°</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 1 - identify the unknown side in trig vocabulary -->
+  <div data-hf-id="hf-lvvp" id="card-step1" class="clip" data-start="44.6" data-duration="3.98" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-f65y" class="solution-card" style="position:absolute;left:640px;top:480px;text-align:center;">
+      <div data-hf-id="hf-0yza" class="card-content">
+        <span data-hf-id="hf-3ife" class="chip">Step 1</span>
+        <div data-hf-id="hf-ng7a" class="math">
+          <span data-hf-id="hf-egpx" class="rv" data-t="44.60">Hypotenuse</span> <span data-hf-id="hf-gdc8" class="rv" data-t="45.30">=</span> <span data-hf-id="hf-gqgj" class="hi rv" data-t="45.60">10 m</span><br data-hf-id="hf-rsrt">
+          <span data-hf-id="hf-j5s4" class="rv" data-t="46.20">Height</span> <span data-hf-id="hf-50fn" class="rv" data-t="46.70">=</span> <span data-hf-id="hf-tlk3" class="ans rv" data-t="46.90">?</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 2 - formula + substitution -->
+  <div data-hf-id="hf-jave" id="card-step2" class="clip" data-start="47.98" data-duration="16.5" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-z076" class="solution-card" style="position:absolute;left:600px;top:460px;text-align:center;width:720px;">
+      <div data-hf-id="hf-1dab" class="card-content">
+        <span data-hf-id="hf-3wqf" class="chip">Step 2</span>
+        <div data-hf-id="hf-nuib" class="math">
+          <span data-hf-id="hf-2pl3" class="rv" data-t="52.98">sin</span> <span data-hf-id="hf-xqfj" class="rv" data-t="53.20">θ</span> <span data-hf-id="hf-n3wi" class="rv" data-t="53.40">=</span>
+          <span data-hf-id="hf-j8sb" class="frac rv" data-t="53.60"><span data-hf-id="hf-px7q" class="top hi">Opposite</span><span data-hf-id="hf-tgp9" class="bot hi">Hypotenuse</span></span><br data-hf-id="hf-szow">
+          <span data-hf-id="hf-3316" class="rv" data-t="59.34">sin</span> <span data-hf-id="hf-e3if" class="rv" data-t="59.60">60°</span> <span data-hf-id="hf-ia71" class="rv" data-t="59.90">=</span>
+          <span data-hf-id="hf-lij5" class="frac rv" data-t="60.20"><span data-hf-id="hf-60v4" class="top hi">Height</span><span data-hf-id="hf-8pz8" class="bot hi">10</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 3 - standard value, solve, final answer -->
+  <div data-hf-id="hf-1y6h" id="card-step3" class="clip" data-start="64.5" data-duration="24.3" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-i8m5" class="solution-card" style="position:absolute;left:580px;top:440px;text-align:center;width:760px;">
+      <div data-hf-id="hf-1rlc" class="card-content">
+        <span data-hf-id="hf-4b1g" class="chip">Step 3</span>
+        <div data-hf-id="hf-o8tc" class="math">
+          <span data-hf-id="hf-ory1" class="rv" data-t="67.16">sin</span> <span data-hf-id="hf-n45u" class="rv" data-t="67.40">60°</span> <span data-hf-id="hf-ev3l" class="rv" data-t="67.60">=</span>
+          <span data-hf-id="hf-mbj2" class="frac rv" data-t="67.80"><span data-hf-id="hf-pwjo" class="top hi">√3</span><span data-hf-id="hf-jgr9" class="bot hi">2</span></span><br data-hf-id="hf-sldv">
+          <span data-hf-id="hf-2v7r" class="rv" data-t="71.50">Height / 10</span> <span data-hf-id="hf-ttgg" class="rv" data-t="72.10">=</span> <span data-hf-id="hf-vm0f" class="rv" data-t="72.40"></span> <span data-hf-id="hf-o3qt" class="rv" data-t="72.60"></span>
+          <span data-hf-id="hf-12vg" class="frac rv" data-t="72.80"><span data-hf-id="hf-sqws" class="top hi">√3</span><span data-hf-id="hf-7gll" class="bot hi">2</span></span><br data-hf-id="hf-qluq">
+          <span data-hf-id="hf-jhhi" class="rv" data-t="78.34">Height</span> <span data-hf-id="hf-z6fy" class="rv" data-t="78.90">=</span> <span data-hf-id="hf-bru4" class="ans rv" data-t="79.20">5√3 m</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       LEFT STACK CARDS
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-s2vt" id="stack-given" class="clip" data-start="43.7" data-duration="88.2" data-track-index="11" style="position:absolute;left:100px;top:140px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-usjn" class="stack-card">
+      <div data-hf-id="hf-yzg5" class="card-content">
+        <span data-hf-id="hf-snhl" class="step-circle">G</span>
+        <div data-hf-id="hf-2ty1" class="math">
+          Ladder = <span data-hf-id="hf-vm7i" class="hi">10 m</span><br data-hf-id="hf-q7jp">
+          Angle = <span data-hf-id="hf-gkw6" class="hi">60°</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-2j6m" id="stack-step1" class="clip" data-start="47.78" data-duration="84.1" data-track-index="12" style="position:absolute;left:100px;top:280px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-3m9v" class="stack-card">
+      <div data-hf-id="hf-zdr6" class="card-content">
+        <span data-hf-id="hf-w2db" class="step-circle">1</span>
+        <div data-hf-id="hf-yl3r" class="math">
+          Hypotenuse = <span data-hf-id="hf-4cvm" class="hi">10 m</span><br data-hf-id="hf-regs">
+          Height = <span data-hf-id="hf-6x5s" class="ans">?</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-wgul" id="stack-step2" class="clip" data-start="63.7" data-duration="68.2" data-track-index="13" style="position:absolute;left:100px;top:420px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-37yu" class="stack-card">
+      <div data-hf-id="hf-zs27" class="card-content">
+        <span data-hf-id="hf-vo2a" class="step-circle">2</span>
+        <div data-hf-id="hf-8q7i" class="math">
+          sin θ =
+          <span data-hf-id="hf-gq2t" class="frac"><span data-hf-id="hf-ohre" class="top hi">Opposite</span><span data-hf-id="hf-sh6p" class="bot hi">Hypotenuse</span></span><br data-hf-id="hf-r05r">
+          sin 60° = <span data-hf-id="hf-18sx" class="hi">Height/10</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-simk" id="stack-step3" class="clip" data-start="87.94" data-duration="4" data-track-index="14" style="position:absolute;left:100px;top:560px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-2tnt" class="stack-card">
+      <div data-hf-id="hf-06d8" class="card-content">
+        <span data-hf-id="hf-v9r9" class="step-circle">3</span>
+        <div data-hf-id="hf-1iob" class="math">
+          sin 60° = <span data-hf-id="hf-laii" class="hi">√3/2</span><br data-hf-id="hf-p0mm">
+          Height = <span data-hf-id="hf-v1ny" class="ans">5√3 m</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- connector lines -->
+  <div data-hf-id="hf-3dgi" id="line-g-1" class="clip stack-line" data-start="47.78" data-duration="84.1" data-track-index="15" style="opacity:0;"></div>
+  <div data-hf-id="hf-f6qd" id="line-1-2" class="clip stack-line" data-start="63.7" data-duration="68.2" data-track-index="16" style="opacity:0;"></div>
+  <div data-hf-id="hf-fl06" id="line-2-3" class="clip stack-line" data-start="87.94" data-duration="4" data-track-index="17" style="opacity:0;"></div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 3 - OPTIONS REVEAL (88.7-91.9s)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-4e6h" id="options-reveal" class="clip" data-start="88.7" data-duration="3.2" data-track-index="10" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:8;opacity:0;">
+    <div data-hf-id="hf-2tfv" class="pinned-col" style="top:400px;">
+      <div data-hf-id="hf-6knj" class="options-grid">
+        <div data-hf-id="hf-i325" class="opt-btn correct"><span data-hf-id="hf-sfug" class="letter">A</span>5√3 m</div>
+        <div data-hf-id="hf-l4us" class="opt-btn"><span data-hf-id="hf-r8xd" class="letter">B</span>5 m</div>
+        <div data-hf-id="hf-t321" class="opt-btn"><span data-hf-id="hf-rn8e" class="letter">C</span>10√3 m</div>
+        <div data-hf-id="hf-4gx1" class="opt-btn"><span data-hf-id="hf-qgbb" class="letter">D</span>20 m</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end root -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script src="animations.js"></script>
+<script>
+  apt.setStackLine("#line-g-1", "#stack-given .step-circle", "#stack-step1 .step-circle");
+  apt.setStackLine("#line-1-2", "#stack-step1 .step-circle", "#stack-step2 .step-circle");
+  apt.setStackLine("#line-2-3", "#stack-step2 .step-circle", "#stack-step3 .step-circle");
+
+  const tl = gsap.timeline({ paused: true });
+
+  // PHASE 1 - Question reveal
+  const HERO_OFFSET_Y = 180;
+  const RISE_TIME = 3.6;
+  apt.heroEnterLowered(tl, "#q-full-card", HERO_OFFSET_Y, RISE_TIME);
+
+  tl.fromTo("#serial-num",
+    { scale: 0, rotation: -45, opacity: 0, y: HERO_OFFSET_Y },
+    { scale: 1, rotation: 0, opacity: 1, duration: 0.55, ease: "back.out(2)", y: HERO_OFFSET_Y },
+    0.8);
+  tl.to("#serial-num", { y: 0, duration: 0.6, ease: "power2.inOut" }, RISE_TIME);
+
+  // GIVEN - early recap card, appears while question is still full-size
+  apt.cardEnter(tl, "#card-given .solution-card", 5.82);
+  apt.textReveal(tl, "#card-given .math");
+  tl.to("#card-given .solution-card", { y: 240, duration: 0.6, ease: "power2.inOut" }, 16.5);
+
+  // Illustration build (Scene 3: ground -> wall -> ladder, plain lines)
+  tl.to("#ground-line", { scaleX: 1, duration: 0.7, ease: "power2.out" }, 21.30);
+  tl.to("#wall-line", { opacity: 1, duration: 0.5, ease: "power2.out" }, 22.54);
+  tl.to("#ladder-line", { opacity: 0.5, duration: 0.6, ease: "power2.out" }, 24.22);
+  tl.fromTo("#ladder-chip", { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 24.4);
+
+  // Scene 4: right-angle marker + sequential side highlights
+  tl.to("#right-angle", { opacity: 1, duration: 0.3 }, 27.56);
+  tl.fromTo("#angle-arc", { opacity: 0, strokeDashoffset: 90 }, { opacity: 1, strokeDashoffset: 0, duration: 0.6, ease: "power2.out" }, 30.54);
+  tl.fromTo("#angle-chip", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 30.54);
+  tl.fromTo("#hyp-chip", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 34.34);
+  tl.fromTo("#opp-chip", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 38.84);
+  tl.fromTo("#adj-chip", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 41.76);
+
+  // PHASE 2 - Pin, then Step 1
+  const PIN_TIME = 43.7;
+  const GIVEN_TIME = 44.6;
+  apt.morphToStack(tl, "#card-given .solution-card", "#stack-given .stack-card", PIN_TIME);
+
+  apt.pinFlow(tl, "#q-full-card", "#q-pinned", PIN_TIME);
+  apt.pinFlow(tl, "#illustration", "#illus-pinned", PIN_TIME);
+  apt.fadeOut(tl, "#serial-num", PIN_TIME, 0.5);
+
+  apt.cardEnter(tl, "#card-step1 .solution-card", GIVEN_TIME);
+  apt.textReveal(tl, "#card-step1 .math");
+  tl.to("#pinned-hyp-chip", { opacity: 1, duration: 0.4, ease: "power2.out" }, 45.60);
+  tl.to("#pinned-height-chip", { opacity: 1, duration: 0.4, ease: "power2.out" }, 46.90);
+
+  // STEP 2
+  apt.morphToStack(tl, "#card-step1 .solution-card", "#stack-step1 .stack-card", 47.78);
+  apt.stackLineGrow(tl, "#line-g-1", 47.78);
+  apt.cardEnter(tl, "#card-step2 .solution-card", 47.98);
+  apt.textReveal(tl, "#card-step2 .math");
+
+  // STEP 3
+  apt.morphToStack(tl, "#card-step2 .solution-card", "#stack-step2 .stack-card", 63.70);
+  apt.stackLineGrow(tl, "#line-1-2", 63.70);
+  apt.cardEnter(tl, "#card-step3 .solution-card", 64.50);
+  apt.textReveal(tl, "#card-step3 .math");
+
+  // Recenter before options
+  const RECENTER_TIME = 87.74;
+  apt.fadeOut(tl, "#illus-pinned", RECENTER_TIME);
+  apt.recenterForOptions(tl, "#q-pinned", 160, 180, RECENTER_TIME);
+
+  // PHASE 3 - Options reveal
+  apt.morphToStack(tl, "#card-step3 .solution-card", "#stack-step3 .stack-card", 87.94);
+  apt.stackLineGrow(tl, "#line-2-3", 87.94);
+  apt.fadeIn(tl, "#options-reveal", 88.70);
+  apt.optionsStagger(tl, ".opt-btn", 89.10);
+  apt.correctPulse(tl, ".opt-btn.correct", 89.60);
+
+  // END FADE
+  const END_FADE_TIME = 90.90;
+  apt.fadeOut(tl, "#root > div", END_FADE_TIME, 1.2);
+
+  tl.set({},{},93)
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines["root"] = tl;
+</script>
+</body>
+</html>

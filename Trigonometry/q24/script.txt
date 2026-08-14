@@ -1,0 +1,52 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+In this problem, we are given that Sign Theta pluss Kos Theta is equal to 7 by 5.
+
+And we need to find Sign Theta into Kos Theta.
+
+now Whenever we see Sign Theta pluss Kos Theta together, there is one very useful trick.
+
+We square both sides.
+<break time="0.5s" />
+
+So,
+
+Sign Theta pluss Kos Theta...whole square is equal to 7 by 5 whole square.
+
+After opening the bracket, this becomes
+
+Sign square Theta...pluss Kos square Theta...pluss 2 Sign Theta into Kos Theta is equal to 49 by 25.
+<break time="0.3s" />
+
+Now as we know, the standard identity,
+
+Sign square Theta...pluss Kos square Theta is always equal to 1.
+
+And it works for every angle.
+
+So we replace Sign square Theta pluss Kos square Theta with 1.
+<break time="0.3s" />
+
+Now the equation becomes
+
+1 pluss<break time="0.2s" /> 2 Sign Theta into Kos Theta <break time="0.2s" />is equal to 49 by 25.
+
+
+now The question is asking for the value of Sign Theta into Kos Theta... so we need to isolate that term.
+
+Subtracting 1 from both sides, we get
+
+2 Sign Theta into Kos theta is equal to 24 by 25.
+<break time="0.3s" />
+
+Now divide both sides by 2.
+
+We get,
+
+Sign Theta into Kos Theta...is equal to 12 by 25.
+Perfect.
+<break time="0.6s" />
+
+So the final answer will be 12 by 25.
+
+Hence, option D is the correct answer.

@@ -1,0 +1,45 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+Now in this problem, we have a 20 metre tower.  <break time="0.2s" /> From a point on the ground, the angle of elevation to the top of the tower is 45 degrees.
+
+And we need to find the distance  <break time="0.2s" /> from that point to the tower.
+
+Before solving,  <break time="0.2s" /> let us quickly draw the <break time="0.2s" />  right triangle in our mind.
+
+The height of the tower  <break time="0.2s" /> becomes the opposite side, which is 20 metres.
+The distance from the <break time="0.2s" />  person to the tower becomes the adjacent side.  <break time="0.2s" /> Let us call it x.
+<break time="0.5s" />
+
+Now which trigonometric ratio  <break time="0.2s" /> connects the opposite side and the adjacent side?
+
+It is ten, because
+
+10 theta <break time="0.2s" />  = Opposite by Adjacent <break time="0.2s" /> 
+
+So we can write, <break time="0.2s" /> 
+
+ten 45 degrees = 20 / x <break time="0.2s" /> 
+
+Now this is where the question becomes easy.
+
+We already know one standard value.
+
+ten 45 degrees = 1 <break time="0.2s" /> 
+
+So,
+
+1 = 20 / x
+
+<break time="0.2s" />
+
+Now cross multiply.
+
+We get,
+
+x = 20
+
+<break time="0.6s" />
+
+So the distance from the point to the tower is 20 metres.
+
+Hence, the correct answer is Option D — 20 metres.

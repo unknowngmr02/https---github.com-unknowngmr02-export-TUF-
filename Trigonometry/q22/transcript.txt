@@ -1,0 +1,49 @@
+[00:00.10 -> 00:01.01]  So welcome back again.
+[00:01.56 -> 00:02.98]  It's time to solve one more problem.
+[00:03.50 -> 00:04.25]  Now, in this problem,
+[00:04.94 -> 00:06.74]  two points are on the same side of a balloon.
+[00:07.40 -> 00:10.06]  The distance between these two points is one hundred meter.
+[00:10.54 -> 00:11.34]  From one point,
+[00:11.65 -> 00:13.82]  the angle of elevation is sixty degrees.
+[00:14.22 -> 00:15.18]  From the other point,
+[00:15.52 -> 00:18.32]  the angle of elevation is thirty degrees.
+[00:18.72 -> 00:20.78]  The nearer point has the bigger angle,
+[00:21.28 -> 00:21.68]  that is
+[00:22.08 -> 00:22.86]  sixty degrees,
+[00:23.36 -> 00:25.58]  and we need to find the height of the balloon.
+[00:26.08 -> 00:31.26]  Let the distance from the nearer point to the point exactly below the balloon be x meter.
+[00:31.98 -> 00:36.64]  So the distance from the farther point will be x plus one hundred meter.
+[00:37.28 -> 00:39.02]  Now, we will use the tan formula
+[00:39.68 -> 00:41.42]  because it deals with the base and height.
+[00:42.02 -> 00:42.16]  So
+[00:42.66 -> 00:44.30]  tan theta is equal to height
+[00:44.70 -> 00:45.32]  by base.
+[00:45.94 -> 00:46.74]  From the nearer point,
+[00:47.22 -> 00:49.70]  tan sixty degree is equal to h by x.
+[00:50.16 -> 00:52.14]  Root three is equal to h by x.
+[00:52.66 -> 00:52.86]  So
+[00:53.20 -> 00:55.20]  h is equal to x root three.
+[00:55.74 -> 00:58.86]  Keep this height with us for a second. From the farther point,
+[00:59.34 -> 01:02.52]  tan thirty degree is equal to h by x plus one hundred.
+[01:02.88 -> 01:04.96]  One by root three is equal to h by
+[01:05.30 -> 01:06.54]  x plus one hundred.
+[01:06.96 -> 01:07.06]  So
+[01:07.40 -> 01:08.12]  h is equal to
+[01:08.44 -> 01:09.70]  x plus one hundred
+[01:10.08 -> 01:10.80]  by root three.
+[01:11.24 -> 01:15.00]  Now, both these expressions are for the same height of the same balloon,
+[01:15.48 -> 01:16.62]  so we can make them equal.
+[01:17.12 -> 01:20.16]  X root three is equal to x plus one hundred by root three.
+[01:20.70 -> 01:22.64]  Multiplying both sides by root three,
+[01:23.10 -> 01:23.86]  this becomes
+[01:24.36 -> 01:26.28]  three x is equal to x plus
+[01:26.68 -> 01:27.32]  one hundred.
+[01:27.78 -> 01:29.56]  So two x is equal to one hundred.
+[01:30.00 -> 01:30.28]  Hence,
+[01:30.70 -> 01:32.76]  x is equal to fifty.
+[01:33.38 -> 01:37.06]  Now, we are not asked for x. We are asked for the height of the balloon,
+[01:37.52 -> 01:40.26]  and height h is equal to x root three.
+[01:40.82 -> 01:40.90]  So
+[01:41.30 -> 01:44.72]  h is equal to fifty root three meters.
+[01:45.66 -> 01:47.92]  So the final answer will be option D,
+[01:48.54 -> 01:49.82]  fifty root three meter.

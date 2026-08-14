@@ -1,0 +1,31 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+Now in this problem, we need to find "cot forty-five degree pluss ten forty-five degree."
+
+This is a direct standard trigonometric values question.
+
+So we only need to remember the values of these two ratios.
+
+<break time="0.5s" />
+
+We know that,
+
+"Cot forty-five degree is equal to one."
+
+And,
+
+"Ten forty-five degree is also equal to one."
+
+<break time="0.2s" />
+
+Now we simply add these two values.
+
+One pluss one.
+
+After adding, we get two.
+
+<break time="0.6s" />
+
+Hence, the required answer is "two."
+
+So the correct option is "Option B."

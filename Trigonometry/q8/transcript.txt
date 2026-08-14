@@ -1,0 +1,31 @@
+[00:00.10 -> 00:01.34]  So welcome back again.
+[00:01.88 -> 00:03.00]  It's time to solve
+[00:03.58 -> 00:04.34]  one more problem.
+[00:04.72 -> 00:08.96]  Now in this problem, we are standing at a point which is 10 root 3 meters away from a tower.
+[00:09.54 -> 00:11.66]  The angle of elevation to the top of the tower
+[00:12.22 -> 00:12.36]  is
+[00:12.70 -> 00:13.42]  60 degrees.
+[00:13.86 -> 00:16.08]  The question is asking us to find the height
+[00:16.44 -> 00:17.10]  of the tower.
+[00:17.46 -> 00:18.88]  Let the height of the tower be
+[00:19.24 -> 00:19.30]  h.
+[00:19.80 -> 00:20.60]  Also imagine a
+[00:21.08 -> 00:22.64]  right-angled triangle here.
+[00:23.08 -> 00:25.56]  The height of the tower becomes the opposite side.
+[00:25.96 -> 00:28.74]  The horizontal distance, which is 10 root 3 meters,
+[00:29.18 -> 00:30.66]  becomes the adjacent side.
+[00:31.44 -> 00:33.90]  Since we know the opposite side and the adjacent side,
+[00:34.34 -> 00:37.12]  the trigonometric ratio we should use is 10.
+[00:37.76 -> 00:41.06]  We know 10 theta is equal to opposite side upon adjacent side.
+[00:41.56 -> 00:41.98]  So here,
+[00:42.52 -> 00:49.96]  10 60 degree is equal to h upon 10 root 3. Now, we already know one important value, 10 60 degree is equal to root 3.
+[00:50.46 -> 00:54.06]  Putting this value into the equation, we get root 3 is equal to
+[00:54.36 -> 00:55.90]  h upon 10 root 3.
+[00:56.26 -> 00:58.54]  Now multiply both sides by 10 root 3.
+[00:58.88 -> 01:04.34]  This gives us h is equal to root 3 multiplied by 10 root 3. After simplifying this,
+[01:04.94 -> 01:06.70]  h is equal to 10 multiplied by 3,
+[01:07.10 -> 01:07.36]  which is
+[01:07.72 -> 01:08.46]  30 meters.
+[01:09.24 -> 01:09.62]  Hence,
+[01:10.00 -> 01:12.56]  the height of the tower is 30 meter.
+[01:13.20 -> 01:15.44]  So the correct option is option D

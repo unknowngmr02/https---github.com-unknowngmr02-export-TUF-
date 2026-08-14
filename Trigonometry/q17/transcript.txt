@@ -1,0 +1,23 @@
+[00:00.12 -> 00:00.34]  So
+[00:00.76 -> 00:01.74]  welcome back again.
+[00:02.34 -> 00:04.58]  It's time to solve one more problem.
+[00:05.08 -> 00:05.88]  Now in this problem,
+[00:06.38 -> 00:09.54]  a point is thirty meters away from a building.
+[00:10.06 -> 00:13.16]  From that point, the angle of elevation to the top of the building
+[00:13.66 -> 00:14.74]  is thirty degrees.
+[00:15.26 -> 00:18.26]  The question is asking us to find the height of the building.
+[00:18.62 -> 00:21.22]  Here, the height of the building is the opposite side,
+[00:21.58 -> 00:25.16]  and the thirty meter distance from the building is the adjacent side.
+[00:25.48 -> 00:30.42]  And we know a trigonometric function that relates with opposite and adjacent side, that is ten.
+[00:31.18 -> 00:32.72]  Let the height of the building be
+[00:33.06 -> 00:33.64]  h meters.
+[00:34.24 -> 00:38.04]  Using ten ratio, ten theta is equal to opposite by adjacent.
+[00:38.46 -> 00:41.36]  So ten thirty degrees is equal to h by thirty.
+[00:41.76 -> 00:48.54]  Now we know ten thirty degrees is equal to one by root three, so we can write one by root three is equal to
+[00:48.84 -> 00:52.14]  h by thirty. Now multiply both sides by thirty.
+[00:52.84 -> 00:54.62]  H is equal to thirty by root three.
+[00:55.16 -> 00:56.42]  After simplifying this,
+[00:57.06 -> 00:58.68]  h is equal to ten root three.
+[00:59.40 -> 00:59.78]  Hence,
+[01:00.32 -> 01:03.72]  the height of the building is ten root three meter.
+[01:04.28 -> 01:06.14]  So the correct option is option A.

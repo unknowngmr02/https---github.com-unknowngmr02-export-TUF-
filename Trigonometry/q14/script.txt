@@ -1,0 +1,29 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+Now in this problem, we are given that coss A is equal to 5 by 13.
+
+The question is asking us to find sign of 90 degree minus A.
+
+This is a direct identity question.
+We do not need to make a triangle here.
+We only need to remember one co-function identity.
+<break time="0.5s" />
+
+The identity is,
+
+sign of 90 degree my-nus theta is equal to coss theta.
+
+So if theta is A, then we can write,
+
+sign of 90 degree minus A is equal to coss of A.
+
+And coss A is already given as 5 by 13.
+<break time="0.2s" />
+
+So directly,
+
+sign of 90 degree minus A is equal to 5 by 13.
+
+Hence, the final answer is "5 by 13".
+
+So the correct option is option B.

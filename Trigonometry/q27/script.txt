@@ -1,0 +1,98 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+
+In this problem, two observation points are on opposite sides of a tower, and the distance between those points is 60 m.
+
+
+Their angles of elevation are 30 degrees and 45 degrees.
+
+
+We need to find the height of the tower.
+
+
+To understand this easily, draw the tower in the middle.
+
+
+Take the height of the tower as h.
+
+
+Let the distance of the 30 degree point from the tower be x.
+
+
+Since both points are on opposite sides and the total distance between them is 60 m, the distance of the other point becomes 60 minus x.
+
+
+Okay, the figure is clear. <break time="0.5s" />
+
+
+Now, 
+Let us start with the easier angle first, which is 45 degrees.
+
+
+We know that ten 45 degree is equal to Height by Distance.
+
+
+And ten 45 degree is 1.
+
+
+Which gives us
+
+
+1 equals h upon<break time="0.2s" /> 60 minus x
+
+
+So we have ,
+
+
+h equal to 60 minus x
+
+
+Got it? Perfect.
+
+
+Now let us use the 30 degree angle. <break time="0.2s" />
+
+
+We know that ten 30 degree is equal to 1 by root 3.
+
+
+So,
+
+
+1 upon root 3 is equal to h upon x
+
+
+Which gives us 
+
+
+x equals root 3 h
+
+
+We already know that h equal to 60 minus x.
+
+
+So after substituting and solving, we get
+
+
+60 equals h times <break time="0.2s" />root 3 plus 1
+
+
+h equals 60 upon <break time="0.2s" />root 3 plus 1
+
+
+And after rationalization, we get
+
+
+h equals 30 times <break time="0.2s" />root3 minus 1
+
+
+Done and dusted. <break time="0.6s" />
+
+
+So the height of the tower is
+
+
+30 times <break time="0.2s" />root 3 - 1 m<break time="0.2s" />
+
+
+Hence, Option C is the correct answer.

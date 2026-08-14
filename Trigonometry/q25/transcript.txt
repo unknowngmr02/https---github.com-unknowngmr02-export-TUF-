@@ -1,0 +1,22 @@
+[00:00.10 -> 00:01.06]  So welcome back again.
+[00:01.56 -> 00:02.84]  It's time to solve one more problem.
+[00:03.32 -> 00:06.78]  In this problem, we are given that tan theta is equal to three by four,
+[00:07.26 -> 00:09.54]  and we need to find sine theta plus cos theta.
+[00:10.02 -> 00:11.24]  What does this mean in simple words?
+[00:11.66 -> 00:15.10]  Tan theta tells us the ratio of opposite side to adjacent side.
+[00:15.64 -> 00:17.74]  So if tan theta is equal to three by four,
+[00:18.24 -> 00:23.52]  we can imagine a right-angled triangle where the opposite side is three and the adjacent side is four.
+[00:23.96 -> 00:28.32]  A three-four right triangle immediately reminds us of one famous triangle,
+[00:28.70 -> 00:30.18]  the three-four-five triangle.
+[00:30.50 -> 00:32.28]  So the hypotenuse will be five.
+[00:32.64 -> 00:33.64]  Got it? Perfect.
+[00:34.44 -> 00:39.84]  Now that we know all three sides, finding sine theta and cos theta becomes very easy.
+[00:40.36 -> 00:43.84]  Sine theta means opposite side divided by hypotenuse.
+[00:44.24 -> 00:50.28]  So sine theta is equal to three by five, and cos theta means adjacent side divided by hypotenuse.
+[00:50.64 -> 00:52.88]  So cos theta is equal to four by five.
+[00:53.28 -> 00:55.62]  Now these values will help us find the required answer.
+[00:56.10 -> 01:00.64]  We need sine theta plus cos theta, so three by five plus four by five.
+[01:01.04 -> 01:04.28]  Since the denominators are the same, we simply add the numerators.
+[01:04.70 -> 01:06.10]  This becomes seven by five.
+[01:06.54 -> 01:07.32]  Done and dusted.
+[01:08.12 -> 01:12.48]  Hence, the final answer will be seven by five. So the correct option is A.

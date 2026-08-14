@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="design-system.css">
+<style>
+  /* Figure labels - .chip is scoped to .solution-card/.stack-card, so the
+     illustration needs its own rule (illustration_reference.md section 3).
+     Kept thin/sleek per standing note: 2px border, soft radius, no heavy fill. */
+  .fig-chip {
+    display: inline-block;
+    background: #FFFFFF;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  .fig-chip.role { border-color: #000000; color: #000000; }
+
+  /* Pinned copy: same viewBox/coords as full-size (260 viewBox units),
+     rendered at 300/360 = 0.833 scale, so declared font/border are bumped
+     to keep effective size >= 21px (26 * 0.833 = 21.7 undershoots comfort,
+     bumped to 30 -> 25px effective). */
+  .fig-chip-pinned {
+    display: inline-block;
+    background: #FFFFFF;
+    border: 1.5px solid var(--primary);
+    color: var(--primary);
+    padding: 3px 9px;
+    border-radius: 6px;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  .fig-chip-pinned.role { border-color: #000000; color: #000000; }
+
+  /* Question-card .num spans get their own ids so individual values can
+     pop on their own transcript word instead of arriving as one flat
+     block (Section 4, the 3-second law, applied to the pre-triangle
+     stretch of Phase 1 where no illustration exists yet). */
+  #num-tan, #num-cot, #num-103, #num-find { display: inline-block; }
+
+  /* Lower-emphasis connector words inside solution-card math lines (e.g.
+     "LCM ->"), so the card reads as a hierarchy of emphasis rather than
+     flat bold text everywhere - per standing note on varying opacity/weight
+     instead of relying only on bold color. */
+  .step-note { color: var(--topic); font-size: 0.75em; font-weight: 400; }
+</style>
+</head>
+<body>
+<div data-hf-id="hf-89uj" id="root" data-composition-id="root" data-start="0" data-width="1920" data-height="1080">
+
+  <!-- ══════ BACKGROUND LAYERS (always visible) ══════ -->
+  <div data-hf-id="hf-858h" class="dotted-grid"></div>
+  <div data-hf-id="hf-izuk" class="bottom-strip"></div>
+  <div data-hf-id="hf-pcpi" class="topic-name">Trigonometry</div>
+  <div data-hf-id="hf-e319" class="logo"></div>
+
+  <!-- ══════ VOICEOVER ══════
+       NARR_END = 102.459, END_FADE_TIME = 103.459, FADE_DUR = 1.5,
+       TIMELINE_END = 103.459 + 1.5 + 0.5 = 105.459 (extra tail buffer -
+       every clip still visible at fade time is given >=1s of headroom past
+       fade completion so unmount never lands mid-fade, see script block) -->
+  <audio data-hf-id="hf-u6lj" id="voiceover" class="clip" src="voiceover.wav" data-start="0" data-duration="105.459" data-track-index="0"></audio>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 1 - Question + geometric triangle (no physical object exists
+       for this identity question - the right triangle P/B/H IS the
+       illustration, per VIDEO_BUILD_PROMPT.md Section 6).
+       data-duration = (PIN_TIME 27.8 - data-start 0) + pinFlow 0.8 + 1.5 = 30.1 -> 30.5
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-1s7a" id="phase1" class="clip" data-start="0" data-duration="30.5" data-track-index="1" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:5;">
+
+    <div data-hf-id="hf-lxc5" id="q-full-card" class="q-card" style="position:absolute;left:50%;top:80px;width:1500px;transform:translateX(-50%);opacity:0;">
+      <div data-hf-id="hf-z6g4" class="q-text">
+        If <span data-hf-id="hf-tan" id="num-tan" class="num">tan θ</span> + <span data-hf-id="hf-cot" id="num-cot" class="num">cot θ</span> = <span data-hf-id="hf-103" id="num-103" class="num">10/3</span>, find <span data-hf-id="hf-find" id="num-find" class="num">sin θ · cos θ</span>.
+      </div>
+    </div>
+
+    <div data-hf-id="hf-w62k" id="serial-num" class="serial-num" style="left:60px;top:60px;opacity:0;">
+      <div data-hf-id="hf-yfde" class="digit">Q</div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════
+         ILLUSTRATION - geometric interpretation: a labelled right triangle
+         standing in for the P/B/H method (no physical object in this
+         identity question).
+
+         VERTICES (defined once, reused literally everywhere):
+           A = (150,470)  angle vertex (theta) - MUST be leftmost of the two base vertices
+           B = (350,470)  right-angle vertex
+           C = (350,302)  apex
+         RATIO CHECK: adjacent(A-B) = 200, opposite(B-C) = 470-302 = 168 -> tan = 168/200 = 0.84
+         ANGLE CHECK:  atan2(168,200) = 40.03deg -> --angle: 40 matches within 1deg
+         LENGTH CHECK: hyp(A-C) = sqrt(200^2+168^2) = sqrt(68224) = 261.20 -> dasharray 261.2
+         VIEWBOX: bounding box of geometry + arc + chips is x[110..410], y[272..510];
+           padded to "90 250 360 300" (comfortable margin for all four chips).
+         Strokes kept thin/sleek throughout (no thick lines): base/perp/hyp = 3,
+         right-angle marker = 2.5, angle arc = 6 (full-size); halved-ish for pinned.
+    -->
+      <div data-hf-id="hf-vk89" id="illustration" style="position:absolute;left:50%;top:460px;transform:translateX(-50%);overflow:visible;">
+        <svg data-hf-id="hf-kmux" width="672" height="560" viewBox="90 250 360 300" style="overflow:visible;">
+
+          <!-- base (adjacent), A-B -->
+          <!-- len = 350-150 = 200 -->
+          <line data-hf-id="hf-base" id="tri-base" x1="150" y1="470" x2="350" y2="470" stroke="#6373db" stroke-width="3" stroke-linecap="round" stroke-dasharray="200" stroke-dashoffset="200" />
+
+          <!-- perpendicular (opposite), B-C -->
+          <!-- len = 470-302 = 168 -->
+          <line data-hf-id="hf-perp" id="tri-perp" x1="350" y1="470" x2="350" y2="302" stroke="#6373db" stroke-width="3" stroke-linecap="round" stroke-dasharray="168" stroke-dashoffset="168" />
+
+          <!-- hypotenuse, A-C -->
+          <!-- len = sqrt(200^2+168^2) = 261.20 -->
+          <line data-hf-id="hf-hyp" id="tri-hyp" x1="150" y1="470" x2="350" y2="302" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-dasharray="261.2" stroke-dashoffset="261.2" />
+
+          <!-- right-angle marker at B=(350,470): rays -x (toward A) and -y
+               (toward C), inset 22px, derived directly from B's real
+               coordinates - never hand-shifted. -->
+          <path data-hf-id="hf-ra" id="right-angle" d="M 328 470 L 328 448 L 350 448" fill="none" stroke="#000000" stroke-width="2.5" stroke-linecap="round" opacity="0" />
+
+          <!-- angle arc at A=(150,470): r=70, C=2*PI*70=439.82; 2*cy=940 -->
+          <circle data-hf-id="hf-arc" id="angle-arc" cx="150" cy="470" r="70" fill="transparent" stroke="#4eb85f" stroke-width="6" stroke-linecap="round" transform="translate(0, 940) scale(1,-1)" style="--angle: 40; stroke-dasharray: calc((var(--angle) / 360) * 439.82) 439.82; opacity:0;" />
+
+          <!-- chips (foreignObject, scale/move with the figure through pinFlow) -->
+          <foreignobject data-hf-id="hf-ct" id="chip-theta" x="203" y="437" width="46" height="34" style="overflow:visible;opacity:0;">
+            <div data-hf-id="hf-ctd" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip">θ</div>
+          </foreignobject>
+          <foreignobject data-hf-id="hf-cp" id="chip-P" x="362" y="368" width="40" height="34" style="overflow:visible;opacity:0;">
+            <div data-hf-id="hf-cpd" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip role">P</div>
+          </foreignobject>
+          <foreignobject data-hf-id="hf-cb" id="chip-B" x="230" y="480" width="40" height="34" style="overflow:visible;opacity:0;">
+            <div data-hf-id="hf-cbd" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip role">B</div>
+          </foreignobject>
+          <foreignobject data-hf-id="hf-ch" id="chip-H" x="206" y="348" width="40" height="34" style="overflow:visible;opacity:0;">
+            <div data-hf-id="hf-chd" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip role">H</div>
+          </foreignobject>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 2 - Pinned question
+       data-duration = TIMELINE_END 104.459 - data-start 27.8 = 76.66 -> 76.7
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-px51" id="q-pinned" class="clip" data-start="27.8" data-duration="78.5" data-track-index="2" style="position:absolute;width:100%;top:0;left:0;z-index:6;opacity:0;">
+    <div data-hf-id="hf-9jf4" class="q-card pinned" style="position:absolute;left:385px;top:30px;width:1275px;">
+      <div data-hf-id="hf-x0ow" class="q-text">
+        <span data-hf-id="hf-x0a" class="num">tan θ + cot θ = 10/3</span>. Find <span data-hf-id="hf-x0b" class="num">sin θ · cos θ</span>.
+      </div>
+    </div>
+  </div>
+
+  <!-- Pinned triangle - EXACT coordinate copy of the full-size figure (same
+       viewBox, same internal numbers), only outer width/height and stroke
+       widths shrink. Right-angle marker omitted when pinned.
+       data-duration = (RECENTER_TIME 99.9 - data-start 27.8) + fadeOut 0.4 + 1.5 = 74.0 -->
+  <div data-hf-id="hf-ovio" id="illus-pinned" class="clip" data-start="27.8" data-duration="74.0" data-track-index="3" style="position:absolute;left:260px;top:150px;width:1400px;height:290px;z-index:5;opacity:0;
+              display:flex;align-items:center;justify-content:center;">
+    <svg data-hf-id="hf-qgcs" width="300" height="250" viewBox="90 250 360 300" style="overflow:visible;">
+      <line data-hf-id="hf-base-p" id="tri-base-pinned" x1="150" y1="470" x2="350" y2="470" stroke="#6373db" stroke-width="2" stroke-linecap="round" />
+      <line data-hf-id="hf-perp-p" id="tri-perp-pinned" x1="350" y1="470" x2="350" y2="302" stroke="#6373db" stroke-width="2" stroke-linecap="round" />
+      <line data-hf-id="hf-hyp-p" id="tri-hyp-pinned" x1="150" y1="470" x2="350" y2="302" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+
+      <!-- <circle data-hf-id="hf-arc-p" id="angle-arc-pinned" cx="150" cy="470" r="70" fill="transparent" stroke="#4eb85f" stroke-width="4.5" stroke-linecap="round" transform="translate(0, 940) scale(1,-1)" style="--angle: 40; stroke-dasharray: calc((var(--angle) / 360) * 439.82) 439.82;" /> -->
+
+      <foreignobject data-hf-id="hf-ct-p" x="203" y="417" width="46" height="34" style="overflow:visible;">
+        <div data-hf-id="hf-ctd-p" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip-pinned">θ</div>
+      </foreignobject>
+      <foreignobject data-hf-id="hf-cp-p" id="chip-P-pinned" x="362" y="368" width="40" height="34" style="overflow:visible;">
+        <div data-hf-id="hf-cpd-p" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip-pinned role">P</div>
+      </foreignobject>
+      <foreignobject data-hf-id="hf-cb-p" id="chip-B-pinned" x="230" y="480" width="40" height="34" style="overflow:visible;">
+        <div data-hf-id="hf-cbd-p" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip-pinned role">B</div>
+      </foreignobject>
+      <foreignobject data-hf-id="hf-ch-p" id="chip-H-pinned" x="206" y="348" width="40" height="34" style="overflow:visible;">
+        <div data-hf-id="hf-chd-p" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip-pinned role">H</div>
+      </foreignobject>
+    </svg>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SOLUTION CARDS
+       ══════════════════════════════════════════════ -->
+
+  <!-- GIVEN - tan/cot restated in P,B,H terms
+       data-duration = (morph 35.26 - data-start 27.86) + 0.8 + 1.5 = 9.7 -> 10.0 -->
+  <div data-hf-id="hf-gzl4" id="card-given" class="clip" data-start="27.86" data-duration="10.0" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-z076" class="solution-card" style="position:absolute;left:640px;top:480px;text-align:center;">
+      <div data-hf-id="hf-3rv6" class="card-content">
+        <span data-hf-id="hf-7r0o" class="chip">Given</span>
+        <div data-hf-id="hf-8tlu" class="math">
+          <span data-hf-id="hf-5r2o" class="rv" data-t="28.8">tan θ = <span data-hf-id="hf-fr1" class="frac"><span data-hf-id="hf-fr1t" class="top hi">P</span><span data-hf-id="hf-fr1b" class="bot hi">B</span></span></span><br data-hf-id="hf-x5px">
+          <span data-hf-id="hf-09jt" class="rv" data-t="32.42">cot θ = <span data-hf-id="hf-fr2" class="frac"><span data-hf-id="hf-fr2t" class="top hi">B</span><span data-hf-id="hf-fr2b" class="bot hi">P</span></span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 1 - substitute + LCM
+       data-duration = (morph 49.08 - data-start 35.26) + 0.8 + 1.5 = 16.12 -> 16.5 -->
+  <div data-hf-id="hf-0ym4" id="card-step1" class="clip" data-start="35.26" data-duration="16.5" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-guue" class="solution-card" style="position:absolute;left:600px;top:460px;text-align:center;width:720px;">
+      <div data-hf-id="hf-0yza" class="card-content">
+        <span data-hf-id="hf-3ife" class="chip">Step 1</span>
+        <div data-hf-id="hf-ng7a" class="math">
+          <span data-hf-id="hf-nhiw" class="rv" data-t="35.26"><span data-hf-id="hf-fr3" class="frac"><span data-hf-id="hf-fr3t" class="top hi">P</span><span data-hf-id="hf-fr3b" class="bot hi">B</span></span> + <span data-hf-id="hf-fr4" class="frac"><span data-hf-id="hf-fr4t" class="top hi">B</span><span data-hf-id="hf-fr4b" class="bot hi">P</span></span> = <span data-hf-id="hf-r103a" class="frac"><span data-hf-id="hf-r103at" class="top hi">10</span><span data-hf-id="hf-r103ab" class="bot hi">3</span></span></span><br data-hf-id="hf-szow">
+          <span data-hf-id="hf-lcm" class="rv step-note" data-t="41.9">LCM</span><br data-hf-id="hf-sldv2">
+          <span data-hf-id="hf-e4c8" class="rv" data-t="43.86"><span data-hf-id="hf-fr5" class="frac"><span data-hf-id="hf-fr5t" class="top hi">P² + B²</span><span data-hf-id="hf-fr5b" class="bot hi">PB</span></span> = <span data-hf-id="hf-r103b" class="frac"><span data-hf-id="hf-r103bt" class="top hi">10</span><span data-hf-id="hf-r103bb" class="bot hi">3</span></span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 2 - Pythagoras observation
+       data-duration = (morph 64.04 - data-start 49.08) + 0.8 + 1.5 = 17.26 -> 17.5 -->
+  <div data-hf-id="hf-y01v" id="card-step2" class="clip" data-start="49.08" data-duration="17.5" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-945l" class="solution-card" style="position:absolute;left:600px;top:470px;text-align:center;width:720px;">
+      <div data-hf-id="hf-1dab" class="card-content">
+        <span data-hf-id="hf-3wqf" class="chip">Step 2</span>
+        <div data-hf-id="hf-nuib" class="math">
+          <span data-hf-id="hf-note2" class="rv step-note" data-t="49.08">Pythagoras</span><br data-hf-id="hf-q7jp0">
+          <span data-hf-id="hf-a9uy" class="rv" data-t="51.94">P² + B² = <span data-hf-id="hf-hsq" class="hi">H²</span></span><br data-hf-id="hf-q7jp">
+          <span data-hf-id="hf-x5jg" class="rv" data-t="58.5"><span data-hf-id="hf-fr6" class="frac"><span data-hf-id="hf-fr6t" class="top hi">H²</span><span data-hf-id="hf-fr6b" class="bot hi">PB</span></span> = <span data-hf-id="hf-r103c" class="frac"><span data-hf-id="hf-r103ct" class="top hi">10</span><span data-hf-id="hf-r103cb" class="bot hi">3</span></span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 3 - build sin θ cos θ in P,B,H
+       data-duration = (morph 80.4 - data-start 64.04) + 0.8 + 1.5 = 18.66 -> 19.0 -->
+  <div data-hf-id="hf-wmda" id="card-step3" class="clip" data-start="64.04" data-duration="19.0" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-h95f" class="solution-card" style="position:absolute;left:600px;top:460px;text-align:center;width:720px;">
+      <div data-hf-id="hf-1rlc" class="card-content">
+        <span data-hf-id="hf-4b1g" class="chip">Step 3</span>
+        <div data-hf-id="hf-o8tc" class="math">
+          <span data-hf-id="hf-sindef" class="rv" data-t="67.02">sin θ = <span data-hf-id="hf-fr7" class="frac"><span data-hf-id="hf-fr7t" class="top hi">P</span><span data-hf-id="hf-fr7b" class="bot hi">H</span></span></span><br data-hf-id="hf-p0mm0">
+          <span data-hf-id="hf-cosdef" class="rv" data-t="71.56">cos θ = <span data-hf-id="hf-fr8" class="frac"><span data-hf-id="hf-fr8t" class="top hi">B</span><span data-hf-id="hf-fr8b" class="bot hi">H</span></span></span><br data-hf-id="hf-p0mm">
+          <span data-hf-id="hf-ganv" class="rv" data-t="75.42">sin θ · cos θ = <span data-hf-id="hf-fr9" class="frac"><span data-hf-id="hf-fr9t" class="top hi">PB</span><span data-hf-id="hf-fr9b" class="bot hi">H²</span></span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 4 - reciprocal, final answer
+       data-duration = (morph 99.9 - data-start 80.4) + 0.8 + 1.5 = 21.8 -> 22.0 -->
+  <div data-hf-id="hf-s4" id="card-step4" class="clip" data-start="80.4" data-duration="22.0" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-s4b" class="solution-card" style="position:absolute;left:600px;top:450px;text-align:center;width:740px;">
+      <div data-hf-id="hf-s4c" class="card-content">
+        <span data-hf-id="hf-s4chip" class="chip">Step 4</span>
+        <div data-hf-id="hf-s4math" class="math">
+          <span data-hf-id="hf-recap" class="rv" data-t="80.4"><span data-hf-id="hf-fr10" class="frac"><span data-hf-id="hf-fr10t" class="top hi">H²</span><span data-hf-id="hf-fr10b" class="bot hi">PB</span></span> = <span data-hf-id="hf-r103d" class="frac"><span data-hf-id="hf-r103dt" class="top hi">10</span><span data-hf-id="hf-r103db" class="bot hi">3</span></span></span><br data-hf-id="hf-s4br1">
+          <span data-hf-id="hf-recip" class="rv" data-t="86.04"><span data-hf-id="hf-recipnote" class="step-note">Reciprocal</span> <span data-hf-id="hf-fr11" class="frac"><span data-hf-id="hf-fr11t" class="top hi">PB</span><span data-hf-id="hf-fr11b" class="bot hi">H²</span></span> = <span data-hf-id="hf-fr12" class="frac"><span data-hf-id="hf-fr12t" class="top hi">3</span><span data-hf-id="hf-fr12b" class="bot hi">10</span></span></span><br data-hf-id="hf-s4br2">
+          <span data-hf-id="hf-equals" class="rv" data-t="90.6">= sin θ · cos θ</span><br data-hf-id="hf-s4br3">
+          <span data-hf-id="hf-ans4" class="rv ans" data-t="95.8">sin θ · cos θ = <span data-hf-id="hf-ans4v" id="ans4-value" class="ans"><span data-hf-id="hf-fr13" class="frac"><span data-hf-id="hf-fr13t" class="top">3</span><span data-hf-id="hf-fr13b" class="bot">10</span></span></span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       LEFT STACK CARDS
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-xjl6" id="stack-given" class="clip" data-start="35.26" data-duration="71.0" data-track-index="11" style="position:absolute;left:100px;top:140px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-usjn" class="stack-card">
+      <div data-hf-id="hf-yzg5" class="card-content">
+        <span data-hf-id="hf-snhl" class="step-circle">G</span>
+        <div data-hf-id="hf-yei6" class="math">
+          tan θ = <span data-hf-id="hf-gv1" class="hi frac"><span data-hf-id="hf-gv1t" class="top">P</span><span data-hf-id="hf-gv1b" class="bot">B</span></span>,
+          cot θ = <span data-hf-id="hf-gv2" class="hi frac"><span data-hf-id="hf-gv2t" class="top">B</span><span data-hf-id="hf-gv2b" class="bot">P</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-s1uo" id="stack-step1" class="clip" data-start="49.08" data-duration="57.0" data-track-index="12" style="position:absolute;left:100px;top:290px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-3m9v" class="stack-card">
+      <div data-hf-id="hf-zdr6" class="card-content">
+        <span data-hf-id="hf-w2db" class="step-circle">1</span>
+        <div data-hf-id="hf-plmh" class="math">
+          <span data-hf-id="hf-sv1" class="hi frac"><span data-hf-id="hf-sv1t" class="top">P² + B²</span><span data-hf-id="hf-sv1b" class="bot">PB</span></span> =
+          <span data-hf-id="hf-sv2" class="hi frac"><span data-hf-id="hf-sv2t" class="top">10</span><span data-hf-id="hf-sv2b" class="bot">3</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-t61a" id="stack-step2" class="clip" data-start="64.04" data-duration="42.0" data-track-index="13" style="position:absolute;left:100px;top:440px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-37yu" class="stack-card">
+      <div data-hf-id="hf-zs27" class="card-content">
+        <span data-hf-id="hf-vo2a" class="step-circle">2</span>
+        <div data-hf-id="hf-tb7u" class="math">
+          P² + B² = <span data-hf-id="hf-svh" class="hi">H²</span><br data-hf-id="hf-svbr">
+          <span data-hf-id="hf-sv3" class="hi frac"><span data-hf-id="hf-sv3t" class="top">H²</span><span data-hf-id="hf-sv3b" class="bot">PB</span></span> =
+          <span data-hf-id="hf-sv4" class="hi frac"><span data-hf-id="hf-sv4t" class="top">10</span><span data-hf-id="hf-sv4b" class="bot">3</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-9zob" id="stack-step3" class="clip" data-start="80.4" data-duration="26.0" data-track-index="14" style="position:absolute;left:100px;top:600px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-2tnt" class="stack-card">
+      <div data-hf-id="hf-06d8" class="card-content">
+        <span data-hf-id="hf-v9r9" class="step-circle">3</span>
+        <div data-hf-id="hf-8u7u" class="math">
+          sin θ · cos θ = <span data-hf-id="hf-sv5" class="hi frac"><span data-hf-id="hf-sv5t" class="top">PB</span><span data-hf-id="hf-sv5b" class="bot">H²</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-s4stack" id="stack-step4" class="clip" data-start="99.9" data-duration="6.5" data-track-index="18" style="position:absolute;left:100px;top:740px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-s4sc" class="stack-card">
+      <div data-hf-id="hf-s4scc" class="card-content">
+        <span data-hf-id="hf-s4circ" class="step-circle">4</span>
+        <div data-hf-id="hf-s4scm" class="math">
+          sin θ · cos θ = <span data-hf-id="hf-s4ans" class="ans frac"><span data-hf-id="hf-s4anst" class="top">3</span><span data-hf-id="hf-s4ansb" class="bot">10</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-xza7" id="line-g-1" class="clip stack-line" data-start="49.08" data-duration="57.0" data-track-index="15" style="opacity:0;"></div>
+  <div data-hf-id="hf-q834" id="line-1-2" class="clip stack-line" data-start="64.04" data-duration="42.0" data-track-index="16" style="opacity:0;"></div>
+  <div data-hf-id="hf-r550" id="line-2-3" class="clip stack-line" data-start="80.4" data-duration="26.0" data-track-index="17" style="opacity:0;"></div>
+  <div data-hf-id="hf-r34" id="line-3-4" class="clip stack-line" data-start="99.9" data-duration="6.5" data-track-index="19" style="opacity:0;"></div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 3 - OPTIONS REVEAL
+       data-duration = TIMELINE_END 105.459 - data-start 100.3 = 5.16 -> 6.0
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-pit6" id="options-reveal" class="clip" data-start="100.3" data-duration="6.0" data-track-index="10" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:8;opacity:0;">
+    <div data-hf-id="hf-2tfv" class="pinned-col" style="top:400px;">
+      <div data-hf-id="hf-6knj" class="options-grid">
+        <div data-hf-id="hf-4gx1" class="opt-btn"><span data-hf-id="hf-sfug" class="letter">A</span>10/3</div>
+        <div data-hf-id="hf-dty7" class="opt-btn"><span data-hf-id="hf-r8xd" class="letter">B</span>1/3</div>
+        <div data-hf-id="hf-o6xy" class="opt-btn"><span data-hf-id="hf-rn8e" class="letter">C</span>1/3</div>
+        <div data-hf-id="hf-ie0u" class="opt-btn correct"><span data-hf-id="hf-qgbb" class="letter">D</span>3/10</div>
+      </div>
+    </div>
+  </div>
+
+<!-- end root -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script src="animations.js"></script>
+<script>
+  apt.setStackLine("#line-g-1", "#stack-given .step-circle", "#stack-step1 .step-circle");
+  apt.setStackLine("#line-1-2", "#stack-step1 .step-circle", "#stack-step2 .step-circle");
+  apt.setStackLine("#line-2-3", "#stack-step2 .step-circle", "#stack-step3 .step-circle");
+  apt.setStackLine("#line-3-4", "#stack-step3 .step-circle", "#stack-step4 .step-circle");
+
+  const tl = gsap.timeline({ paused: true });
+
+  // ── PHASE 1 - question hero entrance
+  const HERO_OFFSET_Y = 180;
+  const RISE_TIME = 3.4; // "...one more problem." ends 3.08 + buffer
+  apt.heroEnterLowered(tl, "#q-full-card", HERO_OFFSET_Y, RISE_TIME);
+
+  tl.fromTo("#serial-num",
+    { scale: 0, rotation: -45, opacity: 0, y: HERO_OFFSET_Y },
+    { scale: 1, rotation: 0, opacity: 1, y: HERO_OFFSET_Y, duration: 0.55, ease: "back.out(2)" },
+    0.8);
+  tl.to("#serial-num", { y: 0, duration: 0.6, ease: "power2.inOut" }, RISE_TIME);
+
+  // ── Pre-triangle beats - the question card's own .num spans pop
+  // individually as each is spoken, filling the 3.48-19.48s stretch before
+  // the illustration exists (Section 4, the 3-second law).
+  apt.emphasize(tl, "#num-tan", 5.42);
+  apt.emphasize(tl, "#num-cot", 7.04);
+  apt.emphasize(tl, "#num-103", 8.66);
+  apt.emphasize(tl, "#num-find", 10.36);
+
+  // ── TRIANGLE BUILD - draws in stroke by stroke as the narrator names
+  // each part ("let us solve this using P, B, and H... perpendicular is P,
+  // base is B, hypotenuse is H").
+  tl.to("#tri-base", { strokeDashoffset: 0, duration: 0.6, ease: "power2.out" }, 18.3);
+  tl.to("#tri-perp", { strokeDashoffset: 0, duration: 0.6, ease: "power2.out" }, 19.0);
+  tl.to("#tri-hyp",  { strokeDashoffset: 0, duration: 0.6, ease: "power2.out" }, 19.6);
+  tl.to("#right-angle", { opacity: 1, duration: 0.3 }, 20.3);
+  tl.to("#angle-arc", { opacity: 1, duration: 0.4 }, 20.6);
+  tl.fromTo("#chip-theta", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, 21.0);
+
+  tl.fromTo("#chip-P", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, 22.58);
+  tl.to("#tri-perp", { stroke: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 22.58);
+
+  tl.fromTo("#chip-B", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, 24.26);
+  tl.to("#tri-base", { stroke: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 24.26);
+
+  tl.fromTo("#chip-H", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, 25.66);
+  tl.to("#tri-hyp", { stroke: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 25.66);
+
+  // ── PHASE 2 - Pin, then Given
+  const PIN_TIME = 27.8;
+  const GIVEN_TIME = 27.86; // narration moves straight into "We know that tan theta..."
+
+  apt.pinFlow(tl, "#q-full-card", "#q-pinned", PIN_TIME);
+  apt.pinFlow(tl, "#illustration", "#illus-pinned", PIN_TIME);
+  apt.fadeOut(tl, "#serial-num", PIN_TIME, 0.5);
+
+  apt.cardEnter(tl, "#card-given .solution-card", GIVEN_TIME);
+  apt.textReveal(tl, "#card-given .math");
+
+  // STEP 1 - LINK: the substituted P/B chips pulse on the pinned triangle
+  apt.morphToStack(tl, "#card-given .solution-card", "#stack-given .stack-card", 35.26);
+  apt.cardEnter(tl, "#card-step1 .solution-card", 35.26);
+  apt.textReveal(tl, "#card-step1 .math");
+  apt.emphasize(tl, "#chip-P-pinned", 35.26);
+  apt.emphasize(tl, "#chip-B-pinned", 35.26);
+
+  // STEP 2 - Pythagoras: the pinned hypotenuse confirms green exactly as
+  // "Pythagoras Theorem" is spoken, and the H chip pulses with it.
+  apt.morphToStack(tl, "#card-step1 .solution-card", "#stack-step1 .stack-card", 49.08);
+  apt.stackLineGrow(tl, "#line-g-1", 49.08);
+  apt.cardEnter(tl, "#card-step2 .solution-card", 49.08);
+  apt.textReveal(tl, "#card-step2 .math");
+  tl.to("#tri-hyp-pinned", { stroke: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 51.94);
+  apt.emphasize(tl, "#chip-H-pinned", 51.94);
+  apt.emphasize(tl, "#chip-P-pinned", 58.5); // filler beat during the long "H^2/PB" stretch
+  apt.emphasize(tl, "#chip-B-pinned", 62.32); // filler beat: "what do we have to find?"
+
+  // STEP 3 - sin/cos definitions, LINK each named side
+  apt.morphToStack(tl, "#card-step2 .solution-card", "#stack-step2 .stack-card", 64.04);
+  apt.stackLineGrow(tl, "#line-1-2", 64.04);
+  apt.cardEnter(tl, "#card-step3 .solution-card", 64.04);
+  apt.textReveal(tl, "#card-step3 .math");
+  apt.emphasize(tl, "#chip-P-pinned", 67.02);
+  apt.emphasize(tl, "#chip-H-pinned", 67.02);
+  apt.emphasize(tl, "#chip-B-pinned", 71.56);
+  apt.emphasize(tl, "#chip-H-pinned", 71.56);
+
+  // STEP 4 - reciprocal + final answer
+  apt.morphToStack(tl, "#card-step3 .solution-card", "#stack-step3 .stack-card", 80.4);
+  apt.stackLineGrow(tl, "#line-2-3", 80.4);
+  apt.cardEnter(tl, "#card-step4 .solution-card", 80.4);
+  apt.textReveal(tl, "#card-step4 .math");
+
+  // LINK - the whole pinned triangle confirms green together, the moment
+  // the algebra lands back on sin θ cos θ.
+  tl.to("#tri-base-pinned", { stroke: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 90.6);
+  tl.to("#tri-perp-pinned", { stroke: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 90.6);
+  tl.to("#tri-hyp-pinned", { stroke: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 90.6);
+  apt.emphasize(tl, "#angle-arc-pinned", 90.6);
+  apt.emphasize(tl, "#ans4-value", 95.8);
+
+  // ── Recenter for options
+  const RECENTER_TIME = 99.9;
+  apt.morphToStack(tl, "#card-step4 .solution-card", "#stack-step4 .stack-card", RECENTER_TIME);
+  apt.stackLineGrow(tl, "#line-3-4", RECENTER_TIME);
+  apt.fadeOut(tl, "#illus-pinned", RECENTER_TIME);
+  apt.recenterForOptions(tl, "#q-pinned", 160, 180, RECENTER_TIME);
+
+  apt.fadeIn(tl, "#options-reveal", 100.3);
+  apt.optionsStagger(tl, ".opt-btn", 100.7);
+  apt.correctPulse(tl, ".opt-btn.correct", 101.8);
+
+  // ── END FADE - everything fades out TOGETHER as one synchronized beat.
+  // Explicit per-element list instead of the "#root > div" wildcard: every
+  // element still visible at this point is targeted by name, so nothing can
+  // silently miss the tween and instead hard-cut at its own clip boundary
+  // (that mismatch - individual elements disappearing one after another
+  // instead of a single unified fade - is exactly the bug this fixes).
+  // Every one of these clips' data-duration windows extends well past
+  // END_FADE_TIME + FADE_DUR (see each element's data-duration comment
+  // above), so unmounting never lands mid-fade.
+  const END_FADE_TIME = 103.459; // NARR_END 102.459 + 1.0
+  const FADE_DUR = 1.5;
+  apt.fadeOut(tl, ".dotted-grid", END_FADE_TIME, FADE_DUR);
+  apt.fadeOut(tl, ".bottom-strip", END_FADE_TIME, FADE_DUR);
+  apt.fadeOut(tl, ".topic-name", END_FADE_TIME, FADE_DUR);
+  apt.fadeOut(tl, ".logo", END_FADE_TIME, FADE_DUR);
+  apt.fadeOut(tl, "#q-pinned", END_FADE_TIME, FADE_DUR);
+  apt.fadeOut(tl, "#stack-given", END_FADE_TIME, FADE_DUR);
+  apt.fadeOut(tl, "#stack-step1", END_FADE_TIME, FADE_DUR);
+  apt.fadeOut(tl, "#stack-step2", END_FADE_TIME, FADE_DUR);
+  apt.fadeOut(tl, "#stack-step3", END_FADE_TIME, FADE_DUR);
+  apt.fadeOut(tl, "#stack-step4", END_FADE_TIME, FADE_DUR);
+  apt.fadeOut(tl, "#line-g-1", END_FADE_TIME, FADE_DUR);
+  apt.fadeOut(tl, "#line-1-2", END_FADE_TIME, FADE_DUR);
+  apt.fadeOut(tl, "#line-2-3", END_FADE_TIME, FADE_DUR);
+  apt.fadeOut(tl, "#line-3-4", END_FADE_TIME, FADE_DUR);
+  apt.fadeOut(tl, "#options-reveal", END_FADE_TIME, FADE_DUR);
+
+  tl.set({}, {}, 105.459); // 103.459 + 1.5 + 0.5 - nothing beyond this
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines["root"] = tl;
+</script>
+</body>
+</html>

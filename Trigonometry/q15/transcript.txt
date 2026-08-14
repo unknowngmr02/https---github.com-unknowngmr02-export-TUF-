@@ -1,0 +1,28 @@
+[00:00.10 -> 00:00.26]  So
+[00:00.56 -> 00:01.32]  welcome back again.
+[00:01.88 -> 00:03.52]  It's time to solve one more problem.
+[00:04.10 -> 00:04.78]  Now in this problem,
+[00:05.36 -> 00:06.42]  a 13-meter ladder
+[00:06.84 -> 00:07.72]  is touching a window
+[00:08.22 -> 00:09.74]  which is 12 meter above the ground.
+[00:10.36 -> 00:13.90]  The question is asking us to find how far the foot of the ladder
+[00:14.32 -> 00:15.00]  is from the wall.
+[00:15.70 -> 00:15.90]  Here,
+[00:16.26 -> 00:16.72]  the ladder,
+[00:17.26 -> 00:17.66]  the wall,
+[00:18.06 -> 00:18.64]  and the ground
+[00:19.10 -> 00:21.02]  make a right-angled triangle.
+[00:21.62 -> 00:25.32]  The ladder will be the hypotenuse because it is the slant side.
+[00:25.84 -> 00:27.50]  The wall height is the perpendicular,
+[00:28.04 -> 00:29.36]  and the distance from the wall
+[00:29.78 -> 00:32.16]  to the foot of the ladder is the base.
+[00:32.92 -> 00:34.14]  Let the base be x meter.
+[00:34.62 -> 00:40.34]  Using Pythagoras Theorem, hypotenuse square is equal to base square plus perpendicular square.
+[00:40.90 -> 00:45.48]  So we can write 13 square is equal to x square plus 12 square.
+[00:45.90 -> 00:46.98]  That means
+[00:47.28 -> 00:51.10]  169 is equal to x square plus 144.
+[00:51.50 -> 00:58.76]  So x square is equal to 169 minus 144. After subtracting, x square is equal to 25.
+[00:59.14 -> 01:01.52]  So x is equal to root 25,
+[01:01.86 -> 01:02.52]  which is five.
+[01:03.44 -> 01:05.98]  Hence, the foot of the ladder is five meters from the wall.
+[01:06.58 -> 01:08.54]  So the correct option is option C.

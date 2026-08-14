@@ -1,0 +1,86 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+
+In this problem, a road rises 10 mee-ter for every 10 root 3 mee-ter of horizontal distance.
+
+
+What does this mean in simple words?
+
+
+It means if we draw the road and the ground, they form a right triangle.
+
+
+The upward rise becomes the height, which is 10 mee-ter.
+
+
+And The horizontal distance becomes the base, which is 10 root 3 mee-ter.
+
+
+And the problem is asking us to find the angle made by the road with the ground.
+
+
+So let us call this angle theta.
+
+
+<break time="0.5s" />
+
+
+Here we know two things already.
+
+
+We know the height.
+
+
+And we know the base.
+
+
+Whenever height and base are given, the trigonometric ratio that connects them is "tan theta".
+
+
+
+
+As ten theta equals Height upon Base
+
+
+So,
+
+
+ten theta equals 10 upon 10 root 3
+
+
+After simplifying this, the 10 gets cancelled.
+
+
+This becomes,
+
+
+ten theta equals 1 upon root 3
+
+
+<break time="0.2s" />
+
+
+Now this is where the question becomes easy.
+
+
+We already know one standard value.
+
+
+ten 30 degree is equal to 1 upon root 3.
+
+
+
+
+So theta must be 30 degree.
+
+
+Got it? Perfect.
+
+
+<break time="0.6s" />
+
+
+Hence, the angle of inclination of the road is 30 degrees.
+
+
+So the final answer will be Option A, 30 degrees.

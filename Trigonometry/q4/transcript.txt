@@ -1,0 +1,26 @@
+[00:00.10 -> 00:01.08]  So welcome back again.
+[00:01.74 -> 00:03.42]  It's time to solve one more problem.
+[00:03.94 -> 00:04.76]  Now, in this problem,
+[00:05.20 -> 00:08.18]  we have a pole whose height is twelve meters,
+[00:08.56 -> 00:12.02]  and the shadow of the pole is twelve root three meters.
+[00:12.46 -> 00:13.28]  The question is
+[00:13.78 -> 00:16.28]  asking us to find the angle of elevation of the sun.
+[00:17.02 -> 00:17.38]  First,
+[00:17.82 -> 00:18.94]  let us draw the situation.
+[00:19.44 -> 00:20.24]  Here is the pole.
+[00:20.74 -> 00:22.30]  Here is its shadow on the ground.
+[00:22.78 -> 00:24.02]  Now join the top of the pole
+[00:24.48 -> 00:25.74]  to the end of the shadow.
+[00:26.20 -> 00:28.06]  This forms a right triangle,
+[00:28.52 -> 00:33.52]  and this angle with the ground is the angle of elevation that we need to find.
+[00:33.88 -> 00:35.42]  Now, let us identify the sides.
+[00:35.78 -> 00:38.38]  The height of the pole becomes the opposite side,
+[00:38.82 -> 00:40.44]  so the opposite side is twelve.
+[00:40.82 -> 00:46.48]  The shadow becomes the adjacent side, so the adjacent side is twelve root three.
+[00:46.88 -> 00:48.94]  Since we know the opposite side and the adjacent side,
+[00:49.46 -> 00:52.68]  ten theta is the correct trigonometric ratio to use.
+[00:53.18 -> 00:56.72]  Ten theta is equal to opposite side divided by adjacent side.
+[00:57.20 -> 01:01.76]  Putting the values, ten theta is equal to twelve divided by twelve root three.
+[01:02.30 -> 01:12.90]  The twelve from the numerator and denominator gets canceled. So now ten theta is equal to one divided by root three. Now we only have to remember one standard trigonometric value.
+[01:13.52 -> 01:16.18]  Ten thirty degree is equal to one divided by root three.
+[01:16.78 -> 01:28.22]  Both values are exactly the same, so theta must be thirty degree. Hence, the angle of elevation of the sun is thirty degree. So the correct option is option D.

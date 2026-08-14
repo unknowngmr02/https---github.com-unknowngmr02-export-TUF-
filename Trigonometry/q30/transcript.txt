@@ -1,0 +1,35 @@
+[00:00.10 -> 00:00.28]  So
+[00:00.70 -> 00:01.76]  welcome back again.
+[00:02.28 -> 00:03.22]  It's time to solve
+[00:03.76 -> 00:04.46]  one more problem.
+[00:04.92 -> 00:05.66]  In this problem,
+[00:06.12 -> 00:06.96]  we are given that
+[00:07.40 -> 00:09.92]  sine theta is equal to cos two theta
+[00:10.38 -> 00:12.04]  and theta is an acute angle.
+[00:12.60 -> 00:15.30]  The question is asking us to find the value of theta.
+[00:15.76 -> 00:17.76]  Now, this is a very easy multiple choice question.
+[00:18.18 -> 00:20.46]  Can we solve it by checking the options directly?
+[00:20.92 -> 00:21.18]  Yes,
+[00:21.60 -> 00:21.96]  we can.
+[00:22.78 -> 00:24.14]  Let us check option A,
+[00:24.58 -> 00:25.88]  which is forty-five degrees.
+[00:26.34 -> 00:30.42]  If theta is forty-five degrees, then sine forty-five degrees is equal to one by root two.
+[00:30.80 -> 00:32.26]  Now, let us check the right side.
+[00:32.66 -> 00:36.38]  Cos two theta becomes cos ninety degrees,
+[00:36.82 -> 00:37.80]  which is equal to zero.
+[00:38.36 -> 00:39.78]  These two values are not the same,
+[00:40.26 -> 00:41.56]  so option A is not correct.
+[00:41.92 -> 00:44.20]  Now, let us check option B, which is thirty degrees.
+[00:44.68 -> 00:49.00]  If theta is thirty degrees, then sine thirty degrees is equal to one-half.
+[00:49.56 -> 00:50.36]  On the right side,
+[00:50.78 -> 00:55.96]  cos two theta becomes cos sixty degrees, which is also equal to one-half.
+[00:56.40 -> 00:58.18]  Now, both sides are giving the same value.
+[00:58.70 -> 00:59.96]  The left side is one by two.
+[01:00.50 -> 01:02.04]  The right side is also one by two.
+[01:02.64 -> 01:04.58]  So the given condition is satisfied.
+[01:05.10 -> 01:05.62]  Got it?
+[01:06.32 -> 01:06.80]  Perfect.
+[01:07.64 -> 01:08.10]  Hence,
+[01:08.70 -> 01:11.50]  the value of theta is thirty degrees.
+[01:12.02 -> 01:13.68]  So the final answer will be option B,
+[01:14.30 -> 01:15.26]  thirty degrees.

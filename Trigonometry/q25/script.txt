@@ -1,0 +1,78 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+In this problem, we are given that
+
+Ten Theta is equal to 3 by 4.
+
+And we need to find
+
+Sign Theta pluss Kos Theta.
+
+What does this mean in simple words?
+
+Ten Theta tells us the rayshio of
+
+opposite side to adjacent side.
+
+So if Ten Theta is equal to 3 by 4,
+
+we can imagine a right-angled triangle where
+
+the opposite side is 3
+
+and the adjacent side is 4.
+<break time="0.3s" />
+
+A 3-4 right triangle immediately reminds us of one famous triangle.
+
+The 3-4-5 triangle.
+
+So the hypotenuse will be 5.
+
+Got it? Perfect.
+<break time="0.5s" />
+
+Now that we know all three sides, finding Sign Theta and Kos Theta becomes very easy.
+
+Sign Theta means
+
+opposite side divided by hypotenuse.
+
+So,
+
+Sign Theta is equal to 3 by 5.
+<break time="0.3s" />
+
+And Kos Theta means
+
+adjacent side divided by hypotenuse.
+
+So,
+
+Kos Theta is equal to 4 by 5.
+
+Now these values will help us find the required answer.
+<break time="0.3s" />
+
+We need
+
+Sign Theta pluss Kos Theta.
+
+So,
+
+3 by 5 pluss 4 by 5.
+
+Since the denominators are the same, we simply add the numerators.
+
+This becomes
+
+7 by 5.
+
+Done and dusted.
+<break time="0.6s" />
+
+Hence, the final answer will be
+
+7 by 5.
+
+So the correct option is A.

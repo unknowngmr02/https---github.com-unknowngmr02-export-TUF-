@@ -1,0 +1,51 @@
+So "welcome back again", <break time="0.2s" />
+
+It's time to solve one more problem, In this problem... We have a ramp that rises 7 metres for a horizontal run of 7 square root of 3 metres.
+
+And we need to find the angle that the ramp makes with the ground.
+
+<break time="0.4s" />
+
+First, let's visualize the right triangle.
+
+The vertical rise is the opposite side, so,
+
+Opposite = 7 metres
+
+And the horizontal run is the adjacent side, so,
+
+Adjacent = 7 square root of 3 metres.
+
+<break time="0.4s" />
+
+Now, which trigonometric ratio uses the opposite and adjacent sides?
+
+It's ten.
+
+So,
+
+ten theta = Opposite / Adjacent
+
+Substituting the values,
+
+ten theta = 7 / 7 square root of 3
+
+The 7 cancels out, giving us,
+
+ten theta = 1 / square root of 3
+
+<break time="0.4s" />
+
+Now we know the standard value,
+
+ten 30 degrees = 1 / square root of 3
+
+Therefore,
+
+theta = 30 degrees.
+
+<break time="0.6s" />
+
+So, the angle made by the ramp with the ground is 30 degrees.
+
+Hence, the correct answer is Option C.

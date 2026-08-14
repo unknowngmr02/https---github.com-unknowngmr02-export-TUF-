@@ -1,0 +1,135 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+
+In this problem, we have two towers.
+
+
+The distance between the towers is 30 mee-ter.
+
+
+From the foot of the first tower, the angle of elevation to the top of the second tower is 60 degrees.
+
+
+And from the foot of the second tower, the angle of elevation to the top of the first tower is 30 degrees.
+
+
+The problem is asking us to find the difference in their heights.
+
+
+What does this mean in simple words?
+
+
+It means we need to find the height of both towers separately, and then subtract the smaller height from the bigger height.
+
+
+Since the distance between the towers is already given as 30 mee-ter, our job becomes very easy.
+
+
+<break time="0.5s" />
+
+
+First, let us find the height of the second tower.
+
+
+Why are we finding this first?
+
+
+Because the question directly gives us a 60-degree angle from the first tower to the top of the second tower.
+
+
+Now we know one fact.
+
+
+In a right triangle,
+
+
+ten theta equal to Height upon Base
+
+
+Here,
+
+
+ten 60° equal to Height of second tower upon 30
+
+
+And ten 60° is equal to root 3.
+
+
+So,
+
+
+Root 3  equal to Height of second tower upon 30
+
+
+After solving this,
+
+
+Height of second tower is equal to 30 root 3 mee-ter.
+
+
+Got it? Perfect.
+
+
+<break time="0.2s" />
+
+
+Now that we know the height of the second tower, let us find the height of the first tower.
+
+
+Again using the same idea,
+
+
+ten 30° equal to  Height of first tower upon 30
+
+
+And ten 30° is equal to 1 upon root 3.
+
+
+So,
+
+
+1 upon root 3 is equal to Height of first tower upon 30
+
+
+After solving this,
+
+
+Height of first tower equal to 30 upon root 3
+
+
+This becomes 10 root 3 mee-ter.
+
+
+
+
+<break time="0.2s" />
+
+
+So both heights are clear now.
+
+
+Second tower equal to 30 root 3 mee-ter
+
+
+And First tower equal to 10 root 3 mee-ter
+
+
+The question is asking for the difference.
+
+
+So,
+
+
+The difference is 30 root 3 minus 10 root 3
+
+
+That is  20 root 3 mee-ter
+
+
+<break time="0.6s" />
+
+
+Hence, the final answer will be 20 root 3 mee-ter.
+
+
+So option B is the correct answer.

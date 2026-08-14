@@ -1,0 +1,32 @@
+So "welcome back again", <break time="0.4s" /> it's time to solve one more problem.
+<break time="0.4s" />
+
+Now in this problem, we are given "sign 30 degree" and "ko-sign 60 degree".
+
+The question is asking us to find their sum.
+<break time="0.4s" />
+
+Now the important point here is that these are standard trigonometric values.
+
+We should remember them because they are used very often.
+
+sign 30 degree is equal to 1 by 2.
+
+And ko-sign 60 degree is also equal to 1 by 2.
+<break time="0.4s" />
+
+Now that we know both values, let us substitute them into the given expression.
+
+So we get,
+
+1 by 2 pluss 1 by 2.
+<break time="0.4s" />
+
+which is equal to 1.
+
+Done.
+<break time="0.2s" />
+
+So the final answer will be "1".
+
+Hence, the correct option is "Option B".

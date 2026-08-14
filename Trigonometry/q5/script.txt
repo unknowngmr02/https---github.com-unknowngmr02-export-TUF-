@@ -1,0 +1,61 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+Now in this problem, we have a ladder of length 10 mee-ter.
+
+The ladder is making an angle of sixty degree with the ground.
+
+The question is asking us to find how high the ladder reaches on the wall.
+
+<break time="0.5s" />
+
+First, let us understand the picture.
+
+Draw the ground.
+
+Now draw the wall.
+
+Place the ladder leaning against the wall.
+
+Since the wall and the ground are perpendicular, this forms a right triangle.
+
+The ladder is the longest side, so it becomes the hypotenuse.
+
+The height on the wall is the opposite side.
+
+And the ground is the adjacent side.
+
+<break time="0.2s" />
+
+We already know the hypotenuse and we need the opposite side.
+
+So "sign theta" is the correct trigonometric ratio.
+
+"Sign theta is equal to opposite side divided by hypotenuse."
+
+<break time="0.2s" />
+
+Putting the values,
+
+"Sign sixty degree is equal to height divided by ten."
+
+We also know one standard trigonometric value.
+
+"Sign sixty degree is equal to root three divided by two."
+
+So,
+
+"Root three divided by two is equal to height divided by ten."
+
+<break time="0.2s" />
+
+Multiply both sides by ten.
+
+After simplifying,
+
+The height becomes "five root three" mee-ter.
+
+<break time="0.6s" />
+
+Hence, the ladder reaches a height of "five root three" mee-ter on the wall.
+
+So the correct option is "Option A."

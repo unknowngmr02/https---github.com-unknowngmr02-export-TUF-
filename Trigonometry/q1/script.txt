@@ -1,0 +1,33 @@
+So "welcome back". I hope you have gone through the theory part for this topic. Now it's time to solve some problems.
+<break time="0.4s" />
+
+Now in this problem, we are given a right triangle.
+
+The side opposite to angle A is 9 senti-mee-ter, and the side adjacent to angle A is 12 senti-mee-ter.
+
+The question is asking us to find the value of "tan A".
+<break time="0.4s" />
+
+Now what does "tan" actually mean?
+
+For any right triangle,
+
+tan A is equal to Opposite Side divided by Adjacent Side.
+<break time="0.4s" />
+
+Now let us put the given values into the formula.
+
+tan A = 9 divided by 12.
+
+Both 9 and 12 are divisible by 3.
+
+After simplifying, we get,
+
+tan A = 3 by 4.
+
+Done.
+<break time="0.2s" />
+
+So the final answer will be "3 by 4".
+
+Hence, the correct option is "Option A".

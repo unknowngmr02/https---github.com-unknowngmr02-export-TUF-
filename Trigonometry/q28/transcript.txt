@@ -1,0 +1,28 @@
+[00:00.10 -> 00:01.12]  So welcome back again.
+[00:01.74 -> 00:02.94]  It's time to solve
+[00:03.50 -> 00:04.38]  one more problem.
+[00:04.78 -> 00:05.58]  In this problem,
+[00:06.20 -> 00:07.52]  we have a ramp that rises
+[00:08.00 -> 00:11.86]  seven meters for a horizontal run of seven square root of three meters,
+[00:12.42 -> 00:15.36]  and we need to find the angle that the ramp makes with the ground.
+[00:16.02 -> 00:16.42]  First,
+[00:16.96 -> 00:18.52]  let's visualize the right
+[00:18.94 -> 00:19.56]  triangle.
+[00:20.00 -> 00:22.54]  The vertical rise is the opposite side,
+[00:22.98 -> 00:23.12]  so
+[00:23.60 -> 00:25.60]  opposite equals seven meters,
+[00:26.26 -> 00:28.50]  and the horizontal run is the adjacent side.
+[00:28.98 -> 00:32.82]  So adjacent equals seven square root of three meters.
+[00:33.46 -> 00:33.62]  Now,
+[00:34.12 -> 00:34.36]  which
+[00:34.70 -> 00:38.38]  trigonometric ratio uses the opposite and adjacent sides?
+[00:38.78 -> 00:39.24]  It's ten.
+[00:39.80 -> 00:42.74]  So ten theta equals opposite over adjacent.
+[00:43.26 -> 00:44.52]  Substituting the values,
+[00:45.02 -> 00:56.22]  ten theta equals seven over seven square root of three. The seven cancels out, giving us ten theta equals one over square root of three.
+[00:56.80 -> 00:58.16]  Now we know the standard value,
+[00:58.76 -> 01:01.60]  ten thirty degrees equals one over square root of three.
+[01:02.24 -> 01:02.74]  Therefore,
+[01:03.36 -> 01:05.12]  theta equals thirty degrees.
+[01:05.96 -> 01:10.08]  So the angle made by the ramp with the ground is thirty degrees.
+[01:10.54 -> 01:12.40]  Hence, the correct answer is option C.

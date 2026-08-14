@@ -1,0 +1,21 @@
+[00:00.10 -> 00:01.28]  So welcome back again.
+[00:01.76 -> 00:03.56]  It's time to solve one more problem.
+[00:04.02 -> 00:07.36]  Now in this problem, a kite string is fifty meters long,
+[00:07.84 -> 00:11.76]  and this string makes an angle of thirty degrees with the ground.
+[00:12.26 -> 00:12.98]  The question is
+[00:13.48 -> 00:15.62]  asking us to find the height of the kite.
+[00:16.04 -> 00:17.48]  Just imagine a right triangle here.
+[00:17.88 -> 00:19.28]  The string is the slant side,
+[00:19.68 -> 00:21.46]  so it is the hypotenuse.
+[00:21.92 -> 00:24.78]  The height of the kite is the vertical side,
+[00:25.30 -> 00:27.90]  so it is the opposite side to thirty degree.
+[00:28.58 -> 00:31.54]  For opposite side and hypotenuse, we use sine theta.
+[00:31.90 -> 00:34.90]  Sine theta is equal to opposite side by hypotenuse.
+[00:35.30 -> 00:35.76]  So here,
+[00:36.18 -> 00:38.92]  sine thirty degree is equal to height by fifty.
+[00:39.42 -> 00:42.32]  We know that sine thirty degree is equal to one by two.
+[00:42.78 -> 00:45.78]  So one by two is equal to height by fifty.
+[00:46.26 -> 00:50.82]  After cross multiplying, height is equal to fifty multiplied by one half.
+[00:51.20 -> 00:52.92]  That gives us twenty-five meter.
+[00:53.72 -> 00:57.32]  So the final answer will be twenty-five meter.
+[00:57.68 -> 00:58.58]  Correct option is A.

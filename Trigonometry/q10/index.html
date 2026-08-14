@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="design-system.css">
+</head>
+<body>
+<div data-hf-id="hf-root10" id="root" data-composition-id="root" data-start="0" data-width="1920" data-height="1080">
+
+  <!-- ══════ BACKGROUND LAYERS (always visible) ══════ -->
+  <div data-hf-id="hf-bg1" class="dotted-grid"></div>
+  <div data-hf-id="hf-bg2" class="bottom-strip"></div>
+  <div data-hf-id="hf-bg3" class="topic-name">Trigonometry</div>
+  <div data-hf-id="hf-bg4" class="logo"></div>
+
+  <!-- ══════ VOICEOVER ══════ -->
+  <audio data-hf-id="hf-vo" id="voiceover" class="clip" src="voiceover.wav" data-start="0" data-duration="88.66" data-track-index="0"></audio>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 1 - Question + Illustration (0-27.9s, PIN_TIME 27.9 + pinFlow 0.8s + buffer)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-p1" id="phase1" class="clip" data-start="0" data-duration="29.0" data-track-index="1" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:5;">
+
+    <div data-hf-id="hf-qfull" id="q-full-card" class="q-card" style="position:absolute;left:50%;top:80px;width:1500px;transform:translateX(-50%);opacity:0;">
+      <div data-hf-id="hf-qtext" class="q-text">
+        For an acute angle <span data-hf-id="hf-num1" class="num">theta</span>, cos theta = <span data-hf-id="hf-num2" class="num">4/5</span>. Find sin theta.
+      </div>
+    </div>
+
+    <div data-hf-id="hf-serial" id="serial-num" class="serial-num" style="left:60px;top:60px;opacity:0;">
+      <div data-hf-id="hf-digit" class="digit">Q</div>
+    </div>
+
+    <!-- Illustration: right triangle, exact 4:3:5 ratio (theta = acos(4/5) = 36.87deg)
+    VERTICES (defined once, reused literally everywhere):
+      A = (150,340)  angle vertex (theta) - leftmost, base ray points +x
+      B = (370,340)  right-angle vertex
+      C = (370,175)  apex
+    RATIO CHECK:  adjacent(A-B) = 220, opposite(B-C) = 165 -> 165/220 = 0.75 = tan(36.87deg)
+    ANGLE CHECK:  atan2(165,220) = 36.8699deg -> --angle: 36.87 matches; cos = 220/275 = 0.8 = 4/5
+    LENGTH CHECK: hyp(A-C) = sqrt(220^2+165^2) = 275 exact
+    VIEWBOX:      x[0..580], y[0..500] -> "0 0 580 500", scale 1.733 per illustration_reference.md -->
+    <div data-hf-id="hf-illus" id="illustration" style="position:absolute;left:50%;top:230px;transform:translateX(-50%);
+                width:1005px;height:866px;overflow:visible;">
+      <svg data-hf-id="hf-svg" id="tri-svg" viewBox="0 0 580 500" width="1005" height="866" style="overflow:visible;">
+        <!-- adjacent side (base): A(150,340) to B(370,340), len=220 -->
+        <line data-hf-id="hf-adj" id="adj-line" x1="150" y1="340" x2="370" y2="340" stroke="#6373db" stroke-width="4" stroke-dasharray="220" stroke-dashoffset="220" stroke-linecap="round" />
+        <!-- opposite side (vertical): B(370,340) to C(370,175), len=165 -->
+        <line data-hf-id="hf-opp" id="opp-line" x1="370" y1="340" x2="370" y2="175" stroke="#6373db" stroke-width="5" stroke-dasharray="165" stroke-dashoffset="165" stroke-linecap="round" />
+        <!-- hypotenuse: dashed annotation (illustration_reference.md 6.1), fades in, no draw-in -->
+        <line data-hf-id="hf-hyp" id="hyp-line" x1="150" y1="340" x2="370" y2="175" stroke="#000000" stroke-width="3.5" stroke-dasharray="6 6" stroke-linecap="round" opacity="0" />
+        <!-- right-angle marker at B: rays -x toward A, -y toward C, inset 30 -->
+        <path data-hf-id="hf-ra" id="right-angle-mark" d="M 340 340 L 340 310 L 370 310" fill="none" stroke="#000000" stroke-width="3" opacity="0" />
+        <!-- theta arc: cx/cy = vertex A exactly. r=90, C=2*PI*90=565.5. translate(0,680)=2*cy(340). --angle unitless, opacity-only. -->
+        <circle data-hf-id="hf-arc" id="angle-arc" cx="150" cy="340" r="90" fill="transparent" stroke="#4eb85f" stroke-width="8" stroke-linecap="round" transform="translate(0,680) scale(1,-1)" style="--angle:36.87; stroke-dasharray: calc((var(--angle) / 360) * 565.5) 565.5;" opacity="0" />
+        <text data-hf-id="hf-alab" id="angle-label" x="196" y="335" font-family="Google Sans Flex, Inter, sans-serif" font-size="34" text-anchor="middle" fill="#4eb85f" opacity="0">θ</text>
+        <text data-hf-id="hf-adjlab" id="adj-label" x="260" y="390" font-family="Google Sans Flex, Inter, sans-serif" font-size="30" fill="#000000" text-anchor="middle" opacity="0">Adjacent</text>
+        <text data-hf-id="hf-hyplab" id="hyp-label" x="190" y="230" font-family="Google Sans Flex, Inter, sans-serif" font-size="30" fill="#000000" text-anchor="middle" opacity="0">Hypotenuse</text>
+        <text data-hf-id="hf-opplab" id="opp-label" x="410" y="258" font-family="Google Sans Flex, Inter, sans-serif" font-size="30" fill="#000000" opacity="0">Opposite</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 2 - Pinned question (27.9s onwards)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-qpin" id="q-pinned" class="clip" data-start="27.9" data-duration="63" data-track-index="2" style="position:absolute;width:100%;top:0;left:0;z-index:6;opacity:0;">
+    <div data-hf-id="hf-qpincard" class="q-card pinned" style="position:absolute;left:385px;top:30px;width:1275px;">
+      <div data-hf-id="hf-qpintext" class="q-text">
+        Acute angle <span data-hf-id="hf-num3" class="num">theta</span>: cos theta = <span data-hf-id="hf-num4" class="num">4/5</span>. Find sin theta.
+      </div>
+    </div>
+  </div>
+
+  <!-- Pinned illustration - coordinate-exact copy of the full-size figure (same viewBox,
+       same internal numbers, only outer width/height + stroke widths shrink), per
+       illustration_reference.md sections 1/4/7. Static/always-visible (no opacity:0). -->
+  <div data-hf-id="hf-illuspin" id="illus-pinned" class="clip" data-start="27.9" data-duration="58.7" data-track-index="3" style="position:absolute;left:230px;top:50px;width:1400px;height:450px;z-index:5;opacity:0;
+              display:flex;align-items:center;justify-content:center;gap:32px;">
+    <svg data-hf-id="hf-svgpin" id="illus-pinned-icon" viewBox="0 0 580 500" width="500" height="431" style="overflow:visible;">
+      <line data-hf-id="hf-adjp" x1="150" y1="340" x2="370" y2="340" stroke="#6373db" stroke-width="3" stroke-linecap="round" />
+      <line data-hf-id="hf-oppp" x1="370" y1="340" x2="370" y2="175" stroke="#6373db" stroke-width="4" stroke-linecap="round" />
+      <line data-hf-id="hf-hypp" x1="150" y1="340" x2="370" y2="175" stroke="#000000" stroke-width="3" stroke-dasharray="5 5" stroke-linecap="round" />
+      <path data-hf-id="hf-rap" d="M 340 340 L 340 310 L 370 310" fill="none" stroke="#000000" stroke-width="2.5" />
+      <circle data-hf-id="hf-arcp" cx="150" cy="340" r="90" fill="transparent" stroke="#4eb85f" stroke-width="7" stroke-linecap="round" transform="translate(0,680) scale(1,-1)" style="--angle:36.87; stroke-dasharray: calc((var(--angle) / 360) * 565.5) 565.5;" />
+      <text data-hf-id="hf-alabp" x="196" y="335" font-family="Google Sans Flex, Inter, sans-serif" font-size="34" text-anchor="middle" fill="#4eb85f">θ</text>
+      <text data-hf-id="hf-adjlabp" x="260" y="390" font-family="Google Sans Flex, Inter, sans-serif" font-size="30" fill="#000000" text-anchor="middle">Adjacent</text>
+      <text data-hf-id="hf-hyplabp" x="190" y="230" font-family="Google Sans Flex, Inter, sans-serif" font-size="30" fill="#000000" text-anchor="middle">Hypotenuse</text>
+      <text data-hf-id="hf-opplabp" x="410" y="258" font-family="Google Sans Flex, Inter, sans-serif" font-size="30" fill="#000000">Opposite</text>
+    </svg>
+    <div data-hf-id="hf-pinlabel" style="font-family:'Google Sans Flex',Inter,sans-serif;font-size:30px;color:#000;white-space:nowrap;">
+      cos θ = <span data-hf-id="hf-pinval1" style="color:#6373db;">4/5</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SOLUTION CARDS (one per step, center)
+       ══════════════════════════════════════════════ -->
+
+  <!-- GIVEN -->
+  <div data-hf-id="hf-cgiven" id="card-given" class="clip" data-start="29.62" data-duration="7.92" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-cgivencard" class="solution-card" style="position:absolute;left:660px;top:470px;text-align:center;">
+      <div data-hf-id="hf-cgivencontent" class="card-content">
+        <span data-hf-id="hf-cgivenchip" class="chip">Given</span>
+        <div data-hf-id="hf-cgivenmath" class="math">
+          <span data-hf-id="hf-g1" class="rv" data-t="29.62">Adjacent</span> <span data-hf-id="hf-g2" class="rv" data-t="30.10">=</span> <span data-hf-id="hf-g3" class="hi rv" data-t="30.60">4</span><br data-hf-id="hf-gbr">
+          <span data-hf-id="hf-g4" class="rv" data-t="32.40">Hypotenuse</span> <span data-hf-id="hf-g5" class="rv" data-t="33.20">=</span> <span data-hf-id="hf-g6" class="hi rv" data-t="33.60">5</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 1 -->
+  <div data-hf-id="hf-cstep1" id="card-step1" class="clip" data-start="38.24" data-duration="22.84" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-cstep1card" class="solution-card" style="position:absolute;left:560px;top:430px;text-align:center;width:800px;">
+      <div data-hf-id="hf-cstep1content" class="card-content">
+        <span data-hf-id="hf-cstep1chip" class="chip">Step 1</span>
+        <div data-hf-id="hf-cstep1math" class="math">
+          <span data-hf-id="hf-s1a" class="rv" data-t="40.86">Hyp²</span> <span data-hf-id="hf-s1b" class="rv" data-t="41.60">=</span> <span data-hf-id="hf-s1c" class="rv" data-t="42.00">Adj²</span> <span data-hf-id="hf-s1d" class="rv" data-t="42.60">+</span> <span data-hf-id="hf-s1e" class="rv" data-t="43.10">Opp²</span><br data-hf-id="hf-s1br1">
+          <span data-hf-id="hf-s1f" class="hi rv" data-t="48.00">5²</span> <span data-hf-id="hf-s1g" class="rv" data-t="48.60">=</span> <span data-hf-id="hf-s1h" class="hi rv" data-t="49.00">4²</span> <span data-hf-id="hf-s1i" class="rv" data-t="49.60">+</span> <span data-hf-id="hf-s1j" class="rv" data-t="50.00">Opp²</span><br data-hf-id="hf-s1br2">
+          <span data-hf-id="hf-s1k" class="rv" data-t="53.26">Opp</span> <span data-hf-id="hf-s1l" class="rv" data-t="53.90">=</span> <span data-hf-id="hf-s1m" class="ans rv" data-t="54.30">3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 2 -->
+  <div data-hf-id="hf-cstep2" id="card-step2" class="clip" data-start="61.78" data-duration="25.22" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-cstep2card" class="solution-card" style="position:absolute;left:520px;top:400px;text-align:center;width:880px;">
+      <div data-hf-id="hf-cstep2content" class="card-content">
+        <span data-hf-id="hf-cstep2chip" class="chip">Step 2</span>
+        <div data-hf-id="hf-cstep2math" class="math">
+          <span data-hf-id="hf-s2a" class="rv" data-t="64.88">sin θ</span> <span data-hf-id="hf-s2b" class="rv" data-t="65.60">=</span>
+          <span data-hf-id="hf-s2c" class="frac rv" data-t="66.00"><span data-hf-id="hf-s2d" class="top hi">Opposite</span><span data-hf-id="hf-s2e" class="bot hi">Hypotenuse</span></span> <span data-hf-id="hf-s2f" class="rv" data-t="71.74">=</span>
+          <span data-hf-id="hf-s2g" class="frac rv" data-t="72.20"><span data-hf-id="hf-s2h" class="top hi">3</span><span data-hf-id="hf-s2i" class="bot hi">5</span></span><br data-hf-id="hf-s2br">
+          <span data-hf-id="hf-s2j" class="rv" data-t="74.68">θ acute → sin θ positive</span><br data-hf-id="hf-s2br2">
+          <span data-hf-id="hf-s2k" class="rv" data-t="82.68">sin θ</span> <span data-hf-id="hf-s2l" class="rv" data-t="83.10">=</span>
+          <span data-hf-id="hf-s2m" class="frac ans rv" data-t="83.40"><span data-hf-id="hf-s2n" class="top">3</span><span data-hf-id="hf-s2o" class="bot">5</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       LEFT STACK CARDS (completed steps)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-stackgiven" id="stack-given" class="clip" data-start="36.44" data-duration="56" data-track-index="11" style="position:absolute;left:100px;top:140px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-stackgivencard" class="stack-card">
+      <div data-hf-id="hf-stackgivencontent" class="card-content">
+        <span data-hf-id="hf-stackgivencircle" class="step-circle">G</span>
+        <div data-hf-id="hf-stackgivenmath" class="math">
+          Adjacent = <span data-hf-id="hf-sg1" class="hi">4</span><br data-hf-id="hf-sgbr">
+          Hypotenuse = <span data-hf-id="hf-sg2" class="hi">5</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-stackstep1" id="stack-step1" class="clip" data-start="59.98" data-duration="29.99" data-track-index="12" style="position:absolute;left:100px;top:300px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-stackstep1card" class="stack-card">
+      <div data-hf-id="hf-stackstep1content" class="card-content">
+        <span data-hf-id="hf-stackstep1circle" class="step-circle">1</span>
+        <div data-hf-id="hf-stackstep1math" class="math">
+          Hyp²=Adj²+Opp² → <span data-hf-id="hf-ss1" class="ans">Opp=3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-stackstep2" id="stack-step2" class="clip" data-start="85.9" data-duration="4" data-track-index="13" style="position:absolute;left:100px;top:450px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-stackstep2card" class="stack-card">
+      <div data-hf-id="hf-stackstep2content" class="card-content">
+        <span data-hf-id="hf-stackstep2circle" class="step-circle">2</span>
+        <div data-hf-id="hf-stackstep2math" class="math">
+          sin θ = <span data-hf-id="hf-ss2" class="frac"><span data-hf-id="hf-ss2a" class="top hi">3</span><span data-hf-id="hf-ss2b" class="bot hi">5</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-lineg1" id="line-g-1" class="clip stack-line" data-start="59.98" data-duration="30" data-track-index="15" style="opacity:0;"></div>
+  <div data-hf-id="hf-line12" id="line-1-2" class="clip stack-line" data-start="85.9" data-duration="4" data-track-index="16" style="opacity:0;"></div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 3 - OPTIONS REVEAL (85.9-88.66s)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-optreveal" id="options-reveal" class="clip" data-start="85.9" data-duration="4" data-track-index="10" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:8;opacity:0;">
+    <div data-hf-id="hf-optcol" class="pinned-col" style="top:400px;">
+      <div data-hf-id="hf-optgrid" class="options-grid">
+        <div data-hf-id="hf-opta" class="opt-btn"><span data-hf-id="hf-optaletter" class="letter">A</span>4/5</div>
+        <div data-hf-id="hf-optb" class="opt-btn correct"><span data-hf-id="hf-optbletter" class="letter">B</span>3/5</div>
+        <div data-hf-id="hf-optc" class="opt-btn"><span data-hf-id="hf-optcletter" class="letter">C</span>5/3</div>
+        <div data-hf-id="hf-optd" class="opt-btn"><span data-hf-id="hf-optdletter" class="letter">D</span>1/5</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end root -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script src="animations.js"></script>
+<script>
+  apt.setStackLine("#line-g-1", "#stack-given .step-circle", "#stack-step1 .step-circle");
+  apt.setStackLine("#line-1-2", "#stack-step1 .step-circle", "#stack-step2 .step-circle");
+
+  const tl = gsap.timeline({ paused: true });
+
+  // PHASE 1 - Question reveal
+  const HERO_OFFSET_Y = 180;
+  const RISE_TIME = 4.3;
+  apt.heroEnterLowered(tl, "#q-full-card", HERO_OFFSET_Y, RISE_TIME);
+
+  tl.fromTo("#serial-num",
+    { scale: 0, rotation: -45, opacity: 0, y: HERO_OFFSET_Y },
+    { scale: 1, rotation: 0, opacity: 1, duration: 0.55, ease: "back.out(2)", y: HERO_OFFSET_Y },
+    0.8);
+  tl.to("#serial-num", { y: 0, duration: 0.6, ease: "power2.inOut" }, RISE_TIME);
+
+  // Illustration build-in (true 4:3:5 triangle)
+  tl.to("#adj-line", { strokeDashoffset: 0, duration: 0.7, ease: "power2.out" }, 5.0);
+  tl.to("#opp-line", { strokeDashoffset: 0, duration: 0.6, ease: "power2.out" }, 5.9);
+  tl.to("#hyp-line", { opacity: 1, duration: 0.5, ease: "power2.out" }, 6.7);
+  tl.to("#right-angle-mark", { opacity: 1, duration: 0.3 }, 7.0);
+  tl.to("#angle-arc", { opacity: 1, duration: 0.4 }, 8.0);
+  tl.to("#angle-label", { opacity: 1, duration: 0.4 }, 8.0);
+  tl.to("#adj-label", { opacity: 1, duration: 0.4 }, 21.6);
+  tl.to("#hyp-label", { opacity: 1, duration: 0.4 }, 23.4);
+  tl.to("#opp-label", { opacity: 1, duration: 0.4 }, 25.2);
+
+  // PHASE 2 - Pin, then Given
+  const PIN_TIME = 27.9;
+  const GIVEN_TIME = 29.62;
+
+  apt.pinFlow(tl, "#q-full-card", "#q-pinned", PIN_TIME);
+  apt.pinFlow(tl, "#illustration", "#illus-pinned", PIN_TIME);
+  apt.fadeOut(tl, "#serial-num", PIN_TIME, 0.5);
+  apt.ambientLoop(tl, "#illus-pinned-icon", 29.0, 59.0);
+
+  apt.cardEnter(tl, "#card-given .solution-card", GIVEN_TIME);
+  apt.textReveal(tl, "#card-given .math");
+
+  // STEP 1
+  apt.morphToStack(tl, "#card-given .solution-card", "#stack-given .stack-card", 36.44);
+  apt.cardEnter(tl, "#card-step1 .solution-card", 38.24);
+  apt.textReveal(tl, "#card-step1 .math");
+
+  // STEP 2
+  apt.morphToStack(tl, "#card-step1 .solution-card", "#stack-step1 .stack-card", 59.98);
+  apt.stackLineGrow(tl, "#line-g-1", 59.98);
+  apt.cardEnter(tl, "#card-step2 .solution-card", 61.78);
+  apt.textReveal(tl, "#card-step2 .math");
+
+  // Recenter before options
+  const RECENTER_TIME = 85.9;
+  apt.fadeOut(tl, "#illus-pinned", RECENTER_TIME);
+  apt.recenterForOptions(tl, "#q-pinned", 160, 180, RECENTER_TIME);
+
+  // PHASE 3 - Options reveal
+  apt.morphToStack(tl, "#card-step2 .solution-card", "#stack-step2 .stack-card", RECENTER_TIME);
+  apt.stackLineGrow(tl, "#line-1-2", RECENTER_TIME);
+  apt.fadeIn(tl, "#options-reveal", 86.9);
+  apt.optionsStagger(tl, ".opt-btn", 87.4);
+  apt.correctPulse(tl, ".opt-btn.correct", 88.0);
+
+  const END_FADE_TIME = 88.5;
+  apt.fadeOut(tl, "#root > div", END_FADE_TIME, 1.0);
+
+  tl.set({},{},93)
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines["root"] = tl;
+</script>
+</body>
+</html>

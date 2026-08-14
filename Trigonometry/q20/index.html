@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="design-system.css">
+<style>
+/* Figure labels - .chip in design-system.css is scoped to .solution-card/.stack-card,
+   so illustration labels need their own rule (per illustration_reference.md section 3). */
+.fig-chip {
+  display: inline-block;
+  background: #FFFFFF;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.fig-chip.role { border-color: #000000; color: #000000; font-size: 22px; }
+
+.fig-chip-pinned {
+  display: inline-block;
+  background: #FFFFFF;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 3px 9px;
+  border-radius: 6px;
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.fig-chip-pinned.role { border-color: #000000; color: #000000; }
+</style>
+</head>
+<body>
+<div data-hf-id="hf-89uj" id="root" data-composition-id="root" data-start="0" data-width="1920" data-height="1080">
+
+  <!-- ══════ BACKGROUND LAYERS (always visible) ══════ -->
+  <div data-hf-id="hf-858h" class="dotted-grid"></div>
+  <div data-hf-id="hf-izuk" class="bottom-strip"></div>
+  <div data-hf-id="hf-pcpi" class="topic-name">Trigonometry</div>
+  <div data-hf-id="hf-e319" class="logo"></div>
+
+  <!-- ══════ VOICEOVER ══════
+       TIMELINE_END = NARR_END(96.539) + 0.6 (END_FADE_TIME=97.139) + 1.2 (FADE_DUR) + 0.2 = 98.539 -->
+  <audio data-hf-id="hf-f8y9" id="voiceover" class="clip" src="voiceover.wav" data-start="0" data-duration="98.6" data-track-index="0"></audio>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 1 - Question + Illustration (0 - PIN_TIME 36.6s)
+       data-duration >= (PIN_TIME - 0) + pinFlow(0.8) + buffer = 38.9 -> 39.5
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-5krl" id="phase1" class="clip" data-start="0" data-duration="39.5" data-track-index="1" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:5;">
+
+    <div data-hf-id="hf-lxc5" id="q-full-card" class="q-card" style="position:absolute;left:50%;top:80px;width:1500px;transform:translateX(-50%);opacity:0;">
+      <div data-hf-id="hf-1pdl" class="q-text">
+        A person's eye level is <span data-hf-id="hf-em9g" class="num">1.5 m</span> above the ground.
+        From <span data-hf-id="hf-78lp" class="num">18 m</span> away, the angle of elevation to the top of a pole
+        is <span data-hf-id="hf-n1e5" class="num">45 degrees</span>. Find the pole height.
+      </div>
+    </div>
+
+    <div data-hf-id="hf-w62k" id="serial-num" class="serial-num" style="left:60px;top:60px;opacity:0;">
+      <div data-hf-id="hf-yfde" class="digit">Q</div>
+    </div>
+
+    <!-- ══════════ ILLUSTRATION (full-size, Phase 1) ══════════
+    VERTICES (defined once, reused literally everywhere):
+      A = (147,310)  angle vertex (observer eye) - leftmost of the two base vertices
+      B = (357,310)  right-angle vertex - ALIGNED to the pole's true left edge (x=357)
+      C = (357,100)  apex - aligned to the pole's true left-top corner
+      D = (357,400)  object base, on the ground (directly below the pole's left edge)
+      observer ground point = (147,400)
+    GROUND: y = 400
+    RATIO CHECK:  adjacent(A-B) = 210, opposite(B-C) = 210 -> tan45 = 1 exact
+    ANGLE CHECK:  atan2(210,210) = 45.00deg -> --angle: 45 matches exactly
+    LENGTH CHECK: hyp(A-C) = sqrt(210^2 + 210^2) = 296.98 -> dasharray 297
+    VIEWBOX:      x[0..580], y[0..500] -> "0 0 580 500"
+    STYLISED DISTANCE (not a side of the triangle): pole_full(300) = eye_offset(90,
+      stylised so the eye is visibly elevated) + opposite(210, exact). Adjacent/opposite
+      still measure exactly equal, so the 45deg triangle itself stays mathematically exact.
+    B/C sit on the pole's actual drawn left edge (x=357, matching the pole rect's own
+    x attribute) so the right-angle marker and hypotenuse land exactly on the object,
+    instead of on its centerline. -->
+    <div data-hf-id="hf-1myc" id="illustration" style="position:absolute;left:50%;top:230px;transform:translateX(-50%);
+                width:1005px;height:866px;overflow:visible;">
+      <svg data-hf-id="hf-rtav" viewBox="0 0 580 500" width="1005" height="866" style="overflow:visible;">
+
+        <!-- Ground line: (160,400) to (370,400), len=210 -->
+        <line data-hf-id="hf-d47g" id="ground-line" x1="147" y1="400" x2="357" y2="400" stroke="#6373db" stroke-width="4" stroke-linecap="round" stroke-dasharray="210" stroke-dashoffset="210" opacity="0" />
+
+        <!-- Observer: eye on a stick, centred exactly on vertex A -->
+        <g data-hf-id="hf-s00n" id="person-icon" opacity="0" style="transform-origin:147px 310px;">
+          <line data-hf-id="hf-gc4z" x1="147" y1="400" x2="147" y2="310" stroke="#6373db" stroke-width="3.5" stroke-linecap="round" />
+          <ellipse data-hf-id="hf-gyiv" cx="147" cy="310" rx="13" ry="7" fill="#FFFFFF" stroke="#6373db" stroke-width="2.5" />
+          <circle data-hf-id="hf-ymim" cx="147" cy="310" r="3" fill="#6373db" />
+        </g>
+
+        <!-- Eye-level line (the true adjacent side): A(147,310) to B(357,310), len=210 -->
+        <line data-hf-id="hf-eyel" id="eye-level-line" x1="147" y1="310" x2="357" y2="310" stroke="#6373db" stroke-width="4" stroke-linecap="round" stroke-dasharray="210" stroke-dashoffset="210" opacity="0" />
+
+        <!-- Ground distance arrow "18 m" - horizontal, spans true A-to-B x range -->
+        <g data-hf-id="hf-p4ao" id="arrow-18" opacity="0">
+          <line data-hf-id="hf-dmvm" x1="147" y1="458" x2="357" y2="458" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+          <path data-hf-id="hf-wgyp" d="M 165,445 L 147,458 L 165,471 Z" fill="#000000" />
+          <path data-hf-id="hf-3o3y" d="M 339,445 L 357,458 L 339,471 Z" fill="#000000" />
+        </g>
+        <text data-hf-id="hf-xoqv" id="label-18" x="252" y="449" text-anchor="middle" font-family="var(--font)" font-size="30" fill="#000000" opacity="0">18 m</text>
+
+        <!-- Eye level arrow "1.5 m" - vertical, x = vertex_x - 55 = 105, y: 400 to 310 (true eye height) -->
+        <g data-hf-id="hf-s1r5" id="arrow-15" opacity="0">
+          <line data-hf-id="hf-utjs" x1="92" y1="400" x2="92" y2="310" stroke="#000000" stroke-width="3.5" stroke-linecap="round" />
+          <path data-hf-id="hf-327t" d="M 79,328 L 92,310 L 105,328 Z" fill="#000000" />
+          <path data-hf-id="hf-xh59" d="M 79,382 L 92,400 L 105,382 Z" fill="#000000" />
+        </g>
+        <text data-hf-id="hf-divd" id="label-15" x="85" y="359" text-anchor="end" font-family="var(--font)" font-size="34" fill="#000000" opacity="0">1.5 m</text>
+
+        <!-- Pole: outline only, grows from ground. x=357 (=370-13), width=26 -->
+        <rect data-hf-id="hf-n55e" id="pole-rect" x="357" y="400" width="26" height="0" fill="none" stroke="#6373db" stroke-width="5" />
+
+        <!-- Right-angle marker at B=(370,310): rays -x toward A and -y toward C, inset 30 -->
+        <path data-hf-id="hf-2hdq" id="right-angle" d="M 327 310 L 327 280 L 357 280" fill="none" stroke="#000000" stroke-width="3" opacity="0" />
+
+        <!-- Sight line (dashed hypotenuse): A(160,310) to true apex C(370,100), len=sqrt(210^2+210^2)=296.98->297 -->
+        <line data-hf-id="hf-alra" id="sight-line" x1="147" y1="310" x2="357" y2="100" stroke="#000000" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="6 6" opacity="0" />
+
+        <!-- Angle arc: cx/cy = vertex A exactly. r=90, C=2*PI*90=565.5. translate(0,620) = 2*cy(310). --angle unitless. -->
+        <circle data-hf-id="hf-yl4a" id="angle-arc" cx="147" cy="310" r="90" fill="transparent" stroke="#4eb85f" stroke-width="8" stroke-linecap="round" transform="translate(0, 620) scale(1,-1)" style="--angle: 45; stroke-dasharray: calc((var(--angle) / 360) * 565.5) 565.5; opacity:0;" />
+
+        <foreignobject data-hf-id="hf-dini" id="chip-45" x="239" y="238" width="90" height="44" style="overflow:visible;opacity:0;">
+          <div data-hf-id="hf-kdv5" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip">45°</div>
+        </foreignobject>
+
+        <!-- X arrow (opposite / eye-to-top): vertical, x = pole_right_edge(383) + 40 = 423, y: 310 to 100 -->
+        <g data-hf-id="hf-a9m5" id="arrow-x" opacity="0">
+          <line data-hf-id="hf-jlec" x1="423" y1="310" x2="423" y2="100" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+          <path data-hf-id="hf-n1hc" d="M 413,115 L 423,100 L 433,115 Z" fill="#000000" />
+          <path data-hf-id="hf-1uab" d="M 413,295 L 423,310 L 433,295 Z" fill="#000000" />
+        </g>
+        <text data-hf-id="hf-a78h" id="label-x" x="441" y="211" text-anchor="start" font-family="var(--font)" font-size="30" fill="#000000" opacity="0">X m</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 2 - Pinned question (PIN_TIME 36.6s onwards)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-bl0r" id="q-pinned" class="clip" data-start="36.6" data-duration="62" data-track-index="2" style="position:absolute;width:100%;top:0;left:0;z-index:6;opacity:0;">
+    <div data-hf-id="hf-9jf4" class="q-card pinned" style="position:absolute;left:385px;top:30px;width:1275px;">
+      <div data-hf-id="hf-2eml" class="q-text">
+        A person's eye level is <span data-hf-id="hf-xcgc" class="num">1.5 m</span> above the ground.
+        From <span data-hf-id="hf-k4n5" class="num">18 m</span> away, the angle of elevation to the top of a pole
+        is <span data-hf-id="hf-dlhd" class="num">45 degrees</span>. Find the pole height.
+      </div>
+    </div>
+  </div>
+
+  <!-- Pinned illustration - coordinate-exact copy of the full-size figure (same viewBox,
+       same internal numbers). Only outer width/height and stroke widths shrink (per
+       illustration_reference.md section 1/4). Static/always-visible per section 7, except
+       the role chips (Adjacent/Opposite) which start hidden until the ratio step. -->
+  <div data-hf-id="hf-2evz" id="illus-pinned" class="clip" data-start="36.6" data-duration="55" data-track-index="3" style="position:absolute;left:230px;top:50px;width:1400px;height:450px;z-index:5;opacity:0;
+              display:flex;align-items:center;justify-content:center;">
+    <svg data-hf-id="hf-g44y" viewBox="0 0 580 500" width="500" height="431" style="overflow:visible;">
+      <line data-hf-id="hf-qae1" x1="147" y1="400" x2="357" y2="400" stroke="#6373db" stroke-width="3" stroke-linecap="round" />
+      <g data-hf-id="hf-pe9k" style="transform-origin:147px 310px;">
+        <line data-hf-id="hf-tzxc" x1="147" y1="400" x2="147" y2="310" stroke="#6373db" stroke-width="3" stroke-linecap="round" />
+        <ellipse data-hf-id="hf-n9ug" cx="147" cy="310" rx="13" ry="7" fill="#FFFFFF" stroke="#6373db" stroke-width="2" />
+        <circle data-hf-id="hf-3yaq" cx="147" cy="310" r="3" fill="#6373db" />
+      </g>
+
+      <!-- Eye-level line (adjacent side), coordinate-exact copy of the full-size line -->
+      <line data-hf-id="hf-lrgx" id="eye-level-line-pinned" x1="147" y1="310" x2="357" y2="310" stroke="#6373db" stroke-width="3" stroke-linecap="round" />
+
+      <g data-hf-id="hf-5p4p" id="arrow-18-pinned" style="transform-origin:252px 458px;">
+        <line data-hf-id="hf-lj24" x1="147" y1="458" x2="357" y2="458" stroke="#000000" stroke-width="2.5" stroke-linecap="round" />
+        <path data-hf-id="hf-2779" d="M 165,445 L 147,458 L 165,471 Z" fill="#000000" />
+        <path data-hf-id="hf-94nm" d="M 339,445 L 357,458 L 339,471 Z" fill="#000000" />
+      </g>
+      <text data-hf-id="hf-zho8" x="252" y="449" text-anchor="middle" font-family="var(--font)" font-size="28" fill="#000000">18 m</text>
+
+      <g data-hf-id="hf-ethf" id="arrow-15-pinned" style="transform-origin:92px 355px;">
+        <line data-hf-id="hf-24qz" x1="92" y1="400" x2="92" y2="310" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+        <path data-hf-id="hf-cgjx" d="M 79,328 L 92,310 L 105,328 Z" fill="#000000" />
+        <path data-hf-id="hf-h4jl" d="M 79,382 L 92,400 L 105,382 Z" fill="#000000" />
+      </g>
+      <text data-hf-id="hf-ihgu" x="85" y="359" text-anchor="end" font-family="var(--font)" font-size="30" fill="#000000">1.5 m</text>
+
+      <rect data-hf-id="hf-j8cs" x="357" y="100" width="26" height="300" fill="none" stroke="#6373db" stroke-width="4" />
+      <path data-hf-id="hf-nz0c" d="M 327 310 L 327 280 L 357 280" fill="none" stroke="#000000" stroke-width="2.5" />
+      <line data-hf-id="hf-nsiw" x1="147" y1="310" x2="357" y2="100" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-dasharray="5 5" />
+      <circle data-hf-id="hf-ksan" cx="147" cy="310" r="90" fill="transparent" stroke="#4eb85f" stroke-width="7" stroke-linecap="round" transform="translate(0, 620) scale(1,-1)" style="--angle: 45; stroke-dasharray: calc((var(--angle) / 360) * 565.5) 565.5;" />
+      <foreignobject data-hf-id="hf-8hjg" x="209" y="238" width="90" height="40" style="overflow:visible;">
+        <div data-hf-id="hf-883s" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip-pinned">45°</div>
+      </foreignobject>
+
+      <g data-hf-id="hf-1cfa" id="arrow-x-pinned" style="transform-origin:423px 205px;">
+        <line data-hf-id="hf-scd2" x1="423" y1="310" x2="423" y2="100" stroke="#000000" stroke-width="2.5" stroke-linecap="round" />
+        <path data-hf-id="hf-037c" d="M 413,115 L 423,100 L 433,115 Z" fill="#000000" />
+        <path data-hf-id="hf-a6lv" d="M 413,295 L 423,310 L 433,295 Z" fill="#000000" />
+      </g>
+      <text data-hf-id="hf-qp8t" id="label-x-pinned" x="441" y="211" text-anchor="start" font-family="var(--font)" font-size="28" fill="#000000" style="transform-origin:460px 205px;">X m</text>
+
+      <foreignobject data-hf-id="hf-g37i" id="chip-adjacent-pinned" x="187" y="316" width="130" height="36" style="overflow:visible;opacity:0;">
+        <div data-hf-id="hf-xp6p" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip-pinned role">Adjacent</div>
+      </foreignobject>
+      <foreignobject data-hf-id="hf-kvi3" id="chip-opposite-pinned" x="438" y="224" width="130" height="36" style="overflow:visible;opacity:0;">
+        <div data-hf-id="hf-p9fm" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip-pinned role">Opposite</div>
+      </foreignobject>
+    </svg>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SOLUTION CARDS
+       ══════════════════════════════════════════════ -->
+
+  <!-- GIVEN - raw facts are timed to their FIRST mention (5.3-19.8s), before this card's
+       own GIVEN_TIME(37.5s). By the time the card enters, those .rv spans have already
+       resolved to opacity:1, so the content appears fully formed - a recap of what Phase 1
+       already established, not a fresh reveal. duration >= (50.5-37.5)+0.8+1.5 = 15.3 -> 16 -->
+  <div data-hf-id="hf-sgnx" id="card-given" class="clip" data-start="37.5" data-duration="16" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-oae2" class="solution-card" style="position:absolute;left:640px;top:530px;text-align:center;">
+      <div data-hf-id="hf-3rv6" class="card-content">
+        <span data-hf-id="hf-7r0o" class="chip">Given</span>
+        <div data-hf-id="hf-8tlu" class="math">
+          <span data-hf-id="hf-6r38" class="rv" data-t="5.299">Distance from pole = <span data-hf-id="hf-lu5i" class="hi">18 m</span></span><br data-hf-id="hf-x5px">
+          <span data-hf-id="hf-vaow" class="rv" data-t="8.84">Eye level height = <span data-hf-id="hf-4f1d" class="hi">1.5 m</span></span><br data-hf-id="hf-rsrt">
+          <span data-hf-id="hf-sdq3" class="rv" data-t="12.119">Angle of elevation = <span data-hf-id="hf-e1vh" class="hi">45°</span></span><br data-hf-id="hf-szow">
+          <span data-hf-id="hf-k1q2" class="rv" data-t="17.719">Find: full height of pole</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 1 - solve for X via tan45 = 1. duration >= (70.0-51.3)+0.8+1.5 = 21.0 -> 21.5 -->
+  <div data-hf-id="hf-f7vi" id="card-step1" class="clip" data-start="51.3" data-duration="21.5" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-lmw7" class="solution-card" style="position:absolute;left:600px;top:500px;text-align:center;width:720px;">
+      <div data-hf-id="hf-0yza" class="card-content">
+        <span data-hf-id="hf-3ife" class="chip">Step 1</span>
+        <div data-hf-id="hf-ng7a" class="math">
+          <span data-hf-id="hf-fjsa" class="rv" data-t="37.34">Adjacent side = <span data-hf-id="hf-qd0q" class="hi">18 m</span></span><br data-hf-id="hf-sldv">
+          <span data-hf-id="hf-9waj" class="rv" data-t="44.719">Opposite side = <span data-hf-id="hf-ka9v" class="hi">X m</span></span><br data-hf-id="hf-qluq">
+          <span data-hf-id="hf-rpdk" class="rv" data-t="52.5">tan</span> <span data-hf-id="hf-013n" class="rv" data-t="52.759">θ</span>
+          <span data-hf-id="hf-w3gn" class="rv" data-t="53.319">=</span>
+          <span data-hf-id="hf-aq3z" class="frac rv" data-t="53.699"><span data-hf-id="hf-px7q" class="top hi">Opposite</span><span data-hf-id="hf-gf3z" class="bot hi">Adjacent</span></span><br data-hf-id="hf-q7jp">
+          <span data-hf-id="hf-dc8j" class="rv" data-t="56.219">tan</span> <span data-hf-id="hf-89qy" class="rv" data-t="56.539">45°</span>
+          <span data-hf-id="hf-mrrx" class="rv" data-t="57.739">=</span>
+          <span data-hf-id="hf-9z3n" class="frac rv" data-t="58.379"><span data-hf-id="hf-v611" class="top hi">X</span><span data-hf-id="hf-bwfg" class="bot hi">18</span></span><br data-hf-id="hf-regs">
+          <span data-hf-id="hf-styf" class="rv" data-t="60.699">tan 45° = 1</span><br data-hf-id="hf-r05r">
+          <span data-hf-id="hf-h4c3" class="rv" data-t="67.479">X = <span data-hf-id="hf-xcql" class="ans">18 m</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 2 - add eye level for full height. duration >= (89.0-70.8)+0.8+1.5 = 20.5 -> 21 -->
+  <div data-hf-id="hf-7y40" id="card-step2" class="clip" data-start="70.8" data-duration="21" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-i4ra" class="solution-card" style="position:absolute;left:610px;top:520px;text-align:center;width:700px;">
+      <div data-hf-id="hf-1dab" class="card-content">
+        <span data-hf-id="hf-3wqf" class="chip">Step 2</span>
+        <div data-hf-id="hf-nuib" class="math">
+          <span data-hf-id="hf-khb6" class="rv" data-t="70.439">Height above eye level = <span data-hf-id="hf-qrbr" class="hi">18 m</span></span><br data-hf-id="hf-p0mm">
+          <span data-hf-id="hf-93iw" class="rv" data-t="76.419">But full height is asked!</span><br data-hf-id="hf-ombl">
+          <span data-hf-id="hf-mezi" class="rv" data-t="81.819">Eye level = <span data-hf-id="hf-2nn9" class="hi">1.5 m</span></span><br data-hf-id="hf-qsyj">
+          <span data-hf-id="hf-xafj" class="rv" data-t="83.86">Full height = 18 + 1.5</span><br data-hf-id="hf-r79k">
+          <span data-hf-id="hf-5pqu" class="rv" data-t="88.019">= <span data-hf-id="hf-7q6f" class="ans">19.5 m</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       LEFT STACK CARDS (completed steps)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-g2rm" id="stack-given" class="clip" data-start="50.5" data-duration="48.5" data-track-index="11" style="position:absolute;left:100px;top:190px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-usjn" class="stack-card">
+      <div data-hf-id="hf-1rlc" class="card-content">
+        <span data-hf-id="hf-snhl" class="step-circle">G</span>
+        <div data-hf-id="hf-3xrm" class="math">
+          Distance = <span data-hf-id="hf-r5ms" class="hi">18 m</span><br data-hf-id="hf-q0ch">
+          Eye level = <span data-hf-id="hf-3ukc" class="hi">1.5 m</span><br data-hf-id="hf-qeni">
+          Angle = <span data-hf-id="hf-dogh" class="hi">45°</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-jhek" id="stack-step1" class="clip" data-start="70.0" data-duration="29" data-track-index="12" style="position:absolute;left:100px;top:350px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-3m9v" class="stack-card">
+      <div data-hf-id="hf-yzg5" class="card-content">
+        <span data-hf-id="hf-w2db" class="step-circle">1</span>
+        <div data-hf-id="hf-w67q" class="math">
+          tan45° = <span data-hf-id="hf-gq2t" class="frac"><span data-hf-id="hf-eftl" class="top hi">X</span><span data-hf-id="hf-tx8k" class="bot hi">18</span></span><br data-hf-id="hf-p7qf">
+          X = <span data-hf-id="hf-es41" class="ans">18 m</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-6trr" id="stack-step2" class="clip" data-start="89.0" data-duration="10" data-track-index="13" style="position:absolute;left:100px;top:510px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-37yu" class="stack-card">
+      <div data-hf-id="hf-zdr6" class="card-content">
+        <span data-hf-id="hf-vo2a" class="step-circle">2</span>
+        <div data-hf-id="hf-sumg" class="math">
+          Full height = 18 + 1.5<br data-hf-id="hf-pm1g">
+          = <span data-hf-id="hf-5l5z" class="ans">19.5 m</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stack connector lines - top/height set at runtime by apt.setStackLine() -->
+  <div data-hf-id="hf-tqkk" id="line-g-1" class="clip stack-line" data-start="70.5" data-duration="29.5" data-track-index="15" style="opacity:0;"></div>
+  <div data-hf-id="hf-xlnf" id="line-1-2" class="clip stack-line" data-start="88.0" data-duration="10" data-track-index="16" style="opacity:0;"></div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 3 - OPTIONS REVEAL
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-ddor" id="options-reveal" class="clip" data-start="89.0" data-duration="10" data-track-index="10" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:8;opacity:0;">
+    <div data-hf-id="hf-2tfv" class="pinned-col" style="top:400px;">
+      <div data-hf-id="hf-6knj" class="options-grid">
+        <div data-hf-id="hf-wlby" class="opt-btn"><span data-hf-id="hf-sfug" class="letter">A</span>18 m</div>
+        <div data-hf-id="hf-2jul" class="opt-btn"><span data-hf-id="hf-r8xd" class="letter">B</span>16.5 m</div>
+        <div data-hf-id="hf-4gx1" class="opt-btn"><span data-hf-id="hf-rn8e" class="letter">C</span>20 m</div>
+        <div data-hf-id="hf-kx2a" class="opt-btn correct"><span data-hf-id="hf-qgbb" class="letter">D</span>19.5 m</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end root -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script src="animations.js"></script>
+<script>
+  apt.setStackLine("#line-g-1", "#stack-given .step-circle", "#stack-step1 .step-circle");
+  apt.setStackLine("#line-1-2", "#stack-step1 .step-circle", "#stack-step2 .step-circle");
+
+  const tl = gsap.timeline({ paused: true });
+
+  // ── PHASE 1 - Question hero entrance
+  const HERO_OFFSET_Y = 180;
+  const RISE_TIME = 3.6; // end of "welcome back... one more problem." (3.559)
+  apt.heroEnterLowered(tl, "#q-full-card", HERO_OFFSET_Y, RISE_TIME);
+  tl.fromTo("#serial-num",
+    { scale: 0, rotation: -45, opacity: 0, y: HERO_OFFSET_Y },
+    { scale: 1, rotation: 0, opacity: 1, duration: 0.55, ease: "back.out(2)", y: HERO_OFFSET_Y },
+    0.8);
+  tl.to("#serial-num", { y: 0, duration: 0.6, ease: "power2.inOut" }, RISE_TIME);
+
+  // ── Illustration build (stroke-by-stroke, one beat per narration phrase)
+  tl.fromTo("#person-icon", { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.4, ease: "back.out(1.6)" }, 4.9);
+  tl.to("#ground-line", { strokeDashoffset: 0, opacity: 1, duration: 0.6, ease: "power2.out" }, 5.9);
+  tl.fromTo("#arrow-18", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(1.6)" }, 6.98);
+  tl.fromTo("#label-18", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(1.6)" }, 6.98);
+  tl.fromTo("#arrow-15", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.8)" }, 9.94);
+  tl.fromTo("#label-15", { opacity: 0, x: -6 }, { opacity: 1, x: 0, duration: 0.35, ease: "back.out(1.6)" }, 9.94);
+  tl.to("#pole-rect", { attr: { height: 300, y: 100 }, duration: 0.7, ease: "power2.out" }, 12.9);
+  tl.to("#eye-level-line", { strokeDashoffset: 0, opacity: 1, duration: 0.6, ease: "power2.out" }, 13.7);
+  tl.to("#right-angle", { opacity: 1, duration: 0.3 }, 14.4);
+  tl.to("#sight-line", { opacity: 1, duration: 0.5, ease: "power2.out" }, 14.7);
+  tl.to("#angle-arc", { opacity: 1, duration: 0.4 }, 16.32);
+  tl.to("#chip-45", { opacity: 1, duration: 0.35, ease: "back.out(1.6)" }, 16.9);
+
+  // ── Define the unknown X (Scene 3)
+  tl.fromTo("#arrow-x", { opacity: 0, x: 6 }, { opacity: 1, x: 0, duration: 0.35, ease: "back.out(1.6)" }, 25.42);
+  tl.fromTo("#label-x", { opacity: 0, x: 6 }, { opacity: 1, x: 0, duration: 0.35, ease: "back.out(1.6)" }, 25.42);
+  apt.emphasize(tl, "#person-icon", 29.48);
+  apt.emphasize(tl, "#ground-line", 34.12);
+
+  // ── PHASE 2 - Pin, then Given (separate timestamps)
+  const PIN_TIME = 36.6;
+  const GIVEN_TIME = 37.5;
+  apt.pinFlow(tl, "#q-full-card", "#q-pinned", PIN_TIME);
+  apt.pinFlow(tl, "#illustration", "#illus-pinned", PIN_TIME);
+  apt.fadeOut(tl, "#serial-num", PIN_TIME, 0.5);
+
+  apt.cardEnter(tl, "#card-given .solution-card", GIVEN_TIME);
+  apt.textReveal(tl, "#card-given .math");
+
+  // Adjacent/opposite naming on the pinned figure (LINK pattern)
+  apt.emphasize(tl, "#arrow-18-pinned", 40.98);
+  apt.fadeIn(tl, "#chip-adjacent-pinned", 43.36, 0.35);
+  apt.emphasize(tl, "#arrow-x-pinned", 44.72);
+  apt.emphasize(tl, "#label-x-pinned", 47.76);
+  apt.fadeIn(tl, "#chip-opposite-pinned", 49.56, 0.35);
+
+  // Given -> stack
+  apt.morphToStack(tl, "#card-given .solution-card", "#stack-given .stack-card", 50.5);
+  apt.stackLineGrow(tl, "#line-g-1", 50.5);
+
+  // ── STEP 1 - solve for X
+  apt.cardEnter(tl, "#card-step1 .solution-card", 51.3);
+  apt.textReveal(tl, "#card-step1 .math");
+  apt.emphasize(tl, "#label-x-pinned", 63.16);
+  apt.emphasize(tl, "#arrow-18-pinned", 65.5);
+  tl.to("#label-x-pinned", { fill: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 68.7);
+  tl.to("#arrow-x-pinned line", { stroke: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 68.7);
+  tl.to("#arrow-x-pinned path", { fill: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 68.7);
+
+  apt.morphToStack(tl, "#card-step1 .solution-card", "#stack-step1 .stack-card", 70.0);
+  apt.stackLineGrow(tl, "#line-1-2", 70.0);
+
+  // ── STEP 2 - full height twist + final add
+  apt.cardEnter(tl, "#card-step2 .solution-card", 70.8);
+  apt.textReveal(tl, "#card-step2 .math");
+  apt.emphasize(tl, "#card-step2 .rv:first-child", 74.48);
+  apt.emphasize(tl, "#card-step2 .rv:first-child", 75.52);
+  apt.emphasize(tl, "#arrow-15-pinned", 79.58);
+  apt.emphasize(tl, "#card-step2 .math", 85.58);
+
+  const RECENTER_TIME = 89.0;
+  apt.morphToStack(tl, "#card-step2 .solution-card", "#stack-step2 .stack-card", RECENTER_TIME);
+  apt.fadeOut(tl, "#illus-pinned", RECENTER_TIME);
+  apt.recenterForOptions(tl, "#q-pinned", 160, 180, RECENTER_TIME);
+
+  // ── PHASE 3 - Options reveal
+  apt.fadeIn(tl, "#options-reveal", 89.8);
+  apt.optionsStagger(tl, ".opt-btn", 90.3);
+  apt.correctPulse(tl, ".opt-btn.correct", 95.6);
+
+  // ── END FADE
+  const END_FADE_TIME = 97.14; // NARR_END(96.539) + 0.6
+  apt.fadeOut(tl, "#root > div", END_FADE_TIME, 1.2);
+
+  tl.set({}, {}, 100); // END_FADE_TIME(97.14) + 1.2 + 0.2 - nothing beyond this
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines["root"] = tl;
+</script>
+</body>
+</html>

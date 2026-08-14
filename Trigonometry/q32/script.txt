@@ -1,0 +1,128 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+
+In this problem, we have a building and a tower standing on the same level ground.
+
+
+The building height is 20 mee-ter.
+
+
+From the foot of the building, the angle of elevation to the top of the tower is 60 degrees.
+
+
+And from the top of the building, the angle of elevation to the top of the tower is 30 degrees.
+
+
+The question is asking us to find the height of the tower.
+
+
+To make things easy, let the height of the tower be H, and let the distance between the building and tower be d.
+
+
+What is the idea here?
+<break time="0.5s" />
+
+
+Both angles are looking at the same top point of the tower, so we can form two right-angled triangles and use ten values.
+
+
+<break time="0.5s" />
+
+
+First, let us use the 60-degree angle.
+
+
+Here, opposite side is the tower height H, and adjacent side is d.
+
+
+So,
+
+
+tan 60 degrees is equal to H upon d
+
+
+We know tan 60° is equal to root 3.
+
+
+Hence,
+
+
+H equal to root 3 times d
+
+
+Got it? Perfect.
+
+
+<break time="0.2s" />
+
+
+Now look at the second angle, which is 30 degrees.
+
+
+This time we are standing on top of the building.
+
+
+The building is already 20 mee-ter tall.
+
+
+So we are not seeing the full tower height.
+
+
+We are only seeing the extra part above the building.
+
+
+That extra height is H minus 20.
+
+
+This is where many students make mistakes. We should not take H here. We should take H minus 20.
+
+
+So,
+
+
+tan 30 degree equals (H minus 20) upon d
+
+
+And tan 30° is equal to 1 by root 3.
+
+
+Hence,
+
+
+(H minus 20) Upon d = 1 upon root 3
+
+
+Now ,
+
+
+From the first equation,
+
+
+d equal to H upon root 3
+
+
+Putting this value in the second equation and after solving this,
+
+
+H minus 20 equal to H upon 3
+
+
+After simplifying,
+
+
+3H minus 60 equal to H
+
+
+2H = 60
+
+
+H = 30
+
+
+<break time="0.6s" />
+
+
+So the height of the tower is 30 mee-ter.
+
+
+Hence, the final answer will be Option B, 30 mee-ter.

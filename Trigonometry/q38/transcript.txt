@@ -1,0 +1,46 @@
+[00:00.12 -> 00:01.38]  So welcome back again.
+[00:01.92 -> 00:04.09]  It's time to solve one more problem. In this problem,
+[00:04.62 -> 00:05.58]  we have two towers.
+[00:06.12 -> 00:10.63]  The distance between the towers is thirty meter. From the foot of the first tower,
+[00:11.00 -> 00:14.94]  the angle of elevation to the top of the second tower is sixty degrees,
+[00:15.36 -> 00:16.82]  and from the foot of the second tower,
+[00:17.26 -> 00:34.31]  the angle of elevation to the top of the first tower is thirty degrees. The problem is asking us to find the difference in their heights. What does this mean in simple words? It means we need to find the height of both towers separately and then subtract the smaller height from the bigger height.
+[00:34.84 -> 00:37.89]  Since the distance between the towers is already given as thirty meter,
+[00:38.48 -> 00:39.02]  our job
+[00:39.40 -> 00:40.34]  becomes very easy.
+[00:41.08 -> 00:41.38]  First,
+[00:41.84 -> 00:44.58]  let us find the height of the second tower.
+[00:45.14 -> 00:46.64]  Why are we finding this first?
+[00:47.02 -> 00:51.08]  Because the question directly gives us a sixty-degree angle from the first tower
+[00:51.62 -> 00:53.00]  to the top of the second tower.
+[00:53.56 -> 00:54.52]  Now, we know one fact.
+[00:54.86 -> 00:55.81]  In a right triangle,
+[00:56.38 -> 00:58.58]  ten theta equal to height upon base.
+[00:59.08 -> 00:59.28]  Here,
+[00:59.76 -> 01:00.88]  ten-sixty degrees
+[01:01.36 -> 01:03.96]  equal to height of second tower upon thirty,
+[01:04.58 -> 01:05.74]  and ten-sixty degrees
+[01:06.18 -> 01:07.24]  is equal to root three.
+[01:07.94 -> 01:10.68]  So root three equal to height of second tower upon thirty.
+[01:11.32 -> 01:12.15]  After solving this,
+[01:12.66 -> 01:15.49]  height of second tower is equal to thirty
+[01:16.06 -> 01:17.08]  root three meter.
+[01:17.58 -> 01:18.63]  Got it? Perfect.
+[01:19.04 -> 01:20.80]  Now that we know the height of the second tower,
+[01:21.36 -> 01:23.46]  let us find the height of the first tower.
+[01:24.08 -> 01:25.27]  Again, using the same idea,
+[01:25.92 -> 01:28.90]  ten-thirty degrees equal to height of first tower upon thirty,
+[01:29.46 -> 01:32.02]  and ten-thirty degrees is equal to one upon root three.
+[01:32.68 -> 01:37.87]  So one upon root three is equal to height of first tower upon thirty. After solving this,
+[01:38.44 -> 01:41.12]  height of first tower equal to thirty upon root three.
+[01:41.84 -> 01:43.42]  This becomes ten root three meters.
+[01:43.96 -> 01:45.38]  So both heights are clear now.
+[01:46.00 -> 01:48.56]  Second tower equal to thirty root three meters
+[01:49.06 -> 01:52.40]  and first tower equal to ten root three meters.
+[01:53.08 -> 01:54.74]  The question is asking for the difference.
+[01:55.34 -> 01:56.28]  So the difference is
+[01:56.70 -> 01:58.78]  thirty root three minus ten root three.
+[01:59.36 -> 02:01.26]  That is twenty root three meters.
+[02:02.08 -> 02:02.48]  Hence,
+[02:02.96 -> 02:05.08]  the final answer will be twenty root three meters,
+[02:05.66 -> 02:07.16]  so option B is the correct answer.

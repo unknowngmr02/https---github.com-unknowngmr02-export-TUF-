@@ -1,0 +1,32 @@
+[00:00.10 -> 00:00.26]  So
+[00:00.60 -> 00:01.28]  welcome back again.
+[00:01.90 -> 00:03.28]  It's time to solve one more problem.
+[00:03.72 -> 00:04.38]  In this problem,
+[00:04.70 -> 00:05.96]  we have given ten theta
+[00:06.38 -> 00:07.58]  is equal to two by three,
+[00:08.14 -> 00:10.72]  and we need to find one plus ten square theta,
+[00:11.12 -> 00:11.80]  divided by
+[00:12.34 -> 00:13.82]  one plus cot squared theta.
+[00:14.32 -> 00:15.64]  What does this mean in simple words?
+[00:16.22 -> 00:18.16]  We already know the value of ten theta,
+[00:18.72 -> 00:23.50]  so our job is just to find ten squared theta and cot squared theta,
+[00:23.90 -> 00:25.56]  then put them into the expression.
+[00:26.28 -> 00:29.76]  Now, we have given that ten theta is equal to two by three,
+[00:30.20 -> 00:33.30]  so ten squared theta will be two by three
+[00:33.74 -> 00:34.28]  whole square,
+[00:34.68 -> 00:36.06]  which is equal to four by nine.
+[00:36.48 -> 00:36.76]  Done.
+[00:37.38 -> 00:39.50]  Now that we have found ten squared theta,
+[00:39.94 -> 00:42.18]  we also need cot squared theta.
+[00:42.60 -> 00:46.66]  We know one simple thing, cot theta is just the reverse of ten theta.
+[00:47.20 -> 00:49.08]  If ten theta is two by three,
+[00:49.42 -> 00:51.30]  then cot theta will be three by two.
+[00:51.82 -> 00:55.64]  So cot squared theta becomes three by two whole square,
+[00:56.02 -> 00:57.76]  which is equal to nine by four.
+[00:58.12 -> 00:58.52]  Got it?
+[00:58.98 -> 00:59.36]  Perfect.
+[00:59.92 -> 01:07.52]  Now let us put these values into the expression. One plus four by nine upon one plus nine by four.
+[01:07.96 -> 01:14.72]  The numerator becomes 13 by nine and the denominator becomes 13 by 4.
+[01:15.26 -> 01:19.20]  So this becomes 13 by nine upon 13 by four.
+[01:19.72 -> 01:21.62]  Now, this is where the question becomes easy.
+[01:22.10 -> 01:41.86]  When we divide fractions, we keep the first fraction as it is and multiply by the reciprocal of the second fraction. So we get 13 upon nine times four upon 13. The 13 gets canceled with 13. Hence, the final answer will be four by nine. So the correct option is option C.

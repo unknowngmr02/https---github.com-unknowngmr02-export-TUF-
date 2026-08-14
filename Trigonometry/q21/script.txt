@@ -1,0 +1,69 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+Now in this problem, we have a tower, and two points are on the same side of that tower.
+
+These two points are 40 mee-ter apart.
+
+From the nearer point, the angle of elevation is 60 degree.<break time="0.2s" />
+And from the farther point, the angle of elevation is 30 degree.
+<break time="0.2s" />
+and, We need to find the height of the tower.<break time="0.2s" />
+
+Let the distance of the nearer point from the tower be x mee-ter.<break time="0.2s" />
+So the farther point will be x plus 40 mee-ter from the tower.
+<break time="0.5s" />
+
+here<break time="0.2s" />, tangent is the most useful ratio.<break time="0.2s" />
+
+Why tangent?<break time="0.2s" />
+
+Because tangent connects height and base.<break time="0.2s" />
+
+tan thee-ta is equal to height by base.<break time="0.2s" />
+
+So from the nearer point,<break time="0.2s" />
+
+tan 60 degree is equal to h by x.<break time="0.2s" />
+
+which gives , Root 3 is equal to h by x.<break time="0.2s" />
+
+That means h is equal to x root 3.<break time="0.2s" />
+
+Okay, keep this aside for a second.<break time="0.2s" />
+We will use this same height from the other point also.
+<break time="0.2s" />
+
+Now from the farther point,<break time="0.2s" />
+
+tan 30 degree is equal to h by x plus 40.<break time="0.2s" />
+
+So 1 by root 3 is equal to h by x plus 40.<break time="0.2s" />
+
+But we already found that h is equal to x root 3.<break time="0.2s" />
+
+So put x root 3 in place of h.<break time="0.2s" />
+
+Then it becomes,<break time="0.2s" />
+
+1 by root 3 is equal to x root 3 by x plus 40.<break time="0.2s" />
+
+After cross multiplication, x plus 40 is equal to 3x.<break time="0.2s" />
+
+So 40 is equal to 2x.<break time="0.2s" />
+
+And x is equal to 20.<break time="0.2s" />
+
+Done. We got the distance of the nearer point.<break time="0.2s" />
+<break time="0.2s" />
+
+But wait<break time="0.2s" />, the question is not asking for this distance.
+The question is asking for the tower height.
+
+So use h is equal to x root 3.<break time="0.2s" />
+
+h is equal to 20 root 3 mee-ter.
+<break time="0.6s" />
+
+Hence, the height of the tower is "20 root 3 mee-ter".
+
+So the correct option is option A.

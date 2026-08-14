@@ -1,0 +1,95 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+In this problem, we are given that
+
+ten theta plus kot theta <break time="0.2s" /> is equal to 10 by 3.
+
+And we need to find
+
+sign theta  into  kos theta.
+
+Now, instead of using formulas directly, <break time="0.2s" /> let us solve this using P, B, and H.
+
+<break time="0.5s" />
+
+Suppose, in a right triangle,
+ 
+Perpendicular is P,
+
+Base is B,
+
+And Hypotenuse is H.
+
+We know that,
+
+ten theta <break time="0.2s" /> is equal to P upon B.<break time="0.2s" /> 
+
+And kot theta <break time="0.2s" /> is equal to B upon P.
+
+So, putting these into the given equation,
+
+P upon B <break time="0.2s" /> plus <break time="0.2s" /> B upon P <break time="0.2s" /> equal to 10 by 3.
+
+Now, take the LCM.
+
+P square plus B square <break time="0.2s" /> upon <break time="0.2s" /> P B <break time="0.2s" /> equal to 10 by 3.
+
+Now, here comes the important observation.
+
+We know from the Pythagoras  theorem that
+
+P square plus B square <break time="0.2s" /> is equal to H square.
+
+So the equation becomes
+
+H square upon P B <break time="0.2s" /> equal to 10 by 3.
+
+<break time="0.5s" />
+
+Now, what do we have to find?
+
+We need
+
+sign theta into kos theta.
+
+Using P, B, and H,
+
+sign theta <break time="0.2s" /> equal to P upon H.
+
+And kos theta <break time="0.2s" /> equal to B upon H.
+
+Multiplying both,
+
+sign theta into kos theta
+
+equal to
+
+P B upon H square.
+
+Now look carefully.
+
+From the previous equation,
+
+H square upon P B <break time="0.2s" /> is equal to 10 by 3.
+
+So, taking the reciprocal,
+
+P B upon H square <break time="0.2s" /> is equal to 3 by 10.
+
+And this is exactly
+
+sign theta into kos theta.
+
+<break time="0.6s" />
+
+Done and dusted.
+
+Hence, the value of
+
+sign theta into kos theta
+
+is
+
+3 by 10.
+
+So, the correct option is <break time="0.2s" /> Option D.

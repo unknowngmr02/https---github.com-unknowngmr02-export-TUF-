@@ -1,0 +1,54 @@
+[00:00.08 -> 00:01.54]  So welcome back again.
+[00:02.16 -> 00:03.78]  It's time to solve one more problem.
+[00:04.16 -> 00:06.08]  Now, in this problem, a drone is flying in the air.
+[00:06.72 -> 00:08.84]  Two people are standing on opposite sides of the point
+[00:09.22 -> 00:10.34]  directly below the drone.
+[00:10.86 -> 00:13.08]  One person sees the drone at forty-five degrees.
+[00:13.52 -> 00:16.20]  The other person sees the drone at sixty degrees.
+[00:16.56 -> 00:19.24]  And the distance between these two people is one hundred meter.
+[00:19.71 -> 00:24.78]  We need to find the height of the drone. Okay, so let us first assume the height of the drone to be h.
+[00:25.32 -> 00:28.04]  Since the drone's foot lies between the two people,
+[00:28.50 -> 00:31.84]  let the distances from the foot to the two observation points be x and y.
+[00:32.36 -> 00:33.71]  One very important thing is clear,
+[00:34.50 -> 00:36.30]  x plus y equal to one hundred
+[00:36.70 -> 00:39.54]  because together they make the full distance between the two people.
+[00:40.44 -> 00:40.60]  Okay,
+[00:41.02 -> 00:43.02]  so first we look at the forty-five degree triangle.
+[00:43.62 -> 00:44.38]  For this triangle,
+[00:45.02 -> 00:46.18]  ten forty-five degrees
+[00:46.66 -> 00:47.78]  equal to h upon x,
+[00:48.24 -> 00:50.02]  and ten forty-five degrees is equal to one.
+[00:50.74 -> 00:50.90]  So
+[00:51.40 -> 00:51.92]  now we have
+[00:52.52 -> 00:53.74]  one equal to h upon x.
+[00:54.24 -> 00:55.28]  This means
+[00:55.60 -> 00:56.62]  h equal to x.
+[00:57.26 -> 00:57.48]  Done.
+[00:58.12 -> 00:59.68]  Now look at the sixty-degree triangle.
+[01:00.24 -> 01:00.89]  For this triangle,
+[01:01.54 -> 01:04.16]  ten sixty degrees equal to h upon y,
+[01:04.70 -> 01:06.98]  and ten sixty degrees is equal to root three.
+[01:07.68 -> 01:07.80]  So
+[01:08.28 -> 01:11.16]  now we have root three equal to h upon y.
+[01:11.64 -> 01:11.88]  Then
+[01:12.66 -> 01:13.58]  after solving this,
+[01:14.10 -> 01:15.82]  we get y equal to h upon root three.
+[01:16.50 -> 01:18.90]  Now that we have both distances in terms of h,
+[01:19.34 -> 01:21.12]  we can use the condition given in the question.
+[01:21.72 -> 01:22.78]  Remember, x plus y
+[01:23.22 -> 01:24.02]  equal to one hundred.
+[01:24.38 -> 01:25.25]  So putting the values,
+[01:25.98 -> 01:27.00]  h plus h upon
+[01:27.44 -> 01:27.76]  root
+[01:28.14 -> 01:28.36]  three
+[01:28.84 -> 01:29.66]  equal to one hundred.
+[01:30.02 -> 01:30.96]  Now taking h common,
+[01:31.48 -> 01:34.96]  we get h times one plus one over the square root of three
+[01:35.48 -> 01:37.45]  equal to one hundred. Then after solving this,
+[01:38.14 -> 01:39.28]  h equal to fifty times
+[01:39.78 -> 01:40.96]  three minus root three.
+[01:41.46 -> 01:43.18]  This is the height of the drone.
+[01:44.02 -> 01:46.26]  Hence, the final answer will be fifty times
+[01:46.76 -> 01:47.92]  three minus root three
+[01:48.34 -> 01:48.64]  meter.
+[01:49.48 -> 01:51.56]  So the correct option is option A.

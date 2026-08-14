@@ -1,0 +1,14 @@
+[00:00.10 -> 00:01.00]  So welcome back again.
+[00:01.48 -> 00:06.74]  It's time to solve one more problem. Now, in this problem, we need to find cot forty-five degree plus
+[00:07.22 -> 00:08.42]  tan forty-five degree.
+[00:08.98 -> 00:11.88]  This is a direct standard trigonometric values question.
+[00:12.44 -> 00:15.22]  So we only need to remember the values of these two ratios.
+[00:15.94 -> 00:16.46]  We know that
+[00:16.96 -> 00:18.78]  cot forty-five degree is equal to one,
+[00:19.38 -> 00:22.10]  and tan forty-five degree is also equal to one.
+[00:22.64 -> 00:24.26]  Now we simply add these two values,
+[00:24.86 -> 00:25.58]  one plus one.
+[00:26.18 -> 00:27.38]  After adding, we get two.
+[00:28.26 -> 00:29.76]  Hence, the required answer is
+[00:30.16 -> 00:30.44]  two.
+[00:30.94 -> 00:32.56]  So the correct option is option B.

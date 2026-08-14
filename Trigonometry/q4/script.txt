@@ -1,0 +1,65 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+Now in this problem, we have a pole whose height is 12 mee-ter.
+
+And the shadow of the pole is "twelve root three" mee-ter.
+
+The question is asking us to find the angle of elevation of the sun.
+
+<break time="0.5s" />
+
+First, let us draw the situation.
+
+Here is the pole.
+
+Here is its shadow on the ground.
+
+Now join the top of the pole to the end of the shadow.
+
+This forms a right triangle.
+
+And this angle with the ground is the angle of elevation that we need to find.
+
+<break time="0.2s" />
+
+Now let us identify the sides.
+
+The height of the pole becomes the opposite side.
+
+So the opposite side is 12.
+
+The shadow becomes the adjacent side.
+
+So the adjacent side is "twelve root three."
+
+<break time="0.2s" />
+
+Since we know the opposite side and the adjacent side, "ten theta" is the correct trigonometric ratio to use.
+
+"Ten theta is equal to opposite side divided by adjacent side."
+
+Putting the values,
+
+"Ten theta is equal to twelve divided by twelve root three."
+
+The twelve from the numerator and denominator gets cancelled.
+
+So now,
+
+"Ten theta is equal to one divided by root three."
+
+<break time="0.2s" />
+
+Now we only have to remember one standard trigonometric value.
+
+"Ten thirty degree is equal to one divided by root three."
+
+Both values are exactly the same.
+
+So theta must be thirty degree.
+
+<break time="0.6s" />
+
+Hence, the angle of elevation of the sun is "thirty degree."
+
+So the correct option is "Option D."

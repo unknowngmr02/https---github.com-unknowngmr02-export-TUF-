@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="design-system.css">
+<style>
+  /* .chip in design-system.css is scoped to .solution-card/.stack-card only -
+     the illustration's figure labels sit outside both, so they need their
+     own pill rule (same visual tokens: primary bg, white text, pill radius). */
+  /* Bordered chip (white bg, primary border+text) - matches the q16 sibling
+     reference's tri-value chip, not the solid-fill primary/.chip pill. */
+  .fig-chip {
+    display: inline-block;
+    background: #FFFFFF;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 5px 16px;
+    border-radius: 10px;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  /* The pinned figure is displayed smaller (svg width/height < viewBox), so
+     its whole coordinate space - including foreignObject text - is scaled
+     down uniformly. A plain 24px .fig-chip would render under 20px on
+     screen once that shrink is applied, so the pinned copy uses a larger
+     source font-size to compensate: at scale 440/700=0.629, 36px * 0.629 =
+     ~22.6px effective - safely over the 20px minimum. */
+  .fig-chip-pinned {
+    display: inline-block;
+    background: #FFFFFF;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 8px 22px;
+    border-radius: 12px;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+<div data-hf-id="hf-89uj" id="root" data-composition-id="root" data-start="0" data-width="1920" data-height="1080">
+
+  <!-- ══════ BACKGROUND LAYERS (always visible) ══════ -->
+  <div data-hf-id="hf-858h" class="dotted-grid"></div>
+  <div data-hf-id="hf-izuk" class="bottom-strip"></div>
+  <div data-hf-id="hf-pcpi" class="topic-name">Trigonometry</div>
+  <div data-hf-id="hf-e319" class="logo"></div>
+
+  <!-- ══════ VOICEOVER ══════ -->
+  <audio data-hf-id="hf-m6dq" id="voiceover" class="clip" src="voiceover.wav" data-start="0" data-duration="69.36" data-track-index="0"></audio>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 1 - Question + Illustration (0-20.4s)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-vee9" id="phase1" class="clip" data-start="0" data-duration="22.1" data-track-index="1" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:5;">
+
+    <div data-hf-id="hf-lxc5" id="q-full-card" class="q-card" style="position:absolute;left:50%;top:80px;width:1500px;transform:translateX(-50%);opacity:0;">
+      <div data-hf-id="hf-4rv3" class="q-text">
+        An acute angle has opposite side <span data-hf-id="hf-nmid" class="num">8</span> and hypotenuse <span data-hf-id="hf-tcs7" class="num">17</span>. What is its <span data-hf-id="hf-98ms" class="num">tangent</span>?
+      </div>
+    </div>
+
+    <div data-hf-id="hf-w62k" id="serial-num" class="serial-num" style="left:60px;top:60px;opacity:0;">
+      <div data-hf-id="hf-yfde" class="digit">Q</div>
+    </div>
+
+    <!-- Illustration area - right triangle, drawn true to scale, 2x the
+         original geometry inside a bigger viewBox (coordinates doubled,
+         render kept 1:1 with viewBox so stroke-width/font-size/chip-box
+         sizes are untouched - only the triangle itself and its margins
+         got bigger, same technique used to enlarge q27's figure):
+           theta-vertex        = (150, 450)  [angle vertex, LEFT - base ray points +x]
+           right-angle-vertex  = (630, 450)  [RIGHT of theta-vertex]
+           apex                = (630, 194)  [directly above right-angle-vertex]
+         base(adjacent)  = 630-150 = 480
+         perp(opposite)  = 450-194 = 256
+         hyp             = sqrt(480^2+256^2) = sqrt(295936) = 544
+         computed angle  = atan2(256,480) = 28.07deg -> --angle:28.07 (unchanged, same true-scale triangle)
+         Arc: cx=150,cy=450,r=144, circumference=2*pi*144=904.78. translate Y = 2*cy = 900 (literal).
+         Labels are <foreignObject> INSIDE this same svg (pinned copy stays a
+         pure width/height shrink of this exact markup, viewBox unchanged). -->
+    <div data-hf-id="hf-e916" id="illustration" style="position:absolute;left:50%;top:340px;transform:translateX(-50%);
+                width:900px;height:650px;opacity:0;">
+      <svg data-hf-id="hf-7e46" viewBox="0 0 900 650" width="900" height="650" xmlns="http://www.w3.org/2000/svg">
+        <!-- base (adjacent), len=sqrt((630-150)^2+(450-450)^2)=480 -->
+        <line data-hf-id="hf-r8e9" x1="150" y1="450" x2="630" y2="450" stroke="#000000" stroke-width="6" stroke-linecap="round" />
+        <!-- perpendicular (opposite), len=sqrt((630-630)^2+(450-194)^2)=256 -->
+        <line data-hf-id="hf-gere" x1="630" y1="450" x2="630" y2="194" stroke="#000000" stroke-width="6" stroke-linecap="round" />
+        <!-- hypotenuse, len=sqrt((630-150)^2+(194-450)^2)=544 -->
+        <line data-hf-id="hf-op0e" x1="150" y1="450" x2="630" y2="194" stroke="#6373db" stroke-width="6" stroke-linecap="round" />
+        <!-- right-angle marker at (630,450), rays -y and -x, inset 48px each -->
+        <path data-hf-id="hf-qh26" d="M 582 450 L 582 402 L 630 402" fill="none" stroke="#000000" stroke-width="4" />
+        <!-- theta arc - stroke-dasharray circle technique, bare unitless --angle,
+             LITERAL translate (not calc()), opacity-only reveal -->
+        <circle data-hf-id="hf-lxu9" id="theta-arc" cx="150" cy="450" r="144" fill="transparent" stroke="#4eb85f" stroke-width="8" stroke-linecap="round" transform="translate(0, 900) scale(1,-1)" style="--angle: 28.07; stroke-dasharray: calc((var(--angle) / 360) * 904.78) 904.78; opacity:0;" />
+        <!-- Chip labels (per feedback: pill chips, not bare svg text) -->
+        <foreignobject data-hf-id="hf-a890" id="chip-theta" x="102" y="398" width="60" height="40" style="overflow:visible;opacity:0;">
+          <div data-hf-id="hf-wdvc" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip">θ</div>
+        </foreignobject>
+        <foreignobject data-hf-id="hf-5ll6" id="chip-opp" x="684" y="270" width="140" height="44" style="overflow:visible;opacity:0;">
+          <div data-hf-id="hf-4m9k" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip">8 units</div>
+        </foreignobject>
+        <foreignobject data-hf-id="hf-ghu1" id="chip-hyp" x="168" y="206" width="150" height="44" style="overflow:visible;opacity:0;">
+          <div data-hf-id="hf-edvw" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip">17 units</div>
+        </foreignobject>
+        <foreignobject data-hf-id="hf-rp0m" id="chip-adj" x="248" y="474" width="140" height="44" style="overflow:visible;opacity:0;">
+          <div data-hf-id="hf-atnc" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip">X units</div>
+        </foreignobject>
+      </svg>
+      <!-- Formula row - bigger, clearer than a small chip pill -->
+      <div data-hf-id="hf-k2u7" id="formula-row" style="position:absolute;left:0;top:560px;width:900px;text-align:center;
+                  font-family:var(--font);font-size:40px;color:var(--text);opacity:0;">
+        tanθ = <span data-hf-id="hf-dkto" class="frac" style="font-size:1em;margin:0 10px;"><span data-hf-id="hf-v9s6" class="top hi">opposite</span><span data-hf-id="hf-dvfj" class="bot hi">adjacent</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 2 - Pinned question (19.6s onwards)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-sf9z" id="q-pinned" class="clip" data-start="19.6" data-duration="51.9" data-track-index="2" style="position:absolute;width:100%;top:0;left:0;z-index:6;opacity:0;">
+    <div data-hf-id="hf-9jf4" class="q-card pinned" style="position:absolute;left:385px;top:30px;width:1275px;">
+      <div data-hf-id="hf-8c20" class="q-text">
+        Opposite = <span data-hf-id="hf-1m21" class="num">8</span>, Hypotenuse = <span data-hf-id="hf-wdfb" class="num">17</span>. Find tanθ.
+      </div>
+    </div>
+  </div>
+
+  <!-- Pinned illustration - EXACT same underlying viewBox/coordinates as
+       #illustration above (now 0 0 900 650), only the outer svg width/height
+       shrink (900*0.629=566, 650*0.629=409) - a pure scale, never a separate
+       eyeballed redraw (penelty.txt rule 5), matching the q10/q16 pattern.
+       Labels use .fig-chip-pinned (bigger source font-size) instead of
+       .fig-chip so they still read >20px after the shrink - see the CSS
+       comment above .fig-chip-pinned for the math. Boxes are enlarged and
+       recentered on the same anchor points the smaller .fig-chip boxes used. -->
+  <div data-hf-id="hf-hqa0" id="illus-pinned" class="clip" data-start="19.6" data-duration="49.2" data-track-index="3" style="position:absolute;left:690px;top:15px;width:566px;height:409px;z-index:5;opacity:0;">
+    <svg data-hf-id="hf-hr79" viewBox="0 0 900 650" width="566" height="409" xmlns="http://www.w3.org/2000/svg">
+      <line data-hf-id="hf-ia8l" x1="150" y1="450" x2="630" y2="450" stroke="#000000" stroke-width="6" stroke-linecap="round" />
+      <line data-hf-id="hf-51em" x1="630" y1="450" x2="630" y2="194" stroke="#000000" stroke-width="6" stroke-linecap="round" />
+      <line data-hf-id="hf-qr9e" x1="150" y1="450" x2="630" y2="194" stroke="#6373db" stroke-width="6" stroke-linecap="round" />
+      <path data-hf-id="hf-jef6" d="M 582 450 L 582 402 L 630 402" fill="none" stroke="#000000" stroke-width="4" />
+      <circle data-hf-id="hf-ew82" cx="150" cy="450" r="144" fill="transparent" stroke="#4eb85f" stroke-width="8" stroke-linecap="round" transform="translate(0, 900) scale(1,-1)" style="--angle: 28.07; stroke-dasharray: calc((var(--angle) / 360) * 904.78) 904.78;" />
+      <!-- box centers match the original .fig-chip anchors, offsets doubled to track the 2x geometry, boxes themselves unchanged (bigger font, not bigger box) -->
+      <foreignobject data-hf-id="hf-dm7t" x="32" y="378" width="90" height="60" style="overflow:visible;">
+        <div data-hf-id="hf-8du8" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip-pinned">θ</div>
+      </foreignobject>
+      <foreignobject data-hf-id="hf-0jn6" x="694" y="268" width="210" height="66" style="overflow:visible;">
+        <div data-hf-id="hf-5y1c" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip-pinned">8 units</div>
+      </foreignobject>
+      <foreignobject data-hf-id="hf-kz71" x="94" y="184" width="225" height="66" style="overflow:visible;">
+        <div data-hf-id="hf-k0ys" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip-pinned">17 units</div>
+      </foreignobject>
+      <foreignobject data-hf-id="hf-kg0x" id="chip-adj-pinned" x="258" y="512" width="210" height="66" style="overflow:visible;opacity:0;">
+        <div data-hf-id="hf-at4g" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip-pinned">X units</div>
+      </foreignobject>
+    </svg>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SOLUTION CARDS
+       ══════════════════════════════════════════════ -->
+
+  <!-- GIVEN - plain recap of the given values + naming the unknown -->
+  <div data-hf-id="hf-1z81" id="card-given" class="clip" data-start="20.14" data-duration="10.8" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-iiia" class="solution-card" style="position:absolute;left:640px;top:480px;text-align:center;">
+      <div data-hf-id="hf-3rv6" class="card-content">
+        <span data-hf-id="hf-7r0o" class="chip">Given</span>
+        <div data-hf-id="hf-8tlu" class="math">
+          <span data-hf-id="hf-d42j" class="rv" data-t="20.14">Opposite</span> <span data-hf-id="hf-gdn4" class="rv" data-t="20.40">=</span> <span data-hf-id="hf-fa4v" class="hi rv" data-t="20.50">8</span><br data-hf-id="hf-x5px">
+          <span data-hf-id="hf-7orl" class="rv" data-t="21.50">Hypotenuse</span> <span data-hf-id="hf-hv4d" class="rv" data-t="21.80">=</span> <span data-hf-id="hf-mad8" class="hi rv" data-t="22.00">17</span><br data-hf-id="hf-rsrt">
+          <span data-hf-id="hf-d84j" class="rv" data-t="26.86">Adjacent</span> <span data-hf-id="hf-nuvl" class="rv" data-t="27.20">=</span> <span data-hf-id="hf-z7nw" class="ans rv" data-t="27.40">X</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 1 - Pythagoras calculation to find X -->
+  <div data-hf-id="hf-ulhf" id="card-step1" class="clip" data-start="29.22" data-duration="29.2" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-9mhg" class="solution-card" style="position:absolute;left:600px;top:440px;text-align:center;width:720px;">
+      <div data-hf-id="hf-0yza" class="card-content">
+        <span data-hf-id="hf-3ife" class="chip">Step 1</span>
+        <div data-hf-id="hf-ng7a" class="math">
+          <span data-hf-id="hf-s7fm" class="rv" data-t="29.22">Using</span> <span data-hf-id="hf-nu4a" class="rv" data-t="29.60">Pythagoras</span> <span data-hf-id="hf-2xql" class="rv" data-t="30.10">theorem:</span><br data-hf-id="hf-szow">
+          <span data-hf-id="hf-xl7i" class="rv" data-t="31.20">hyp</span><sup data-hf-id="hf-baz3" class="rv" data-t="31.20">2</sup> <span data-hf-id="hf-jrgj" class="rv" data-t="31.90">=</span> <span data-hf-id="hf-l9gt" class="rv" data-t="32.20">opp</span><sup data-hf-id="hf-xzss" class="rv" data-t="32.20">2</sup> <span data-hf-id="hf-dgie" class="rv" data-t="33.40">+</span> <span data-hf-id="hf-j5ud" class="rv" data-t="33.70">adj</span><sup data-hf-id="hf-7c4c" class="rv" data-t="33.70">2</sup><br data-hf-id="hf-sldv">
+          <span data-hf-id="hf-61bv" class="hi rv" data-t="35.72">17</span><sup data-hf-id="hf-4kqd" class="hi rv" data-t="35.72">2</sup> <span data-hf-id="hf-sa5k" class="rv" data-t="36.90">=</span> <span data-hf-id="hf-j8k5" class="hi rv" data-t="37.30">8</span><sup data-hf-id="hf-ruqx" class="hi rv" data-t="37.30">2</sup> <span data-hf-id="hf-p6uz" class="rv" data-t="38.60">+</span> <span data-hf-id="hf-h919" class="rv" data-t="39.00">X</span><sup data-hf-id="hf-3vhx" class="rv" data-t="39.00">2</sup><br data-hf-id="hf-qluq">
+          <span data-hf-id="hf-tmym" class="hi rv" data-t="41.68">289</span> <span data-hf-id="hf-lkuu" class="rv" data-t="42.64">=</span> <span data-hf-id="hf-oxph" class="hi rv" data-t="42.96">64</span> <span data-hf-id="hf-g1px" class="rv" data-t="43.60">+</span> <span data-hf-id="hf-6lx5" class="rv" data-t="44.00">X</span><sup data-hf-id="hf-ppf1" class="rv" data-t="44.00">2</sup><br data-hf-id="hf-q7jp">
+          <span data-hf-id="hf-x2eq" class="rv" data-t="44.84">X</span><sup data-hf-id="hf-x2er" class="rv" data-t="44.84">2</sup> <span data-hf-id="hf-x2es" class="rv" data-t="46.02">=</span> <span data-hf-id="hf-x2et" class="hi rv" data-t="46.02">289</span> <span data-hf-id="hf-x2eu" class="rv" data-t="47.62">-</span> <span data-hf-id="hf-x2ev" class="hi rv" data-t="47.94">64</span><br data-hf-id="hf-x2ew">
+          <span data-hf-id="hf-71jx" class="rv" data-t="50.40">X</span><sup data-hf-id="hf-5ma1" class="rv" data-t="50.40">2</sup> <span data-hf-id="hf-1wmy" class="rv" data-t="51.20">=</span> <span data-hf-id="hf-misz" class="hi rv" data-t="51.80">225</span><br data-hf-id="hf-regs">
+          <span data-hf-id="hf-bjiz" class="rv" data-t="53.60">X</span> <span data-hf-id="hf-n4uj" class="rv" data-t="53.90">=</span> <span data-hf-id="hf-gu7u" class="ans rv" data-t="54.60">15</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 2 - tan theta -->
+  <div data-hf-id="hf-u062" id="card-step2" class="clip" data-start="56.90" data-duration="12.3" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-f65y" class="solution-card" style="position:absolute;left:640px;top:480px;text-align:center;">
+      <div data-hf-id="hf-1dab" class="card-content">
+        <span data-hf-id="hf-3wqf" class="chip">Step 2</span>
+        <div data-hf-id="hf-nuib" class="math">
+          <span data-hf-id="hf-lotq" class="rv" data-t="56.90">tanθ</span> <span data-hf-id="hf-8zbk" class="rv" data-t="57.60">=</span> <span data-hf-id="hf-euje" class="rv" data-t="57.90">opposite / adjacent</span><br data-hf-id="hf-r05r">
+          <span data-hf-id="hf-ggy2" class="rv" data-t="59.60">tanθ</span> <span data-hf-id="hf-hvbq" class="rv" data-t="60.20">=</span>
+          <span data-hf-id="hf-cnr1" class="frac ans rv" data-t="60.60"><span data-hf-id="hf-7vtx" class="top hi">8</span><span data-hf-id="hf-9wwb" class="bot hi">15</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       LEFT STACK CARDS
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-22mn" id="stack-given" class="clip" data-start="28.4" data-duration="43.1" data-track-index="11" style="position:absolute;left:100px;top:140px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-usjn" class="stack-card">
+      <div data-hf-id="hf-1rlc" class="card-content">
+        <span data-hf-id="hf-snhl" class="step-circle">G</span>
+        <div data-hf-id="hf-v23g" class="math">
+          Opposite = <span data-hf-id="hf-saj8" class="hi">8</span>, Hypotenuse = <span data-hf-id="hf-m67c" class="hi">17</span>, Adjacent = <span data-hf-id="hf-rf7p" class="ans">X</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-cgcl" id="stack-step1" class="clip" data-start="55.9" data-duration="15.6" data-track-index="12" style="position:absolute;left:100px;top:300px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-3m9v" class="stack-card">
+      <div data-hf-id="hf-yzg5" class="card-content">
+        <span data-hf-id="hf-w2db" class="step-circle">1</span>
+        <div data-hf-id="hf-msst" class="math">
+          17<sup data-hf-id="hf-etg7">2</sup> = 8<sup data-hf-id="hf-d6zb">2</sup> + X<sup data-hf-id="hf-csoa">2</sup>, so X = <span data-hf-id="hf-1dvx" class="ans">15</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-au94" id="stack-step2" class="clip" data-start="66.7" data-duration="4.8" data-track-index="13" style="position:absolute;left:100px;top:440px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-37yu" class="stack-card">
+      <div data-hf-id="hf-zdr6" class="card-content">
+        <span data-hf-id="hf-vo2a" class="step-circle">2</span>
+        <div data-hf-id="hf-3yoo" class="math">
+          tanθ = <span data-hf-id="hf-gq2t" class="frac"><span data-hf-id="hf-l9o9" class="top hi">8</span><span data-hf-id="hf-nf3f" class="bot hi">15</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-f1rg" id="line-g-1" class="clip stack-line" data-start="55.9" data-duration="15.6" data-track-index="15" style="opacity:0;"></div>
+  <div data-hf-id="hf-4vs4" id="line-1-2" class="clip stack-line" data-start="66.7" data-duration="4.8" data-track-index="16" style="opacity:0;"></div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 3 - OPTIONS REVEAL
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-4t4x" id="options-reveal" class="clip" data-start="67.5" data-duration="4" data-track-index="10" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:8;opacity:0;">
+    <div data-hf-id="hf-2tfv" class="pinned-col" style="top:400px;">
+      <div data-hf-id="hf-6knj" class="options-grid">
+        <div data-hf-id="hf-w7m1" class="opt-btn"><span data-hf-id="hf-sfug" class="letter">A</span>15/8</div>
+        <div data-hf-id="hf-5u5h" class="opt-btn correct"><span data-hf-id="hf-r8xd" class="letter">B</span>8/15</div>
+        <div data-hf-id="hf-3bst" class="opt-btn"><span data-hf-id="hf-rn8e" class="letter">C</span>8/17</div>
+        <div data-hf-id="hf-bfi3" class="opt-btn"><span data-hf-id="hf-qgbb" class="letter">D</span>15/17</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end root -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script src="animations.js"></script>
+<script>
+  apt.setStackLine("#line-g-1", "#stack-given .step-circle", "#stack-step1 .step-circle");
+  apt.setStackLine("#line-1-2", "#stack-step1 .step-circle", "#stack-step2 .step-circle");
+
+  const tl = gsap.timeline({ paused: true });
+
+  // PHASE 1
+  const HERO_OFFSET_Y = 180;
+  const RISE_TIME = 3.7;
+  apt.heroEnterLowered(tl, "#q-full-card", HERO_OFFSET_Y, RISE_TIME);
+
+  tl.fromTo("#serial-num",
+    { scale: 0, rotation: -45, opacity: 0, y: HERO_OFFSET_Y },
+    { scale: 1, rotation: 0, opacity: 1, duration: 0.55, ease: "back.out(2)" },
+    0.8);
+  tl.to("#serial-num", { y: 0, duration: 0.6, ease: "power2.inOut" }, RISE_TIME);
+
+  // Illustration builds in
+  apt.fadeIn(tl, "#illustration", 5.76, 0.6);
+  apt.fadeIn(tl, "#theta-arc", 8.30);
+  apt.fadeIn(tl, "#chip-theta", 8.30);
+  apt.fadeIn(tl, "#chip-opp", 9.46);
+  apt.fadeIn(tl, "#chip-hyp", 11.52);
+  apt.fadeIn(tl, "#formula-row", 16.72, 0.6);
+
+  // PHASE 2 - Pin, then Given
+  const PIN_TIME = 19.6;
+  const GIVEN_TIME = 20.14;
+
+  apt.pinFlow(tl, "#q-full-card", "#q-pinned", PIN_TIME);
+  apt.pinFlow(tl, "#illustration", "#illus-pinned", PIN_TIME);
+  apt.fadeOut(tl, "#serial-num", PIN_TIME, 0.5);
+
+  apt.cardEnter(tl, "#card-given .solution-card", GIVEN_TIME);
+  apt.textReveal(tl, "#card-given .math");
+
+  // Pinned figure: emphasize the (still unlabeled) base line when the
+  // narration names the unknown, then reveal its "X" chip verbatim with
+  // "let the adjacent side be X".
+  apt.emphasize(tl, "#illus-pinned line:nth-of-type(1)", 20.14);
+  apt.fadeIn(tl, "#chip-adj-pinned", 26.86);
+
+  // GIVEN -> stack
+  apt.morphToStack(tl, "#card-given .solution-card", "#stack-given .stack-card", 28.4);
+  apt.cardEnter(tl, "#card-step1 .solution-card", 29.22);
+  apt.textReveal(tl, "#card-step1 .math");
+
+  // STEP 1 -> stack
+  apt.morphToStack(tl, "#card-step1 .solution-card", "#stack-step1 .stack-card", 55.9);
+  apt.stackLineGrow(tl, "#line-g-1", 55.9);
+  apt.cardEnter(tl, "#card-step2 .solution-card", 56.90);
+  apt.textReveal(tl, "#card-step2 .math");
+
+  // Recenter before options
+  const RECENTER_TIME = 66.7;
+  apt.fadeOut(tl, "#illus-pinned", RECENTER_TIME);
+  apt.recenterForOptions(tl, "#q-pinned", 160, 180, RECENTER_TIME);
+
+  // STEP 2 -> stack
+  apt.morphToStack(tl, "#card-step2 .solution-card", "#stack-step2 .stack-card", RECENTER_TIME);
+  apt.stackLineGrow(tl, "#line-1-2", RECENTER_TIME);
+
+  apt.fadeIn(tl, "#options-reveal", 67.5);
+  apt.optionsStagger(tl, ".opt-btn", 67.8);
+  apt.correctPulse(tl, ".opt-btn.correct", 69.0);
+
+  const END_FADE_TIME = 69.9;
+  apt.fadeOut(tl, "#root > div", END_FADE_TIME, 1.2);
+
+  tl.set({},{},71.5)
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines["root"] = tl;
+</script>
+</body>
+</html>

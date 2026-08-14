@@ -1,0 +1,4129 @@
+{
+  "duration": 107.579,
+  "phrases": [
+    {
+      "start": 0.119,
+      "end": 0.299,
+      "text": "So"
+    },
+    {
+      "start": 0.959,
+      "end": 1.74,
+      "text": "welcome back again."
+    },
+    {
+      "start": 2.319,
+      "end": 4.779,
+      "text": "It's time to solve one more problem. In this problem,"
+    },
+    {
+      "start": 5.319,
+      "end": 7.779,
+      "text": "a person is standing at a certain distance from a tower."
+    },
+    {
+      "start": 8.34,
+      "end": 10.539,
+      "text": "The angle of elevation of the top of the tower is"
+    },
+    {
+      "start": 10.979,
+      "end": 11.8,
+      "text": "thirty degrees."
+    },
+    {
+      "start": 12.3,
+      "end": 14.519,
+      "text": "Then the person walks twenty meters towards the tower."
+    },
+    {
+      "start": 15.039,
+      "end": 16.84,
+      "text": "Now the angle becomes forty-five degrees,"
+    },
+    {
+      "start": 17.399,
+      "end": 19.219,
+      "text": "and we need to find the height of the tower."
+    },
+    {
+      "start": 19.699,
+      "end": 22.659,
+      "text": "Let the distance from the tower after walking be x,"
+    },
+    {
+      "start": 23.019,
+      "end": 25.299,
+      "text": "so the initial distance becomes x plus twenty."
+    },
+    {
+      "start": 25.859,
+      "end": 27.26,
+      "text": "Let the height of the tower be"
+    },
+    {
+      "start": 27.599,
+      "end": 27.659,
+      "text": "h."
+    },
+    {
+      "start": 28.42,
+      "end": 28.599,
+      "text": "Now,"
+    },
+    {
+      "start": 29.139,
+      "end": 32.84,
+      "text": "let us start with the second position where the angle is forty-five degrees."
+    },
+    {
+      "start": 33.299,
+      "end": 35.539,
+      "text": "Here we know the opposite side and the adjacent side."
+    },
+    {
+      "start": 35.959,
+      "end": 39.859,
+      "text": "So tan theta is the right trigonometric ratio to use."
+    },
+    {
+      "start": 40.379,
+      "end": 42.519,
+      "text": "Tan theta is equal to height by base."
+    },
+    {
+      "start": 43.02,
+      "end": 45.119,
+      "text": "Tan forty-five degrees is equal to h by"
+    },
+    {
+      "start": 45.439,
+      "end": 45.459,
+      "text": "x."
+    },
+    {
+      "start": 45.899,
+      "end": 49.259,
+      "text": "We know tan forty-five degrees is one, so h by x is equal to one,"
+    },
+    {
+      "start": 49.7,
+      "end": 50.68,
+      "text": "which means"
+    },
+    {
+      "start": 51.059,
+      "end": 52.219,
+      "text": "h is equal to"
+    },
+    {
+      "start": 52.559,
+      "end": 52.599,
+      "text": "x."
+    },
+    {
+      "start": 53.039,
+      "end": 53.539,
+      "text": "Got it?"
+    },
+    {
+      "start": 54.059,
+      "end": 56.18,
+      "text": "Perfect. Now keep this value with us."
+    },
+    {
+      "start": 56.539,
+      "end": 58.039,
+      "text": "We will use it in the next step."
+    },
+    {
+      "start": 58.539,
+      "end": 63.299,
+      "text": "Now let us use the first position where the angle is thirty degrees. Again, we will use tan theta."
+    },
+    {
+      "start": 63.739,
+      "end": 69.559,
+      "text": "Tan thirty degree is equal to h by x plus twenty. We know tan thirty degree is one by root three."
+    },
+    {
+      "start": 70.04,
+      "end": 73.0,
+      "text": "So one by root three is equal to h by x plus twenty."
+    },
+    {
+      "start": 73.659,
+      "end": 77.139,
+      "text": "Since we already know h is equal to x, we replace x with h."
+    },
+    {
+      "start": 77.599,
+      "end": 80.239,
+      "text": "This becomes one by root three is equal to h by"
+    },
+    {
+      "start": 80.58,
+      "end": 85.159,
+      "text": "h plus twenty. Cross-multiplying h plus twenty is equal to root three h."
+    },
+    {
+      "start": 85.659,
+      "end": 86.599,
+      "text": "So twenty is equal to"
+    },
+    {
+      "start": 86.9,
+      "end": 93.839,
+      "text": "h into root three minus one. Therefore, h is equal to twenty by root three minus one. Now rationalize the denominator."
+    },
+    {
+      "start": 94.319,
+      "end": 107.579,
+      "text": "We get h is equal to ten into root three plus one. Done and dusted. So the final answer will be ten into root three plus one meter. Hence, option B is correct."
+    }
+  ],
+  "words": [
+    {
+      "text": "So",
+      "start": 0.119,
+      "end": 0.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 0.299,
+      "end": 0.959,
+      "type": "spacing"
+    },
+    {
+      "text": "welcome",
+      "start": 0.959,
+      "end": 1.24,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 1.24,
+      "end": 1.299,
+      "type": "spacing"
+    },
+    {
+      "text": "back",
+      "start": 1.299,
+      "end": 1.439,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 1.439,
+      "end": 1.5,
+      "type": "spacing"
+    },
+    {
+      "text": "again.",
+      "start": 1.5,
+      "end": 1.74,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 1.74,
+      "end": 2.319,
+      "type": "spacing"
+    },
+    {
+      "text": "It's",
+      "start": 2.319,
+      "end": 2.46,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 2.46,
+      "end": 2.5,
+      "type": "spacing"
+    },
+    {
+      "text": "time",
+      "start": 2.5,
+      "end": 2.679,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 2.679,
+      "end": 2.719,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 2.72,
+      "end": 2.799,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 2.799,
+      "end": 2.859,
+      "type": "spacing"
+    },
+    {
+      "text": "solve",
+      "start": 2.859,
+      "end": 3.099,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 3.099,
+      "end": 3.179,
+      "type": "spacing"
+    },
+    {
+      "text": "one",
+      "start": 3.179,
+      "end": 3.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 3.299,
+      "end": 3.399,
+      "type": "spacing"
+    },
+    {
+      "text": "more",
+      "start": 3.399,
+      "end": 3.579,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 3.579,
+      "end": 3.619,
+      "type": "spacing"
+    },
+    {
+      "text": "problem.",
+      "start": 3.619,
+      "end": 3.919,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 3.919,
+      "end": 4.119,
+      "type": "spacing"
+    },
+    {
+      "text": "In",
+      "start": 4.119,
+      "end": 4.219,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 4.219,
+      "end": 4.279,
+      "type": "spacing"
+    },
+    {
+      "text": "this",
+      "start": 4.279,
+      "end": 4.4,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 4.4,
+      "end": 4.48,
+      "type": "spacing"
+    },
+    {
+      "text": "problem,",
+      "start": 4.48,
+      "end": 4.779,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 4.779,
+      "end": 5.319,
+      "type": "spacing"
+    },
+    {
+      "text": "a",
+      "start": 5.319,
+      "end": 5.359,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 5.359,
+      "end": 5.419,
+      "type": "spacing"
+    },
+    {
+      "text": "person",
+      "start": 5.42,
+      "end": 5.659,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 5.659,
+      "end": 5.699,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 5.699,
+      "end": 5.779,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 5.779,
+      "end": 5.819,
+      "type": "spacing"
+    },
+    {
+      "text": "standing",
+      "start": 5.819,
+      "end": 6.139,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 6.139,
+      "end": 6.159,
+      "type": "spacing"
+    },
+    {
+      "text": "at",
+      "start": 6.159,
+      "end": 6.239,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 6.239,
+      "end": 6.279,
+      "type": "spacing"
+    },
+    {
+      "text": "a",
+      "start": 6.279,
+      "end": 6.359,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 6.359,
+      "end": 6.419,
+      "type": "spacing"
+    },
+    {
+      "text": "certain",
+      "start": 6.42,
+      "end": 6.759,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 6.759,
+      "end": 6.839,
+      "type": "spacing"
+    },
+    {
+      "text": "distance",
+      "start": 6.839,
+      "end": 7.179,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 7.179,
+      "end": 7.219,
+      "type": "spacing"
+    },
+    {
+      "text": "from",
+      "start": 7.219,
+      "end": 7.339,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 7.339,
+      "end": 7.379,
+      "type": "spacing"
+    },
+    {
+      "text": "a",
+      "start": 7.379,
+      "end": 7.46,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 7.46,
+      "end": 7.519,
+      "type": "spacing"
+    },
+    {
+      "text": "tower.",
+      "start": 7.519,
+      "end": 7.779,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 7.779,
+      "end": 8.34,
+      "type": "spacing"
+    },
+    {
+      "text": "The",
+      "start": 8.34,
+      "end": 8.399,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 8.399,
+      "end": 8.5,
+      "type": "spacing"
+    },
+    {
+      "text": "angle",
+      "start": 8.5,
+      "end": 8.699,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 8.699,
+      "end": 8.76,
+      "type": "spacing"
+    },
+    {
+      "text": "of",
+      "start": 8.76,
+      "end": 8.82,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 8.82,
+      "end": 8.899,
+      "type": "spacing"
+    },
+    {
+      "text": "elevation",
+      "start": 8.899,
+      "end": 9.26,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 9.26,
+      "end": 9.3,
+      "type": "spacing"
+    },
+    {
+      "text": "of",
+      "start": 9.3,
+      "end": 9.38,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 9.38,
+      "end": 9.439,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 9.439,
+      "end": 9.539,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 9.539,
+      "end": 9.659,
+      "type": "spacing"
+    },
+    {
+      "text": "top",
+      "start": 9.659,
+      "end": 9.819,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 9.819,
+      "end": 9.859,
+      "type": "spacing"
+    },
+    {
+      "text": "of",
+      "start": 9.859,
+      "end": 9.92,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 9.92,
+      "end": 9.96,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 9.96,
+      "end": 10.019,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 10.019,
+      "end": 10.099,
+      "type": "spacing"
+    },
+    {
+      "text": "tower",
+      "start": 10.099,
+      "end": 10.319,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 10.319,
+      "end": 10.38,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 10.38,
+      "end": 10.539,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 10.539,
+      "end": 10.979,
+      "type": "spacing"
+    },
+    {
+      "text": "thirty",
+      "start": 10.979,
+      "end": 11.26,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 11.26,
+      "end": 11.359,
+      "type": "spacing"
+    },
+    {
+      "text": "degrees.",
+      "start": 11.359,
+      "end": 11.8,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 11.8,
+      "end": 12.3,
+      "type": "spacing"
+    },
+    {
+      "text": "Then",
+      "start": 12.3,
+      "end": 12.399,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 12.399,
+      "end": 12.439,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 12.439,
+      "end": 12.5,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 12.5,
+      "end": 12.559,
+      "type": "spacing"
+    },
+    {
+      "text": "person",
+      "start": 12.559,
+      "end": 12.8,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 12.8,
+      "end": 12.859,
+      "type": "spacing"
+    },
+    {
+      "text": "walks",
+      "start": 12.859,
+      "end": 13.079,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 13.079,
+      "end": 13.139,
+      "type": "spacing"
+    },
+    {
+      "text": "twenty",
+      "start": 13.139,
+      "end": 13.38,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 13.38,
+      "end": 13.46,
+      "type": "spacing"
+    },
+    {
+      "text": "meters",
+      "start": 13.46,
+      "end": 13.739,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 13.739,
+      "end": 13.779,
+      "type": "spacing"
+    },
+    {
+      "text": "towards",
+      "start": 13.779,
+      "end": 14.019,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 14.019,
+      "end": 14.059,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 14.059,
+      "end": 14.119,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 14.119,
+      "end": 14.199,
+      "type": "spacing"
+    },
+    {
+      "text": "tower.",
+      "start": 14.199,
+      "end": 14.519,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 14.519,
+      "end": 15.039,
+      "type": "spacing"
+    },
+    {
+      "text": "Now",
+      "start": 15.039,
+      "end": 15.139,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 15.139,
+      "end": 15.179,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 15.179,
+      "end": 15.22,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 15.22,
+      "end": 15.299,
+      "type": "spacing"
+    },
+    {
+      "text": "angle",
+      "start": 15.299,
+      "end": 15.539,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 15.539,
+      "end": 15.599,
+      "type": "spacing"
+    },
+    {
+      "text": "becomes",
+      "start": 15.599,
+      "end": 15.88,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 15.88,
+      "end": 15.96,
+      "type": "spacing"
+    },
+    {
+      "text": "forty-five",
+      "start": 15.96,
+      "end": 16.319,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 16.319,
+      "end": 16.44,
+      "type": "spacing"
+    },
+    {
+      "text": "degrees,",
+      "start": 16.44,
+      "end": 16.84,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 16.84,
+      "end": 17.399,
+      "type": "spacing"
+    },
+    {
+      "text": "and",
+      "start": 17.399,
+      "end": 17.5,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 17.5,
+      "end": 17.539,
+      "type": "spacing"
+    },
+    {
+      "text": "we",
+      "start": 17.539,
+      "end": 17.619,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 17.619,
+      "end": 17.679,
+      "type": "spacing"
+    },
+    {
+      "text": "need",
+      "start": 17.68,
+      "end": 17.76,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 17.76,
+      "end": 17.799,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 17.799,
+      "end": 17.859,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 17.859,
+      "end": 17.919,
+      "type": "spacing"
+    },
+    {
+      "text": "find",
+      "start": 17.92,
+      "end": 18.079,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 18.079,
+      "end": 18.119,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 18.119,
+      "end": 18.219,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 18.219,
+      "end": 18.299,
+      "type": "spacing"
+    },
+    {
+      "text": "height",
+      "start": 18.299,
+      "end": 18.579,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 18.579,
+      "end": 18.639,
+      "type": "spacing"
+    },
+    {
+      "text": "of",
+      "start": 18.639,
+      "end": 18.719,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 18.719,
+      "end": 18.779,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 18.779,
+      "end": 18.819,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 18.819,
+      "end": 18.939,
+      "type": "spacing"
+    },
+    {
+      "text": "tower.",
+      "start": 18.939,
+      "end": 19.219,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 19.219,
+      "end": 19.699,
+      "type": "spacing"
+    },
+    {
+      "text": "Let",
+      "start": 19.699,
+      "end": 19.819,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 19.819,
+      "end": 19.859,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 19.859,
+      "end": 19.92,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 19.92,
+      "end": 19.959,
+      "type": "spacing"
+    },
+    {
+      "text": "distance",
+      "start": 19.959,
+      "end": 20.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 20.299,
+      "end": 20.34,
+      "type": "spacing"
+    },
+    {
+      "text": "from",
+      "start": 20.34,
+      "end": 20.459,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 20.459,
+      "end": 20.5,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 20.5,
+      "end": 20.56,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 20.56,
+      "end": 20.659,
+      "type": "spacing"
+    },
+    {
+      "text": "tower",
+      "start": 20.659,
+      "end": 21.459,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 21.459,
+      "end": 21.579,
+      "type": "spacing"
+    },
+    {
+      "text": "after",
+      "start": 21.579,
+      "end": 21.84,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 21.84,
+      "end": 21.899,
+      "type": "spacing"
+    },
+    {
+      "text": "walking",
+      "start": 21.899,
+      "end": 22.159,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 22.159,
+      "end": 22.239,
+      "type": "spacing"
+    },
+    {
+      "text": "be",
+      "start": 22.239,
+      "end": 22.359,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 22.359,
+      "end": 22.539,
+      "type": "spacing"
+    },
+    {
+      "text": "x,",
+      "start": 22.539,
+      "end": 22.659,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 22.659,
+      "end": 23.019,
+      "type": "spacing"
+    },
+    {
+      "text": "so",
+      "start": 23.019,
+      "end": 23.059,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 23.059,
+      "end": 23.1,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 23.1,
+      "end": 23.159,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 23.159,
+      "end": 23.219,
+      "type": "spacing"
+    },
+    {
+      "text": "initial",
+      "start": 23.219,
+      "end": 23.539,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 23.539,
+      "end": 23.579,
+      "type": "spacing"
+    },
+    {
+      "text": "distance",
+      "start": 23.579,
+      "end": 23.92,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 23.92,
+      "end": 23.979,
+      "type": "spacing"
+    },
+    {
+      "text": "becomes",
+      "start": 23.979,
+      "end": 24.339,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 24.339,
+      "end": 24.559,
+      "type": "spacing"
+    },
+    {
+      "text": "x",
+      "start": 24.559,
+      "end": 24.639,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 24.639,
+      "end": 24.699,
+      "type": "spacing"
+    },
+    {
+      "text": "plus",
+      "start": 24.699,
+      "end": 24.939,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 24.939,
+      "end": 24.979,
+      "type": "spacing"
+    },
+    {
+      "text": "twenty.",
+      "start": 24.979,
+      "end": 25.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 25.299,
+      "end": 25.859,
+      "type": "spacing"
+    },
+    {
+      "text": "Let",
+      "start": 25.859,
+      "end": 25.979,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 25.979,
+      "end": 26.039,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 26.039,
+      "end": 26.139,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 26.139,
+      "end": 26.199,
+      "type": "spacing"
+    },
+    {
+      "text": "height",
+      "start": 26.199,
+      "end": 26.42,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 26.42,
+      "end": 26.459,
+      "type": "spacing"
+    },
+    {
+      "text": "of",
+      "start": 26.459,
+      "end": 26.539,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 26.539,
+      "end": 26.579,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 26.579,
+      "end": 26.659,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 26.659,
+      "end": 26.719,
+      "type": "spacing"
+    },
+    {
+      "text": "tower",
+      "start": 26.719,
+      "end": 27.039,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 27.039,
+      "end": 27.119,
+      "type": "spacing"
+    },
+    {
+      "text": "be",
+      "start": 27.119,
+      "end": 27.26,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 27.26,
+      "end": 27.599,
+      "type": "spacing"
+    },
+    {
+      "text": "h.",
+      "start": 27.599,
+      "end": 27.659,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 27.659,
+      "end": 28.419,
+      "type": "spacing"
+    },
+    {
+      "text": "Now,",
+      "start": 28.42,
+      "end": 28.599,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 28.599,
+      "end": 29.139,
+      "type": "spacing"
+    },
+    {
+      "text": "let",
+      "start": 29.139,
+      "end": 29.26,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 29.26,
+      "end": 29.319,
+      "type": "spacing"
+    },
+    {
+      "text": "us",
+      "start": 29.319,
+      "end": 29.399,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 29.399,
+      "end": 29.479,
+      "type": "spacing"
+    },
+    {
+      "text": "start",
+      "start": 29.479,
+      "end": 29.799,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 29.799,
+      "end": 29.84,
+      "type": "spacing"
+    },
+    {
+      "text": "with",
+      "start": 29.84,
+      "end": 29.92,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 29.92,
+      "end": 29.959,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 29.959,
+      "end": 30.099,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 30.099,
+      "end": 30.179,
+      "type": "spacing"
+    },
+    {
+      "text": "second",
+      "start": 30.179,
+      "end": 30.539,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 30.539,
+      "end": 30.599,
+      "type": "spacing"
+    },
+    {
+      "text": "position",
+      "start": 30.599,
+      "end": 31.019,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 31.019,
+      "end": 31.059,
+      "type": "spacing"
+    },
+    {
+      "text": "where",
+      "start": 31.059,
+      "end": 31.179,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 31.179,
+      "end": 31.239,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 31.239,
+      "end": 31.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 31.299,
+      "end": 31.399,
+      "type": "spacing"
+    },
+    {
+      "text": "angle",
+      "start": 31.399,
+      "end": 31.679,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 31.679,
+      "end": 31.739,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 31.739,
+      "end": 31.819,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 31.819,
+      "end": 31.92,
+      "type": "spacing"
+    },
+    {
+      "text": "forty-five",
+      "start": 31.92,
+      "end": 32.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 32.299,
+      "end": 32.399,
+      "type": "spacing"
+    },
+    {
+      "text": "degrees.",
+      "start": 32.399,
+      "end": 32.84,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 32.84,
+      "end": 33.299,
+      "type": "spacing"
+    },
+    {
+      "text": "Here",
+      "start": 33.299,
+      "end": 33.419,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 33.419,
+      "end": 33.479,
+      "type": "spacing"
+    },
+    {
+      "text": "we",
+      "start": 33.479,
+      "end": 33.54,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 33.54,
+      "end": 33.599,
+      "type": "spacing"
+    },
+    {
+      "text": "know",
+      "start": 33.599,
+      "end": 33.7,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 33.7,
+      "end": 33.739,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 33.739,
+      "end": 33.779,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 33.779,
+      "end": 33.86,
+      "type": "spacing"
+    },
+    {
+      "text": "opposite",
+      "start": 33.86,
+      "end": 34.18,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 34.18,
+      "end": 34.239,
+      "type": "spacing"
+    },
+    {
+      "text": "side",
+      "start": 34.239,
+      "end": 34.419,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 34.419,
+      "end": 34.479,
+      "type": "spacing"
+    },
+    {
+      "text": "and",
+      "start": 34.479,
+      "end": 34.559,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 34.559,
+      "end": 34.599,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 34.599,
+      "end": 34.659,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 34.659,
+      "end": 34.759,
+      "type": "spacing"
+    },
+    {
+      "text": "adjacent",
+      "start": 34.759,
+      "end": 35.18,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 35.18,
+      "end": 35.239,
+      "type": "spacing"
+    },
+    {
+      "text": "side.",
+      "start": 35.239,
+      "end": 35.539,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 35.539,
+      "end": 35.959,
+      "type": "spacing"
+    },
+    {
+      "text": "So",
+      "start": 35.959,
+      "end": 36.619,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 36.619,
+      "end": 36.68,
+      "type": "spacing"
+    },
+    {
+      "text": "tan",
+      "start": 36.68,
+      "end": 36.759,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 36.759,
+      "end": 36.879,
+      "type": "spacing"
+    },
+    {
+      "text": "theta",
+      "start": 36.88,
+      "end": 37.2,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 37.2,
+      "end": 37.299,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 37.299,
+      "end": 37.399,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 37.399,
+      "end": 37.439,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 37.439,
+      "end": 37.579,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 37.579,
+      "end": 37.659,
+      "type": "spacing"
+    },
+    {
+      "text": "right",
+      "start": 37.659,
+      "end": 38.2,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 38.2,
+      "end": 38.259,
+      "type": "spacing"
+    },
+    {
+      "text": "trigonometric",
+      "start": 38.259,
+      "end": 38.979,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 38.979,
+      "end": 39.04,
+      "type": "spacing"
+    },
+    {
+      "text": "ratio",
+      "start": 39.04,
+      "end": 39.379,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 39.379,
+      "end": 39.419,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 39.419,
+      "end": 39.5,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 39.5,
+      "end": 39.619,
+      "type": "spacing"
+    },
+    {
+      "text": "use.",
+      "start": 39.619,
+      "end": 39.859,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 39.859,
+      "end": 40.379,
+      "type": "spacing"
+    },
+    {
+      "text": "Tan",
+      "start": 40.379,
+      "end": 40.559,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 40.559,
+      "end": 40.599,
+      "type": "spacing"
+    },
+    {
+      "text": "theta",
+      "start": 40.599,
+      "end": 40.899,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 40.899,
+      "end": 40.959,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 40.959,
+      "end": 41.04,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 41.04,
+      "end": 41.139,
+      "type": "spacing"
+    },
+    {
+      "text": "equal",
+      "start": 41.139,
+      "end": 41.319,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 41.319,
+      "end": 41.399,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 41.399,
+      "end": 41.5,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 41.5,
+      "end": 41.559,
+      "type": "spacing"
+    },
+    {
+      "text": "height",
+      "start": 41.559,
+      "end": 41.819,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 41.819,
+      "end": 41.879,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 41.879,
+      "end": 42.0,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 42.0,
+      "end": 42.099,
+      "type": "spacing"
+    },
+    {
+      "text": "base.",
+      "start": 42.099,
+      "end": 42.519,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 42.519,
+      "end": 43.02,
+      "type": "spacing"
+    },
+    {
+      "text": "Tan",
+      "start": 43.02,
+      "end": 43.2,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 43.2,
+      "end": 43.239,
+      "type": "spacing"
+    },
+    {
+      "text": "forty-five",
+      "start": 43.239,
+      "end": 43.56,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 43.56,
+      "end": 43.659,
+      "type": "spacing"
+    },
+    {
+      "text": "degrees",
+      "start": 43.659,
+      "end": 44.0,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 44.0,
+      "end": 44.04,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 44.04,
+      "end": 44.139,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 44.139,
+      "end": 44.239,
+      "type": "spacing"
+    },
+    {
+      "text": "equal",
+      "start": 44.239,
+      "end": 44.459,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 44.459,
+      "end": 44.5,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 44.5,
+      "end": 44.599,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 44.599,
+      "end": 44.859,
+      "type": "spacing"
+    },
+    {
+      "text": "h",
+      "start": 44.86,
+      "end": 44.899,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 44.899,
+      "end": 44.959,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 44.959,
+      "end": 45.119,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 45.119,
+      "end": 45.439,
+      "type": "spacing"
+    },
+    {
+      "text": "x.",
+      "start": 45.439,
+      "end": 45.459,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 45.459,
+      "end": 45.899,
+      "type": "spacing"
+    },
+    {
+      "text": "We",
+      "start": 45.899,
+      "end": 45.959,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 45.959,
+      "end": 46.02,
+      "type": "spacing"
+    },
+    {
+      "text": "know",
+      "start": 46.02,
+      "end": 46.159,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 46.159,
+      "end": 46.219,
+      "type": "spacing"
+    },
+    {
+      "text": "tan",
+      "start": 46.219,
+      "end": 46.36,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 46.36,
+      "end": 46.399,
+      "type": "spacing"
+    },
+    {
+      "text": "forty-five",
+      "start": 46.399,
+      "end": 46.659,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 46.659,
+      "end": 46.739,
+      "type": "spacing"
+    },
+    {
+      "text": "degrees",
+      "start": 46.739,
+      "end": 47.02,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 47.02,
+      "end": 47.059,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 47.059,
+      "end": 47.159,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 47.159,
+      "end": 47.239,
+      "type": "spacing"
+    },
+    {
+      "text": "one,",
+      "start": 47.239,
+      "end": 47.7,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 47.7,
+      "end": 47.779,
+      "type": "spacing"
+    },
+    {
+      "text": "so",
+      "start": 47.779,
+      "end": 47.86,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 47.86,
+      "end": 48.079,
+      "type": "spacing"
+    },
+    {
+      "text": "h",
+      "start": 48.079,
+      "end": 48.099,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 48.099,
+      "end": 48.159,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 48.159,
+      "end": 48.279,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 48.279,
+      "end": 48.439,
+      "type": "spacing"
+    },
+    {
+      "text": "x",
+      "start": 48.439,
+      "end": 48.459,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 48.459,
+      "end": 48.52,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 48.52,
+      "end": 48.599,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 48.599,
+      "end": 48.68,
+      "type": "spacing"
+    },
+    {
+      "text": "equal",
+      "start": 48.68,
+      "end": 48.86,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 48.86,
+      "end": 48.899,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 48.899,
+      "end": 49.0,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 49.0,
+      "end": 49.079,
+      "type": "spacing"
+    },
+    {
+      "text": "one,",
+      "start": 49.079,
+      "end": 49.259,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 49.259,
+      "end": 49.7,
+      "type": "spacing"
+    },
+    {
+      "text": "which",
+      "start": 49.7,
+      "end": 49.86,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 49.86,
+      "end": 49.939,
+      "type": "spacing"
+    },
+    {
+      "text": "means",
+      "start": 49.939,
+      "end": 50.68,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 50.68,
+      "end": 51.059,
+      "type": "spacing"
+    },
+    {
+      "text": "h",
+      "start": 51.059,
+      "end": 51.239,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 51.239,
+      "end": 51.379,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 51.379,
+      "end": 51.659,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 51.659,
+      "end": 51.779,
+      "type": "spacing"
+    },
+    {
+      "text": "equal",
+      "start": 51.779,
+      "end": 52.039,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 52.039,
+      "end": 52.099,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 52.099,
+      "end": 52.219,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 52.219,
+      "end": 52.559,
+      "type": "spacing"
+    },
+    {
+      "text": "x.",
+      "start": 52.559,
+      "end": 52.599,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 52.599,
+      "end": 53.039,
+      "type": "spacing"
+    },
+    {
+      "text": "Got",
+      "start": 53.039,
+      "end": 53.219,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 53.219,
+      "end": 53.279,
+      "type": "spacing"
+    },
+    {
+      "text": "it?",
+      "start": 53.279,
+      "end": 53.539,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 53.539,
+      "end": 54.059,
+      "type": "spacing"
+    },
+    {
+      "text": "Perfect.",
+      "start": 54.059,
+      "end": 54.5,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 54.5,
+      "end": 54.759,
+      "type": "spacing"
+    },
+    {
+      "text": "Now",
+      "start": 54.759,
+      "end": 54.86,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 54.86,
+      "end": 54.919,
+      "type": "spacing"
+    },
+    {
+      "text": "keep",
+      "start": 54.919,
+      "end": 55.099,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 55.099,
+      "end": 55.159,
+      "type": "spacing"
+    },
+    {
+      "text": "this",
+      "start": 55.159,
+      "end": 55.319,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 55.319,
+      "end": 55.399,
+      "type": "spacing"
+    },
+    {
+      "text": "value",
+      "start": 55.399,
+      "end": 55.639,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 55.639,
+      "end": 55.68,
+      "type": "spacing"
+    },
+    {
+      "text": "with",
+      "start": 55.68,
+      "end": 55.799,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 55.799,
+      "end": 55.86,
+      "type": "spacing"
+    },
+    {
+      "text": "us.",
+      "start": 55.86,
+      "end": 56.18,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 56.18,
+      "end": 56.539,
+      "type": "spacing"
+    },
+    {
+      "text": "We",
+      "start": 56.539,
+      "end": 56.619,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 56.619,
+      "end": 56.659,
+      "type": "spacing"
+    },
+    {
+      "text": "will",
+      "start": 56.659,
+      "end": 56.819,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 56.819,
+      "end": 56.939,
+      "type": "spacing"
+    },
+    {
+      "text": "use",
+      "start": 56.939,
+      "end": 57.039,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 57.039,
+      "end": 57.099,
+      "type": "spacing"
+    },
+    {
+      "text": "it",
+      "start": 57.099,
+      "end": 57.18,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 57.18,
+      "end": 57.219,
+      "type": "spacing"
+    },
+    {
+      "text": "in",
+      "start": 57.219,
+      "end": 57.279,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 57.279,
+      "end": 57.319,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 57.319,
+      "end": 57.379,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 57.379,
+      "end": 57.439,
+      "type": "spacing"
+    },
+    {
+      "text": "next",
+      "start": 57.439,
+      "end": 57.599,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 57.599,
+      "end": 57.68,
+      "type": "spacing"
+    },
+    {
+      "text": "step.",
+      "start": 57.68,
+      "end": 58.039,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 58.039,
+      "end": 58.539,
+      "type": "spacing"
+    },
+    {
+      "text": "Now",
+      "start": 58.539,
+      "end": 58.619,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 58.619,
+      "end": 58.68,
+      "type": "spacing"
+    },
+    {
+      "text": "let",
+      "start": 58.68,
+      "end": 58.779,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 58.779,
+      "end": 58.84,
+      "type": "spacing"
+    },
+    {
+      "text": "us",
+      "start": 58.84,
+      "end": 58.939,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 58.939,
+      "end": 59.0,
+      "type": "spacing"
+    },
+    {
+      "text": "use",
+      "start": 59.0,
+      "end": 59.099,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 59.099,
+      "end": 59.139,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 59.139,
+      "end": 59.219,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 59.219,
+      "end": 59.279,
+      "type": "spacing"
+    },
+    {
+      "text": "first",
+      "start": 59.279,
+      "end": 59.479,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 59.479,
+      "end": 59.539,
+      "type": "spacing"
+    },
+    {
+      "text": "position",
+      "start": 59.539,
+      "end": 60.419,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 60.419,
+      "end": 60.5,
+      "type": "spacing"
+    },
+    {
+      "text": "where",
+      "start": 60.5,
+      "end": 60.619,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 60.619,
+      "end": 60.659,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 60.659,
+      "end": 60.739,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 60.739,
+      "end": 60.819,
+      "type": "spacing"
+    },
+    {
+      "text": "angle",
+      "start": 60.819,
+      "end": 61.039,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 61.039,
+      "end": 61.099,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 61.099,
+      "end": 61.18,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 61.18,
+      "end": 61.279,
+      "type": "spacing"
+    },
+    {
+      "text": "thirty",
+      "start": 61.279,
+      "end": 61.54,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 61.54,
+      "end": 61.619,
+      "type": "spacing"
+    },
+    {
+      "text": "degrees.",
+      "start": 61.619,
+      "end": 61.959,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 61.959,
+      "end": 62.02,
+      "type": "spacing"
+    },
+    {
+      "text": "Again,",
+      "start": 62.02,
+      "end": 62.219,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 62.219,
+      "end": 62.279,
+      "type": "spacing"
+    },
+    {
+      "text": "we",
+      "start": 62.279,
+      "end": 62.34,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 62.34,
+      "end": 62.379,
+      "type": "spacing"
+    },
+    {
+      "text": "will",
+      "start": 62.379,
+      "end": 62.5,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 62.5,
+      "end": 62.579,
+      "type": "spacing"
+    },
+    {
+      "text": "use",
+      "start": 62.579,
+      "end": 62.699,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 62.699,
+      "end": 62.799,
+      "type": "spacing"
+    },
+    {
+      "text": "tan",
+      "start": 62.799,
+      "end": 62.919,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 62.919,
+      "end": 62.959,
+      "type": "spacing"
+    },
+    {
+      "text": "theta.",
+      "start": 62.959,
+      "end": 63.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 63.299,
+      "end": 63.739,
+      "type": "spacing"
+    },
+    {
+      "text": "Tan",
+      "start": 63.739,
+      "end": 63.879,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 63.879,
+      "end": 63.919,
+      "type": "spacing"
+    },
+    {
+      "text": "thirty",
+      "start": 63.919,
+      "end": 64.099,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 64.099,
+      "end": 64.18,
+      "type": "spacing"
+    },
+    {
+      "text": "degree",
+      "start": 64.18,
+      "end": 64.439,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 64.439,
+      "end": 64.499,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 64.5,
+      "end": 64.599,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 64.599,
+      "end": 64.659,
+      "type": "spacing"
+    },
+    {
+      "text": "equal",
+      "start": 64.659,
+      "end": 64.899,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 64.899,
+      "end": 65.0,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 65.0,
+      "end": 65.4,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 65.4,
+      "end": 65.699,
+      "type": "spacing"
+    },
+    {
+      "text": "h",
+      "start": 65.699,
+      "end": 65.739,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 65.739,
+      "end": 65.819,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 65.819,
+      "end": 65.979,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 65.979,
+      "end": 66.179,
+      "type": "spacing"
+    },
+    {
+      "text": "x",
+      "start": 66.18,
+      "end": 66.26,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 66.26,
+      "end": 66.299,
+      "type": "spacing"
+    },
+    {
+      "text": "plus",
+      "start": 66.299,
+      "end": 66.54,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 66.54,
+      "end": 66.599,
+      "type": "spacing"
+    },
+    {
+      "text": "twenty.",
+      "start": 66.599,
+      "end": 67.439,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 67.439,
+      "end": 67.479,
+      "type": "spacing"
+    },
+    {
+      "text": "We",
+      "start": 67.479,
+      "end": 67.539,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 67.539,
+      "end": 67.58,
+      "type": "spacing"
+    },
+    {
+      "text": "know",
+      "start": 67.58,
+      "end": 67.739,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 67.739,
+      "end": 67.799,
+      "type": "spacing"
+    },
+    {
+      "text": "tan",
+      "start": 67.799,
+      "end": 67.979,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 67.979,
+      "end": 68.019,
+      "type": "spacing"
+    },
+    {
+      "text": "thirty",
+      "start": 68.019,
+      "end": 68.219,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 68.219,
+      "end": 68.299,
+      "type": "spacing"
+    },
+    {
+      "text": "degree",
+      "start": 68.299,
+      "end": 68.559,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 68.559,
+      "end": 68.599,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 68.599,
+      "end": 68.72,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 68.72,
+      "end": 68.779,
+      "type": "spacing"
+    },
+    {
+      "text": "one",
+      "start": 68.779,
+      "end": 68.9,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 68.9,
+      "end": 68.959,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 68.959,
+      "end": 69.059,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 69.059,
+      "end": 69.119,
+      "type": "spacing"
+    },
+    {
+      "text": "root",
+      "start": 69.119,
+      "end": 69.279,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 69.279,
+      "end": 69.319,
+      "type": "spacing"
+    },
+    {
+      "text": "three.",
+      "start": 69.319,
+      "end": 69.559,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 69.559,
+      "end": 70.04,
+      "type": "spacing"
+    },
+    {
+      "text": "So",
+      "start": 70.04,
+      "end": 70.119,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 70.119,
+      "end": 70.159,
+      "type": "spacing"
+    },
+    {
+      "text": "one",
+      "start": 70.159,
+      "end": 70.279,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 70.279,
+      "end": 70.319,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 70.319,
+      "end": 70.439,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 70.439,
+      "end": 70.479,
+      "type": "spacing"
+    },
+    {
+      "text": "root",
+      "start": 70.479,
+      "end": 70.639,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 70.639,
+      "end": 70.699,
+      "type": "spacing"
+    },
+    {
+      "text": "three",
+      "start": 70.699,
+      "end": 70.839,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 70.839,
+      "end": 70.899,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 70.9,
+      "end": 71.0,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 71.0,
+      "end": 71.119,
+      "type": "spacing"
+    },
+    {
+      "text": "equal",
+      "start": 71.119,
+      "end": 71.279,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 71.279,
+      "end": 71.319,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 71.319,
+      "end": 71.439,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 71.439,
+      "end": 71.679,
+      "type": "spacing"
+    },
+    {
+      "text": "h",
+      "start": 71.68,
+      "end": 71.72,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 71.72,
+      "end": 71.779,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 71.779,
+      "end": 71.899,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 71.899,
+      "end": 72.18,
+      "type": "spacing"
+    },
+    {
+      "text": "x",
+      "start": 72.18,
+      "end": 72.199,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 72.199,
+      "end": 72.239,
+      "type": "spacing"
+    },
+    {
+      "text": "plus",
+      "start": 72.239,
+      "end": 72.54,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 72.54,
+      "end": 72.599,
+      "type": "spacing"
+    },
+    {
+      "text": "twenty.",
+      "start": 72.599,
+      "end": 73.0,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 73.0,
+      "end": 73.659,
+      "type": "spacing"
+    },
+    {
+      "text": "Since",
+      "start": 73.659,
+      "end": 73.819,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 73.819,
+      "end": 73.86,
+      "type": "spacing"
+    },
+    {
+      "text": "we",
+      "start": 73.86,
+      "end": 73.919,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 73.919,
+      "end": 74.0,
+      "type": "spacing"
+    },
+    {
+      "text": "already",
+      "start": 74.0,
+      "end": 74.279,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 74.279,
+      "end": 74.339,
+      "type": "spacing"
+    },
+    {
+      "text": "know",
+      "start": 74.339,
+      "end": 74.439,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 74.439,
+      "end": 74.659,
+      "type": "spacing"
+    },
+    {
+      "text": "h",
+      "start": 74.659,
+      "end": 74.679,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 74.679,
+      "end": 74.739,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 74.739,
+      "end": 74.839,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 74.839,
+      "end": 74.919,
+      "type": "spacing"
+    },
+    {
+      "text": "equal",
+      "start": 74.919,
+      "end": 75.119,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 75.119,
+      "end": 75.159,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 75.159,
+      "end": 75.259,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 75.259,
+      "end": 75.479,
+      "type": "spacing"
+    },
+    {
+      "text": "x,",
+      "start": 75.479,
+      "end": 75.779,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 75.779,
+      "end": 75.839,
+      "type": "spacing"
+    },
+    {
+      "text": "we",
+      "start": 75.839,
+      "end": 75.879,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 75.879,
+      "end": 75.939,
+      "type": "spacing"
+    },
+    {
+      "text": "replace",
+      "start": 75.939,
+      "end": 76.279,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 76.279,
+      "end": 76.5,
+      "type": "spacing"
+    },
+    {
+      "text": "x",
+      "start": 76.5,
+      "end": 76.519,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 76.519,
+      "end": 76.579,
+      "type": "spacing"
+    },
+    {
+      "text": "with",
+      "start": 76.58,
+      "end": 76.779,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 76.779,
+      "end": 77.04,
+      "type": "spacing"
+    },
+    {
+      "text": "h.",
+      "start": 77.04,
+      "end": 77.139,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 77.139,
+      "end": 77.599,
+      "type": "spacing"
+    },
+    {
+      "text": "This",
+      "start": 77.599,
+      "end": 77.719,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 77.719,
+      "end": 77.759,
+      "type": "spacing"
+    },
+    {
+      "text": "becomes",
+      "start": 77.759,
+      "end": 78.36,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 78.36,
+      "end": 78.459,
+      "type": "spacing"
+    },
+    {
+      "text": "one",
+      "start": 78.459,
+      "end": 78.559,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 78.559,
+      "end": 78.619,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 78.619,
+      "end": 78.72,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 78.72,
+      "end": 78.799,
+      "type": "spacing"
+    },
+    {
+      "text": "root",
+      "start": 78.799,
+      "end": 78.939,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 78.939,
+      "end": 78.979,
+      "type": "spacing"
+    },
+    {
+      "text": "three",
+      "start": 78.979,
+      "end": 79.079,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 79.079,
+      "end": 79.199,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 79.199,
+      "end": 79.299,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 79.299,
+      "end": 79.419,
+      "type": "spacing"
+    },
+    {
+      "text": "equal",
+      "start": 79.419,
+      "end": 79.599,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 79.599,
+      "end": 79.619,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 79.619,
+      "end": 79.719,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 79.719,
+      "end": 79.979,
+      "type": "spacing"
+    },
+    {
+      "text": "h",
+      "start": 79.979,
+      "end": 79.999,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 79.999,
+      "end": 80.059,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 80.059,
+      "end": 80.239,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 80.239,
+      "end": 80.579,
+      "type": "spacing"
+    },
+    {
+      "text": "h",
+      "start": 80.58,
+      "end": 80.599,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 80.599,
+      "end": 80.639,
+      "type": "spacing"
+    },
+    {
+      "text": "plus",
+      "start": 80.639,
+      "end": 81.019,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 81.019,
+      "end": 81.079,
+      "type": "spacing"
+    },
+    {
+      "text": "twenty.",
+      "start": 81.08,
+      "end": 81.919,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 81.919,
+      "end": 81.999,
+      "type": "spacing"
+    },
+    {
+      "text": "Cross-multiplying",
+      "start": 82.0,
+      "end": 82.819,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 82.819,
+      "end": 83.059,
+      "type": "spacing"
+    },
+    {
+      "text": "h",
+      "start": 83.059,
+      "end": 83.139,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 83.139,
+      "end": 83.18,
+      "type": "spacing"
+    },
+    {
+      "text": "plus",
+      "start": 83.18,
+      "end": 83.459,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 83.459,
+      "end": 83.5,
+      "type": "spacing"
+    },
+    {
+      "text": "twenty",
+      "start": 83.5,
+      "end": 83.739,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 83.739,
+      "end": 83.839,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 83.839,
+      "end": 83.939,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 83.939,
+      "end": 84.019,
+      "type": "spacing"
+    },
+    {
+      "text": "equal",
+      "start": 84.019,
+      "end": 84.199,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 84.199,
+      "end": 84.259,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 84.259,
+      "end": 84.339,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 84.339,
+      "end": 84.399,
+      "type": "spacing"
+    },
+    {
+      "text": "root",
+      "start": 84.4,
+      "end": 84.599,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 84.599,
+      "end": 84.639,
+      "type": "spacing"
+    },
+    {
+      "text": "three",
+      "start": 84.639,
+      "end": 84.839,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 84.839,
+      "end": 85.139,
+      "type": "spacing"
+    },
+    {
+      "text": "h.",
+      "start": 85.139,
+      "end": 85.159,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 85.159,
+      "end": 85.659,
+      "type": "spacing"
+    },
+    {
+      "text": "So",
+      "start": 85.659,
+      "end": 85.779,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 85.779,
+      "end": 85.819,
+      "type": "spacing"
+    },
+    {
+      "text": "twenty",
+      "start": 85.819,
+      "end": 86.359,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 86.359,
+      "end": 86.379,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 86.379,
+      "end": 86.419,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 86.419,
+      "end": 86.439,
+      "type": "spacing"
+    },
+    {
+      "text": "equal",
+      "start": 86.439,
+      "end": 86.539,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 86.539,
+      "end": 86.559,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 86.559,
+      "end": 86.599,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 86.599,
+      "end": 86.9,
+      "type": "spacing"
+    },
+    {
+      "text": "h",
+      "start": 86.9,
+      "end": 86.919,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 86.919,
+      "end": 86.939,
+      "type": "spacing"
+    },
+    {
+      "text": "into",
+      "start": 86.939,
+      "end": 87.119,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 87.119,
+      "end": 87.139,
+      "type": "spacing"
+    },
+    {
+      "text": "root",
+      "start": 87.139,
+      "end": 87.819,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 87.819,
+      "end": 87.839,
+      "type": "spacing"
+    },
+    {
+      "text": "three",
+      "start": 87.839,
+      "end": 88.099,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 88.099,
+      "end": 88.119,
+      "type": "spacing"
+    },
+    {
+      "text": "minus",
+      "start": 88.119,
+      "end": 88.439,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 88.439,
+      "end": 88.479,
+      "type": "spacing"
+    },
+    {
+      "text": "one.",
+      "start": 88.479,
+      "end": 89.219,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 89.219,
+      "end": 89.259,
+      "type": "spacing"
+    },
+    {
+      "text": "Therefore,",
+      "start": 89.259,
+      "end": 89.619,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 89.619,
+      "end": 89.919,
+      "type": "spacing"
+    },
+    {
+      "text": "h",
+      "start": 89.919,
+      "end": 89.939,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 89.939,
+      "end": 89.959,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 89.959,
+      "end": 90.019,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 90.019,
+      "end": 90.239,
+      "type": "spacing"
+    },
+    {
+      "text": "equal",
+      "start": 90.239,
+      "end": 90.339,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 90.339,
+      "end": 90.359,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 90.36,
+      "end": 90.399,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 90.399,
+      "end": 90.459,
+      "type": "spacing"
+    },
+    {
+      "text": "twenty",
+      "start": 90.459,
+      "end": 90.759,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 90.759,
+      "end": 90.779,
+      "type": "spacing"
+    },
+    {
+      "text": "by",
+      "start": 90.779,
+      "end": 90.839,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 90.839,
+      "end": 90.899,
+      "type": "spacing"
+    },
+    {
+      "text": "root",
+      "start": 90.9,
+      "end": 91.119,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 91.119,
+      "end": 91.159,
+      "type": "spacing"
+    },
+    {
+      "text": "three",
+      "start": 91.159,
+      "end": 91.339,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 91.339,
+      "end": 91.479,
+      "type": "spacing"
+    },
+    {
+      "text": "minus",
+      "start": 91.479,
+      "end": 91.679,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 91.679,
+      "end": 91.72,
+      "type": "spacing"
+    },
+    {
+      "text": "one.",
+      "start": 91.72,
+      "end": 92.259,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 92.259,
+      "end": 92.299,
+      "type": "spacing"
+    },
+    {
+      "text": "Now",
+      "start": 92.299,
+      "end": 92.439,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 92.439,
+      "end": 92.459,
+      "type": "spacing"
+    },
+    {
+      "text": "rationalize",
+      "start": 92.459,
+      "end": 93.019,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 93.019,
+      "end": 93.059,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 93.059,
+      "end": 93.119,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 93.119,
+      "end": 93.179,
+      "type": "spacing"
+    },
+    {
+      "text": "denominator.",
+      "start": 93.18,
+      "end": 93.839,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 93.839,
+      "end": 94.319,
+      "type": "spacing"
+    },
+    {
+      "text": "We",
+      "start": 94.319,
+      "end": 94.399,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 94.399,
+      "end": 94.479,
+      "type": "spacing"
+    },
+    {
+      "text": "get",
+      "start": 94.479,
+      "end": 95.239,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 95.239,
+      "end": 95.479,
+      "type": "spacing"
+    },
+    {
+      "text": "h",
+      "start": 95.479,
+      "end": 95.519,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 95.519,
+      "end": 95.559,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 95.559,
+      "end": 95.659,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 95.659,
+      "end": 95.779,
+      "type": "spacing"
+    },
+    {
+      "text": "equal",
+      "start": 95.779,
+      "end": 95.959,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 95.959,
+      "end": 95.979,
+      "type": "spacing"
+    },
+    {
+      "text": "to",
+      "start": 95.979,
+      "end": 96.079,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 96.079,
+      "end": 96.179,
+      "type": "spacing"
+    },
+    {
+      "text": "ten",
+      "start": 96.18,
+      "end": 96.879,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 96.879,
+      "end": 96.899,
+      "type": "spacing"
+    },
+    {
+      "text": "into",
+      "start": 96.9,
+      "end": 97.119,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 97.119,
+      "end": 97.139,
+      "type": "spacing"
+    },
+    {
+      "text": "root",
+      "start": 97.139,
+      "end": 97.399,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 97.399,
+      "end": 97.419,
+      "type": "spacing"
+    },
+    {
+      "text": "three",
+      "start": 97.419,
+      "end": 97.699,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 97.699,
+      "end": 97.739,
+      "type": "spacing"
+    },
+    {
+      "text": "plus",
+      "start": 97.739,
+      "end": 98.079,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 98.079,
+      "end": 98.139,
+      "type": "spacing"
+    },
+    {
+      "text": "one.",
+      "start": 98.139,
+      "end": 98.859,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 98.859,
+      "end": 98.899,
+      "type": "spacing"
+    },
+    {
+      "text": "Done",
+      "start": 98.9,
+      "end": 99.04,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 99.04,
+      "end": 99.079,
+      "type": "spacing"
+    },
+    {
+      "text": "and",
+      "start": 99.079,
+      "end": 99.159,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 99.159,
+      "end": 99.219,
+      "type": "spacing"
+    },
+    {
+      "text": "dusted.",
+      "start": 99.22,
+      "end": 100.499,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 100.499,
+      "end": 100.539,
+      "type": "spacing"
+    },
+    {
+      "text": "So",
+      "start": 100.54,
+      "end": 100.599,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 100.599,
+      "end": 100.639,
+      "type": "spacing"
+    },
+    {
+      "text": "the",
+      "start": 100.639,
+      "end": 100.719,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 100.719,
+      "end": 100.759,
+      "type": "spacing"
+    },
+    {
+      "text": "final",
+      "start": 100.759,
+      "end": 100.999,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 100.999,
+      "end": 101.079,
+      "type": "spacing"
+    },
+    {
+      "text": "answer",
+      "start": 101.079,
+      "end": 101.279,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 101.279,
+      "end": 101.339,
+      "type": "spacing"
+    },
+    {
+      "text": "will",
+      "start": 101.339,
+      "end": 101.459,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 101.459,
+      "end": 101.5,
+      "type": "spacing"
+    },
+    {
+      "text": "be",
+      "start": 101.5,
+      "end": 102.279,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 102.279,
+      "end": 102.399,
+      "type": "spacing"
+    },
+    {
+      "text": "ten",
+      "start": 102.399,
+      "end": 102.759,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 102.759,
+      "end": 102.819,
+      "type": "spacing"
+    },
+    {
+      "text": "into",
+      "start": 102.819,
+      "end": 103.099,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 103.099,
+      "end": 103.159,
+      "type": "spacing"
+    },
+    {
+      "text": "root",
+      "start": 103.159,
+      "end": 103.839,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 103.839,
+      "end": 103.899,
+      "type": "spacing"
+    },
+    {
+      "text": "three",
+      "start": 103.899,
+      "end": 104.219,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 104.219,
+      "end": 104.259,
+      "type": "spacing"
+    },
+    {
+      "text": "plus",
+      "start": 104.259,
+      "end": 104.639,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 104.639,
+      "end": 104.699,
+      "type": "spacing"
+    },
+    {
+      "text": "one",
+      "start": 104.699,
+      "end": 104.879,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 104.879,
+      "end": 104.899,
+      "type": "spacing"
+    },
+    {
+      "text": "meter.",
+      "start": 104.899,
+      "end": 105.579,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 105.579,
+      "end": 105.619,
+      "type": "spacing"
+    },
+    {
+      "text": "Hence,",
+      "start": 105.619,
+      "end": 106.479,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 106.479,
+      "end": 106.519,
+      "type": "spacing"
+    },
+    {
+      "text": "option",
+      "start": 106.519,
+      "end": 106.939,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 106.939,
+      "end": 106.959,
+      "type": "spacing"
+    },
+    {
+      "text": "B",
+      "start": 106.959,
+      "end": 106.979,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 106.979,
+      "end": 107.019,
+      "type": "spacing"
+    },
+    {
+      "text": "is",
+      "start": 107.019,
+      "end": 107.18,
+      "type": "word"
+    },
+    {
+      "text": " ",
+      "start": 107.18,
+      "end": 107.199,
+      "type": "spacing"
+    },
+    {
+      "text": "correct.",
+      "start": 107.199,
+      "end": 107.579,
+      "type": "word"
+    }
+  ]
+}

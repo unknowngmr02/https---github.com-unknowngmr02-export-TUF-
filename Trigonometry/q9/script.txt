@@ -1,0 +1,44 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+Now in this problem, we have a vertical stick.
+
+The question says that the shadow of the stick is equal to its height.
+
+And we need to find the sun's angle of elevation.
+
+Let the angle of elevation be "thee-ta".
+
+Before solving, let us quickly understand the picture.
+
+The stick is standing straight, so its height becomes the opposite side.
+
+The shadow is on the ground, so it becomes the adjacent side.
+
+That is all we need for this question.
+<break time="0.5s" />
+
+Since we know the opposite side and the adjacent side, the correct trigonometric ratio to use is "ten".
+
+So, ten thee-ta is equal to Opposite upon Adjacent.
+
+Now let us put the given values.
+
+The height is equal to the shadow.
+
+So, ten thee-ta is equal to Height upon Shadow, which becomes 1 upon 1.
+
+That means tan thee-ta is equal to 1.
+<break time="0.2s" />
+
+Now we know one standard trigonometric value.
+
+ten 45 degree is equal to 1.
+
+Since ten thee-ta is also equal to 1, the value of thee-ta must be 45 degrees.
+
+Got it? Perfect.
+<break time="0.6s" />
+
+So the sun's angle of elevation is "45 degrees".
+
+Hence, the correct option is *Option A, 45 degrees*.

@@ -1,0 +1,29 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+Now in this problem, tan theta is equal to 7 by 24, and theta is an acute angle.
+
+We need to find sec theta. <break time="0.3s" />
+
+We know that tan theta is perpendicular divided by base.
+
+So when tan theta is 7 by 24, we can take the perpendicular as seven and the base as twenty-four.
+
+Do these have to be the actual side lengths? <break time="0.3s" /> No.
+
+Since tan gives us a ratio, we can take any sides in the same ratio.
+
+Taking seven and twenty-four simply makes our calculation easy.
+
+We now know two sides of the right triangle, but sec theta needs the hypotenuse and the base.
+
+So first, we need to find the hypotenuse.
+
+Using the Pythagoras theorem, hypotenuse is equal to the square root of perpendicular square plus base square.
+
+Putting the values, we get the square root of seven square plus twenty-four square. This becomes the square root of forty-nine plus five hundred seventy-six, which is the square root of six hundred twenty-five.
+
+So the hypotenuse is twenty-five. Now, sec theta is hypotenuse divided by base.
+
+Therefore, sec theta is twenty-five by twenty-four. Since theta is an acute angle, we take the positive value.
+
+Hence, sec theta is twenty-five by twenty-four. So the correct option is "Option C".

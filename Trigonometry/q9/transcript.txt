@@ -1,0 +1,26 @@
+[00:00.10 -> 00:00.24]  So
+[00:00.68 -> 00:01.68]  welcome back again.
+[00:02.18 -> 00:03.30]  It's time to solve
+[00:03.88 -> 00:04.94]  one more problem.
+[00:05.34 -> 00:06.22]  Now in this problem,
+[00:06.74 -> 00:08.32]  we have a vertical stick.
+[00:08.72 -> 00:09.72]  The question says
+[00:10.24 -> 00:13.54]  that the shadow of the stick is equal to its height,
+[00:14.06 -> 00:16.86]  and we need to find the sun's angle of elevation.
+[00:17.38 -> 00:19.96]  Let the angle of elevation be theta.
+[00:20.70 -> 00:23.00]  Before solving, let us quickly understand the picture.
+[00:23.38 -> 00:25.40]  The stick is standing straight,
+[00:25.88 -> 00:28.22]  so its height becomes the opposite side.
+[00:28.62 -> 00:29.94]  The shadow is on the ground,
+[00:30.36 -> 00:32.18]  so it becomes the adjacent side.
+[00:32.58 -> 00:34.36]  That is all we need for this question.
+[00:35.04 -> 00:37.50]  Since we know the opposite side and the adjacent side,
+[00:37.94 -> 00:42.30]  the correct trigonometric ratio to use is ten.
+[00:42.92 -> 00:44.22]  So tan theta
+[00:44.94 -> 00:47.18]  is equal to opposite upon adjacent.
+[00:47.50 -> 00:49.18]  Now let us put the given values.
+[00:49.70 -> 00:57.58]  The height is equal to the shadow, so tan theta is equal to height upon shadow, which becomes one upon one.
+[00:58.08 -> 00:59.62]  That means tan theta
+[00:59.94 -> 01:01.02]  is equal to one.
+[01:01.46 -> 01:03.70]  Now we know one standard trigonometric value.
+[01:04.26 -> 01:22.70]  Tan forty-five degrees is equal to one. Since tan theta is also equal to one, the value of theta must be forty-five degrees. Got it? Perfect. So the sun's angle of elevation is forty-five degrees. Hence, the correct option is option A, forty-five degrees

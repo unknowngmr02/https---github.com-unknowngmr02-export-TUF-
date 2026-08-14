@@ -1,0 +1,9 @@
+🎬 Visual Help (Animation Timeline)
+Voice	Visual
+"find cot 45 + ten 45"	Display the expression Cot 45° + Ten 45° large at the center.
+"direct standard trigonometric values"	Fade in a small Standard Values title above the expression.
+"Cot 45 is equal to one"	Animate Cot 45° → 1 (replace smoothly).
+"Ten 45 is also equal to one"	Animate Ten 45° → 1.
+"Now we simply add"	Expression becomes 1 + 1.
+"After adding"	Morph 1 + 1 into 2 with a pop animation.
+"Option B"	Highlight Option B in green.

@@ -1,0 +1,91 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+Now in this problem, a drone is flying in the air.
+
+Two people are standing on opposite sides of the point directly below the drone.
+
+One person sees the drone at 45 degrees.
+
+The other person sees the drone at 60 degrees.
+
+And the distance between these two people is 100 mee-ter.
+
+We need to find the height of the drone.
+
+Okay, so let us first assume the height of the drone to be h.
+
+Since the drone's foot lies between the two people, <break time="0.2s" /> let the distances from the foot to the two observation points be x and y.
+
+One very important thing is clear.
+
+x plus y <break time="0.2s" /> equal to 100.
+
+Because together, they make the full distance between the two people.
+
+<break time="0.5s" />
+
+Okey, so first we look at the 45-degree triangle.
+
+For this triangle,
+
+ten 45 degrees <break time="0.2s" /> equal to h upon x.
+
+And ten 45 degrees is equal to 1.
+
+So, <break time="0.2s" /> now we have,
+
+1 equal to h upon x.
+
+This means
+
+h equal to x.
+
+Done.
+
+<break time="0.4s" />
+
+Now look at the 60-degree triangle.
+
+For this triangle,
+
+ten 60 degrees <break time="0.2s" /> equal to h upon y.
+
+And ten 60 degrees is equal to root 3.
+
+So, <break time="0.2s" /> now we have,
+
+Root 3 equal to h upon y.
+
+Then, after solving this, we get
+
+y equal to h upon root 3.
+
+<break time="0.3s" />
+
+Now that we have both distances in terms of h, <break time="0.2s" /> we can use the condition given in the question.
+
+Remember,
+
+x plus y <break time="0.2s" /> equal to 100.
+
+So, putting the values,
+
+h plus h upon root 3 <break time="0.2s" /> equal to 100.
+
+Now, taking h common, <break time="0.2s" /> we get
+
+h times <break time="0.2s" /> 1 plus 1 upon root 3 <break time="0.2s" /> equal to 100.
+
+Then, after solving this,
+
+h equal to 50 times <break time="0.2s" /> 3 minus root 3.
+
+This is the height of the drone.
+
+<break time="0.6s" />
+
+Hence, the final answer will be
+
+50 times <break time="0.2s" /> 3 minus root 3 <break time="0.2s" /> mee-ter.
+
+So the correct option is Option A.

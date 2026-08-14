@@ -1,0 +1,16 @@
+Suggested animation timeline
+Voice	Visual
+"pole whose height is 12"	Pole grows upward with 12 m label.
+"shadow is twelve root three"	Shadow extends along the ground and gets 12√3 m label.
+"join the top..."	A slanted sunlight line is drawn.
+"forms a right triangle"	Right-angle marker appears.
+"angle of elevation"	θ appears at the shadow end and glows.
+"opposite side"	Height highlights in one color.
+"adjacent side"	Shadow highlights in another color.
+"ten theta..."	Formula slides in while opposite and adjacent pulse.
+"putting the values"	Formula morphs into substituted values.
+"twelve gets cancelled"	Strike-through animation cancels both 12s.
+"one divided by root three"	Simplified fraction enlarges.
+"standard value"	Fade to the trig table showing Ten 30° = 1/√3.
+"theta must be thirty degree"	Equation morphs to θ = 30° with a green tick.
+"Option D"	Option D highlights.

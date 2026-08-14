@@ -1,0 +1,34 @@
+[00:00.10 -> 00:01.08]  So welcome back again.
+[00:01.56 -> 00:02.54]  It's time to solve
+[00:03.08 -> 00:03.84]  one more problem.
+[00:04.26 -> 00:05.34]  Now, in this problem,
+[00:05.86 -> 00:06.58]  we are given that
+[00:07.08 -> 00:07.74]  cos theta
+[00:08.32 -> 00:10.06]  is equal to four by five.
+[00:10.54 -> 00:12.40]  Also, theta is an acute angle.
+[00:12.92 -> 00:14.90]  The problem is asking us to find sine theta.
+[00:15.78 -> 00:21.04]  Now, before we start solving, let us first understand what this given value is telling us.
+[00:21.36 -> 00:25.06]  We know that cos theta is equal to adjacent upon hypotenuse.
+[00:25.50 -> 00:27.40]  So when cos theta is four by five,
+[00:27.82 -> 00:29.10]  we are sure about one fact,
+[00:29.62 -> 00:34.78]  the adjacent side is four units and the hypotenuse is five units.
+[00:35.54 -> 00:37.54]  So let us find the opposite side first.
+[00:38.24 -> 00:40.16]  Here we will use the Pythagoras Theorem.
+[00:40.86 -> 00:44.94]  Hypotenuse square is equal to adjacent square plus opposite square.
+[00:45.60 -> 00:47.34]  Now substitute the known values.
+[00:48.00 -> 00:51.14]  Five square is equal to four square plus opposite square.
+[00:51.72 -> 00:52.62]  After solving this,
+[00:53.26 -> 00:56.16]  the opposite side becomes three units.
+[00:56.90 -> 00:57.32]  Got it?
+[00:58.02 -> 00:58.50]  Perfect.
+[00:59.24 -> 01:01.10]  Now we know all three sides of the triangle.
+[01:01.78 -> 01:04.18]  So let us check the formula for sine.
+[01:04.88 -> 01:09.04]  Sine theta is equal to opposite upon hypotenuse.
+[01:09.72 -> 01:11.06]  Now substitute the values.
+[01:11.74 -> 01:14.12]  This becomes three upon five.
+[01:14.68 -> 01:19.58]  Also, the question clearly says that theta is an acute angle,
+[01:20.28 -> 01:22.24]  so sine theta will be positive.
+[01:22.68 -> 01:23.10]  Hence,
+[01:23.66 -> 01:25.72]  the final answer will be three by five.
+[01:26.18 -> 01:26.60]  Therefore,
+[01:27.20 -> 01:28.66]  option B is the correct answer.

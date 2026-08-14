@@ -1,0 +1,61 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+In this problem, we are given that
+
+Sign Theta is equal to Kos 2 Theta,
+
+and Theta is an acute angle.
+
+The question is asking us to find the value of Theta.
+
+Now this is a very easy multiple-choice question.
+
+Can we solve it by checking the options directly?
+
+Yes, we can.
+<break time="0.5s" />
+
+Let us check option A, which is 45 degrees.
+
+If Theta is 45 degrees,
+
+then Sign 45 degrees is equal to 1 by root 2.
+
+Now let us check the right side.
+
+Kos 2 Theta becomes Kos 90 degrees,
+
+which is equal to 0.
+
+These two values are not the same.
+
+So option A is not correct.
+<break time="0.3s" />
+
+Now let us check option B, which is 30 degrees.
+
+If Theta is 30 degrees,
+
+then Sign 30 degrees is equal to 1 by 2.
+
+On the right side,
+
+Kos 2 Theta becomes Kos 60 degrees,
+
+which is also equal to 1 by 2.
+<break time="0.3s" />
+
+Now both sides are giving the same value.
+
+The left side is 1 by 2.
+
+The right side is also 1 by 2.
+
+So the given condition is satisfied.
+
+Got it? Perfect.
+<break time="0.6s" />
+
+Hence, the value of Theta is 30 degrees.
+
+So the final answer will be Option B, 30 degrees.

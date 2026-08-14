@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<!-- Trigonometry q34 - lighthouse, two ships on the same line, angle of
+     depression 30 deg (far ship) and 60 deg (near ship), ships 120 m apart.
+     Find lighthouse height. Answer: B (60 root3 m) -->
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="design-system.css">
+<style>
+  /* Figure labels - design-system .chip is scoped to solution/stack cards,
+     illustration needs its own bordered-chip rule (illustration_reference.md 3) */
+  .fig-chip {
+    display: inline-block;
+    background: #FFFFFF;
+    border: 2px solid var(--success);
+    color: var(--success);
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  .fig-chip-pinned {
+    display: inline-block;
+    background: #FFFFFF;
+    border: 2px solid var(--success);
+    color: var(--success);
+    padding: 3px 9px;
+    border-radius: 6px;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  /* far-ship (30deg) angle - blue, distinct from near-ship (60deg) green */
+  .fig-chip.blue { border-color: var(--primary); color: var(--primary); }
+  .fig-chip-pinned.blue { border-color: var(--primary); color: var(--primary); }
+  /* depression chips (at the lighthouse top) - smaller, so the two pairs
+     of chips (elevation at the ships, depression at the top) never read
+     as equally weighted/cluttered */
+  .fig-chip.small { font-size: 16px; padding: 2px 8px; border-radius: 6px; }
+  .fig-chip-pinned.small { font-size: 15px; padding: 2px 6px; }
+</style>
+</head>
+<body>
+<div data-hf-id="hf-89uj" id="root" data-composition-id="root" data-start="0" data-width="1920" data-height="1080">
+
+  <!-- ══════ BACKGROUND LAYERS (always visible) ══════ -->
+  <div data-hf-id="hf-858h" class="dotted-grid"></div>
+  <div data-hf-id="hf-izuk" class="bottom-strip"></div>
+  <div data-hf-id="hf-pcpi" class="topic-name">Trigonometry</div>
+  <div data-hf-id="hf-e319" class="logo"></div>
+
+  <!-- ══════ VOICEOVER ══════ -->
+  <audio data-hf-id="hf-wck3" id="voiceover" class="clip" src="voiceover.wav" data-start="0" data-duration="168.94" data-track-index="0"></audio>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 1 - Question + Illustration (0 -> PIN_TIME 64.2)
+       data-duration = PIN_TIME(64.2) + pinFlow(0.8) + buffer(1.5) = 66.5
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-zis5" id="phase1" class="clip" data-start="0" data-duration="66.5" data-track-index="1" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:5;">
+
+    <div data-hf-id="hf-xf18" id="q-full-card" class="q-card" style="position:absolute;left:50%;top:70px;width:1560px;transform:translateX(-50%);opacity:0;">
+      <div data-hf-id="hf-3do1" class="q-text">
+        From a lighthouse, two ships on the same straight line have angles of depression <span data-hf-id="hf-jhjo" class="num">30°</span> and <span data-hf-id="hf-1efn" class="num">60°</span>. If the ships are <span data-hf-id="hf-gk5b" class="num">120 m</span> apart, find the lighthouse height.
+      </div>
+    </div>
+
+    <div data-hf-id="hf-w62k" id="serial-num" class="serial-num" style="left:60px;top:60px;opacity:0;">
+      <div data-hf-id="hf-yfde" class="digit">Q</div>
+    </div>
+
+    <!-- Illustration area - full size. wrapper left:50%, top:220px; svg
+         viewBox identical to the pinned copy, only render width/height
+         differ (scale 1.75x here). -->
+    <div data-hf-id="hf-iktn" id="illustration" class="illustration" style="position:absolute;left:50%;top:220px;transform:translateX(-50%);
+                width:1085px;height:875px;">
+      <svg data-hf-id="hf-utkh" viewBox="0 0 620 500" width="1085" height="875" style="overflow:visible">
+        <!-- VERTICES (defined once, reused literally everywhere):
+               B = (460,400)  right-angle vertex - lighthouse NEAR FACE (facing the ships) at sea level
+               C = (460,250)  apex - lighthouse NEAR FACE top - height = 150
+               (lighthouse body itself is drawn as a rect x[460..500] - B/C sit on its LEFT edge,
+                so the right-angle marker and both sight lines stay clear of the tower's own outline)
+               A1 = (373.40,400)  angle vertex, NEAR ship (60 deg) - leftmost of A1,B
+               A2 = (200.19,400)  angle vertex, FAR ship (30 deg) - leftmost of A2,B
+             NEAR TRIANGLE: opposite(B-C)=150, adjacent(A1-B)=150/tan(60)=86.60
+               atan2(150,86.60)=60.00deg -> --angle:60 matches.
+               hyp(A1-C) = sqrt(86.60^2+150^2) = 173.21 (30-60-90 rule: 2*86.60)
+             FAR TRIANGLE: opposite(B-C)=150, adjacent(A2-B)=150/tan(30)=259.81
+               atan2(150,259.81)=30.00deg -> --angle:30 matches.
+               hyp(A2-C) = sqrt(259.81^2+150^2) = 300.00 (30-60-90 rule: 2*150)
+             GROUND(sea) line: len = 540-150 = 390
+             VIEWBOX: "0 0 620 500"; ships x[172..430] y[345..404]; lighthouse x[460..500] y[250..400] -->
+
+        <!-- sea line -->
+        <line data-hf-id="hf-e4nz" id="sea-line" x1="150" y1="400" x2="540" y2="400" stroke="#6373db" stroke-width="3" stroke-linecap="round" stroke-dasharray="390" stroke-dashoffset="390" opacity="0" />
+
+        <!-- lighthouse outline, grown from sea level -->
+        <rect data-hf-id="hf-f806" id="lighthouse-rect" x="460" y="400" width="40" height="0" fill="none" stroke="#6373db" stroke-width="3.5" />
+
+        <!-- lamp marker at top, centered on C=(460,250) -->
+        <g data-hf-id="hf-tq0l" id="lamp-mark" opacity="0">
+          <circle data-hf-id="hf-ogig" cx="460" cy="244" r="8" fill="none" stroke="#6373db" stroke-width="2.5" />
+          <line data-hf-id="hf-ebis" x1="460" y1="228" x2="460" y2="216" stroke="#6373db" stroke-width="2" stroke-linecap="round" />
+          <line data-hf-id="hf-zid6" x1="443" y1="244" x2="431" y2="244" stroke="#6373db" stroke-width="2" stroke-linecap="round" />
+        </g>
+
+        <!-- FAR ship: hull spans A2.x-56 to A2.x (right/mast edge sits exactly on the
+             vertex, hull extends AWAY from the lighthouse) so the elevation arc's
+             sweep zone (x>=A2.x) never overlaps the ship artwork -->
+        <image data-hf-id="hf-ri3l" id="ship-far" href="illustration/ship-svgrepo-com.svg" x="144.19" y="352" width="56" height="56" opacity="0" />
+        <!-- sight line A2-C (depression/elevation hypotenuse), dashed; len=300.00 -->
+        <line data-hf-id="hf-js8c" id="sight-far" x1="200.19" y1="400" x2="460" y2="250" stroke="#000000" stroke-width="3" stroke-dasharray="6 6" opacity="0" />
+        <!-- FAR ELEVATION ARC at A2=(200.19,400), r=65 (bumped up for visibility),
+             C=2*pi*65=408.41, cy=400 so translate=800; sweep-min-y = 400-65*sin(30)
+             = 367.5, clears ship top (352) by 15.5px. blue (--primary) -->
+        <!-- path arc, computed directly (no transform): P_start=(A2.x+r,A2.y)=(265.19,400)
+             [0deg, +x ray toward B]; P_end=(A2.x+r*cos30,A2.y-r*sin30)=(256.48,367.50)
+             [30deg above horizontal, toward C] -->
+        <path data-hf-id="hf-n54c" id="arc-far" d="M 265.19,400 A 65,65 0 0 0 256.48,367.50" fill="none" stroke="#6373db" stroke-width="7" stroke-linecap="round" opacity="0" />
+        <foreignobject data-hf-id="hf-joon" id="chip-30" x="170" y="290" width="90" height="44" style="overflow:visible;opacity:0;">
+          <div data-hf-id="hf-k1wh" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip blue">30°</div>
+        </foreignobject>
+
+        <!-- NEAR ship: hull spans A1.x-56 to A1.x, same convention -->
+        <image data-hf-id="hf-z7qc" id="ship-near" href="illustration/ship-svgrepo-com.svg" x="317.40" y="352" width="56" height="56" opacity="0" />
+        <!-- sight line A1-C, dashed; len=173.21 -->
+        <line data-hf-id="hf-69aw" id="sight-near" x1="373.40" y1="400" x2="460" y2="250" stroke="#000000" stroke-width="3" stroke-dasharray="6 6" opacity="0" />
+        <!-- NEAR ELEVATION ARC at A1=(373.40,400), r=45 (bumped up for visibility),
+             C=2*pi*45=282.74, cy=400 so translate=800; sweep-min-y = 400-45*sin(60)
+             = 361.0, clears ship top (352) by 9px. green (--success) -->
+        <!-- path arc, computed directly: P_start=(A1.x+r,A1.y)=(418.40,400) [0deg];
+             P_end=(A1.x+r*cos60,A1.y-r*sin60)=(395.90,361.03) [60deg toward C] -->
+        <path data-hf-id="hf-mm9n" id="arc-near" d="M 418.40,400 A 45,45 0 0 0 395.90,361.03" fill="none" stroke="#4eb85f" stroke-width="7" stroke-linecap="round" opacity="0" />
+        <foreignobject data-hf-id="hf-4piq" id="chip-60" x="355" y="295" width="90" height="44" style="overflow:visible;opacity:0;">
+          <div data-hf-id="hf-iwsi" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip">60°</div>
+        </foreignobject>
+
+        <!-- ship-gap arrow (120 m), below sea line: y=430, spans A2.x to A1.x, len=173.21 -->
+        <g data-hf-id="hf-hl9q" id="arrow-120" opacity="0">
+          <line data-hf-id="hf-xqz0" x1="200.19" y1="430" x2="373.40" y2="430" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+          <path data-hf-id="hf-9nws" d="M 218,419 L 200.19,430 L 218,441 Z" fill="#000000" />
+          <path data-hf-id="hf-fjt5" d="M 355,419 L 373.40,430 L 355,441 Z" fill="#000000" />
+        </g>
+        <text data-hf-id="hf-pd3n" id="label-120" x="286.80" y="456" text-anchor="middle" font-family="Google Sans Flex, Inter, sans-serif" font-size="26" fill="#000000" opacity="0">120 m</text>
+
+        <!-- right-angle marker at B=(460,400): rays -x (toward A1, along the ground) and -y
+             (toward C, up the tower's own near face), inset 20 each - stays clear of the
+             tower rect (which starts at x=460) since both ray points sit at x<=460 -->
+        <path data-hf-id="hf-4ts6" id="right-angle" d="M 440,400 L 440,380 L 460,380" fill="none" stroke="#000000" stroke-width="2.5" opacity="0" />
+
+        <!-- height arrow (h), right of lighthouse: x=520, y 400->250, len=150 -->
+        <g data-hf-id="hf-gfst" id="arrow-h" opacity="0">
+          <line data-hf-id="hf-ikcq" x1="520" y1="400" x2="520" y2="250" stroke="#000000" stroke-width="2.5" stroke-linecap="round" />
+          <path data-hf-id="hf-8qpm" d="M 510,266 L 520,250 L 530,266 Z" fill="#000000" />
+          <path data-hf-id="hf-b94l" d="M 510,384 L 520,400 L 530,384 Z" fill="#000000" />
+        </g>
+        <text data-hf-id="hf-wdu7" id="label-h" x="538" y="330" text-anchor="start" font-family="Google Sans Flex, Inter, sans-serif" font-size="26" fill="#000000" opacity="0">h</text>
+
+        <!-- horizon (construction) line at C, dashed black; sells "depression = elevation" -->
+        <line data-hf-id="hf-57wk" id="horizon-line" x1="280" y1="250" x2="460" y2="250" stroke="#000000" stroke-width="2.5" stroke-dasharray="6 6" opacity="0" />
+
+        <!-- DEPRESSION ARCS at C=(460,250): same technique, horizontally mirrored so
+             the 0deg start ray points -x (toward the ships, matching horizon-line's
+             direction) and the default clockwise sweep goes DOWN toward each sight
+             line. transform = translate(2*cx,0) scale(-1,1) = translate(920,0) scale(-1,1).
+             Verified: at a=60deg the ray direction (-r*cos60, r*sin60) is parallel to
+             the true C->A1 vector (-86.60,150) - ratio dy/dx = -1.732 = tan(60) both sides.
+             Same check for the 30deg / C->A2 pair. Small font chips (see .fig-chip.small)
+             so this pair reads as secondary to the elevation chips at the ships. -->
+        <!-- path arcs, computed directly: P_start=(C.x-r,C.y) [180deg, -x ray toward
+             the ships]; P_end=(C.x-r*cos(theta),C.y+r*sin(theta)) [sweeping down-left] -->
+        <path data-hf-id="hf-dep60" id="arc-dep-near" d="M 418,250 A 42,42 0 0 0 439,286.37" fill="none" stroke="#4eb85f" stroke-width="6" stroke-linecap="round" opacity="0" />
+        <path data-hf-id="hf-dep30" id="arc-dep-far" d="M 398,250 A 62,62 0 0 0 406.31,281.00" fill="none" stroke="#6373db" stroke-width="6" stroke-linecap="round" opacity="0" />
+        <foreignobject data-hf-id="hf-chdep60" id="chip-dep-60" x="468" y="180" width="64" height="28" style="overflow:visible;opacity:0;">
+          <div data-hf-id="hf-cdn60" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip small">60°</div>
+        </foreignobject>
+        <foreignobject data-hf-id="hf-chdep30" id="chip-dep-30" x="468" y="212" width="64" height="28" style="overflow:visible;opacity:0;">
+          <div data-hf-id="hf-cdn30" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip blue small">30°</div>
+        </foreignobject>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 2 - Pinned question (64.2 -> end)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-m7kq" id="q-pinned" class="clip" data-start="64.2" data-duration="104.8" data-track-index="2" style="position:absolute;width:100%;top:0;left:0;z-index:6;opacity:0;">
+    <div data-hf-id="hf-9jf4" class="q-card pinned" style="position:absolute;left:385px;top:30px;width:1275px;">
+      <div data-hf-id="hf-ffoh" class="q-text">
+        Lighthouse sees two ships, depression <span data-hf-id="hf-1tik" class="num">30°</span> and <span data-hf-id="hf-yz77" class="num">60°</span>, ships <span data-hf-id="hf-vx1b" class="num">120 m</span> apart. Find the height.
+      </div>
+    </div>
+  </div>
+
+  <!-- Pinned illustration - coordinate-exact copy of #illustration, only
+       outer width/height shrunk (0.85 scale), stroke widths thinned.
+       Everything already narrated before PIN_TIME is static/visible. -->
+  <div data-hf-id="hf-05ln" id="illus-pinned" class="clip" data-start="64.2" data-duration="99.4" data-track-index="3" style="position:absolute;left:230px;top:60px;width:1400px;height:450px;z-index:5;opacity:0;
+              display:flex;align-items:center;justify-content:center;">
+    <svg data-hf-id="hf-yzw8" viewBox="0 0 620 500" width="527" height="425" style="overflow:visible">
+      <line data-hf-id="hf-j04v" x1="150" y1="400" x2="540" y2="400" stroke="#6373db" stroke-width="2.5" stroke-linecap="round" />
+      <rect data-hf-id="hf-jfvb" id="lighthouse-rect-pinned" x="460" y="250" width="40" height="150" fill="none" stroke="#6373db" stroke-width="3" />
+      <g data-hf-id="hf-6aa4" id="lamp-mark-pinned">
+        <circle data-hf-id="hf-b6r7" cx="460" cy="244" r="8" fill="none" stroke="#6373db" stroke-width="2" />
+        <line data-hf-id="hf-6obr" x1="460" y1="228" x2="460" y2="216" stroke="#6373db" stroke-width="1.6" stroke-linecap="round" />
+        <line data-hf-id="hf-whx9" x1="443" y1="244" x2="431" y2="244" stroke="#6373db" stroke-width="1.6" stroke-linecap="round" />
+      </g>
+
+      <image data-hf-id="hf-8ml1" x="144.19" y="352" width="56" height="56" href="illustration/ship-svgrepo-com.svg" />
+      <line data-hf-id="hf-yyer" id="sight-far-pinned" x1="200.19" y1="400" x2="460" y2="250" stroke="#000000" stroke-width="2.5" stroke-dasharray="5 5" />
+      <path data-hf-id="hf-4k71" d="M 265.19,400 A 65,65 0 0 0 256.48,367.50" fill="none" stroke="#6373db" stroke-width="6" stroke-linecap="round" />
+      <foreignobject data-hf-id="hf-wng1" x="170" y="290" width="90" height="40" style="overflow:visible;">
+        <div data-hf-id="hf-kd1k" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip-pinned blue">30°</div>
+      </foreignobject>
+      <!-- y placeholder -> pops in when narration names "y" (72.56), then
+           confirmed h*root3 at Step 3, then numeric 180 m after h is solved -->
+      <text data-hf-id="hf-0kmf" id="label-y-pinned" x="180" y="430" text-anchor="start" font-family="Google Sans Flex, Inter, sans-serif" font-size="24" fill="#000000" opacity="0">y</text>
+      <text data-hf-id="hf-180i" id="label-y-solved-pinned" x="180" y="430" text-anchor="start" font-family="Google Sans Flex, Inter, sans-serif" font-size="22" fill="#4eb85f" opacity="0">h·√3</text>
+      <text data-hf-id="hf-q347" id="label-y-final-pinned"x="180" y="430" text-anchor="start" font-family="Google Sans Flex, Inter, sans-serif" font-size="22" fill="#4eb85f" opacity="0">180 m</text>
+
+      <image data-hf-id="hf-ps5n" x="317.40" y="352" width="56" height="56" href="illustration/ship-svgrepo-com.svg" />
+      <line data-hf-id="hf-jjmp" id="sight-near-pinned" x1="373.40" y1="400" x2="460" y2="250" stroke="#000000" stroke-width="2.5" stroke-dasharray="5 5" />
+      <path data-hf-id="hf-jh2r" d="M 418.40,400 A 45,45 0 0 0 395.90,361.03" fill="none" stroke="#4eb85f" stroke-width="6" stroke-linecap="round" />
+      <foreignobject data-hf-id="hf-k7hl" x="355" y="295" width="90" height="40" style="overflow:visible;">
+        <div data-hf-id="hf-mgv3" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip-pinned">60°</div>
+      </foreignobject>
+      <!-- x placeholder -> pops in when narration names "x" (69.4), then
+           confirmed h/root3 at Step 2, then numeric 60 m after h is solved -->
+      <text data-hf-id="hf-k241" id="label-x-pinned" x="383" y="430" text-anchor="start" font-family="Google Sans Flex, Inter, sans-serif" font-size="24" fill="#000000" opacity="0">x</text>
+      <text data-hf-id="hf-hfmb" id="label-x-solved-pinned" x="383" y="430" text-anchor="start" font-family="Google Sans Flex, Inter, sans-serif" font-size="22" fill="#4eb85f" opacity="0">h/√3</text>
+      <text data-hf-id="hf-4k23" id="label-x-final-pinned" x="383" y="430" text-anchor="start" font-family="Google Sans Flex, Inter, sans-serif" font-size="22" fill="#4eb85f" opacity="0">60 m</text>
+
+      <!-- DEPRESSION ARCS (pinned, coordinate-exact) - already narrated pre-pin, static -->
+      <path data-hf-id="hf-4r1z" d="M 418,250 A 42,42 0 0 0 439,286.37" fill="none" stroke="#4eb85f" stroke-width="5" stroke-linecap="round" />
+      <path data-hf-id="hf-58zs" d="M 398,250 A 62,62 0 0 0 406.31,281.00" fill="none" stroke="#6373db" stroke-width="5" stroke-linecap="round" />
+      <foreignobject data-hf-id="hf-woq5" x="468" y="180" width="64" height="28" style="overflow:visible;">
+        <div data-hf-id="hf-05vm" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip-pinned small">60°</div>
+      </foreignobject>
+      <foreignobject data-hf-id="hf-108b" x="468" y="212" width="64" height="28" style="overflow:visible;">
+        <div data-hf-id="hf-mp39" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip-pinned blue small">30°</div>
+      </foreignobject>
+
+      <g data-hf-id="hf-vera">
+        <line data-hf-id="hf-kif6" x1="200.19" y1="430" x2="373.40" y2="430" stroke="#000000" stroke-width="2.5" stroke-linecap="round" />
+        <path data-hf-id="hf-cx9g" d="M 218,419 L 200.19,430 L 218,441 Z" fill="#000000" />
+        <path data-hf-id="hf-ebjx" d="M 355,419 L 373.40,430 L 355,441 Z" fill="#000000" />
+      </g>
+      <text data-hf-id="hf-ct65" x="286.80" y="456" text-anchor="middle" font-family="Google Sans Flex, Inter, sans-serif" font-size="22" fill="#000000">120 m</text>
+
+      <path data-hf-id="hf-02sp" d="M 440,400 L 440,380 L 460,380" fill="none" stroke="#000000" stroke-width="2" />
+
+      <g data-hf-id="hf-h0us" id="arrow-h-pinned">
+        <line data-hf-id="hf-evc1" x1="520" y1="400" x2="520" y2="250" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+        <path data-hf-id="hf-7hlq" d="M 510,266 L 520,250 L 530,266 Z" fill="#000000" />
+        <path data-hf-id="hf-dxyh" d="M 510,384 L 520,400 L 530,384 Z" fill="#000000" />
+      </g>
+      <!-- h placeholder -> confirmed 60root3 m at Step 4's final answer -->
+      <text data-hf-id="hf-oyss" id="label-h-pinned" x="538" y="330" text-anchor="start" font-family="Google Sans Flex, Inter, sans-serif" font-size="24" fill="#000000">h</text>
+      <text data-hf-id="hf-xw2d" id="label-h-solved-pinned" x="538" y="330" text-anchor="start" font-family="Google Sans Flex, Inter, sans-serif" font-size="21" fill="#4eb85f" opacity="0">60√3 m</text>
+
+      <line data-hf-id="hf-sea9" x1="280" y1="250" x2="460" y2="250" stroke="#000000" stroke-width="2" stroke-dasharray="5 5" />
+    </svg>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SOLUTION CARDS
+       ══════════════════════════════════════════════ -->
+
+  <!-- GIVEN: data-duration = MORPH_GIVEN(67.6)+0.8+1.5 - 64.8 = 5.1 -> 5.5 -->
+  <div data-hf-id="hf-xl0j" id="card-given" class="clip" data-start="64.8" data-duration="5.5" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-rw9r" class="solution-card" style="position:absolute;left:640px;top:500px;text-align:center;width:660px;">
+      <div data-hf-id="hf-3rv6" class="card-content">
+        <span data-hf-id="hf-7r0o" class="chip">Given</span>
+        <div data-hf-id="hf-8tlu" class="math">
+          <span data-hf-id="hf-ul2p" class="rv" data-t="64.80">∠ depression (near ship) = <span data-hf-id="hf-gkw6" class="hi">60°</span></span><br data-hf-id="hf-x5px">
+          <span data-hf-id="hf-ohj7" class="rv" data-t="65.60">∠ depression (far ship) = <span data-hf-id="hf-1wxp" class="hi">30°</span></span><br data-hf-id="hf-rsrt">
+          <span data-hf-id="hf-pe2a" class="rv" data-t="66.40">Ships apart = <span data-hf-id="hf-ctpi" class="hi">120 m</span>. Find: h</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 1: data-duration = MORPH_STEP1(82.0)+0.8+1.5 - 69.4 = 14.9 -> 15.0 -->
+  <div data-hf-id="hf-8jxc" id="card-step1" class="clip" data-start="69.4" data-duration="15.0" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-1hjr" class="solution-card" style="position:absolute;left:610px;top:460px;text-align:center;width:700px;">
+      <div data-hf-id="hf-0yza" class="card-content">
+        <span data-hf-id="hf-3ife" class="chip">Step 1</span>
+        <div data-hf-id="hf-ng7a" class="math">
+          <span data-hf-id="hf-eca6" class="rv" data-t="69.40">Let nearer ship distance = <span data-hf-id="hf-ls44" class="hi">x</span></span><br data-hf-id="hf-szow">
+          <span data-hf-id="hf-pf5w" class="rv" data-t="72.56">Let farther ship distance = <span data-hf-id="hf-ldt3" class="hi">y</span></span><br data-hf-id="hf-sldv">
+          <span data-hf-id="hf-mlgx" class="rv" data-t="76.62">Ships 120 m apart:</span><br data-hf-id="hf-qluq">
+          <span data-hf-id="hf-dvyb" class="rv" data-t="80.90">y</span> <span data-hf-id="hf-yvrs" class="rv" data-t="81.20">−</span> <span data-hf-id="hf-gugw" class="rv" data-t="81.40">x</span> <span data-hf-id="hf-09hl" class="rv" data-t="81.60">=</span> <span data-hf-id="hf-a8cw" class="ans rv" data-t="81.90">120</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 2: data-duration = MORPH_STEP2(106.0)+0.8+1.5 - 83.8 = 24.5 -->
+  <div data-hf-id="hf-4vtc" id="card-step2" class="clip" data-start="83.8" data-duration="24.5" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-8hiu" class="solution-card" style="position:absolute;left:600px;top:480px;text-align:center;width:770px;">
+      <div data-hf-id="hf-1dab" class="card-content">
+        <span data-hf-id="hf-3wqf" class="chip">Step 2</span>
+        <div data-hf-id="hf-nuib" class="math">
+          <span data-hf-id="hf-0ghp" class="rv" data-t="83.80">Need tan θ - it links height and base directly</span><br data-hf-id="hf-q7jp">
+          <span data-hf-id="hf-yzlp" class="rv" data-t="97.38">Nearer ship (θ = <span data-hf-id="hf-22tm" class="hi">60°</span>):</span><br data-hf-id="hf-regs">
+          <span data-hf-id="hf-m27w" class="rv" data-t="98.50">tan</span> <span data-hf-id="hf-wgek" class="hi rv" data-t="98.90">60°</span> <span data-hf-id="hf-n8u3" class="rv" data-t="99.70">=</span>
+          <span data-hf-id="hf-gq2t" class="frac"><span data-hf-id="hf-42lq" class="top hi rv" data-t="100.00">h</span><span data-hf-id="hf-5cv0" class="bot hi rv" data-t="100.40">x</span></span><br data-hf-id="hf-r05r">
+          <span data-hf-id="hf-q47g" class="frac rv" data-t="102.02"><span data-hf-id="hf-pwjo" class="top hi">√3</span><span data-hf-id="hf-knoc" class="bot hi">1</span></span> <span data-hf-id="hf-qx9o" class="rv" data-t="103.20">=</span>
+          <span data-hf-id="hf-s3fd" class="frac"><span data-hf-id="hf-c3bp" class="top hi">h</span><span data-hf-id="hf-nlc7" class="bot hi">x</span></span><br data-hf-id="hf-p0mm">
+          <span data-hf-id="hf-xwwn" class="rv" data-t="104.94">x</span> <span data-hf-id="hf-svbv" class="rv" data-t="105.30">=</span>
+          <span data-hf-id="hf-sj8d" class="frac ans rv" data-t="105.60"><span data-hf-id="hf-654m" class="top">h</span><span data-hf-id="hf-dptf" class="bot">√3</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 3: data-duration = MORPH_STEP3(123.0)+0.8+1.5 - 107.8 = 17.5 -->
+  <div data-hf-id="hf-jude" id="card-step3" class="clip" data-start="107.8" data-duration="17.5" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-orbr" class="solution-card" style="position:absolute;left:600px;top:470px;text-align:center;width:720px;">
+      <div data-hf-id="hf-1rlc" class="card-content">
+        <span data-hf-id="hf-4b1g" class="chip">Step 3</span>
+        <div data-hf-id="hf-o8tc" class="math">
+          <span data-hf-id="hf-9tku" class="rv" data-t="107.80">Same idea for the farther ship (θ = <span data-hf-id="hf-f6s1" class="hi">30°</span>):</span><br data-hf-id="hf-ombl">
+          <span data-hf-id="hf-qpnc" class="rv" data-t="113.90">tan</span> <span data-hf-id="hf-5kz8" class="hi rv" data-t="114.30">30°</span> <span data-hf-id="hf-eaqy" class="rv" data-t="115.10">=</span>
+          <span data-hf-id="hf-tacg" class="frac"><span data-hf-id="hf-ygms" class="top hi rv" data-t="115.40">h</span><span data-hf-id="hf-09el" class="bot hi rv" data-t="115.80">y</span></span><br data-hf-id="hf-qsyj">
+          <span data-hf-id="hf-1wfx" class="frac rv" data-t="116.64"><span data-hf-id="hf-53oq" class="top hi">1</span><span data-hf-id="hf-p5ne" class="bot hi">√3</span></span> <span data-hf-id="hf-1gea" class="rv" data-t="118.00">=</span>
+          <span data-hf-id="hf-sw1f" class="frac"><span data-hf-id="hf-7evd" class="top hi">h</span><span data-hf-id="hf-nzn8" class="bot hi">y</span></span><br data-hf-id="hf-r79k">
+          <span data-hf-id="hf-lf3u" class="rv" data-t="119.90">y</span> <span data-hf-id="hf-16ek" class="rv" data-t="120.30">=</span> <span data-hf-id="hf-pfxp" class="ans rv" data-t="121.80">h·√3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 4: data-duration = MORPH_STEP4(161.5)+0.8+1.5 - 124.8 = 39.0 -> 39.5 -->
+  <div data-hf-id="hf-f9re" id="card-step4" class="clip" data-start="124.8" data-duration="39.5" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-p49h" class="solution-card" style="position:absolute;left:580px;top:470px;text-align:center;width:760px;">
+      <div data-hf-id="hf-yzg5" class="card-content">
+        <span data-hf-id="hf-4pch" class="chip">Step 4</span>
+        <div data-hf-id="hf-lgo5" class="math">
+          <span data-hf-id="hf-sk4n" class="rv" data-t="124.80">We know <span data-hf-id="hf-4877" class="hi">y − x = 120</span></span><br data-hf-id="hf-q0ch">
+          <span data-hf-id="hf-j8kb" class="rv" data-t="131.52">h·√3 −</span>
+          <span data-hf-id="hf-3vod" class="frac rv" data-t="132.40"><span data-hf-id="hf-8lsg" class="top hi">h</span><span data-hf-id="hf-d2wu" class="bot hi">√3</span></span> <span data-hf-id="hf-h7ii" class="rv" data-t="134.30">= 120</span><br data-hf-id="hf-qeni">
+          <span data-hf-id="hf-qrzz" class="rv" data-t="135.48">h ·</span> <span data-hf-id="hf-ff0x" class="rv" data-t="138.20">(</span>
+          <span data-hf-id="hf-dsyc" class="rv" data-t="138.40">√3 −</span>
+          <span data-hf-id="hf-z1aa" class="frac rv" data-t="139.20"><span data-hf-id="hf-xd4e" class="top hi">1</span><span data-hf-id="hf-hj6z" class="bot hi">√3</span></span> <span data-hf-id="hf-ge6n" class="rv" data-t="140.60">)</span> <span data-hf-id="hf-6u09" class="rv" data-t="140.94">= 120</span><br data-hf-id="hf-p7qf">
+          <span data-hf-id="hf-58c3" class="rv" data-t="145.36">h ·</span>
+          <span data-hf-id="hf-15ir" class="frac rv" data-t="146.38"><span data-hf-id="hf-5hzr" class="top hi">2</span><span data-hf-id="hf-hxi0" class="bot hi">√3</span></span> <span data-hf-id="hf-vxm5" class="rv" data-t="147.82">= 120</span><br data-hf-id="hf-pm1g">
+          <span data-hf-id="hf-iwua" class="rv" data-t="153.18">2h = 120√3</span> <span data-hf-id="hf-5g2x" class="rv" data-t="155.90">so</span><br data-hf-id="hf-of4d">
+          <span data-hf-id="hf-6l2d" class="rv" data-t="156.68">h</span> <span data-hf-id="hf-d020" class="rv" data-t="157.10">=</span> <span data-hf-id="hf-3k1s" class="ans rv" data-t="157.40">60√3 m</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       LEFT STACK CARDS
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-k08a" id="stack-given" class="clip" data-start="67.6" data-duration="101.5" data-track-index="11" style="position:absolute;left:100px;top:140px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-usjn" class="stack-card">
+      <div data-hf-id="hf-zdr6" class="card-content">
+        <span data-hf-id="hf-snhl" class="step-circle">G</span>
+        <div data-hf-id="hf-l5bw" class="math">
+          Depression = <span data-hf-id="hf-2h4n" class="hi">60°</span>, <span data-hf-id="hf-gdp4" class="hi">30°</span><br data-hf-id="hf-otfe">
+          Ships apart = <span data-hf-id="hf-bizu" class="hi">120 m</span>. Find h
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-cnd6" id="stack-step1" class="clip" data-start="82.0" data-duration="87.0" data-track-index="12" style="position:absolute;left:100px;top:290px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-3m9v" class="stack-card">
+      <div data-hf-id="hf-zs27" class="card-content">
+        <span data-hf-id="hf-w2db" class="step-circle">1</span>
+        <div data-hf-id="hf-3s1c" class="math">
+          x = near dist, y = far dist<br data-hf-id="hf-tzer">
+          <span data-hf-id="hf-43fe" class="ans">y − x = 120</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-49ho" id="stack-step2" class="clip" data-start="106.0" data-duration="63.0" data-track-index="13" style="position:absolute;left:100px;top:440px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-37yu" class="stack-card">
+      <div data-hf-id="hf-06d8" class="card-content">
+        <span data-hf-id="hf-vo2a" class="step-circle">2</span>
+        <div data-hf-id="hf-khyz" class="math">
+          tan 60° = h/x<br data-hf-id="hf-udps">
+          <span data-hf-id="hf-kkmg" class="ans">x = h/√3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-yu8y" id="stack-step3" class="clip" data-start="123.0" data-duration="46.0" data-track-index="14" style="position:absolute;left:100px;top:590px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-2tnt" class="stack-card">
+      <div data-hf-id="hf-xe81" class="card-content">
+        <span data-hf-id="hf-v9r9" class="step-circle">3</span>
+        <div data-hf-id="hf-vi6v" class="math">
+          tan 30° = h/y<br data-hf-id="hf-7f5s">
+          <span data-hf-id="hf-tcc1" class="ans">y = h·√3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-iide" id="stack-step4" class="clip" data-start="161.5" data-duration="7.5" data-track-index="15" style="position:absolute;left:100px;top:740px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-2fcs" class="stack-card">
+      <div data-hf-id="hf-xsj2" class="card-content">
+        <span data-hf-id="hf-y1wg" class="step-circle">4</span>
+        <div data-hf-id="hf-kvl1" class="math">
+          2h = 120√3<br data-hf-id="hf-70ur">
+          <span data-hf-id="hf-dk50" class="ans">h = 60√3 m</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-mqjc" id="line-g-1" class="clip stack-line" data-start="82.0" data-duration="87.0" data-track-index="16" style="opacity:0;"></div>
+  <div data-hf-id="hf-uzwf" id="line-1-2" class="clip stack-line" data-start="106.0" data-duration="63.0" data-track-index="17" style="opacity:0;"></div>
+  <div data-hf-id="hf-3mmg" id="line-2-3" class="clip stack-line" data-start="123.0" data-duration="46.0" data-track-index="18" style="opacity:0;"></div>
+  <div data-hf-id="hf-bums" id="line-3-4" class="clip stack-line" data-start="161.5" data-duration="7.5" data-track-index="19" style="opacity:0;"></div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 3 - OPTIONS REVEAL
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-o8cg" id="options-reveal" class="clip" data-start="164.14" data-duration="4.8" data-track-index="10" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:8;opacity:0;">
+    <div data-hf-id="hf-2tfv" class="pinned-col" style="top:400px;">
+      <div data-hf-id="hf-6knj" class="options-grid">
+        <div data-hf-id="hf-hzn5" class="opt-btn"><span data-hf-id="hf-sfug" class="letter">A</span>120√3 m</div>
+        <div data-hf-id="hf-0qn4" class="opt-btn correct"><span data-hf-id="hf-r8xd" class="letter">B</span>60√3 m</div>
+        <div data-hf-id="hf-16g9" class="opt-btn"><span data-hf-id="hf-rn8e" class="letter">C</span>60 m</div>
+        <div data-hf-id="hf-z7fv" class="opt-btn"><span data-hf-id="hf-qgbb" class="letter">D</span>30√3 m</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end root -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script src="animations.js"></script>
+<script>
+  apt.setStackLine("#line-g-1", "#stack-given .step-circle", "#stack-step1 .step-circle");
+  apt.setStackLine("#line-1-2", "#stack-step1 .step-circle", "#stack-step2 .step-circle");
+  apt.setStackLine("#line-2-3", "#stack-step2 .step-circle", "#stack-step3 .step-circle");
+  apt.setStackLine("#line-3-4", "#stack-step3 .step-circle", "#stack-step4 .step-circle");
+
+  const tl = gsap.timeline({ paused: true });
+
+  // ── PHASE 1: question hero + serial badge ──
+  const HERO_OFFSET_Y = 180;
+  const RISE_TIME = 3.9; // "...one more problem." ends 4.14
+  apt.heroEnterLowered(tl, "#q-full-card", HERO_OFFSET_Y, RISE_TIME);
+  tl.fromTo("#serial-num",
+    { scale: 0, rotation: -45, opacity: 0, y: HERO_OFFSET_Y },
+    { scale: 1, rotation: 0, opacity: 1, duration: 0.55, ease: "back.out(2)" },
+    0.8);
+  tl.to("#serial-num", { y: 0, duration: 0.6, ease: "power2.inOut" }, RISE_TIME);
+
+  // ── Illustration build, one beat per narration phrase ──
+  tl.to("#sea-line", { strokeDashoffset: 0, opacity: 1, duration: 0.6, ease: "power2.out" }, 4.6);
+  tl.to("#lighthouse-rect", { attr: { height: 150, y: 250 }, duration: 0.7, ease: "power2.out" }, 5.2);
+  tl.fromTo("#lamp-mark", { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.4, ease: "back.out(1.6)" }, 6.6);
+
+  tl.fromTo("#ship-far", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 10.0);
+  tl.to("#sight-far", { strokeDashoffset: 0, opacity: 1, duration: 0.6, ease: "power2.out" }, 12.0);
+  tl.to("#arc-far", { opacity: 1, duration: 0.4 }, 14.6);
+  tl.fromTo("#chip-30", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, 14.9);
+
+  tl.fromTo("#ship-near", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 19.3);
+  tl.to("#sight-near", { strokeDashoffset: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 19.6);
+  tl.to("#arc-near", { opacity: 1, duration: 0.4 }, 19.9);
+  tl.fromTo("#chip-60", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, 20.2);
+
+  tl.fromTo("#arrow-120", { opacity: 0, scaleX: 0.7 }, { opacity: 1, scaleX: 1, duration: 0.35, ease: "back.out(1.6)" }, 21.3);
+  tl.fromTo("#label-120", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(1.6)" }, 21.8);
+  tl.to("#right-angle", { opacity: 1, duration: 0.3 }, 24.0);
+
+  tl.fromTo("#arrow-h", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.8)" }, 25.4);
+  tl.fromTo("#label-h", { opacity: 0, x: 6 }, { opacity: 1, x: 0, duration: 0.35, ease: "back.out(1.6)" }, 26.0);
+
+  apt.emphasize(tl, "#illustration", 29.1);
+  apt.emphasize(tl, "#arrow-h", 33.7);
+  apt.emphasize(tl, "#label-h", 34.5);
+
+  // "closer ship has angle of depression 60" - re-anchor near-ship group
+  apt.emphasize(tl, "#ship-near", 37.4);
+  apt.emphasize(tl, "#chip-60", 45.1);
+  apt.emphasize(tl, "#arc-near", 45.4);
+  // "farther ship has angle of depression 30" - re-anchor far-ship group
+  apt.emphasize(tl, "#ship-far", 46.6);
+  apt.emphasize(tl, "#chip-30", 48.9);
+  apt.emphasize(tl, "#arc-far", 49.2);
+
+  // "depression = elevation" - horizon line + BOTH depression arcs (at the
+  // lighthouse top) pop in together, right beside the elevation arcs they equal
+  tl.to("#horizon-line", { opacity: 1, duration: 0.4 }, 50.7);
+  tl.fromTo("#arc-dep-near", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 52.0);
+  tl.fromTo("#chip-dep-60", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(1.6)" }, 52.4);
+  tl.fromTo("#arc-dep-far", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 53.6);
+  tl.fromTo("#chip-dep-30", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(1.6)" }, 54.0);
+  tl.to("#arc-near", { strokeWidth: 8, duration: 0.3, yoyo: true, repeat: 1 }, 54.9);
+  tl.to("#arc-dep-near", { strokeWidth: 7, duration: 0.3, yoyo: true, repeat: 1 }, 54.9);
+  tl.to("#arc-far", { strokeWidth: 8, duration: 0.3, yoyo: true, repeat: 1 }, 55.8);
+  tl.to("#arc-dep-far", { strokeWidth: 7, duration: 0.3, yoyo: true, repeat: 1 }, 55.8);
+  apt.emphasize(tl, "#chip-60", 56.6);
+  apt.emphasize(tl, "#chip-dep-60", 56.6);
+  apt.emphasize(tl, "#chip-30", 57.6);
+  apt.emphasize(tl, "#chip-dep-30", 57.6);
+
+  // "use the angles at the ships themselves"
+  apt.emphasize(tl, "#sight-near", 59.1);
+  apt.emphasize(tl, "#sight-far", 61.9);
+
+  // ── PHASE 2: pin, then Given (separate timestamps) ──
+  const PIN_TIME = 64.2;
+  const GIVEN_TIME = 64.8;
+  apt.pinFlow(tl, "#q-full-card", "#q-pinned", PIN_TIME);
+  apt.pinFlow(tl, "#illustration", "#illus-pinned", PIN_TIME);
+  apt.fadeOut(tl, "#serial-num", PIN_TIME, 0.5);
+
+  apt.cardEnter(tl, "#card-given .solution-card", GIVEN_TIME);
+  apt.textReveal(tl, "#card-given .math");
+
+  // STEP 1 - morph Given into the stack
+  const MORPH_GIVEN = 67.6;
+  apt.morphToStack(tl, "#card-given .solution-card", "#stack-given .stack-card", MORPH_GIVEN);
+  apt.cardEnter(tl, "#card-step1 .solution-card", 69.4);
+  apt.textReveal(tl, "#card-step1 .math");
+  // LINK: near/far ship groups pulse and the x/y tags pop in as they're named
+  apt.emphasize(tl, "#sight-near-pinned", 69.4);
+  tl.fromTo("#label-x-pinned", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, 69.4);
+  apt.emphasize(tl, "#sight-far-pinned", 72.56);
+  tl.fromTo("#label-y-pinned", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, 72.56);
+
+  // STEP 2 - Step 1 joins the stack; grow the G-1 connector
+  const MORPH_STEP1 = 82.0;
+  apt.morphToStack(tl, "#card-step1 .solution-card", "#stack-step1 .stack-card", MORPH_STEP1);
+  apt.stackLineGrow(tl, "#line-g-1", MORPH_STEP1);
+  apt.cardEnter(tl, "#card-step2 .solution-card", 83.8);
+  apt.textReveal(tl, "#card-step2 .math");
+  apt.emphasize(tl, "#sight-near-pinned", 97.38);
+  // x confirmed - figure and equation answer land on the same frame
+  tl.to("#label-x-pinned", { opacity: 0, duration: 0.2 }, 105.6);
+  tl.fromTo("#label-x-solved-pinned", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, 105.6);
+  tl.to("#sight-near-pinned", { stroke: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 105.6);
+
+  // STEP 3 - Step 2 joins the stack; grow the 1-2 connector
+  const MORPH_STEP2 = 106.0;
+  apt.morphToStack(tl, "#card-step2 .solution-card", "#stack-step2 .stack-card", MORPH_STEP2);
+  apt.stackLineGrow(tl, "#line-1-2", MORPH_STEP2);
+  apt.cardEnter(tl, "#card-step3 .solution-card", 107.8);
+  apt.textReveal(tl, "#card-step3 .math");
+  apt.emphasize(tl, "#sight-far-pinned", 113.9);
+  // ambient bob on the pinned lamp - long algebra stretch coming up in Step 4
+  apt.ambientLoop(tl, "#lamp-mark-pinned", 108.0, 160.0);
+  // y confirmed - figure and equation answer land on the same frame
+  tl.to("#label-y-pinned", { opacity: 0, duration: 0.2 }, 121.8);
+  tl.fromTo("#label-y-solved-pinned", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, 121.8);
+  tl.to("#sight-far-pinned", { stroke: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 121.8);
+
+  // STEP 4 - Step 3 joins the stack; grow the 2-3 connector
+  const MORPH_STEP3 = 123.0;
+  apt.morphToStack(tl, "#card-step3 .solution-card", "#stack-step3 .stack-card", MORPH_STEP3);
+  apt.stackLineGrow(tl, "#line-2-3", MORPH_STEP3);
+  apt.cardEnter(tl, "#card-step4 .solution-card", 124.8);
+  apt.textReveal(tl, "#card-step4 .math");
+  // fill the long algebra stretch with figure pulses tied to each re-mention
+  apt.emphasize(tl, "#label-x-solved-pinned", 131.52);
+  apt.emphasize(tl, "#label-y-solved-pinned", 132.4);
+  tl.to("#lighthouse-rect-pinned", { strokeWidth: 4, duration: 0.3, yoyo: true, repeat: 1 }, 138.4);
+  apt.emphasize(tl, "#arrow-h-pinned", 145.36);
+  apt.emphasize(tl, "#lighthouse-rect-pinned", 153.18);
+  // h confirmed - figure and equation answer land on the same frame
+  tl.to("#label-h-pinned", { opacity: 0, duration: 0.2 }, 157.4);
+  tl.fromTo("#label-h-solved-pinned", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 157.4);
+  tl.to("#lighthouse-rect-pinned", { stroke: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 157.4);
+  apt.emphasize(tl, "#label-h-solved-pinned", 159.0);
+  // final numeric flourish - x, y crossfade to actual numbers now h is known
+  tl.to("#label-x-solved-pinned", { opacity: 0, duration: 0.2 }, 159.6);
+  tl.fromTo("#label-x-final-pinned", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, 159.6);
+  tl.to("#label-y-solved-pinned", { opacity: 0, duration: 0.2 }, 160.2);
+  tl.fromTo("#label-y-final-pinned", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, 160.2);
+
+  // ── Recenter before options, Step 4 joins the stack ──
+  const RECENTER_TIME = 161.7;
+  const MORPH_STEP4 = 161.5;
+  apt.fadeOut(tl, "#illus-pinned", RECENTER_TIME);
+  apt.recenterForOptions(tl, "#q-pinned", 160, 180, RECENTER_TIME);
+  apt.morphToStack(tl, "#card-step4 .solution-card", "#stack-step4 .stack-card", MORPH_STEP4);
+  apt.stackLineGrow(tl, "#line-3-4", MORPH_STEP4);
+
+  // ── PHASE 3: options ──
+  apt.fadeIn(tl, "#options-reveal", 164.14);
+  apt.optionsStagger(tl, ".opt-btn", 164.7);
+  apt.correctPulse(tl, ".opt-btn.correct", 165.4);
+
+  // ── END FADE (narration ends 165.94) ──
+  const END_FADE_TIME = 166.54; // NARR_END 165.94 + 0.6
+  apt.fadeOut(tl, "#root > div", END_FADE_TIME, 1.2);
+  tl.set({}, {}, 169.94); // 166.54 + 1.2 + 0.2 - nothing beyond this
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines["root"] = tl;
+</script>
+</body>
+</html>

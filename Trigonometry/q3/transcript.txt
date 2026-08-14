@@ -1,0 +1,24 @@
+[00:00.10 -> 00:00.30]  So
+[00:00.76 -> 00:01.68]  welcome back again.
+[00:02.24 -> 00:03.96]  It's time to solve one more problem.
+[00:04.42 -> 00:05.86]  Now in this problem, we are given that
+[00:06.44 -> 00:07.72]  tan of theta
+[00:08.22 -> 00:10.24]  is equal to five divided by 12,
+[00:10.72 -> 00:12.52]  and theta is an acute angle.
+[00:13.00 -> 00:16.38]  The question is asking us to find the value of sine theta.
+[00:17.28 -> 00:18.06]  Tan of theta
+[00:18.38 -> 00:18.70]  means
+[00:19.16 -> 00:21.80]  opposite side divided by adjacent side.
+[00:22.28 -> 00:26.38]  So we can say opposite side divided by adjacent side is equal to five
+[00:26.80 -> 00:27.80]  divided by 12.
+[00:28.30 -> 00:34.14]  This means we can take the opposite side as five units and the adjacent side as 12 units.
+[00:34.74 -> 00:35.94]  Since we know these two sides,
+[00:36.38 -> 00:40.00]  we can find the hypotenuse using the Pythagoras theorem.
+[00:40.34 -> 00:42.50]  The hypotenuse is equal to the square root of
+[00:43.06 -> 00:44.68]  five square plus 12 square.
+[00:45.26 -> 00:46.34]  After simplifying this,
+[00:46.74 -> 00:49.08]  the hypotenuse is equal to 13.
+[00:49.50 -> 00:52.92]  We needed this value because sine theta means
+[00:53.58 -> 00:56.16]  opposite side divided by hypotenuse.
+[00:56.64 -> 01:00.30]  So sine theta is equal to five divided by 13.
+[01:01.14 -> 01:07.64]  Hence, the value of sine theta is five by 13, so the correct option is option C.

@@ -1,0 +1,31 @@
+[00:00.12 -> 00:00.36]  So
+[00:00.78 -> 00:01.70]  welcome back again.
+[00:02.24 -> 00:03.60]  It's time to solve one more problem.
+[00:03.96 -> 00:05.58]  In this problem, we have a tower.
+[00:06.08 -> 00:08.68]  From the ground, the angle of elevation to the top of the tower
+[00:09.20 -> 00:10.38]  is sixty degrees.
+[00:10.82 -> 00:13.90]  Then a person moves twenty meter upward along the same vertical line.
+[00:14.44 -> 00:17.28]  From there, the angle of elevation becomes thirty degrees.
+[00:17.84 -> 00:19.50]  We need to find the height of the tower.
+[00:19.92 -> 00:21.16]  Let the height of the tower be
+[00:21.48 -> 00:26.12]  h meter and let the horizontal distance from the observer to the tower be d meter.
+[00:26.62 -> 00:28.42]  Notice one important thing.
+[00:28.80 -> 00:31.00]  When the observer moves up by twenty meters,
+[00:31.46 -> 00:33.56]  the horizontal distance d remains the same.
+[00:34.10 -> 00:36.90]  Only the remaining height changes to h minus twenty.
+[00:37.60 -> 00:41.96]  So using ten sixty degrees, ten sixty degrees equal to
+[00:42.34 -> 00:49.38]  h upon d, and we know that ten sixty degrees is equal to root three. So now we have root three
+[00:49.82 -> 00:50.88]  equal to h upon d.
+[00:51.36 -> 00:53.86]  Rearranging this, d equal to h upon root three.
+[00:54.66 -> 00:58.20]  Now use the thirty-degree angle for remaining height is
+[00:58.50 -> 01:02.36]  h minus twenty. So ten thirty degrees equal to h minus twenty
+[01:03.00 -> 01:12.10]  upon d, and ten thirty degrees is equal to one upon root three. Substituting the value of d, one upon root three equal to h minus twenty
+[01:12.66 -> 01:14.06]  upon h by root three.
+[01:14.66 -> 01:15.54]  After simplifying,
+[01:16.00 -> 01:16.20]  two
+[01:16.60 -> 01:17.96]  h equal to sixty.
+[01:18.48 -> 01:18.96]  Therefore,
+[01:20.38 -> 01:21.26]  h equal to thirty.
+[01:22.14 -> 01:23.26]  Done and dusted.
+[01:23.66 -> 01:26.14]  Hence, the height of the tower is thirty meter.
+[01:26.72 -> 01:28.32]  So option C is the correct answer.

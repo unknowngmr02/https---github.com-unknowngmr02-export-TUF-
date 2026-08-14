@@ -1,0 +1,30 @@
+[00:00.12 -> 00:00.28]  So
+[00:00.74 -> 00:01.58]  welcome back again.
+[00:02.06 -> 00:03.56]  It's time to solve one more problem.
+[00:04.04 -> 00:04.82]  Now, in this problem,
+[00:05.30 -> 00:08.28]  a person is standing eighteen meter away from a pole.
+[00:08.84 -> 00:11.72]  The person's eye level is one point five meter above the ground,
+[00:12.12 -> 00:15.66]  and the angle of elevation from the eye to the top of the pole
+[00:16.12 -> 00:17.36]  is forty-five degrees.
+[00:17.72 -> 00:19.80]  We need to find the full height of the pole.
+[00:20.18 -> 00:24.86]  Let us take the height from the person's eye level to the top of the pole as
+[00:25.42 -> 00:26.00]  x meter.
+[00:26.46 -> 00:29.00]  Why are we taking only this upper part?
+[00:29.48 -> 00:33.60]  Because the angle of elevation starts from the person's eye,
+[00:34.12 -> 00:35.16]  not from the ground.
+[00:35.76 -> 00:36.98]  Now, look at the right triangle.
+[00:37.34 -> 00:44.26]  The horizontal distance between the person and the pole is eighteen meters, so this becomes the adjacent side.
+[00:44.72 -> 00:50.28]  The vertical height from the eye level to the top is x meter, so this becomes the opposite side.
+[00:50.78 -> 00:51.96]  Using the tan formula,
+[00:52.50 -> 00:55.62]  tan theta is equal to opposite divided by adjacent.
+[00:56.02 -> 00:59.66]  So tan forty-five degree is equal to x divided by eighteen.
+[01:00.16 -> 01:09.14]  We know that tan forty-five degree is equal to one, therefore one is equal to x divided by eighteen. This gives us x equal to eighteen meters.
+[01:09.76 -> 01:09.98]  Okay,
+[01:10.44 -> 01:13.86]  we have found the height of the pole above the person's eye level.
+[01:14.48 -> 01:15.04]  Are we done?
+[01:15.52 -> 01:15.94]  Not yet.
+[01:16.42 -> 01:21.38]  The question asks for the full height of the pole, so we must also add the person's eye level,
+[01:21.82 -> 01:23.28]  which is one point five meter.
+[01:23.86 -> 01:26.40]  The full height is eighteen plus one point
+[01:27.04 -> 01:29.22]  five, which is nineteen point five meter.
+[01:29.96 -> 01:36.54]  Hence, the height of the pole is nineteen point five meter. So the correct option is D.

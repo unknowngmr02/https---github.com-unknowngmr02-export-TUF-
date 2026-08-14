@@ -1,0 +1,23 @@
+[00:00.10 -> 00:00.26]  So
+[00:00.64 -> 00:01.46]  welcome back again.
+[00:02.20 -> 00:03.80]  It's time to solve one more problem.
+[00:04.18 -> 00:07.36]  In this problem, we are given that sine theta plus cos theta
+[00:07.90 -> 00:09.78]  is equal to seven by five,
+[00:10.08 -> 00:12.40]  and we need to find sine theta into cos theta.
+[00:12.78 -> 00:16.78]  Now, whenever we see sine theta plus cos theta together, there is one very useful trick.
+[00:17.12 -> 00:18.28]  We square both sides.
+[00:19.08 -> 00:24.10]  So sine theta plus cos theta whole square is equal to seven by five whole square.
+[00:24.60 -> 00:25.94]  After opening the bracket,
+[00:26.36 -> 00:27.84]  this becomes sine square theta
+[00:28.28 -> 00:32.00]  plus cos square theta plus two sine theta into cos theta
+[00:32.68 -> 00:34.56]  is equal to forty-nine by twenty-five.
+[00:35.02 -> 00:35.74]  Now, as we know,
+[00:36.36 -> 00:40.28]  the standard identity sine square theta plus cos square theta
+[00:40.82 -> 00:49.46]  is always equal to one, and it works for every angle. So we replace sine square theta plus cos square theta with one.
+[00:49.90 -> 01:01.04]  Now, the equation becomes one plus two sine theta into cos theta is equal to forty-nine by twenty-five. Now, the question is asking for the value of sine theta into cos theta.
+[01:01.38 -> 01:03.46]  So we need to isolate that term.
+[01:03.84 -> 01:11.38]  Subtracting one from both sides, we get two sine theta into cos theta is equal to twenty-four by twenty-five. Now divide both sides by two.
+[01:11.68 -> 01:16.30]  We get sine theta into cos theta is equal to twelve by twenty-five. Perfect.
+[01:17.26 -> 01:19.24]  So the final answer will be twelve by twenty-five.
+[01:19.90 -> 01:20.32]  Hence,
+[01:20.90 -> 01:22.30]  option D is the correct answer.

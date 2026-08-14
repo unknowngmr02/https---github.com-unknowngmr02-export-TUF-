@@ -1,0 +1,68 @@
+[00:00.08 -> 00:01.34]  So welcome back again.
+[00:01.82 -> 00:03.78]  It's time to solve one more problem.
+[00:04.26 -> 00:05.18]  Now, in this problem,
+[00:05.74 -> 00:07.94]  we have a building of height twelve meter.
+[00:08.58 -> 00:11.31]  We are standing at the top of this building. From there,
+[00:11.78 -> 00:15.89]  the angle of depression to the base of a tower is sixty degrees,
+[00:16.26 -> 00:20.84]  and the angle of elevation to the top of the tower is thirty degrees.
+[00:21.32 -> 00:23.72]  The problem is asking us to find the height of the tower.
+[00:24.30 -> 00:25.34]  So to make things simple,
+[00:25.84 -> 00:28.04]  let the distance between the building and the tower
+[00:28.54 -> 00:36.80]  be x. Now, why are we taking x? Because both the sixty-degree triangle and the thirty-degree triangle have the same horizontal distance.
+[00:37.20 -> 00:38.52]  So if we find x once,
+[00:39.08 -> 00:40.42]  we can use it again in the next
+[00:40.84 -> 00:41.06]  step.
+[00:41.50 -> 00:41.68]  Okay,
+[00:42.38 -> 00:43.16]  everything is clear.
+[00:43.88 -> 00:49.97]  Let us first focus on the sixty-degree angle. The height of the building is already given. It is twelve meter,
+[00:50.56 -> 00:51.94]  and the horizontal distance is
+[00:52.36 -> 00:52.42]  x.
+[00:53.02 -> 00:53.16]  Now,
+[00:53.78 -> 00:57.36]  the angle of depression from the top of the building to the bottom of the tower
+[00:57.86 -> 01:01.68]  is equal to the angle of elevation from the bottom of the tower
+[01:02.24 -> 01:03.70]  to the top of the building. So
+[01:04.14 -> 01:06.24]  we can directly use ten sixty degrees.
+[01:06.70 -> 01:07.74]  Ten sixty degrees
+[01:08.18 -> 01:09.50]  equal to twelve upon x.
+[01:09.90 -> 01:11.40]  We know that ten sixty degrees
+[01:11.78 -> 01:12.88]  is equal to root three.
+[01:13.36 -> 01:14.16]  So now we have
+[01:14.76 -> 01:15.22]  root three
+[01:15.76 -> 01:17.20]  equal to twelve upon x.
+[01:17.88 -> 01:19.58]  Then after solving this,
+[01:20.02 -> 01:22.38]  we get x equal to twelve upon root three,
+[01:22.92 -> 01:23.95]  and after simplifying,
+[01:24.56 -> 01:25.74]  x equal to four root three.
+[01:26.34 -> 01:26.52]  Done.
+[01:27.14 -> 01:29.11]  So the distance between the building and the tower
+[01:29.80 -> 01:31.58]  is four root three meter.
+[01:32.34 -> 01:34.42]  Now, this is exactly why we found x first,
+[01:34.78 -> 01:38.40]  because the same horizontal distance will help us find the extra height of the tower.
+[01:38.88 -> 01:39.04]  Okay,
+[01:39.56 -> 01:41.96]  let the part of the tower above the level of the building
+[01:42.54 -> 01:43.02]  be h.
+[01:43.48 -> 01:47.70]  Now we focus on the thirty-degree angle using ten thirty degrees.
+[01:48.12 -> 01:49.13]  Ten thirty degrees
+[01:49.58 -> 01:50.94]  equal to h upon four
+[01:51.64 -> 01:52.20]  root three.
+[01:52.69 -> 01:56.16]  And we know that ten thirty degrees is equal to one upon root three.
+[01:56.74 -> 01:58.99]  So now we have one upon root three
+[01:59.50 -> 02:01.12]  equal to h upon four root three.
+[02:01.72 -> 02:03.17]  Then after simplifying this,
+[02:03.72 -> 02:06.50]  we get h equal to four. Got it? Perfect.
+[02:07.00 -> 02:07.40]  But wait,
+[02:08.18 -> 02:09.86]  what does this four actually represent?
+[02:10.70 -> 02:12.64]  It is not the complete height of the tower.
+[02:13.20 -> 02:15.58]  It is only the extra height of the tower
+[02:16.08 -> 02:17.42]  above the level of the building.
+[02:17.88 -> 02:19.56]  This is where the question can trick us.
+[02:20.00 -> 02:22.42]  The building is already twelve meter high,
+[02:22.84 -> 02:26.10]  and the tower reaches another four meter above that level.
+[02:26.64 -> 02:26.76]  So
+[02:27.20 -> 02:28.74]  to find the complete height of the tower,
+[02:29.16 -> 02:30.46]  we have to add both of them.
+[02:31.00 -> 02:33.98]  Now we have tower height equal to twelve plus four,
+[02:34.46 -> 02:35.84]  which gives us sixteen meter.
+[02:36.74 -> 02:37.58]  Done and dusted.
+[02:37.94 -> 02:40.48]  So the height of the tower is sixteen meter.
+[02:41.02 -> 02:43.46]  Hence, the final answer will be option D.

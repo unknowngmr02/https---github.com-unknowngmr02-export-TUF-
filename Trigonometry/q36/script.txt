@@ -1,0 +1,117 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+Now, in this problem, we have a building of height 12 mee-ter.
+
+We are standing at the top of this building.
+
+From there, <break time="0.2s" /> the angle of depression to the base of a tower is 60 degrees.
+
+And the angle of elevation to the top of the tower is 30 degrees.
+
+The problem is asking us to find the height of the tower.
+
+So, to make things simple, <break time="0.2s" /> let the distance between the building and the tower be x.
+
+Now, why are we taking x?
+
+Because both the 60-degree triangle and the 30-degree triangle have the same horizontal distance.
+
+So, if we find x once, <break time="0.2s" /> we can use it again in the next step.
+
+Okey, everything is clear.
+
+<break time="0.5s" />
+
+Let us first focus on the 60-degree angle.
+
+The height of the building is already given.
+
+It is 12 mee-ter.
+
+And the horizontal distance is x.
+
+Now, the angle of depression from the top of the building to the bottom of the tower <break time="0.2s" /> is equal to the angle of elevation from the bottom of the tower to the top of the building.
+
+So, <break time="0.2s" /> we can directly use ten 60 degrees.
+
+ten 60 degrees <break time="0.2s" /> equal to 12 upon x.
+
+We know that ten 60 degrees is equal to root 3.
+
+So, now we have,
+
+Root 3 <break time="0.2s" /> equal to 12 upon x.
+
+Then, after solving this, we get
+
+x equal to 12 upon root 3.
+
+And after simplifying,
+
+x equal to 4 root 3.
+
+Done. <break time="0.3s" />
+
+So, the distance between the building and the tower is 4 root 3 mee-ter.
+
+<break time="0.5s" />
+
+Now, this is exactly why we found x first.
+
+Because the same horizontal distance will help us find the extra height of the tower.
+
+Okey, <break time="0 .2s" /> let the part of the tower above the level of the building be h.
+
+Now we focus on the 30-degree angle.
+
+Using ten 30 degrees,
+
+ten 30 degrees <break time="0.2s" /> equal to h upon 4 root 3.
+
+And we know that ten 30 degrees is equal to 1 upon root 3.
+
+So, now we have,
+
+1 upon root 3 <break time="0.2s" /> equal to h upon 4 root 3.
+
+Then, after simplifying this, <break time="0.2s" /> we get
+
+h equal to 4.
+
+Got it? <break time="0.2s" /> Perfect.
+
+But wait. <break time="0.3s" />
+
+What does this 4 actually represent?
+
+It is not the complete height of the tower.
+
+It is only the extra height of the tower <break time="0.2s" /> above the level of the building.
+
+This is where the question can trick us.
+
+The building is already 12 mee-ter high.
+
+And the tower reaches another 4 mee-ter above that level.
+
+So, <break time="0.2s" /> to find the complete height of the tower, we have to add both of them.
+
+Now we have,
+
+Tower height equal to
+
+12 plus 4.
+
+Which gives us
+
+16 mee-ter.
+
+<break time="0.6s" />
+
+Done and dusted.
+
+So, the height of the tower is
+
+16 mee-ter.
+
+Hence, the final answer will be <break time="0.2s" /> Option D.

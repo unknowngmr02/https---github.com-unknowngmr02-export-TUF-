@@ -1,0 +1,31 @@
+[00:00.12 -> 00:00.28]  So
+[00:00.64 -> 00:01.48]  welcome back again.
+[00:02.02 -> 00:03.68]  It's time to solve one more problem.
+[00:04.38 -> 00:05.22]  Now in this problem,
+[00:05.76 -> 00:07.64]  we are given an acute angle.
+[00:08.30 -> 00:09.00]  For this angle,
+[00:09.46 -> 00:11.08]  the opposite side is eight
+[00:11.52 -> 00:13.74]  and the hypotenuse is 17.
+[00:14.26 -> 00:16.10]  The question is asking us to find its tan.
+[00:16.72 -> 00:17.42]  For tan theta,
+[00:17.96 -> 00:19.60]  we need opposite by adjacent.
+[00:20.14 -> 00:23.08]  Opposite is already given, but adjacent is not given.
+[00:23.66 -> 00:24.28]  So first,
+[00:24.64 -> 00:26.32]  we have to find the adjacent side.
+[00:26.86 -> 00:28.22]  Let the adjacent side be
+[00:28.56 -> 00:28.68]  X.
+[00:29.22 -> 00:35.18]  Using Pythagoras theorem, hypotenuse square is equal to opposite square plus adjacent square.
+[00:35.72 -> 00:40.10]  So 17 square is equal to eight square plus X square.
+[00:40.52 -> 00:41.02]  That means
+[00:41.68 -> 00:42.64]  289 is equal to
+[00:42.96 -> 00:44.30]  64 plus X square.
+[00:44.84 -> 00:45.50]  So X square
+[00:46.02 -> 00:47.62]  is equal to 289 minus
+[00:47.94 -> 00:48.36]  64.
+[00:48.82 -> 00:49.80]  After subtracting,
+[00:50.40 -> 00:56.38]  X square is equal to 225, so X is equal to 15. Now we can find tan theta.
+[00:56.90 -> 00:59.12]  Tan theta is equal to opposite by adjacent.
+[00:59.60 -> 01:01.94]  So tan theta is equal to eight by 15.
+[01:02.76 -> 01:03.24]  Hence,
+[01:03.82 -> 01:07.00]  the tan of the angle is eight by 15.
+[01:07.80 -> 01:09.36]  So the correct option is option B.

@@ -1,0 +1,61 @@
+PENALTY / CHECK NOTE - read this before finishing any question build in this Trigonometry folder.
+
+Issue found in q9: card/illustration clip data-duration ended exactly AT their morphToStack/fadeOut start time, so the transition animation got cut mid-motion when the clip unmounted.
+
+Fix applied (q9 only, not a template-wide rule): extend each affected clip's data-duration by ~1.5-2s past its morph/fade completion time (morph = start+0.8s, fadeOut default ~0.4s), so the transition finishes fully before unmount.
+
+- card-given, card-step1, card-step2, card-step3 durations bumped
+- illus-pinned duration bumped (fadeOut at RECENTER_TIME needed room to finish)
+- stack-*, options-reveal, q-pinned were already fine (already ran clean to video end or matched exit point)
+
+Check for this same bug on every future question: any clip whose data-duration ends exactly at a morphToStack/fadeOut/pinFlow call needs +1.5-2s buffer past that transition's completion, or the animation will visibly cut off.
+
+Issue found in q10: illustration side/angle text labels got clipped ("Opposite" rendered as "Oppos") because the SVG viewBox was too tight around the label text, and the triangle itself rendered too small at default scale.
+
+Check for this same bug on every future question: size illustration text labels' containing viewBox with enough margin for the full label string at its font-size (don't just fit the geometry), and keep the theta arc's endpoint computed exactly from the true triangle angle (never hand-guess arc endpoint coordinates) so it stays precise even after rescaling.
+
+
+STANDARD (from q10 onward): render every angle arc with the CSS stroke-dasharray circle technique below, not a hand-built <path> arc. A full <circle> stroked only (fill="transparent"), dash length driven by a CSS custom property --angle (the EXACT angle in degrees, computed via acos/asin/atan from the known sides - never eyeballed), so the visible arc is always precisely theta degrees no matter how the illustration gets rescaled later.
+
+<circle
+  cx="VERTEX_X" cy="VERTEX_Y" r="RADIUS"
+  fill="transparent" stroke="#4eb85f" stroke-width="8" stroke-linecap="round"
+  transform="translate(0, calc(2*VERTEX_Y)) scale(1,-1)"
+  style="--angle: THETA_DEGREES; stroke-dasharray: calc((var(--angle) / 360) * CIRCUMFERENCE) CIRCUMFERENCE;"
+/>
+<!-- CIRCUMFERENCE = 2 * PI * RADIUS -->
+
+The transform vertically flips the circle about its own center so the stroke starts at 0deg (pointing +x, same direction as the adjacent/base ray) and sweeps UP toward the hypotenuse - without it, the default sweep goes clockwise/downward, off the triangle. Apply this to both the full-size Phase 1 illustration arc and the shrunk Phase 2 pinned-icon arc (same technique, smaller radius/circumference).
+
+Issue found in q12: the standard --angle stroke-dasharray circle technique (see above) was written with --angle given a "deg" unit (e.g. "--angle: 45deg"). calc((var(--angle) / 360) * CIRCUMFERENCE) then divides a <angle> by a plain <number> (360) - the deg unit does NOT cancel out, so the calc() result is itself an angle, not the length stroke-dasharray requires. That makes the whole stroke-dasharray value invalid CSS, which the browser silently ignores - the circle renders as a solid, complete ring instead of a partial arc. It looked identical to a correctly-drawn "full circle" bug at a glance, but the root cause was a unit mismatch, not a wrong angle value.
+
+Fix applied (q12): declare --angle as a bare unitless number (e.g. "--angle: 45", not "45deg") everywhere this technique is used - both the full-size Phase 1 arc and the shrunk Phase 2 pinned-icon arc. This matches how CIRCUMFERENCE itself is always written unitless (stroke-dasharray accepts plain numbers as SVG user units).
+
+Also found in q12: GSAP was used to additionally tween the same "--angle" custom property at runtime (`tl.to("#angle-arc", { "--angle": "45deg" }, time)`) on top of the static inline value. Animating a CSS custom property through GSAP's plain .to() is unreliable (no guaranteed unit/interpolation handling for custom properties without registering them), and it duplicated work the opacity fade-in already did. Removed the GSAP tween entirely - the arc's final angle is set once, statically, in the markup; only opacity is animated to reveal it. This is now the standard: do not GSAP-tween the --angle custom property, only fade its opacity in.
+
+Check for this same bug on every future question: when writing the --angle circle technique, always use a bare unitless number for --angle (never "Ndeg"), and never GSAP-tween --angle - only fade the element's opacity.
+
+Issue found in q16: the theta arc (stroke-dasharray circle technique) rendered as a tiny sliver curling away from the triangle instead of sweeping up to the hypotenuse. Root cause: the angle vertex was placed on the RIGHT of the triangle with its base ray pointing -x (toward a right-angle vertex further left), but the arc's 0deg start always points +x. Start ray and arc-start direction were pointing opposite ways, so the visible short arc opened away from the triangle entirely.
+
+Fix applied (q16): always place the angle vertex on the LEFT of the triangle so its base/adjacent ray points +x (toward the right-angle vertex, which sits to the right), matching the arc's 0deg start direction. Also build each triangle's side lengths true to its actual angle (e.g. for 30 degrees, perp/base = tan(30) = 1/root3; for 60 degrees, perp/base = tan(60) = root3) rather than eyeballing similar-looking triangles - this keeps the drawn angle visually consistent with its arc and label.
+
+Check for this same bug on every future question using the theta arc technique: before drawing, confirm the base/adjacent ray direction from the angle vertex is +x (angle vertex on the left, right-angle vertex on the right), and compute side lengths from the actual angle's tan/sin/cos ratio, never approximate proportions.
+
+MANDATORY PRE-FLIGHT CHECKLIST - ANGLE ARC / TRIANGLE GEOMETRY (added after q10/q12/q16 all shipped variants of the same bug class): before writing ANY <circle> theta-arc or right-triangle SVG in this Trigonometry folder, work through these in order, in a comment right above the geometry, not silently in your head:
+
+1. State the three vertex coordinates explicitly: angle-vertex, right-angle-vertex, apex. Angle-vertex MUST be the leftmost of the two base vertices (base ray then points +x, matching the arc's fixed 0deg start direction). If a question needs the mirror image, mirror the WHOLE triangle (flip both the arc's cx and re-derive which vertex is "left") - never leave the arc start pointing away from the base ray.
+2. Compute side lengths from the real ratio, not eyeballed proportions: base = adjacent, perp = adjacent * tan(angle). Write the arithmetic out in a comment, e.g. "30deg: base=130, perp=130*tan(30)=75.05->75".
+3. Compute the arc's actual swept angle from the same coordinates you just drew - atan2(perp, base) - and write it in a comment next to the <circle>, e.g. "<!-- computed atan2(75,130)=29.98deg, --angle:30 matches -->". If the written --angle value and this computed check don't match to within ~1deg, the geometry is wrong - stop and re-derive, don't ship it.
+4. Confirm --angle is a bare unitless number (never "Ndeg") and is only opacity-faded, never GSAP-tweened (q12 fix, still applies).
+5. Do this same 4-step check TWICE per question if there are two triangles/arcs (e.g. two different angles compared side by side) - each one is a separate derivation, not a mirrored copy of the other's numbers.
+
+GENERAL PRECISION STANDARD - ALL SVG GEOMETRY (lines, right-angle marks, labels, viewBox), not just theta arcs:
+
+1. stroke-dasharray/stroke-dashoffset on any drawn line MUST equal the actual pixel length of that line, computed as sqrt((x2-x1)^2+(y2-y1)^2), never rounded loosely or copy-pasted from a different line. Write the computed value in a trailing comment on the same line, e.g. `<!-- len=sqrt(130^2+75^2)=150.06 -->`. A dasharray shorter than the real length draws a visibly incomplete stroke; longer leaves a dangling offset gap.
+2. The right-angle marker (the small square/path at a 90deg corner) must be built from the SAME two ray directions as the two sides meeting there, offset by one fixed inset (e.g. 15px) along each ray - never hand-guess its three points independently of the actual line coordinates it's supposed to mark. If a side's endpoint coordinates change, the marker's points must be re-derived, not left stale.
+3. Every vertex used in more than one place (a line endpoint, an arc center, a label anchor, the right-angle marker) must be defined ONCE as a coordinate pair in a comment at the top of the illustration block, then reused literally everywhere - never restate the "same" point with slightly different numbers in different tags. Mismatched restatements are how corners stop lining up after edits.
+4. viewBox must be sized from the actual geometry's bounding box (min/max x and y across every vertex, arc radius, and label extent) plus a fixed margin (~30-40px) for the widest label string at its font-size - compute min/max explicitly in a comment, don't pick round numbers that "look like they'll fit" (this is what caused the q10 label-clipping bug; the same discipline now applies to line/arc extents too, not just labels).
+5. When a full-size Phase-1 illustration is duplicated as a smaller Phase-2 pinned icon, the pinned copy's viewBox and all internal coordinates must be an EXACT copy of the full-size one (same numbers), with only the outer `width`/`height` attributes shrunk - never a separately-eyeballed redraw at smaller coordinates. Redrawing from scratch at "roughly the same shape but smaller" is exactly how full-size and pinned versions drift apart.
+6. Before marking a question's illustration done, re-read every coordinate you wrote against the comment-stated vertex list from rule 3 and confirm no tag uses a number that isn't traceable to that list.
+
+WORKFLOW GATE - read before starting: before writing a storyboard.md OR building index.html for any question in this Trigonometry folder, first read this penelty.txt (or the equivalent <Topic>/penelty.txt in another topic folder) top to bottom and apply every standing fix/standard listed here. This applies to every future question, not just the ones where the issue was first found. See also _template/README.md Step 4A / Step 5A, which now cross-reference this gate.

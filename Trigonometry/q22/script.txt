@@ -1,0 +1,67 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+Now in this problem, two points are on the same side of a balloon.
+The distance between these two points is 100 mee-ter.
+
+From one point, the angle of elevation is 60 degree.
+From the other point, the angle of elevation is 30 degree.
+
+The nearer point has the bigger angle, that is 60 degree.
+And we need to find the height of the balloon.
+
+Let the distance from the nearer point to the point exactly below the balloon be x mee-ter.
+So the distance from the farther point will be x pluss 100 mee-ter.
+
+<break time="0.5s" />
+
+Now we will use the ten formula.
+
+because it deals with the base and height so<break time="0.2s" /> 
+
+Ten theta is equal to height by base.<break time="0.2s" /> 
+
+From the nearer point,<break time="0.2s" /> 
+
+ten 60 degree is equal to h by x.<break time="0.2s" /> 
+
+Root 3 is equal to h by x.<break time="0.2s" /> 
+
+So h is equal to x root 3.<break time="0.2s" /> 
+
+Keep this height with us for a second.
+
+<break time="0.2s" />
+
+From the farther point,<break time="0.2s" /> 
+
+ten 30 degree is equal to h by x pluss 100.<break time="0.2s" /> 
+
+1 by root 3 is equal to h by x pluss 100.<break time="0.2s" /> 
+
+So h is equal to x pluss 100 by root 3.<break time="0.2s" /> 
+
+Now both these expressions are for the same height of the same balloon.<break time="0.2s" /> 
+So we can make them equal.<break time="0.2s" /> 
+
+x root 3 is equal to x pluss 100 by root 3.<break time="0.2s" /> 
+
+Multiplying both sides by root 3, this becomes,<break time="0.2s" /> 
+
+3x is equal to x pluss 100.<break time="0.2s" /> 
+
+So 2x is equal to 100.<break time="0.2s" /> 
+
+Hence, x is equal to 50.
+
+<break time="0.2s" />
+
+Now we are not asked for x.
+We are asked for the height of the balloon.
+
+And height h is equal to x root 3.
+
+So h is equal to 50 root 3 mee-ter.
+
+<break time="0.6s" />
+
+So the final answer will be option D, "50 root 3 mee-ter".

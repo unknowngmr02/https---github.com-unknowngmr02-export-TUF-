@@ -1,0 +1,36 @@
+[00:00.12 -> 00:00.30]  So
+[00:00.96 -> 00:01.74]  welcome back again.
+[00:02.32 -> 00:04.78]  It's time to solve one more problem. In this problem,
+[00:05.32 -> 00:07.78]  a person is standing at a certain distance from a tower.
+[00:08.34 -> 00:10.54]  The angle of elevation of the top of the tower is
+[00:10.98 -> 00:11.80]  thirty degrees.
+[00:12.30 -> 00:14.52]  Then the person walks twenty meters towards the tower.
+[00:15.04 -> 00:16.84]  Now the angle becomes forty-five degrees,
+[00:17.40 -> 00:19.22]  and we need to find the height of the tower.
+[00:19.70 -> 00:22.66]  Let the distance from the tower after walking be x,
+[00:23.02 -> 00:25.30]  so the initial distance becomes x plus twenty.
+[00:25.86 -> 00:27.26]  Let the height of the tower be
+[00:27.60 -> 00:27.66]  h.
+[00:28.42 -> 00:28.60]  Now,
+[00:29.14 -> 00:32.84]  let us start with the second position where the angle is forty-five degrees.
+[00:33.30 -> 00:35.54]  Here we know the opposite side and the adjacent side.
+[00:35.96 -> 00:39.86]  So tan theta is the right trigonometric ratio to use.
+[00:40.38 -> 00:42.52]  Tan theta is equal to height by base.
+[00:43.02 -> 00:45.12]  Tan forty-five degrees is equal to h by
+[00:45.44 -> 00:45.46]  x.
+[00:45.90 -> 00:49.26]  We know tan forty-five degrees is one, so h by x is equal to one,
+[00:49.70 -> 00:50.68]  which means
+[00:51.06 -> 00:52.22]  h is equal to
+[00:52.56 -> 00:52.60]  x.
+[00:53.04 -> 00:53.54]  Got it?
+[00:54.06 -> 00:56.18]  Perfect. Now keep this value with us.
+[00:56.54 -> 00:58.04]  We will use it in the next step.
+[00:58.54 -> 01:03.30]  Now let us use the first position where the angle is thirty degrees. Again, we will use tan theta.
+[01:03.74 -> 01:09.56]  Tan thirty degree is equal to h by x plus twenty. We know tan thirty degree is one by root three.
+[01:10.04 -> 01:13.00]  So one by root three is equal to h by x plus twenty.
+[01:13.66 -> 01:17.14]  Since we already know h is equal to x, we replace x with h.
+[01:17.60 -> 01:20.24]  This becomes one by root three is equal to h by
+[01:20.58 -> 01:25.16]  h plus twenty. Cross-multiplying h plus twenty is equal to root three h.
+[01:25.66 -> 01:26.60]  So twenty is equal to
+[01:26.90 -> 01:33.84]  h into root three minus one. Therefore, h is equal to twenty by root three minus one. Now rationalize the denominator.
+[01:34.32 -> 01:47.58]  We get h is equal to ten into root three plus one. Done and dusted. So the final answer will be ten into root three plus one meter. Hence, option B is correct.

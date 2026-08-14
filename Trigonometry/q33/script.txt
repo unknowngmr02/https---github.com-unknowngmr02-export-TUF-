@@ -1,0 +1,133 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+
+Now in this problem, a person is standing at a window which is 10 mee-ter above the ground.
+
+
+From that window, the angle of elevation to the top of the tower is 30 degrees.
+
+
+And the angle of depression to the foot of the tower is 45 degrees.
+
+
+What do we need to find?
+
+
+We need to find the total height of the tower.
+
+
+A small diagram will make this very easy.
+
+
+Draw the window 10 mee-ter above the ground.
+
+
+From the window, draw a line going down to the foot of the tower. This makes an angle of depression of 45 degrees.
+
+
+Also draw a line going up to the top of the tower. This makes an angle of elevation of 30 degrees.
+
+
+<break time="0.5s" />
+
+
+Let the horizontal distance between the building and the tower be x.
+
+
+First, let us use the 45-degree angle.
+
+
+For the triangle formed with the foot of the tower,
+
+
+ten 45 degree equal to Opposite side upon Adjacent side
+
+
+Here, the opposite side is equal to the hight of window which is 10 mee-ter, and the adjacent side is x.
+
+
+So,
+
+
+1 equal to 10 upon x
+
+
+This gives
+
+
+x equal to 10 mee-ter.
+
+
+Got it? Perfect.
+
+
+We have found the distance between the building and the tower.
+
+
+<break time="0.2s" />
+
+
+Now that we know the distance, we can use it to find the extra height of the tower above the window level.
+
+
+Let that extra height be h.
+
+
+Now For the 30-degree triangle,
+
+
+ten 30 degree equal to h upon 10
+
+
+We know that
+
+
+ten 30° is equal to 1 upon root 3
+
+
+So,
+
+
+1 upon  root 3 is equal to h upon 10
+
+
+After solving this we get 
+
+
+h equal to 10 upon root 3 mee-ter.
+
+
+Done.
+
+
+<break time="0.2s" />
+
+
+But be very sure about one thing.
+
+
+This is not the total height of the tower.
+
+
+This is only the part of the tower which is above the window.
+
+
+The window itself is already 10 mee-ter above the ground.
+
+
+So total tower height becomes
+
+
+10 plus 10 upon root 3 mee-ter.
+
+
+<break time="0.6s" />
+
+
+Hence, the final answer will be
+
+
+10 + 10/√3 mee-ter.
+
+
+So the correct option is Option A.

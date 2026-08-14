@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="design-system.css">
+<style>
+  .fig-chip {
+    display: inline-block;
+    background: #FFFFFF;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  .fig-chip.hyp { border-color: #000000; color: #000000; }
+  .fig-chip.theta { border-color: var(--success); color: var(--success); font-size: 24px; }
+</style>
+</head>
+<body>
+<div data-hf-id="hf-89uj" id="root" data-composition-id="root" data-start="0" data-width="1920" data-height="1080">
+
+  <!-- ══════ BACKGROUND LAYERS (always visible) ══════ -->
+  <div data-hf-id="hf-858h" class="dotted-grid"></div>
+  <div data-hf-id="hf-izuk" class="bottom-strip"></div>
+  <div data-hf-id="hf-ql9k" class="topic-name">Trigonometry</div>
+  <div data-hf-id="hf-e319" class="logo"></div>
+
+  <!-- ══════ VOICEOVER ══════ -->
+  <audio data-hf-id="hf-f4n9" id="voiceover" class="clip" src="voiceover.wav" data-start="0" data-duration="44.14" data-track-index="0"></audio>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 1 - Question + Illustration (0-10.66s)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-rvrz" id="phase1" class="clip" data-start="0" data-duration="12.2" data-track-index="1" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:5;">
+
+    <div data-hf-id="hf-lxc5" id="q-full-card" class="q-card" style="position:absolute;left:50%;top:80px;width:1500px;transform:translateX(-50%);opacity:0;">
+      <div data-hf-id="hf-jox3" class="q-text">
+        Find <span data-hf-id="hf-peee" class="num">sin² 30°</span> + <span data-hf-id="hf-0wjx" class="num">cos² 30°</span>.
+      </div>
+    </div>
+
+    <div data-hf-id="hf-w62k" id="serial-num" class="serial-num" style="left:60px;top:60px;opacity:0;">
+      <div data-hf-id="hf-yfde" class="digit">Q</div>
+    </div>
+
+    <!-- ILLUSTRATION - right triangle with hypotenuse 1, showing the two
+         legs sin30deg and cos30deg that the identity relates.
+         VERTICES (defined once, reused literally everywhere):
+           A = (150,400)     angle vertex (leftmost base vertex)
+           B = (340.53,400)  right-angle vertex
+           C = (340.53,290)  apex
+         RATIO CHECK: hyp(A-C) chosen = 220 (represents the unit "1").
+           adjacent(A-B) = 220*cos(30deg) = 190.53
+           opposite(B-C) = 220*sin(30deg) = 110.00
+         ANGLE CHECK: atan2(110,190.53) = 30.00deg -> --angle: 30 (exact by construction)
+         LENGTH CHECK: hyp = sqrt(190.53^2 + 110^2) = 220.00 -> dasharray 220
+         VIEWBOX: covers x[60..470] y[240..460] + label margin -> "0 0 520 500" -->
+    <div data-hf-id="hf-bti0" id="illustration" style="position:absolute;left:50%;top:20px;transform:translateX(-50%);width:780px;opacity:1;">
+      <svg data-hf-id="hf-py7y" viewBox="0 0 520 500" width="780" height="750" style="overflow:visible;">
+        <!-- adjacent side A-B, len=190.53 -->
+        <line data-hf-id="hf-nqi6" id="tri-base" x1="150" y1="400" x2="340.53" y2="400" stroke="#6373db" stroke-width="5" stroke-linecap="round" stroke-dasharray="190.53" stroke-dashoffset="190.53" />
+        <!-- hypotenuse A-C, len=220.00 (represents "1") -->
+        <line data-hf-id="hf-r82a" id="tri-hyp" x1="150" y1="400" x2="340.53" y2="290" stroke="#000000" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="6 6" opacity="0" />
+        <!-- opposite side B-C, len=110.00 -->
+        <line data-hf-id="hf-z6q2" id="tri-perp" x1="340.53" y1="400" x2="340.53" y2="290" stroke="#6373db" stroke-width="5" stroke-linecap="round" stroke-dasharray="110" stroke-dashoffset="110" />
+        <!-- right-angle marker at B: rays -x toward A, -y toward C, inset 20 -->
+        <path data-hf-id="hf-lckj" id="right-angle" d="M 320.53 400 L 320.53 380 L 340.53 380" fill="none" stroke="#000000" stroke-width="3" opacity="0" />
+        <!-- angle arc: cx/cy = angle vertex A exactly. r=70, C=2*PI*70=439.8.
+             translate(0, 2*cy)=translate(0,800). --angle:30 bare number.
+             dasharray = (30/360)*439.8 = 36.65 -->
+        <circle data-hf-id="hf-6w2q" id="angle-arc" cx="150" cy="400" r="70" fill="transparent" stroke="#4eb85f" stroke-width="7" stroke-linecap="round" transform="translate(0, 800) scale(1,-1)" style="--angle: 30; stroke-dasharray: calc((var(--angle) / 360) * 439.8) 439.8; opacity:0;" />
+
+        <foreignobject data-hf-id="hf-uz4k" id="chip-hyp" x="200" y="305" width="60" height="44" style="overflow:visible;opacity:0;">
+          <div data-hf-id="hf-lrt8" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip hyp">1</div>
+        </foreignobject>
+        <foreignobject data-hf-id="hf-gtqt" id="chip-sin" x="356" y="328" width="120" height="44" style="overflow:visible;opacity:0;">
+          <div data-hf-id="hf-wj27" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip">sin 30°</div>
+        </foreignobject>
+        <foreignobject data-hf-id="hf-6fj9" id="chip-cos" x="188" y="412" width="120" height="44" style="overflow:visible;opacity:0;">
+          <div data-hf-id="hf-0q66" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip">cos 30°</div>
+        </foreignobject>
+        <foreignobject data-hf-id="hf-5ns8" id="chip-theta" x="176" y="360" width="66" height="40" style="overflow:visible;opacity:0;">
+          <div data-hf-id="hf-om5p" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip theta">30°</div>
+        </foreignobject>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 2 - Pinned question (9.86s onwards)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-yeq7" id="q-pinned" class="clip" data-start="9.86" data-duration="34.3" data-track-index="2" style="position:absolute;width:100%;top:0;left:0;z-index:6;opacity:0;">
+    <div data-hf-id="hf-9jf4" class="q-card pinned" style="position:absolute;left:385px;top:30px;width:1275px;">
+      <div data-hf-id="hf-9ll3" class="q-text">
+        Find <span data-hf-id="hf-pfai" class="num">sin² 30°</span> + <span data-hf-id="hf-jw1t" class="num">cos² 30°</span>.
+      </div>
+    </div>
+  </div>
+
+  <!-- Pinned illustration - exact coordinate copy of the full-size figure,
+       only outer width/height shrunk (per illustration_reference.md canvas
+       contract). Static geometry (no opacity:0 on lines/arc) since it only
+       appears once the full-size version has already drawn in. -->
+  <div data-hf-id="hf-wy7y" id="illus-pinned" class="clip" data-start="9.86" data-duration="30.0" data-track-index="3" style="position:absolute;left:700px;top:-200px;width:720px;height:692px;z-index:5;opacity:0;">
+    <svg data-hf-id="hf-wdv5" viewBox="0 0 520 500" width="720" height="692" style="overflow:visible;">
+      <line data-hf-id="hf-fkcc" x1="150" y1="400" x2="340.53" y2="400" stroke="#6373db" stroke-width="4" stroke-linecap="round" />
+      <line data-hf-id="hf-j51c" x1="150" y1="400" x2="340.53" y2="290" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-dasharray="5 5" />
+      <line data-hf-id="hf-wor6" x1="340.53" y1="400" x2="340.53" y2="290" stroke="#6373db" stroke-width="4" stroke-linecap="round" />
+      <path data-hf-id="hf-sbo7" d="M 320.53 400 L 320.53 380 L 340.53 380" fill="none" stroke="#000000" stroke-width="2.5" />
+      <circle data-hf-id="hf-tbo2" id="angle-arc-pinned" cx="150" cy="400" r="70" fill="transparent" stroke="#4eb85f" stroke-width="6" stroke-linecap="round" transform="translate(0, 800) scale(1,-1)" style="--angle: 30; stroke-dasharray: calc((var(--angle) / 360) * 439.8) 439.8;" />
+      <foreignobject data-hf-id="hf-5cm8" x="200" y="305" width="60" height="44" style="overflow:visible;">
+        <div data-hf-id="hf-6dd0" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip hyp">1</div>
+      </foreignobject>
+      <foreignobject data-hf-id="hf-yzqe" id="chip-sin-pinned" x="356" y="328" width="120" height="44" style="overflow:visible;">
+        <div data-hf-id="hf-a9vj" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip">sin 30°</div>
+      </foreignobject>
+      <foreignobject data-hf-id="hf-eevw" id="chip-cos-pinned" x="188" y="412" width="120" height="44" style="overflow:visible;">
+        <div data-hf-id="hf-fs6a" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip">cos 30°</div>
+      </foreignobject>
+      <foreignobject data-hf-id="hf-20el" id="chip-theta-pinned" x="176" y="360" width="66" height="40" style="overflow:visible;">
+        <div data-hf-id="hf-ag9t" xmlns="http://www.w3.org/1999/xhtml" class="fig-chip theta">30°</div>
+      </foreignobject>
+    </svg>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SOLUTION CARDS
+       ══════════════════════════════════════════════ -->
+
+  <!-- GIVEN - the observation (same angle) + the general identity -->
+  <div data-hf-id="hf-ze5j" id="card-given" class="clip" data-start="10.66" data-duration="17.1" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-f272" class="solution-card" style="position:absolute;left:640px;top:440px;text-align:center;">
+      <div data-hf-id="hf-3rv6" class="card-content">
+        <span data-hf-id="hf-7r0o" class="chip">Given</span>
+        <div data-hf-id="hf-8tlu" class="math">
+          <span data-hf-id="hf-elqs" class="rv" data-t="10.66">sin 30° and cos 30° have the same angle</span><br data-hf-id="hf-x5px">
+          <span data-hf-id="hf-ag93" class="rv" data-t="19.26">sin²θ</span> <span data-hf-id="hf-y8hv" class="rv" data-t="20.94">+</span> <span data-hf-id="hf-04oq" class="rv" data-t="21.50">cos²θ</span> <span data-hf-id="hf-6w96" class="rv" data-t="23.94">=</span> <span data-hf-id="hf-t5xa" class="hi rv" data-t="24.34">1</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 1 - direct substitution -->
+  <div data-hf-id="hf-lcay" id="card-step1" class="clip" data-start="25.30" data-duration="14.2" data-track-index="5" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-a1ig" class="solution-card" style="position:absolute;left:640px;top:460px;text-align:center;">
+      <div data-hf-id="hf-0yza" class="card-content">
+        <span data-hf-id="hf-3ife" class="chip">Step 1</span>
+        <div data-hf-id="hf-ng7a" class="math">
+          <span data-hf-id="hf-31zg" class="rv" data-t="26.62">sin²30°</span>
+          <span data-hf-id="hf-kv70" class="rv" data-t="28.06">+</span>
+          <span data-hf-id="hf-oxy4" class="rv" data-t="28.34">cos²30°</span>
+          <span data-hf-id="hf-6860" class="rv" data-t="30.70">=</span>
+          <span data-hf-id="hf-wea5" class="ans rv" data-t="31.12">1</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       LEFT STACK CARDS
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-tb2s" id="stack-given" class="clip" data-start="25.30" data-duration="18.8" data-track-index="11" style="position:absolute;left:100px;top:140px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-usjn" class="stack-card">
+      <div data-hf-id="hf-1dab" class="card-content">
+        <span data-hf-id="hf-snhl" class="step-circle">G</span>
+        <div data-hf-id="hf-o0ad" class="math">
+          sin²θ + cos²θ = <span data-hf-id="hf-v2of" class="hi">1</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-fwqo" id="stack-step1" class="clip" data-start="37.16" data-duration="7.0" data-track-index="12" style="position:absolute;left:100px;top:290px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-3m9v" class="stack-card">
+      <div data-hf-id="hf-1rlc" class="card-content">
+        <span data-hf-id="hf-w2db" class="step-circle">1</span>
+        <div data-hf-id="hf-mfyt" class="math">
+          sin²30° + cos²30° = <span data-hf-id="hf-1cve" class="ans">1</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-e93v" id="line-g-1" class="clip stack-line" data-start="37.16" data-duration="7.0" data-track-index="15" style="opacity:0;"></div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 3 - OPTIONS REVEAL
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-zrxu" id="options-reveal" class="clip" data-start="38.46" data-duration="5.7" data-track-index="10" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:8;opacity:0;">
+    <div data-hf-id="hf-2tfv" class="pinned-col" style="top:400px;">
+      <div data-hf-id="hf-6knj" class="options-grid">
+        <div data-hf-id="hf-zb8u" class="opt-btn"><span data-hf-id="hf-sfug" class="letter">A</span>1/2</div>
+        <div data-hf-id="hf-rf9i" class="opt-btn"><span data-hf-id="hf-r8xd" class="letter">B</span>3/4</div>
+        <div data-hf-id="hf-2fn1" class="opt-btn correct"><span data-hf-id="hf-rn8e" class="letter">C</span>1</div>
+        <div data-hf-id="hf-5lka" class="opt-btn"><span data-hf-id="hf-qgbb" class="letter">D</span>2</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end root -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script src="animations.js"></script>
+<script>
+  apt.setStackLine("#line-g-1", "#stack-given .step-circle", "#stack-step1 .step-circle");
+
+  const tl = gsap.timeline({ paused: true });
+
+  // PHASE 1 - Question reveal
+  const HERO_OFFSET_Y = 180;
+  const RISE_TIME = 3.58; // end of "one more problem."
+  apt.heroEnterLowered(tl, "#q-full-card", HERO_OFFSET_Y, RISE_TIME);
+
+  tl.fromTo("#serial-num",
+    { scale: 0, rotation: -45, opacity: 0, y: HERO_OFFSET_Y },
+    { scale: 1, rotation: 0, opacity: 1, y: HERO_OFFSET_Y, duration: 0.55, ease: "back.out(2)" },
+    0.8);
+  tl.to("#serial-num", { y: 0, duration: 0.6, ease: "power2.inOut" }, RISE_TIME);
+
+  // Illustration builds stroke-by-stroke while the question is read aloud
+  // (narration: "we need to find sin squared 30 degree plus cos squared 30 degree").
+  tl.to("#tri-base", { strokeDashoffset: 0, duration: 0.6, ease: "power2.out" }, 4.12);
+  tl.fromTo("#tri-hyp", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.out" }, 5.02);
+  tl.to("#tri-perp", { strokeDashoffset: 0, duration: 0.5, ease: "power2.out" }, 5.74);
+  tl.to("#right-angle", { opacity: 1, duration: 0.3 }, 5.90);
+  tl.to("#angle-arc", { opacity: 1, duration: 0.4 }, 6.68);
+  tl.fromTo("#chip-theta", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, 6.68);
+  tl.fromTo("#chip-hyp", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, 7.26);
+  tl.fromTo("#chip-sin", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(1.6)" }, 8.12);
+  tl.fromTo("#chip-cos", { opacity: 0, y: 6 }, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(1.6)" }, 9.08);
+
+  // PHASE 2 - Pin (question + triangle glide together into the pinned slots)
+  const PIN_TIME = 9.86;
+  const GIVEN_TIME = 10.66; // "Here, both sin and cos..." narration starts
+
+  apt.pinFlow(tl, "#q-full-card", "#q-pinned", PIN_TIME);
+  apt.pinFlow(tl, "#illustration", "#illus-pinned", PIN_TIME);
+  apt.fadeOut(tl, "#serial-num", PIN_TIME, 0.5);
+
+  apt.cardEnter(tl, "#card-given .solution-card", GIVEN_TIME);
+  apt.textReveal(tl, "#card-given .math");
+
+  // LINK - as the identity's theta terms reveal, pulse the pinned figure's
+  // angle arc + theta chip to tie the abstract identity back to the drawn angle.
+  tl.to("#angle-arc-pinned", { stroke: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 19.26);
+  apt.emphasize(tl, "#chip-theta-pinned", 19.26);
+
+  // Given -> stack, right as the bridging phrase "So directly," begins
+  apt.morphToStack(tl, "#card-given .solution-card", "#stack-given .stack-card", 25.30);
+
+  apt.cardEnter(tl, "#card-step1 .solution-card", 25.30);
+  apt.textReveal(tl, "#card-step1 .math");
+
+  // LINK - the substitution (theta -> 30deg) lands on the pinned figure's
+  // labels at the same beat Step 1's numbers reveal.
+  tl.to("#chip-sin-pinned", { color: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 26.62);
+  apt.emphasize(tl, "#chip-sin-pinned", 26.62);
+  tl.to("#chip-cos-pinned", { color: "#4eb85f", duration: 0.3, yoyo: true, repeat: 1 }, 28.34);
+  apt.emphasize(tl, "#chip-cos-pinned", 28.34);
+
+  // Reinforce the "no need to compute separately" line by re-pulsing the
+  // already-revealed answer, holding the card alive through beat 6.
+  apt.emphasize(tl, "#card-step1 .ans", 31.86);
+
+  // Step 1 -> stack, right as "Hence," begins
+  apt.morphToStack(tl, "#card-step1 .solution-card", "#stack-step1 .stack-card", 37.16);
+  apt.stackLineGrow(tl, "#line-g-1", 37.16);
+
+  const RECENTER_TIME = 37.96;
+  apt.fadeOut(tl, "#illus-pinned", RECENTER_TIME);
+  apt.recenterForOptions(tl, "#q-pinned", 160, 180, RECENTER_TIME);
+
+  // PHASE 3 - Options reveal
+  apt.fadeIn(tl, "#options-reveal", 38.46);
+  apt.optionsStagger(tl, ".opt-btn", 38.86);
+  apt.correctPulse(tl, ".opt-btn.correct", 42.06);
+
+  // END FADE - NARR_END 42.139 + 0.6 = 42.74
+  const END_FADE_TIME = 42.74;
+  apt.fadeOut(tl, "#root > div", END_FADE_TIME, 1.2);
+
+  tl.set({},{},45.14)
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines["root"] = tl;
+</script>
+</body>
+</html>

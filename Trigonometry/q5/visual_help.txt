@@ -1,0 +1,15 @@
+🎬 Visual Help (Animation Timeline)
+Voice	Visual
+"ladder of length 10 meter"	Ground appears → Wall appears → Ladder slides and leans against wall. Label 10 m on ladder.
+"angle of sixty degree"	Angle arc appears at the bottom with 60°.
+"find how high..."	Question mark appears on the wall.
+"forms a right triangle"	Right-angle marker pops up. Triangle outline glows.
+"ladder is the hypotenuse"	Ladder highlights in yellow with Hypotenuse label.
+"height is the opposite side"	Vertical wall side highlights green. Label Height = ?
+"ground is adjacent"	Ground side highlights blue.
+"sign theta..."	Formula slides in beside the triangle.
+"putting the values"	Formula morphs into Sign 60 = Height / 10.
+"standard value"	Replace Sign 60 with Root 3 / 2 using a smooth morph.
+"multiply both sides by ten"	Number 10 flies across both sides showing multiplication.
+"height becomes..."	Everything simplifies into Height = 5√3 m. Animate the answer with a glow.
+"Option A"	Highlight Option A in green.

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="design-system.css">
+</head>
+<body>
+<div data-hf-id="hf-89uj" id="root" data-composition-id="root" data-start="0" data-width="1920" data-height="1080">
+
+  <!-- ══════ BACKGROUND LAYERS (always visible) ══════ -->
+  <div data-hf-id="hf-858h" class="dotted-grid"></div>
+  <div data-hf-id="hf-izuk" class="bottom-strip"></div>
+  <div data-hf-id="hf-ql9k" class="topic-name">Trigonometry</div>
+  <div data-hf-id="hf-e319" class="logo"></div>
+
+  <!-- ══════ VOICEOVER ══════ -->
+  <audio data-hf-id="hf-6kr1" id="voiceover" class="clip" src="voiceover.mp3" data-start="0" data-duration="69.2" data-track-index="0"></audio>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 1 - Question + Illustration (0-27.8s)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-71wf" id="phase1" class="clip" data-start="0" data-duration="28.9" data-track-index="1" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:5;">
+
+    <div data-hf-id="hf-lxc5" id="q-full-card" class="q-card" style="position:absolute;left:50%;top:80px;width:1500px;transform:translateX(-50%);opacity:0;">
+      <div data-hf-id="hf-uwhd" class="q-text">
+        If <span data-hf-id="hf-llty" class="num">tan theta</span> is equal to <span data-hf-id="hf-6xss" class="num">5/12</span> for an acute angle, find <span data-hf-id="hf-mpbr" class="num">sin theta</span>.
+      </div>
+    </div>
+
+    <div data-hf-id="hf-w62k" id="serial-num" class="serial-num" style="left:60px;top:60px;opacity:0;">
+      <div data-hf-id="hf-yfde" class="digit">Q</div>
+    </div>
+
+    <!-- Illustration area: right triangle, theta bottom-left, right angle bottom-right -->
+    <div data-hf-id="hf-32sf" id="illustration" class="illustration" style="position:absolute;left:50%;top:480px;transform:translateX(-50%);
+                width:900px;height:340px;display:flex;align-items:center;justify-content:center;">
+      <svg data-hf-id="hf-dwqf" width="520" height="320" viewBox="0 0 520 320" style="overflow:visible;">
+        <!-- triangle: theta at (40,280), right-angle vertex at (400,280), top vertex at (400,130).
+             adjacent=360, opposite=150 -> exact 12:5 ratio (30px/unit), so the drawn
+             angle at theta is the real atan(5/12) = 22.6199deg, not an eyeballed guess. -->
+        <path data-hf-id="hf-2yfl" id="tri-path" d="M 40 280 L 400 280 L 400 130 Z" fill="none" stroke="#6373db" stroke-width="6" stroke-linejoin="round" stroke-dasharray="900" stroke-dashoffset="900" />
+        <!-- right angle marker -->
+        <rect data-hf-id="hf-9a20" x="372" y="252" width="28" height="28" fill="none" stroke="#6373db" stroke-width="4" id="right-angle-mark" opacity="0" />
+      </svg>
+      <!-- Angle theta arc: CSS conic-gradient ring, same technique as q1/q2. --angle is the
+           EXACT atan(5/12) value (22.6199deg). Positioned so its center lands on vertex theta
+           (svg-local (40,280) sits at wrapper (230,290); 100px circle centered there starts
+           at left:180/top:240). -->
+      <div data-hf-id="hf-zgti" id="angle-theta-arc" style="position:absolute;left:180px;top:240px;width:100px;height:100px;border-radius:50%;opacity:0;
+             --angle:22.6199deg;
+             background:conic-gradient(from 0deg, transparent 0deg calc(90deg - var(--angle)), #6373db calc(90deg - var(--angle)) 90deg, transparent 90deg 360deg);
+             -webkit-mask:radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 4px));
+             mask:radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 4px));"></div>
+      <div data-hf-id="hf-k161" id="angle-theta-label" style="position:absolute;left:206px;top:258px;font-family:'Google Sans Flex','Inter',sans-serif;font-size:26px;font-weight:400;color:#000000;opacity:0;">θ</div>
+      <div data-hf-id="hf-n58q" id="label-opposite" style="position:absolute;left:615px;top:190px;font-family:'Google Sans Flex','Inter',sans-serif;font-size:36px;font-weight:500;color:#6373db;opacity:0;">5</div>
+      <div data-hf-id="hf-012w" id="label-adjacent" style="position:absolute;left:395px;top:298px;font-family:'Google Sans Flex','Inter',sans-serif;font-size:36px;font-weight:500;color:#6373db;opacity:0;">12</div>
+
+      <!-- tan formula label - fills the empty space above the triangle apex
+           (wrapper top 0-140px is clear since the triangle's top vertex sits
+           at wrapper y=140). Word-synced to the exact narration that states
+           the formula and then the ratio (17.28-27.80s), via apt.textReveal. -->
+      <div data-hf-id="hf-tanf" id="tan-formula" style="position:absolute;left:50%;top:20px;transform:translateX(-50%);
+             text-align:center;font-family:'Google Sans Flex','Inter',sans-serif;font-size:34px;font-weight:400;color:#000000;white-space:nowrap;">
+        <span data-hf-id="hf-tf1" class="rv" data-t="17.28" style="opacity:0;">tan &theta;</span>
+        <span data-hf-id="hf-tf2" class="rv" data-t="18.38" style="opacity:0;">=</span>
+        <span data-hf-id="hf-tf3" class="frac rv" data-t="19.16" style="opacity:0;"><span data-hf-id="hf-tf3t" class="top hi">Opposite</span><span data-hf-id="hf-tf3b" class="bot hi">Adjacent</span></span>
+        <span data-hf-id="hf-tf4" class="rv" data-t="22.28" style="opacity:0;">=</span>
+        <span data-hf-id="hf-tf5" class="frac ans rv" data-t="26.50" style="opacity:0;"><span data-hf-id="hf-tf5t" class="top">5</span><span data-hf-id="hf-tf5b" class="bot">12</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 2 - Pinned question (27.8s onwards)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-kbhs" id="q-pinned" class="clip" data-start="27.8" data-duration="41.4" data-track-index="2" style="position:absolute;width:100%;top:0;left:0;z-index:6;opacity:0;">
+    <div data-hf-id="hf-9jf4" class="q-card pinned" style="position:absolute;left:385px;top:30px;width:1275px;">
+      <div data-hf-id="hf-o44x" class="q-text">
+        <span data-hf-id="hf-9t56" class="num">tan theta</span> = <span data-hf-id="hf-j1ck" class="num">5/12</span>, theta acute. Find <span data-hf-id="hf-81iv" class="num">sin theta</span>.
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-rwm5" id="illus-pinned" class="clip" data-start="27.8" data-duration="32.7" data-track-index="3" style="position:absolute;left:280px;top:190px;width:1300px;height:210px;z-index:5;opacity:0;
+              display:flex;align-items:center;justify-content:center;gap:40px;">
+    <svg data-hf-id="hf-f9x8" id="illus-pinned-icon" width="150" height="110" viewBox="0 0 520 320">
+      <path data-hf-id="hf-zf3c" d="M 40 280 L 460 280 L 460 65 Z" fill="none" stroke="#6373db" stroke-width="10" stroke-linejoin="round" />
+      <rect data-hf-id="hf-ysgp" x="420" y="240" width="40" height="40" fill="none" stroke="#6373db" stroke-width="6" />
+      <text data-hf-id="hf-xii2" x="80" y="260" font-family="'Google Sans Flex','Inter',sans-serif" font-size="42" fill="#000000">θ</text>
+    </svg>
+    <div data-hf-id="hf-8635" style="font-family:'Google Sans Flex','Inter',sans-serif;font-size:22px;color:#000000;">
+      Opposite = <span data-hf-id="hf-3rx3" style="color:#6373db;">5</span> &#160;·&#160; Adjacent = <span data-hf-id="hf-usxn" style="color:#6373db;">12</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SOLUTION CARDS (center)
+       ══════════════════════════════════════════════ -->
+
+  <!-- GIVEN -->
+  <div data-hf-id="hf-a4b2" id="card-given" class="clip" data-start="28.3" data-duration="7.3" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-iiia" class="solution-card" style="position:absolute;left:640px;top:480px;text-align:center;">
+      <div data-hf-id="hf-3rv6" class="card-content">
+        <span data-hf-id="hf-7r0o" class="chip">Given</span>
+        <div data-hf-id="hf-8tlu" class="math">
+          <span data-hf-id="hf-ldsz" class="rv" data-t="28.30">Opposite Side = <span data-hf-id="hf-wnwj" class="hi">5</span></span><br data-hf-id="hf-x5px">
+          <span data-hf-id="hf-g55o" class="rv" data-t="30.60">Adjacent Side = <span data-hf-id="hf-k6o7" class="hi">12</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 1 - hypotenuse -->
+  <div data-hf-id="hf-cnih" id="card-step1" class="clip" data-start="35.54" data-duration="14.86" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-htwl" class="solution-card" style="position:absolute;left:640px;top:450px;text-align:center;width:760px;">
+      <div data-hf-id="hf-0yza" class="card-content">
+        <span data-hf-id="hf-3ife" class="chip">Step 1</span>
+        <div data-hf-id="hf-ng7a" class="math">
+          <span data-hf-id="hf-x6mi" class="rv" data-t="40.34">Hypotenuse</span> <span data-hf-id="hf-3odt" class="rv" data-t="41.20">=</span>
+          <span data-hf-id="hf-chsn" class="rv hi" data-t="42.50">√(5² + 12²)</span><br data-hf-id="hf-rsrt">
+          <span data-hf-id="hf-w5jz" class="rv" data-t="46.74">=</span> <span data-hf-id="hf-7c0j" class="rv ans" data-t="47.30">13</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 2 - sine -->
+  <div data-hf-id="hf-kglm" id="card-step2" class="clip" data-start="50.3" data-duration="11.1" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-f272" class="solution-card" style="position:absolute;left:640px;top:440px;text-align:center;">
+      <div data-hf-id="hf-1dab" class="card-content">
+        <span data-hf-id="hf-3wqf" class="chip">Step 2</span>
+        <div data-hf-id="hf-nuib" class="math">
+          <span data-hf-id="hf-1lm3" class="rv" data-t="49.50">sin</span> <span data-hf-id="hf-k0qf" class="rv" data-t="50.10">theta</span> <span data-hf-id="hf-501a" class="rv" data-t="51.20">=</span>
+          <span data-hf-id="hf-h50i" class="frac rv" data-t="52.40"><span data-hf-id="hf-ccjl" class="top hi">Opposite Side</span><span data-hf-id="hf-tgp9" class="bot hi">Hypotenuse</span></span><br data-hf-id="hf-szow">
+          <span data-hf-id="hf-62c5" class="rv" data-t="56.64">=</span>
+          <span data-hf-id="hf-mebr" class="frac ans rv" data-t="57.60"><span data-hf-id="hf-wrnh" class="top">5</span><span data-hf-id="hf-gv64" class="bot">13</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       LEFT STACK CARDS
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-b0ya" id="stack-given" class="clip" data-start="30.8" data-duration="39" data-track-index="11" style="position:absolute;left:100px;top:140px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-usjn" class="stack-card">
+      <div data-hf-id="hf-1rlc" class="card-content">
+        <span data-hf-id="hf-snhl" class="step-circle">G</span>
+        <div data-hf-id="hf-ctev" class="math">
+          Opposite = <span data-hf-id="hf-hi0z" class="hi">5</span><br data-hf-id="hf-sldv">
+          Adjacent = <span data-hf-id="hf-ofl3" class="hi">12</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-q8ma" id="stack-step1" class="clip" data-start="45.5" data-duration="24" data-track-index="12" style="position:absolute;left:100px;top:290px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-3m9v" class="stack-card">
+      <div data-hf-id="hf-yzg5" class="card-content">
+        <span data-hf-id="hf-w2db" class="step-circle">1</span>
+        <div data-hf-id="hf-l34t" class="math">
+          Hypotenuse = <span data-hf-id="hf-3rq3" class="ans">13</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-2ys8" id="stack-step2" class="clip" data-start="60.5" data-duration="9.3" data-track-index="13" style="position:absolute;left:100px;top:420px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-37yu" class="stack-card">
+      <div data-hf-id="hf-zdr6" class="card-content">
+        <span data-hf-id="hf-vo2a" class="step-circle">2</span>
+        <div data-hf-id="hf-m50j" class="math">
+          sin theta = <span data-hf-id="hf-pbzz" class="ans">5/13</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-gp2x" id="line-g-1" class="clip stack-line" data-start="45.5" data-duration="24" data-track-index="15" style="opacity:0;"></div>
+  <div data-hf-id="hf-frwm" id="line-1-2" class="clip stack-line" data-start="60.5" data-duration="9.3" data-track-index="16" style="opacity:0;"></div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 3 - OPTIONS REVEAL
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-lhqc" id="options-reveal" class="clip" data-start="60.5" data-duration="9.3" data-track-index="10" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:8;opacity:0;">
+    <div data-hf-id="hf-2tfv" class="pinned-col" style="top:400px;">
+      <div data-hf-id="hf-6knj" class="options-grid">
+        <div data-hf-id="hf-d0v4" class="opt-btn"><span data-hf-id="hf-sfug" class="letter">A</span>12/13</div>
+        <div data-hf-id="hf-qopb" class="opt-btn"><span data-hf-id="hf-r8xd" class="letter">B</span>5/12</div>
+        <div data-hf-id="hf-o192" class="opt-btn correct"><span data-hf-id="hf-rn8e" class="letter">C</span>5/13</div>
+        <div data-hf-id="hf-0hlw" class="opt-btn"><span data-hf-id="hf-qgbb" class="letter">D</span>13/5</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end root -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script src="animations.js"></script>
+<script>
+  apt.setStackLine("#line-g-1", "#stack-given .step-circle", "#stack-step1 .step-circle");
+  apt.setStackLine("#line-1-2", "#stack-step1 .step-circle", "#stack-step2 .step-circle");
+
+  const tl = gsap.timeline({ paused: true });
+
+  // PHASE 1 - Question reveal
+  const HERO_OFFSET_Y = 180;
+  const RISE_TIME = 3.96; // end of "it's time to solve one more problem"
+  apt.heroEnterLowered(tl, "#q-full-card", HERO_OFFSET_Y, RISE_TIME);
+
+  tl.fromTo("#serial-num",
+    { scale: 0, rotation: -45, opacity: 0, y: HERO_OFFSET_Y },
+    { scale: 1, rotation: 0, opacity: 1, duration: 0.55, ease: "back.out(2)", y: HERO_OFFSET_Y },
+    0.8);
+  tl.to("#serial-num", { y: 0, duration: 0.6, ease: "power2.inOut" }, RISE_TIME);
+
+  // Triangle stroke-draw + labels - retimed to "tan theta is equal to five divided by 12" (9.0),
+  // right-angle/arc/theta-label right after the ratio is first stated (12.6),
+  // "5" and "12" labels as the ratio is restated with real numbers (22.6, 25.0)
+  tl.to("#tri-path", { strokeDashoffset: 0, duration: 1.0, ease: "power2.out" }, 9.0);
+  tl.to("#right-angle-mark", { opacity: 1, duration: 0.3 }, 12.6);
+  tl.to("#angle-theta-arc", { opacity: 1, duration: 0.3 }, 12.6);
+  tl.to("#angle-theta-label", { opacity: 1, duration: 0.3 }, 12.6);
+  tl.fromTo("#label-opposite", { y: 10, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" }, 22.6);
+  tl.fromTo("#label-adjacent", { y: 10, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" }, 25.0);
+
+  // tan formula label - word-synced to "tan of theta means opposite side divided
+  // by adjacent side... is equal to five divided by 12" (17.28-27.80)
+  apt.textReveal(tl, "#tan-formula");
+
+  // PHASE 2 - Pin, then Given - PIN_TIME right before "we can take the opposite side as five units..."
+  const PIN_TIME = 27.8;
+  const GIVEN_TIME = 28.3;
+
+  apt.pinFlow(tl, "#q-full-card", "#q-pinned", PIN_TIME);
+  apt.pinFlow(tl, "#illustration", "#illus-pinned", PIN_TIME);
+  apt.fadeOut(tl, "#serial-num", PIN_TIME, 0.5);
+
+  apt.cardEnter(tl, "#card-given .solution-card", GIVEN_TIME);
+  apt.textReveal(tl, "#card-given .math");
+
+  // STEP 1 - morph right when "since we know these two sides" begins (34.74), hypotenuse computed 40.34-49.08
+  apt.morphToStack(tl, "#card-given .solution-card", "#stack-given .stack-card", 34.74);
+  apt.cardEnter(tl, "#card-step1 .solution-card", 35.54);
+  apt.textReveal(tl, "#card-step1 .math");
+
+  // STEP 2 - morph right after "hypotenuse = 13" ends (49.08), sine narrated 49.50-60.30
+  apt.morphToStack(tl, "#card-step1 .solution-card", "#stack-step1 .stack-card", 49.5);
+  apt.stackLineGrow(tl, "#line-g-1", 49.5);
+  apt.cardEnter(tl, "#card-step2 .solution-card", 50.3);
+  apt.textReveal(tl, "#card-step2 .math");
+
+  // Recenter + Options - after "sine theta = 5/13" ends (60.30), final answer/option-C restated 61.14-67.64
+  const RECENTER_TIME = 60.5;
+  apt.morphToStack(tl, "#card-step2 .solution-card", "#stack-step2 .stack-card", RECENTER_TIME);
+  apt.stackLineGrow(tl, "#line-1-2", RECENTER_TIME);
+  apt.fadeOut(tl, "#illus-pinned", RECENTER_TIME);
+  apt.recenterForOptions(tl, "#q-pinned", 160, 180, RECENTER_TIME);
+
+  apt.fadeIn(tl, "#options-reveal", 61.2);
+  apt.optionsStagger(tl, ".opt-btn", 61.6);
+  apt.correctPulse(tl, ".opt-btn.correct", 65.5);
+
+  const END_FADE_TIME = 68.0;
+  apt.fadeOut(tl, "#root > div", END_FADE_TIME, 1.2);
+
+  tl.set({},{},70)
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines["root"] = tl;
+</script>
+</body>
+</html>

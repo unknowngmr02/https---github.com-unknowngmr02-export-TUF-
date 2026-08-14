@@ -1,0 +1,92 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+In this problem, a person is standing at a certain distance from a tower.
+
+The angle of elevation of the top of the tower is 30 degrees.
+
+Then the person walks 20 mee-ter towards the tower.
+
+Now the angle becomes 45 degrees.
+
+And we need to find the height of the tower.
+
+Let the distance from the tower after walking be x.
+
+So the initial distance becomes x pluss 20.
+
+Let the height of the tower be h.
+<break time="0.5s" />
+
+now, Let us start with the second position where the angle is 45 degrees.
+
+Here, we know the opposite side and the adjacent side.
+
+So, Ten Theta is the right trigonometric rayshio to use.
+
+ten theta is equal to height by base.
+
+Ten 45 degree is equal to h by x.
+
+We know Ten 45 degree is 1.
+
+So,
+
+h by x is equal to 1.
+
+Which means,
+
+h is equal to x.
+
+Got it? Perfect.
+
+Now keep this value with us. We will use it in the next step.
+<break time="0.3s" />
+
+Now let us use the first position where the angle is 30 degrees.
+
+Again, we will use Ten Theta.
+
+Ten 30 degree is equal to h by x pluss 20.
+
+We know Ten 30 degree is 1 by root 3.
+
+So,
+
+1 by root 3 is equal to h by x pluss 20.
+
+Since we already know h is equal to x,
+
+we replace x with h.
+
+This becomes,
+
+1 by root 3 is equal to h by h pluss 20.
+<break time="0.3s" />
+
+Cross multiplying,
+
+h pluss 20 is equal to root 3 h.
+
+So,
+
+20 is equal to h into root 3 my-nus 1.
+
+Therefore,
+
+h is equal to 20 by root 3 my-nus 1.
+<break time="0.3s" />
+
+Now rationalize the denominator.
+
+We get,
+
+h is equal to 10 into root 3 pluss 1.
+
+Done and dusted.
+<break time="0.6s" />
+
+So the final answer will be,
+
+10 into root 3 pluss 1 mee-ter.
+
+Hence, Option B is correct.

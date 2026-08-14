@@ -1,0 +1,45 @@
+[00:00.08 -> 00:00.28]  So
+[00:00.64 -> 00:01.56]  welcome back again.
+[00:02.16 -> 00:03.76]  It's time to solve one more problem.
+[00:04.38 -> 00:07.16]  In this problem, we have a tower of height fifty meter.
+[00:07.72 -> 00:09.03]  From the foot of the second tower,
+[00:09.54 -> 00:14.23]  the angle of elevation to the top of the first tower is sixty degrees,
+[00:14.62 -> 00:16.09]  and from the top of the second tower,
+[00:16.48 -> 00:30.92]  the angle of elevation to the top of the first tower is thirty degrees. The problem is asking us to find the height of the second tower. So to understand this clearly, draw both towers and join the top of the first tower to the top and foot of the second tower.
+[00:31.26 -> 00:34.82]  Let the distance between the two towers be x and let the height of the second tower be h.
+[00:35.18 -> 00:35.34]  Okay,
+[00:35.72 -> 00:36.58]  everything is clear now.
+[00:37.24 -> 00:37.58]  First,
+[00:38.04 -> 00:41.52]  focus on the line going from the foot of the second tower to the top of the first tower.
+[00:41.98 -> 00:43.20]  Why are we doing this first?
+[00:43.58 -> 00:45.38]  Because here, we already know the full height,
+[00:45.84 -> 00:46.84]  which is fifty meters,
+[00:47.24 -> 00:49.06]  and this will help us find the distance x.
+[00:49.60 -> 00:52.94]  So using ten sixty degrees, tan sixty degrees equals height upon base.
+[00:53.44 -> 00:53.96]  Now we have
+[00:54.38 -> 00:55.96]  root three equals fifty upon x.
+[00:56.52 -> 01:03.88]  Then after solving this, we get x equals fifty upon root three. Got it? Perfect. Now keep this value with us.
+[01:04.32 -> 01:05.69]  We will use it in the next step.
+[01:06.16 -> 01:06.56]  Next,
+[01:06.98 -> 01:11.32]  focus on the line joining the top of the second tower to the top of the first tower.
+[01:11.68 -> 01:13.38]  The first tower is fifty meter tall
+[01:13.80 -> 01:15.18]  and the second tower is
+[01:15.48 -> 01:16.32]  h meter tall.
+[01:16.72 -> 01:19.72]  So the vertical difference between their tops will be fifty minus
+[01:20.12 -> 01:20.20]  h.
+[01:20.60 -> 01:21.42]  This is very important.
+[01:21.82 -> 01:25.54]  We are not using h directly. We are using the difference in heights, which is fifty minus h.
+[01:26.04 -> 01:26.18]  Okay,
+[01:26.66 -> 01:30.02]  now using tan thirty degrees, tan thirty degrees equals fifty minus h
+[01:30.42 -> 01:30.96]  upon x.
+[01:31.50 -> 01:31.96]  Now we have
+[01:32.38 -> 01:33.06]  one upon root
+[01:33.40 -> 01:34.84]  three equals fifty minus h
+[01:35.30 -> 01:35.80]  upon x.
+[01:36.46 -> 01:38.08]  Then substituting the value of x,
+[01:38.52 -> 01:40.32]  one upon root three equals fifty minus h
+[01:40.90 -> 01:49.26]  upon fifty by root three. After solving this, we get fifty minus h equals fifty upon three. Then simplifying further, h equals one hundred upon three meter.
+[01:49.74 -> 01:50.35]  Done and dusted.
+[01:51.18 -> 01:54.08]  So the height of the other tower is one hundred by three meters.
+[01:54.64 -> 01:54.96]  Hence,
+[01:55.54 -> 01:57.02]  the final answer will be option C.

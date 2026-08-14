@@ -1,0 +1,77 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+In this problem we have given ten theta is equal to 2 by 3.
+
+And we need to find
+
+1 plus ten square theta <break time="0.2s" /> Devided by <break time="0.2s" /> 1 plus kot square theta.
+
+What does this mean in simple words?
+
+We already know the value of ten theta, so our job is just to find ten² theta and kot² theta, then put them into the expression.
+
+<break time="0.5s" />
+
+Now we have given that ten theta is equal to 2 by 3,
+
+So ten² theta will be
+
+2 by 3 <break time="0.2s" /> whole square,
+
+which is equal to 4 by 9.
+
+Done.
+
+Now that we have found ten² theta, we also need kot² theta.
+
+we know one simple thing.
+
+Kot theta is just the reverse of ten theta.
+
+If ten theta is 2 by 3,
+
+then kot theta will be 3 by 2.
+
+So kot² theta becomes
+
+3 by 2 <break time="0.2s" /> whole square,
+
+which is equal to 9 by 4.
+
+Got it? Perfect.
+
+<break time="0.2s" />
+
+Now let us put these values into the expression.
+
+1 plus 4 by 9 <break time="0.2s" /> Upon <break time="0.2s" /> 1 plus 9 by 4.
+
+The numerator becomes
+
+13 by 9.
+
+And the denominator becomes
+
+13 by 4.
+
+So this becomes
+
+13 by 9 <break time="0.2s" /> Upon <break time="0.2s" /> 13 by 4.
+
+Now this is where the question becomes easy.
+
+When we divide fractions, we keep the first fraction as it is and multiply by the reciprocal of the second fraction.
+
+So we get
+
+13 upon 9 <break time="0.2s" /> Times <break time="0.2s" /> 4 upon 13.
+
+The 13 gets cancelled with 13.
+
+<break time="0.6s" />
+
+Hence, the final answer will be
+
+4 by 9.
+
+So the correct option is Option C.

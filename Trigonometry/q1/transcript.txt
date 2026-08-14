@@ -1,0 +1,18 @@
+[00:00.10 -> 00:01.28]  So welcome back.
+[00:01.82 -> 00:04.28]  I hope you have gone through the theory part for this topic.
+[00:04.80 -> 00:06.28]  Now it's time to solve some problems.
+[00:06.92 -> 00:09.02]  Now, in this problem, we are given a right triangle.
+[00:09.58 -> 00:11.32]  The side opposite to angle A is
+[00:11.92 -> 00:12.96]  nine centimeter,
+[00:13.60 -> 00:16.52]  and the side adjacent to angle A is 12 centimeter.
+[00:17.18 -> 00:19.76]  The question is asking us to find the value of tan A.
+[00:20.44 -> 00:21.82]  Now, what does tan actually mean?
+[00:22.36 -> 00:27.60]  For any right triangle, tan A is equal to opposite side divided by adjacent side.
+[00:28.28 -> 00:31.12]  Now, let us put the given values into the formula.
+[00:31.68 -> 00:31.96]  Tan
+[00:32.76 -> 00:34.82]  A equal to nine divided by 12.
+[00:35.28 -> 00:37.26]  Both nine and 12 are divisible by three.
+[00:37.82 -> 00:42.62]  After simplifying, we get tan A equal to three by four.
+[00:43.14 -> 00:43.44]  Done.
+[00:43.92 -> 00:47.48]  So the final answer will be three by four. Hence,
+[00:47.80 -> 00:49.90]  the correct option is option A.

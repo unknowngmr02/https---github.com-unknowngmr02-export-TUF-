@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="design-system.css">
+</head>
+<body>
+<div data-hf-id="hf-89uj" id="root" data-composition-id="root" data-start="0" data-width="1920" data-height="1080">
+
+  <!-- ══════ BACKGROUND LAYERS (always visible) ══════ -->
+  <div data-hf-id="hf-858h" class="dotted-grid"></div>
+  <div data-hf-id="hf-izuk" class="bottom-strip"></div>
+  <div data-hf-id="hf-ql9k" class="topic-name">Trigonometry</div>
+  <div data-hf-id="hf-e319" class="logo"></div>
+
+  <!-- ══════ VOICEOVER ══════ -->
+  <audio data-hf-id="hf-n6gp" id="voiceover" class="clip" src="voiceover.wav" data-start="0" data-duration="50.5" data-track-index="0"></audio>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 1 - Question + Illustration (0-16.8s)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-8uoi" id="phase1" class="clip" data-start="0" data-duration="17.9" data-track-index="1" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:5;">
+
+    <div data-hf-id="hf-lxc5" id="q-full-card" class="q-card" style="position:absolute;left:50%;top:80px;width:1500px;transform:translateX(-50%);opacity:0;">
+      <div data-hf-id="hf-rpne" class="q-text">
+        In a right triangle, the side opposite angle A is <span data-hf-id="hf-nmye" class="num">9 cm</span> and the adjacent side is <span data-hf-id="hf-fuwk" class="num">12 cm</span>. What is <span data-hf-id="hf-42dp" class="num">tan A</span>?
+      </div>
+    </div>
+
+    <div data-hf-id="hf-w62k" id="serial-num" class="serial-num" style="left:60px;top:60px;opacity:0;">
+      <div data-hf-id="hf-yfde" class="digit">Q</div>
+    </div>
+
+    <!-- Illustration area: right triangle, angle A bottom-left, right angle bottom-right -->
+    <div data-hf-id="hf-32sf" id="illustration" class="illustration" style="position:absolute;left:50%;top:480px;transform:translateX(-50%);
+                width:900px;height:340px;display:flex;align-items:center;justify-content:center;">
+      <svg data-hf-id="hf-dwqf" width="520" height="320" viewBox="0 0 520 320" style="overflow:visible;">
+        <!-- triangle: A at (40,280), right-angle vertex at (400,280), top vertex at (400,10).
+             adjacent=360, opposite=270 -> exact 12:9 ratio (scale 30px/cm), so the drawn
+             angle at A is the real atan(9/12) = 36.87deg, not an eyeballed guess. -->
+        <path data-hf-id="hf-h0id" id="tri-path" d="M 40 280 L 400 280 L 400 10 Z" fill="none" stroke="#6373db" stroke-width="6" stroke-linejoin="round" stroke-dasharray="1080" stroke-dashoffset="1080" />
+        <!-- right angle marker -->
+        <rect data-hf-id="hf-kapj" x="372" y="252" width="28" height="28" fill="none" stroke="#6373db" stroke-width="4" id="right-angle-mark" opacity="0" />
+      </svg>
+      <!-- Angle A arc: CSS conic-gradient ring instead of an SVG arc path.
+           --angle is the EXACT atan(9/12) value (36.8699deg), so the sweep is
+           mathematically accurate, not hand-drawn. conic-gradient's 0deg = 12
+           o'clock, clockwise; "from 0deg" + the calc() below paints only the
+           sector between the baseline (pointing right = 90deg in conic terms)
+           and the hypotenuse direction (90deg - angle, since the hypotenuse
+           tilts upward/counterclockwise from the baseline). The radial-gradient
+           mask hollows the disc down to a 4px ring, so it reads as a stroke arc,
+           not a filled pie slice. Positioned so its center lands exactly on
+           vertex A (wrapper-relative: svg is 520x320 centered in a 900x340 box,
+           so A at svg-local (40,280) sits at wrapper (230,290); a 100px circle
+           centered there starts at left:180/top:240). -->
+      <div data-hf-id="hf-a4c1" id="angle-a-arc" style="position:absolute;left:180px;top:240px;width:100px;height:100px;border-radius:50%;opacity:0;
+             --angle:36.8699deg;
+             background:conic-gradient(from 0deg, transparent 0deg calc(90deg - var(--angle)), #6373db calc(90deg - var(--angle)) 90deg, transparent 90deg 360deg);
+             -webkit-mask:radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 4px));
+             mask:radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 4px));"></div>
+      <div data-hf-id="hf-xzba" id="angle-a-label" style="position:absolute;left:206px;top:258px;font-family:'Google Sans Flex','Inter',sans-serif;font-size:26px;font-weight:400;color:#000000;opacity:0;">A</div>
+      <div data-hf-id="hf-41g5" id="label-opposite" style="position:absolute;left:610px;top:145px;font-family:'Google Sans Flex','Inter',sans-serif;font-size:26px;font-weight:400;color:#6373db;opacity:0;">9 cm</div>
+      <div data-hf-id="hf-8mc9" id="label-adjacent" style="position:absolute;left:390px;top:300px;font-family:'Google Sans Flex','Inter',sans-serif;font-size:26px;font-weight:400;color:#6373db;opacity:0;">12 cm</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 2 - Pinned question (22s onwards)
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-ibg8" id="q-pinned" class="clip" data-start="16.8" data-duration="34.7" data-track-index="2" style="position:absolute;width:100%;top:0;left:0;z-index:6;opacity:0;">
+    <div data-hf-id="hf-9jf4" class="q-card pinned" style="position:absolute;left:385px;top:30px;width:1275px;">
+      <div data-hf-id="hf-60qr" class="q-text">
+        Right triangle: opposite <span data-hf-id="hf-umai" class="num">9 cm</span>, adjacent <span data-hf-id="hf-lsuk" class="num">12 cm</span>. Find <span data-hf-id="hf-ypfl" class="num">tan A</span>.
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-ue4y" id="illus-pinned" class="clip" data-start="16.8" data-duration="26.7" data-track-index="3" style="position:absolute;left:280px;top:190px;width:1300px;height:210px;z-index:5;opacity:0;
+              display:flex;align-items:center;justify-content:center;gap:40px;">
+    <svg data-hf-id="hf-f9x8" id="illus-pinned-icon" width="150" height="110" viewBox="0 0 520 320">
+      <path data-hf-id="hf-rrj1" d="M 40 280 L 460 280 L 460 40 Z" fill="none" stroke="#6373db" stroke-width="10" stroke-linejoin="round" />
+      <rect data-hf-id="hf-ysgp" x="420" y="240" width="40" height="40" fill="none" stroke="#6373db" stroke-width="6" />
+      <text data-hf-id="hf-pgc5" x="80" y="260" font-family="'Google Sans Flex','Inter',sans-serif" font-size="42" fill="#000000">A</text>
+    </svg>
+    <div data-hf-id="hf-8635" style="font-family:'Google Sans Flex','Inter',sans-serif;font-size:22px;color:#000000;">
+      Opposite = <span data-hf-id="hf-nxk9" style="color:#6373db;">9 cm</span> &#160;·&#160; Adjacent = <span data-hf-id="hf-bc6p" style="color:#6373db;">12 cm</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SOLUTION CARDS (center)
+       ══════════════════════════════════════════════ -->
+
+  <!-- GIVEN -->
+  <div data-hf-id="hf-8cj4" id="card-given" class="clip" data-start="17.4" data-duration="4.2" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-iiia" class="solution-card" style="position:absolute;left:640px;top:480px;text-align:center;">
+      <div data-hf-id="hf-3rv6" class="card-content">
+        <span data-hf-id="hf-7r0o" class="chip">Given</span>
+        <div data-hf-id="hf-8tlu" class="math">
+          <span data-hf-id="hf-nesk" class="rv" data-t="17.40">Opposite Side = <span data-hf-id="hf-kvql" class="hi">9 cm</span></span><br data-hf-id="hf-x5px">
+          <span data-hf-id="hf-rb4l" class="rv" data-t="17.40">Adjacent Side = <span data-hf-id="hf-8lcd" class="hi">12 cm</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 1 - formula -->
+  <div data-hf-id="hf-h7zd" id="card-step1" class="clip" data-start="22.36" data-duration="6.3" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-xgi9" class="solution-card" style="position:absolute;left:640px;top:470px;text-align:center;">
+      <div data-hf-id="hf-0yza" class="card-content">
+        <span data-hf-id="hf-3ife" class="chip">Step 1</span>
+        <div data-hf-id="hf-ng7a" class="math">
+          <span data-hf-id="hf-aldo" class="rv" data-t="22.36">tan</span> <span data-hf-id="hf-qu61" class="rv" data-t="22.55">A</span> <span data-hf-id="hf-cvlj" class="rv" data-t="22.70">=</span>
+          <span data-hf-id="hf-akik" class="frac rv" data-t="23.00"><span data-hf-id="hf-ccjl" class="top hi">Opposite Side</span><span data-hf-id="hf-5lna" class="bot hi">Adjacent Side</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 2 - substitute + simplify -->
+  <div data-hf-id="hf-zjfa" id="card-step2" class="clip" data-start="28.5" data-duration="15.6" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-8hiu" class="solution-card" style="position:absolute;left:600px;top:420px;text-align:center;width:720px;">
+      <div data-hf-id="hf-1dab" class="card-content">
+        <span data-hf-id="hf-3wqf" class="chip">Step 2</span>
+        <div data-hf-id="hf-nuib" class="math">
+          <span data-hf-id="hf-0t9h" class="rv" data-t="31.68">tan</span> <span data-hf-id="hf-qh0y" class="rv" data-t="32.76">A</span> <span data-hf-id="hf-xdi6" class="rv" data-t="32.90">=</span>
+          <span data-hf-id="hf-ovmt" class="frac rv" data-t="33.10"><span data-hf-id="hf-8a4y" class="top hi">9</span><span data-hf-id="hf-7xd6" class="bot hi">12</span></span><br data-hf-id="hf-rsrt">
+          <span data-hf-id="hf-rnad" class="rv" data-t="35.28">Both 9 and 12 are divisible by 3</span><br data-hf-id="hf-szow">
+          <span data-hf-id="hf-a306" class="rv" data-t="37.82">=</span>
+          <span data-hf-id="hf-8rxk" class="frac ans rv" data-t="38.30"><span data-hf-id="hf-z5hn" class="top">3</span><span data-hf-id="hf-ncuw" class="bot">4</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       LEFT STACK CARDS
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-ihwv" id="stack-given" class="clip" data-start="20.5" data-duration="31" data-track-index="11" style="position:absolute;left:100px;top:140px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-usjn" class="stack-card">
+      <div data-hf-id="hf-1rlc" class="card-content">
+        <span data-hf-id="hf-snhl" class="step-circle">G</span>
+        <div data-hf-id="hf-ctev" class="math">
+          Opposite = <span data-hf-id="hf-wg2p" class="hi">9 cm</span><br data-hf-id="hf-sldv">
+          Adjacent = <span data-hf-id="hf-a05d" class="hi">12 cm</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-cgw4" id="stack-step1" class="clip" data-start="27.6" data-duration="24" data-track-index="12" style="position:absolute;left:100px;top:290px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-3m9v" class="stack-card">
+      <div data-hf-id="hf-yzg5" class="card-content">
+        <span data-hf-id="hf-w2db" class="step-circle">1</span>
+        <div data-hf-id="hf-7b2x" class="math">
+          tan A =
+          <span data-hf-id="hf-gq2t" class="frac"><span data-hf-id="hf-c6kw" class="top hi">Opp</span><span data-hf-id="hf-ggie" class="bot hi">Adj</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-9ekm" id="stack-step2" class="clip" data-start="43.0" data-duration="8.5" data-track-index="13" style="position:absolute;left:100px;top:420px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-37yu" class="stack-card">
+      <div data-hf-id="hf-zdr6" class="card-content">
+        <span data-hf-id="hf-vo2a" class="step-circle">2</span>
+        <div data-hf-id="hf-tjcj" class="math">
+          tan A = 9/12 = <span data-hf-id="hf-f1jz" class="ans">3/4</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-4a7b" id="line-g-1" class="clip stack-line" data-start="27.6" data-duration="24" data-track-index="15" style="opacity:0;"></div>
+  <div data-hf-id="hf-jrok" id="line-1-2" class="clip stack-line" data-start="43.0" data-duration="8.5" data-track-index="16" style="opacity:0;"></div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 3 - OPTIONS REVEAL
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-2luq" id="options-reveal" class="clip" data-start="43.0" data-duration="8.5" data-track-index="10" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:8;opacity:0;">
+    <div data-hf-id="hf-2tfv" class="pinned-col" style="top:400px;">
+      <div data-hf-id="hf-6knj" class="options-grid">
+        <div data-hf-id="hf-xnl0" class="opt-btn correct"><span data-hf-id="hf-sfug" class="letter">A</span>3/4</div>
+        <div data-hf-id="hf-z7le" class="opt-btn"><span data-hf-id="hf-r8xd" class="letter">B</span>4/3</div>
+        <div data-hf-id="hf-he8i" class="opt-btn"><span data-hf-id="hf-rn8e" class="letter">C</span>9/15</div>
+        <div data-hf-id="hf-pv48" class="opt-btn"><span data-hf-id="hf-qgbb" class="letter">D</span>5/4</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end root -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script src="animations.js"></script>
+<script>
+  apt.setStackLine("#line-g-1", "#stack-given .step-circle", "#stack-step1 .step-circle");
+  apt.setStackLine("#line-1-2", "#stack-step1 .step-circle", "#stack-step2 .step-circle");
+
+  const tl = gsap.timeline({ paused: true });
+
+  // PHASE 1 - Question reveal
+  const HERO_OFFSET_Y = 180;
+  const RISE_TIME = 4.3; // end of "I hope you have gone through the theory part..." intro beat
+  apt.heroEnterLowered(tl, "#q-full-card", HERO_OFFSET_Y, RISE_TIME);
+
+  tl.fromTo("#serial-num",
+    { scale: 0, rotation: -45, opacity: 0, y: HERO_OFFSET_Y },
+    { scale: 1, rotation: 0, opacity: 1, duration: 0.55, ease: "back.out(2)", y: HERO_OFFSET_Y },
+    0.8);
+  tl.to("#serial-num", { y: 0, duration: 0.6, ease: "power2.inOut" }, RISE_TIME);
+
+  // Triangle stroke-draw + labels - retimed to "we are given a right triangle" (ends 9.02),
+  // "nine centimeter" (11.92-12.96), "12 centimeter" (within 13.60-16.52)
+  tl.to("#tri-path", { strokeDashoffset: 0, duration: 1.0, ease: "power2.out" }, 9.1);
+  tl.to("#right-angle-mark", { opacity: 1, duration: 0.3 }, 10.1);
+  tl.to("#angle-a-arc", { opacity: 1, duration: 0.3 }, 10.1);
+  tl.to("#angle-a-label", { opacity: 1, duration: 0.3 }, 10.1);
+  tl.fromTo("#label-opposite", { y: 10, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" }, 11.9);
+  tl.fromTo("#label-adjacent", { y: 10, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" }, 15.5);
+
+  // PHASE 2 - Pin, then Given - PIN_TIME just before "the question is asking us to find tan A" (17.18)
+  const PIN_TIME = 16.8;
+  const GIVEN_TIME = 17.4;
+
+  apt.pinFlow(tl, "#q-full-card", "#q-pinned", PIN_TIME);
+  apt.pinFlow(tl, "#illustration", "#illus-pinned", PIN_TIME);
+  apt.fadeOut(tl, "#serial-num", PIN_TIME, 0.5);
+
+  apt.cardEnter(tl, "#card-given .solution-card", GIVEN_TIME);
+  apt.textReveal(tl, "#card-given .math");
+
+  // STEP 1 - morph after "what does tan actually mean" (20.44-21.82), formula narrated 22.36-27.60
+  apt.morphToStack(tl, "#card-given .solution-card", "#stack-given .stack-card", 20.5);
+  apt.cardEnter(tl, "#card-step1 .solution-card", 22.36);
+  apt.textReveal(tl, "#card-step1 .math");
+
+  // STEP 2 - morph right after formula narration ends (27.60), substitution/simplify 31.68-42.62
+  apt.morphToStack(tl, "#card-step1 .solution-card", "#stack-step1 .stack-card", 27.6);
+  apt.stackLineGrow(tl, "#line-g-1", 27.6);
+  apt.cardEnter(tl, "#card-step2 .solution-card", 28.5);
+  apt.textReveal(tl, "#card-step2 .math");
+
+  // Recenter + Options - after "Done" (43.14-43.44), final-answer/option-A restated 43.92-49.90
+  const RECENTER_TIME = 43.0;
+  apt.morphToStack(tl, "#card-step2 .solution-card", "#stack-step2 .stack-card", 43.0);
+  apt.stackLineGrow(tl, "#line-1-2", 43.0);
+  apt.fadeOut(tl, "#illus-pinned", RECENTER_TIME);
+  apt.recenterForOptions(tl, "#q-pinned", 160, 180, RECENTER_TIME);
+
+  apt.fadeIn(tl, "#options-reveal", 43.9);
+  apt.optionsStagger(tl, ".opt-btn", 44.3);
+  apt.correctPulse(tl, ".opt-btn.correct", 47.8);
+
+  const END_FADE_TIME = 50.3;
+  apt.fadeOut(tl, "#root > div", END_FADE_TIME, 1.2);
+
+  tl.set({},{},52)
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines["root"] = tl;
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+
+Now in this problem, we are given an acute angle.
+
+For this angle, the opposite side is 8.
+And the high-pot-en-use is 17.
+
+The question is asking us to find its ten.
+
+For ten theta, we need opposite by adjacent.
+Opposite is already given, but adjacent is not given.
+So first, we have to find the adjacent side.
+<break time="0.5s" />
+
+Let the adjacent side be x.
+
+Using Pythagoras theorem,
+
+high-pot-en-use square is equal to opposite square pluss adjacent square.
+
+So,
+
+17 square is equal to 8 square pluss x square.
+
+That means,
+
+289 is equal to 64 pluss x square.
+
+So x square is equal to 289 - 64.
+
+After subtracting, x square is equal to 225.
+So x is equal to 15.
+<break time="0.2s" />
+
+Now we can find ten theta.
+
+ten theta is equal to opposite by adjacent.
+
+So ten theta is equal to 8 by 15.
+<break time="0.6s" />
+
+Hence, the ten of the angle is "8 by 15".
+
+So the correct option is option B.

@@ -1,0 +1,386 @@
+/* ═══════════════════════════════════════════════════════════════
+   APTITUDE VIDEO - DESIGN SYSTEM CSS
+   Read _template/design.md first (at the MasterAptitude root)
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Load Google Sans Flex (Google's variable font) */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500&display=swap');
+
+:root {
+  /* Colors */
+  --primary:        #6373db;
+  --primary-light:  #e2e5ff;
+  --success:        #4eb85f;
+  --topic:          #949494;
+  --text:           #000000;
+  --bg:             #FFFFFF;
+
+  /* Typography */
+  --font: 'Google Sans Flex', 'Inter', 'Helvetica Neue', sans-serif;
+
+  /* Spacing */
+  --gap-sm: 12px;
+  --gap-md: 18px;
+  --gap-lg: 28px;
+
+  /* Radius */
+  --radius-card:  18px;
+  --radius-pill:  999px;
+
+  /* Shadows */
+  --shadow-card:  0 6px 24px rgba(99, 115, 219, 0.15);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  font-family: var(--font);
+  color: var(--text);
+  overflow: hidden;
+  font-weight: 400; /* Regular by default */
+}
+
+#root {
+  width: 1920px;
+  height: 1080px;
+  background: var(--bg);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ─── BACKGROUND LAYERS ─── */
+
+/* Dotted grid (radial dots @ 20px spacing, faded mask).
+   Translated from the React/Tailwind reference. */
+.dotted-grid {
+  position: absolute;
+  inset: 0;
+  background-size: 20px 20px;
+  background-image: radial-gradient(#d4d4d4 1px, transparent 1px);
+  opacity: 0.65;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Optional faded vignette overlay matching the original demo
+   (radial mask so dots fade away at the edges).
+   Apply as a separate layer if you want the faded effect: */
+.dotted-grid-fade {
+  position: absolute;
+  inset: 0;
+  background: #FFFFFF;
+  -webkit-mask-image: radial-gradient(ellipse at center, transparent 20%, black);
+          mask-image: radial-gradient(ellipse at center, transparent 20%, black);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bottom-strip {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 1920px;
+  height: 15px;
+  background: var(--primary);
+  z-index: 1;
+}
+
+/* ─── LAYOUT GRID (1920×1080) ───
+   4 columns × 3 rows, margin 100px, column gap 60px, row gap 40px.
+   Column width = (1920 - 2*100 - 3*60) / 4 = 385px
+   Row height   = (1080 - 2*100 - 2*40) / 3  = 266.67px
+   Column left edges: 100, 545, 990, 1435
+   Row top edges:     100, 406.67, 713.33
+   Use this grid for all absolute positioning instead of ad-hoc pixel values. */
+
+/* Shared column for the options-reveal wrapper (and the reference point the
+   pinned question card recenters toward before Phase 3) - spans columns
+   2–4 (3 columns wide: 1275px). The pinned question card itself starts at
+   left:385px (see template.html) and shifts there via apt.recenterForOptions
+   right before options appear - it does NOT use this class directly. */
+.pinned-col {
+  position: absolute;
+  left: 540px;
+  width: 1275px;
+}
+
+/* ─── QUESTION CARD ─── */
+/* "Stickered" look: white card, thick black border, sharp black shadow offset
+   down-right (no blur). Matches the design from question-card.html. */
+.q-card {
+  position: relative;
+  background-color: #FFFFFF;
+  border: 4px solid #000000;
+  border-radius: 42px;
+  padding: 36px 80px;
+  text-align: center;
+  box-shadow: 7px 7px 0 0 #000000;
+  z-index: 3;
+}
+/* Pinned (smaller) variant */
+.q-card.pinned {
+  padding: 18px 48px;
+  border-radius: 28px;
+  border-width: 3px;
+  box-shadow: 5px 5px 0 0 #000000;
+}
+.q-card.pinned .q-text { font-size: 25px; }
+
+.q-card .q-text {
+  font-family: var(--font);
+  font-weight: 500;  /* Medium - ONLY on main question */
+  font-size: 36px;
+  color: var(--text);
+  line-height: 1.45;
+}
+.q-card .q-text .num { color: var(--primary); font-weight: 500; }
+
+/* ─── SERIAL NUMBER BADGE ─── */
+/* Wavy-edge flower badge SVG with the number centered on top.
+   The SVG fill colour is set inside the file (#6675de = --primary tone). */
+.serial-num {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('assets/serial-num-badge.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 4;
+}
+.serial-num .digit {
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 44px;
+  color: #FFFFFF;
+  line-height: 1;
+}
+
+/* ─── SOLUTION CARD (active, center) ─── */
+.solution-card {
+  background: var(--bg);
+  border-radius: var(--radius-card);
+  border: 1px solid #E5E7EB;
+  box-shadow: var(--shadow-card);
+  padding: 28px 48px;
+  width: 640px;
+  position: relative;
+  z-index: 3;
+}
+
+.solution-card .chip {
+  display: inline-block;
+  background: var(--primary);
+  color: #FFFFFF;
+  padding: 6px 18px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.solution-card .math {
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--text);
+  line-height: 1.55;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.solution-card .math .hi  { color: var(--primary); }
+.solution-card .math .ans { color: var(--primary); }   /* answers in blue too, per design */
+
+/* ─── TEXT REVEAL (word/line fade-in synced to transcript.json) ───
+   Only used inside the ACTIVE center card's .math content (Given/Step 1-3).
+   Each unit that should reveal on its own - either a single word (for lines
+   that are a direct verbal match to the narration) or a whole line (for
+   paraphrased lines with no clean word-to-word match) - gets wrapped in
+   <span class="rv" data-t="12.34"> and starts hidden here. apt.textReveal()
+   (animations.js) fades each one in at its own data-t timestamp (an
+   ABSOLUTE timeline time, taken straight from transcript.json). Plain
+   opacity only - no slide/scale/bounce, this is a text-sync reveal, not an
+   entrance animation. Collapsed .stack-card .math content does NOT use
+   this - stack cards keep their existing single fade-in via
+   apt.morphToStack's text crossfade. */
+.solution-card .math .rv {
+  opacity: 0;
+}
+
+/* ─── SOLUTION STACK CARD (left column, completed) ─── */
+.stack-card {
+  background: var(--primary-light);
+  border-radius: var(--radius-card);
+  padding: 14px 18px;
+  width: 385px; /* grid column width */
+  margin-bottom: 14px;
+  position: relative;
+}
+
+.stack-card .chip {
+  display: inline-block;
+  background: var(--primary);
+  color: #FFFFFF;
+  padding: 4px 14px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.stack-card .math {
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--text);
+  line-height: 1.45;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.stack-card .math .hi  { color: var(--primary); }
+.stack-card .math .ans { color: var(--primary); }
+
+/* ─── STEP CIRCLE (stack-card badge: "G", "1", "2", "3"...) ───
+   Replaces the old .chip pill inside .stack-card. Sits to the LEFT of the
+   card via a negative left offset (not actual DOM placement outside the
+   card) and is vertically centered against the card's own height, so it
+   auto-adjusts for cards with different numbers of math lines (e.g. the
+   multi-line Given card). Pair with .stack-line below to connect
+   consecutive circles down the left column. */
+.step-circle {
+  position: absolute;
+  left: -55px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #FFFFFF;
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 24px;
+}
+.stack-card .step-circle {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ─── STACK CONNECTOR LINE (vertical line between step circles) ───
+   left:65px aligns with the horizontal center of a .step-circle
+   (left:-55px + 44px width / 2 ≈ 65px from the stack card's own left
+   edge). Position/size each line as a sibling of the stack cards (not
+   inside one), with `top`/`height` computed from the actual rendered
+   circle centers of the two cards it connects - see template.html for
+   the worked example and the comment on measuring real card heights. */
+.stack-line {
+  position: absolute;
+  left: 65px;
+  width: 4px;
+  background: var(--primary);
+  z-index: 5;
+  transform-origin: top center;
+}
+
+/* ─── FRACTION (numerator over denominator) ─── */
+.frac {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  line-height: 1.0;
+  margin: 0 8px;
+  position: relative;
+  top: -2px;
+}
+.frac .top {
+  padding: 0 10px 4px;
+  border-bottom: 2px solid currentColor;
+  font-size: 0.85em;
+}
+.frac .bot {
+  padding: 4px 10px 0;
+  font-size: 0.85em;
+}
+
+/* ─── TOPIC NAME ─── */
+.topic-name {
+  position: absolute;
+  bottom: 28px;
+  left: 40px;
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--topic);
+  z-index: 2;
+}
+
+/* ─── LOGO (bottom right F mark) ─── */
+.logo {
+  position: absolute;
+  bottom: 36px;
+  right: 48px;
+  width: 56px;
+  height: 56px;
+  background-image: url('assets/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+
+/* ─── OPTIONS GRID ─── */
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.opt-btn {
+  background: var(--bg);
+  border: 2.5px solid #000000;
+  border-radius: var(--radius-pill);
+  padding: 18px 28px 18px 80px;
+  font-family: var(--font);
+  font-weight: 400;
+  font-size: 28px;
+  color: var(--text);
+  position: relative;
+  text-align: center;
+}
+
+.opt-btn .letter {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.opt-btn.correct {
+  background: var(--success);
+  border-color: var(--success);
+  color: #FFFFFF;
+}
+.opt-btn.correct .letter {
+  background: #FFFFFF;
+  color: var(--success);
+}
+

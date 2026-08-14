@@ -1,0 +1,30 @@
+[00:00.12 -> 00:00.26]  So
+[00:00.74 -> 00:01.60]  welcome back again.
+[00:02.08 -> 00:03.46]  It's time to solve one more problem.
+[00:04.00 -> 00:04.58]  In this problem,
+[00:04.94 -> 00:07.36]  two observation points are on opposite sides of a tower,
+[00:07.80 -> 00:09.92]  and the distance between those points is sixty meters.
+[00:10.46 -> 00:16.90]  Their angles of elevation are thirty degrees and forty-five degrees. We need to find the height of the tower.
+[00:17.42 -> 00:18.42]  To understand this easily,
+[00:19.04 -> 00:20.46]  draw the tower in the middle.
+[00:20.92 -> 00:22.80]  Take the height of the tower as
+[00:23.12 -> 00:25.90]  h. Let the distance of the thirty-degree point from the tower
+[00:26.44 -> 00:26.58]  be
+[00:26.94 -> 00:27.00]  x.
+[00:27.48 -> 00:32.12]  Since both points are on opposite sides and the total distance between them is sixty meters,
+[00:32.54 -> 00:36.74]  the distance of the other point becomes sixty minus
+[00:37.08 -> 00:37.16]  x.
+[00:37.56 -> 00:37.76]  Okay,
+[00:38.12 -> 00:38.98]  the figure is clear.
+[00:39.78 -> 00:39.96]  Now,
+[00:40.50 -> 00:44.34]  let us start with the easier angle first, which is forty-five degrees.
+[00:44.76 -> 00:47.80]  We know that ten forty-five degree is equal to height by distance,
+[00:48.16 -> 00:49.80]  and ten forty-five degree is one,
+[00:50.18 -> 00:57.14]  which gives us one equals h upon sixty minus x. So we have h equal to sixty minus x.
+[00:57.66 -> 00:58.08]  Got it?
+[00:58.52 -> 00:59.00]  Perfect.
+[00:59.42 -> 01:01.44]  Now let us use the thirty-degree angle.
+[01:02.06 -> 01:04.50]  We know that ten thirty degree is equal to one by root three.
+[01:04.90 -> 01:09.38]  So one upon root three is equal to h upon x, which gives us x equals root three h.
+[01:09.90 -> 01:12.62]  We already know that h equal to sixty minus x.
+[01:13.12 -> 01:37.38]  So after substituting and solving, we get sixty equals h times root three plus one h equals sixty upon root three plus one. And after rationalization, we get h equals thirty times root three minus one. Done and dusted. So the height of the tower is thirty times root three minus one meters. Hence, option C is the correct answer.

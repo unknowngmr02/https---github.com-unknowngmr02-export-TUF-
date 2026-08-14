@@ -1,0 +1,55 @@
+So "welcome back again", <break time="0.2s" /> it's time to solve one more problem.
+Now in this problem, we have a lighthouse and two ships.
+Both ships are on the same straight line.
+The angle of depression from the top of the lighthouse to the ships are 30 degrees and 60 degrees.
+Also, the distance between the two ships is 120 mee-ter.
+And we need to find the height of the lighthouse.
+Before solving, let us quickly understand the diagram.
+So, Take the height of the lighthouse as h.
+One ship is closer to the lighthouse and the other ship is farther away.
+The closer ship has angle of depression 60 degrees.
+The farther ship has angle of depression 30 degrees.
+Now here we are sure about one fact.
+Angle of depression and angle of elevation are equal.
+So instead of working from the top of the lighthouse, we can use the angles at the ships themselves.
+This makes the problem much easier.
+<break time="0.5s" />
+So, Let the distance of the nearer ship from the lighthouse be x.
+And let the distance of the farther ship from the lighthouse be y.
+Since the ships are 120 mee-ter apart,
+we can say,
+y minus x is equal to 120.
+Now we need a relation between these distances and the height h.
+For that, we will use ten.
+Why ten?
+Because ten directly connects height and base distance.
+For the nearer ship,
+ten 60 is equal to h by x.
+Which is
+Root 3 is equal to h by x.
+So,
+x equal to h upon root 3.
+<break time="0.2s" />
+Now that we have found x, we can use the same idea for the second ship.
+For the farther ship,
+ten 30 is equal to h by y.
+1 by root 3 is equal to h by y.
+So,
+y is equal to h root 3.
+<break time="0.2s" />
+Now let's see what we have ,
+We already know that
+y minus x is equal to 120.
+Putting the values,
+h root 3 minus h by root 3 equals to 120.
+Taking h common,
+h times <break time="0.2s" /> root 3 minus 1 by root 3 <break time="0.2s" /> is equal to 120.
+After simplifying this,
+h times <break time="0.2s" />2 by root 3<break time="0.2s" /> is equal to 120.
+Multiplying both sides by root 3,
+2h equal to 120 root 3.
+So,
+h equal to 60 root 3.
+<break time="0.6s" />
+Hence, the height of the lighthouse is 60 root 3 mee-ter.
+So the final answer will be Option B.

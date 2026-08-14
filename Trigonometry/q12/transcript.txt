@@ -1,0 +1,29 @@
+[00:00.10 -> 00:01.46]  So welcome back again.
+[00:02.08 -> 00:03.20]  It's time to solve
+[00:03.64 -> 00:04.60]  one more problem.
+[00:05.06 -> 00:05.86]  Now in this problem,
+[00:06.46 -> 00:07.02]  we have a
+[00:07.46 -> 00:08.50]  20-meter tower.
+[00:09.06 -> 00:10.10]  From a point on the ground,
+[00:10.52 -> 00:13.20]  the angle of elevation to the top of the tower
+[00:13.78 -> 00:15.46]  is 45 degrees,
+[00:15.88 -> 00:17.32]  and we need to find the distance
+[00:17.84 -> 00:19.14]  from that point to the tower.
+[00:19.70 -> 00:20.40]  Before solving,
+[00:20.90 -> 00:24.22]  let us quickly draw the right triangle in our mind.
+[00:24.68 -> 00:28.34]  The height of the tower becomes the opposite side, which is
+[00:28.66 -> 00:29.32]  20 meters.
+[00:29.84 -> 00:34.44]  The distance from the person to the tower becomes the adjacent side.
+[00:34.84 -> 00:35.42]  Let us call it
+[00:35.76 -> 00:35.88]  X.
+[00:36.56 -> 00:45.10]  Now, which trigonometric ratio connects the opposite side and the adjacent side? It is 10, because 10 theta equals opposite by adjacent.
+[00:45.42 -> 00:51.08]  So we can write 1045 degrees equals 20 over X. Now, this is where the question becomes easy.
+[00:51.56 -> 00:53.20]  We already know one standard value,
+[00:53.68 -> 00:57.70]  1045 degrees equals one, so one equals 20 divided by
+[00:58.00 -> 00:58.12]  X.
+[00:58.44 -> 00:59.50]  Now cross-multiply,
+[00:59.84 -> 01:01.94]  we get X equals 20.
+[01:02.64 -> 01:05.70]  So the distance from the point to the tower is 20 meters.
+[01:06.14 -> 01:06.48]  Hence,
+[01:06.84 -> 01:08.88]  the correct answer is option D,
+[01:09.56 -> 01:10.06]  20 meters

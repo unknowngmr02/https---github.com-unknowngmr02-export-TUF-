@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="design-system.css">
+<style>
+  /* Illustration-area content for this question (no physical object - a
+     growing reference equation stands in for the illustration, per
+     VIDEO_BUILD_PROMPT.md Section 6). Per-question custom CSS, same as any
+     illustration label - not a new shared component. */
+  #eq-row {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 1400px;
+    text-align: center;
+    font-family: var(--font);
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  #eq-given-label { font-size: 30px; color: var(--topic); display: block; margin-bottom: 18px; opacity: 0; }
+  #eq-main { font-size: 56px; color: var(--text); }
+  #eq-main .num { color: var(--primary); }
+  #eq-sin, #eq-cos2t { opacity: 0; }
+  #eq-equals1 { opacity: 0; }
+  #chip-acute {
+    display: inline-block;
+    margin-left: 28px;
+    background: #FFFFFF;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 8px 22px;
+    border-radius: 12px;
+    font-size: 28px;
+    vertical-align: middle;
+    opacity: 0;
+  }
+  #eq-goal { font-size: 34px; color: var(--text); margin-top: 24px; display: block; opacity: 0; }
+  #eq-goal .num { color: var(--primary); }
+  #hint-check { font-size: 26px; color: var(--topic); margin-top: 16px; display: block; opacity: 0; }
+
+  /* Pinned copy - coordinate-exact in content, only sized down (per
+     illustration_reference.md rule: pinned copy is same numbers, smaller
+     render). Centered per design.md Illustration rule (single-icon recap). */
+  #eq-row-pinned {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1300px;
+    text-align: center;
+    font-family: var(--font);
+    font-weight: 400;
+  }
+  #eq-main-pinned { font-size: 32px; color: var(--text); }
+  #eq-main-pinned .num { color: var(--primary); }
+  #chip-acute-pinned {
+    display: inline-block;
+    margin-left: 18px;
+    background: #FFFFFF;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 5px 16px;
+    border-radius: 10px;
+    font-size: 22px;
+    vertical-align: middle;
+  }
+
+  /* Verdict glyphs inside solution cards - existing tokens only (no new
+     colors): the cross uses --text (elimination = dim to gray via opacity,
+     not a new red token); the check uses --success (it IS the correct
+     verdict, matching the green-for-correct convention). */
+  .verdict-fail { color: var(--text); font-weight: 500; }
+  .verdict-ok   { color: var(--success); font-weight: 500; }
+</style>
+</head>
+<body>
+<div data-hf-id="hf-89uj" id="root" data-composition-id="root" data-start="0" data-width="1920" data-height="1080">
+
+  <!-- ══════ BACKGROUND LAYERS (always visible) ══════ -->
+  <div data-hf-id="hf-858h" class="dotted-grid"></div>
+  <div data-hf-id="hf-izuk" class="bottom-strip"></div>
+  <div data-hf-id="hf-pcpi" class="topic-name">Trigonometry</div>
+  <div data-hf-id="hf-e319" class="logo"></div>
+
+  <!-- ══════ VOICEOVER ══════ -->
+  <audio data-hf-id="hf-349x" id="voiceover" class="clip" src="voiceover.wav" data-start="0" data-duration="77.3" data-track-index="0"></audio>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 1 - Question + growing-equation hero (0-21.9s)
+       data-duration = (PIN_TIME 21.9 - data-start 0) + pinFlow 0.8 + 1.5 buffer = 24.2 -> 24.5
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-mytz" id="phase1" class="clip" data-start="0" data-duration="24.5" data-track-index="1" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:5;">
+
+    <div data-hf-id="hf-lxc5" id="q-full-card" class="q-card" style="position:absolute;left:50%;top:80px;width:1500px;transform:translateX(-50%);opacity:0;">
+      <div data-hf-id="hf-ywat" class="q-text">
+        For an acute angle <span data-hf-id="hf-4c39" class="num">θ</span>, <span data-hf-id="hf-xuy7" class="num">sin θ = cos 2θ</span>. Find <span data-hf-id="hf-jzah" class="num">θ</span>.
+      </div>
+    </div>
+
+    <div data-hf-id="hf-w62k" id="serial-num" class="serial-num" style="left:60px;top:60px;opacity:0;">
+      <div data-hf-id="hf-yfde" class="digit">Q</div>
+    </div>
+
+    <!-- Illustration area: growing reference equation (no physical object
+         exists for this identity question - see storyboard Scene 2). -->
+    <div data-hf-id="hf-5a2r" id="illustration" class="illustration" style="position:absolute;left:50%;top:470px;transform:translateX(-50%);
+                width:1400px;height:280px;">
+      <div data-hf-id="hf-qjrg" id="eq-row">
+        <span data-hf-id="hf-pe0g" id="eq-given-label">Given:</span>
+        <div data-hf-id="hf-5z73" id="eq-main">
+          <span data-hf-id="hf-7i3c" id="eq-sin" class="num">sin θ</span>
+          <span data-hf-id="hf-iehq" id="eq-equals1">=</span>
+          <span data-hf-id="hf-0uik" id="eq-cos2t" class="num">cos 2θ</span>
+          <span data-hf-id="hf-xxrr" id="chip-acute">θ is acute</span>
+        </div>
+        <span data-hf-id="hf-swq7" id="eq-goal">Find <span data-hf-id="hf-l67k" class="num">θ</span> = ?</span>
+        <span data-hf-id="hf-ovhk" id="hint-check">Check each option</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 2 - Pinned question (21.9s onwards, runs to video end)
+       data-duration = TIMELINE_END 77.26 - data-start 21.9 = 55.36 -> 55.4
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-5w40" id="q-pinned" class="clip" data-start="21.9" data-duration="55.4" data-track-index="2" style="position:absolute;width:100%;top:0;left:0;z-index:6;opacity:0;">
+    <div data-hf-id="hf-9jf4" class="q-card pinned" style="position:absolute;left:385px;top:30px;width:1275px;">
+      <div data-hf-id="hf-q1an" class="q-text">
+        For acute <span data-hf-id="hf-krwj" class="num">θ</span>: <span data-hf-id="hf-nken" class="num">sin θ = cos 2θ</span>. Find <span data-hf-id="hf-isde" class="num">θ</span>.
+      </div>
+    </div>
+  </div>
+
+  <!-- Pinned equation recap - coordinate-exact content, smaller render.
+       Only sinθ=cos2θ + the "θ acute" chip persist (the goal/hint lines have
+       done their job in Phase 1). Fades out at RECENTER_TIME=71.6.
+       data-duration = (71.6 - 21.9) + fadeOut 0.4 + 1.5 buffer = 51.6 -> 52 -->
+  <div data-hf-id="hf-lddc" id="illus-pinned" class="clip" data-start="21.9" data-duration="52" data-track-index="3" style="position:absolute;left:280px;top:170px;width:1300px;height:250px;z-index:5;opacity:0;">
+    <div data-hf-id="hf-edcv" id="eq-row-pinned">
+      <div data-hf-id="hf-d3r5" id="eq-main-pinned">
+        <span data-hf-id="hf-np7v" class="num">sin θ</span> = <span data-hf-id="hf-s39k" class="num">cos 2θ</span>
+        <span data-hf-id="hf-f5gi" id="chip-acute-pinned">θ is acute</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SOLUTION CARDS
+       ══════════════════════════════════════════════ -->
+
+  <!-- STEP 1 - test option A (45deg)
+       data-duration = (morph 41.1 - data-start 22.5) + 0.8 + 1.5 = 21.9 -> 22.5 -->
+  <div data-hf-id="hf-d3jl" id="card-step1" class="clip" data-start="22.5" data-duration="22.5" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-uasq" class="solution-card" style="position:absolute;left:640px;top:400px;text-align:center;">
+      <div data-hf-id="hf-3rv6" class="card-content">
+        <span data-hf-id="hf-3ife" class="chip">Step 1</span>
+        <div data-hf-id="hf-8tlu" class="math">
+          <span data-hf-id="hf-zl8g" class="rv" data-t="22.78">Option A: θ = 45°</span><br data-hf-id="hf-x5px">
+          <span data-hf-id="hf-t7d6" class="rv" data-t="28.06">sin 45°</span>
+          <span data-hf-id="hf-x0o1" class="rv" data-t="29.22">=</span>
+          <span data-hf-id="hf-z8k5" class="frac rv hi" data-t="29.62"><span data-hf-id="hf-ycvl" class="top">1</span><span data-hf-id="hf-e44g" class="bot">√2</span></span><br data-hf-id="hf-rsrt">
+          <span data-hf-id="hf-rq2t" class="rv" data-t="32.66">cos 2θ</span>
+          <span data-hf-id="hf-sapq" class="rv" data-t="34.58">= cos 90°</span>
+          <span data-hf-id="hf-ldlf" class="rv" data-t="37.56">= 0</span><br data-hf-id="hf-szow">
+          <span data-hf-id="hf-643p" class="rv verdict-fail" data-t="38.36">1/√2 ≠ 0</span><br data-hf-id="hf-sldv">
+          <span data-hf-id="hf-wllu" class="rv ans verdict-fail" data-t="40.26">Option A ✗</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 2 - test option B (30deg), confirmed
+       data-duration = (morph 71.6 - data-start 42.0) + 0.8 + 1.5 = 31.9 -> 32.5 -->
+  <div data-hf-id="hf-sbl4" id="card-step2" class="clip" data-start="42.0" data-duration="32.5" data-track-index="4" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:7;">
+    <div data-hf-id="hf-otin" class="solution-card" style="position:absolute;left:640px;top:380px;text-align:center;">
+      <div data-hf-id="hf-0yza" class="card-content">
+        <span data-hf-id="hf-3wqf" class="chip">Step 2</span>
+        <div data-hf-id="hf-ng7a" class="math">
+          <span data-hf-id="hf-p5nd" class="rv" data-t="42.30">Option B: θ = 30°</span><br data-hf-id="hf-qluq">
+          <span data-hf-id="hf-21hz" class="rv" data-t="46.74">sin 30°</span>
+          <span data-hf-id="hf-7mdf" class="rv" data-t="48.18">=</span>
+          <span data-hf-id="hf-tw8l" class="frac rv hi" data-t="48.56"><span data-hf-id="hf-e55x" class="top">1</span><span data-hf-id="hf-kz0q" class="bot">2</span></span><br data-hf-id="hf-q7jp">
+          <span data-hf-id="hf-cn1k" class="rv" data-t="50.78">cos 2θ</span>
+          <span data-hf-id="hf-vw66" class="rv" data-t="52.62">= cos 60°</span>
+          <span data-hf-id="hf-qgx0" class="rv" data-t="55.46">= 1/2</span><br data-hf-id="hf-regs">
+          <span data-hf-id="hf-25ev" class="rv verdict-ok" data-t="56.40">1/2 = 1/2 ✓ condition satisfied</span><br data-hf-id="hf-r05r">
+          <span data-hf-id="hf-fi8y" class="rv ans" data-t="68.70">θ = 30°</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       LEFT STACK CARDS
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-hecl" id="stack-step1" class="clip" data-start="40.5" data-duration="37" data-track-index="12" style="position:absolute;left:100px;top:140px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-usjn" class="stack-card">
+      <div data-hf-id="hf-1dab" class="card-content">
+        <span data-hf-id="hf-w2db" class="step-circle">1</span>
+        <div data-hf-id="hf-2hbz" class="math">
+          Option A: θ = 45°<br data-hf-id="hf-p0mm">
+          sin 45° = <span data-hf-id="hf-q42c" class="hi frac"><span data-hf-id="hf-fc30" class="top">1</span><span data-hf-id="hf-e1y0" class="bot">√2</span></span>,
+          cos 90° = 0<br data-hf-id="hf-ombl">
+          <span data-hf-id="hf-dh88" class="verdict-fail">Not equal - ✗</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-we0n" id="stack-step2" class="clip" data-start="70.5" data-duration="7" data-track-index="13" style="position:absolute;left:100px;top:340px;z-index:6;opacity:0;">
+    <div data-hf-id="hf-3m9v" class="stack-card">
+      <div data-hf-id="hf-1rlc" class="card-content">
+        <span data-hf-id="hf-vo2a" class="step-circle">2</span>
+        <div data-hf-id="hf-zlrb" class="math">
+          Option B: θ = 30°<br data-hf-id="hf-qsyj">
+          sin 30° = cos 60° =
+          <span data-hf-id="hf-ynu4" class="hi frac"><span data-hf-id="hf-exrz" class="top">1</span><span data-hf-id="hf-mqdq" class="bot">2</span></span><br data-hf-id="hf-r79k">
+          <span data-hf-id="hf-xrhi" class="ans">θ = 30° ✓</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-hf-id="hf-z31r" id="line-1-2" class="clip stack-line" data-start="70.5" data-duration="7" data-track-index="15" style="opacity:0;"></div>
+
+  <!-- ══════════════════════════════════════════════
+       PHASE 3 - OPTIONS REVEAL (72-77.26s)
+       data-duration = (correctPulse 74.3 - data-start 72.0) + 0.8 + 1.5 = 4.6 -> 6
+       ══════════════════════════════════════════════ -->
+  <div data-hf-id="hf-bleu" id="options-reveal" class="clip" data-start="72.0" data-duration="6" data-track-index="10" style="position:absolute;width:100%;height:100%;top:0;left:0;z-index:8;opacity:0;">
+    <div data-hf-id="hf-2tfv" class="pinned-col" style="top:400px;">
+      <div data-hf-id="hf-6knj" class="options-grid">
+        <div data-hf-id="hf-y2h1" class="opt-btn"><span data-hf-id="hf-sfug" class="letter">A</span>45°</div>
+        <div data-hf-id="hf-jjy7" class="opt-btn correct"><span data-hf-id="hf-r8xd" class="letter">B</span>30°</div>
+        <div data-hf-id="hf-nvou" class="opt-btn"><span data-hf-id="hf-rn8e" class="letter">C</span>60°</div>
+        <div data-hf-id="hf-gmgy" class="opt-btn"><span data-hf-id="hf-qgbb" class="letter">D</span>15°</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end root -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script src="animations.js"></script>
+<script>
+  // Only one connector line in this question (Step1 -> Step2), no Given
+  // circle exists (see storyboard: no separate Given card, the eq-row hero
+  // already carries the given equation).
+  apt.setStackLine("#line-1-2", "#stack-step1 .step-circle", "#stack-step2 .step-circle");
+
+  const tl = gsap.timeline({ paused: true });
+
+  // PHASE 1 - Question hero
+  const HERO_OFFSET_Y = 180;
+  const RISE_TIME = 4.6; // end of "one more problem."
+  apt.heroEnterLowered(tl, "#q-full-card", HERO_OFFSET_Y, RISE_TIME);
+
+  tl.fromTo("#serial-num",
+    { scale: 0, rotation: -45, opacity: 0, y: HERO_OFFSET_Y },
+    { scale: 1, rotation: 0, opacity: 1, y: HERO_OFFSET_Y, duration: 0.55, ease: "back.out(2)" },
+    0.8);
+  tl.to("#serial-num", { y: 0, duration: 0.6, ease: "power2.inOut" }, RISE_TIME);
+
+  // Growing equation - the illustration for this question (no physical
+  // object exists; Section 6 of VIDEO_BUILD_PROMPT.md).
+  apt.fadeIn(tl, "#eq-given-label", 4.92);
+  tl.fromTo("#eq-sin", { y: 10, opacity: 0, scale: 0.85 },
+    { y: 0, opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 7.40);
+  apt.fadeIn(tl, "#eq-equals1", 8.30);
+  tl.fromTo("#eq-cos2t", { y: 10, opacity: 0, scale: 0.85 },
+    { y: 0, opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 9.06);
+  tl.fromTo("#chip-acute", { scale: 0.85, opacity: 0 },
+    { scale: 1, opacity: 1, duration: 0.4, ease: "back.out(1.6)" }, 11.18);
+  tl.fromTo("#eq-goal", { y: 8, opacity: 0 },
+    { y: 0, opacity: 1, duration: 0.4, ease: "back.out(1.6)" }, 14.18);
+  apt.emphasize(tl, "#eq-main", 15.76);
+  apt.fadeIn(tl, "#hint-check", 18.18);
+  apt.emphasize(tl, "#hint-check", 20.92);
+
+  // PIN
+  const PIN_TIME = 21.9;
+  apt.pinFlow(tl, "#q-full-card", "#q-pinned", PIN_TIME);
+  apt.pinFlow(tl, "#illustration", "#illus-pinned", PIN_TIME);
+  apt.fadeOut(tl, "#serial-num", PIN_TIME, 0.5);
+
+  // STEP 1 - test option A
+  apt.cardEnter(tl, "#card-step1 .solution-card", 22.78);
+  apt.textReveal(tl, "#card-step1 .math");
+
+  // STEP 2 - Step 1 joins the stack
+  apt.morphToStack(tl, "#card-step1 .solution-card", "#stack-step1 .stack-card", 41.1);
+  apt.cardEnter(tl, "#card-step2 .solution-card", 42.3);
+  apt.textReveal(tl, "#card-step2 .math");
+
+  // LINK - the confirmed answer pulses the pinned reference equation, tying
+  // the solved theta back to the original identity it satisfies.
+  apt.emphasize(tl, "#eq-main-pinned", 68.70);
+
+  // Recenter - clear the stack column before options reveal
+  const RECENTER_TIME = 71.6;
+  apt.fadeOut(tl, "#illus-pinned", RECENTER_TIME);
+  apt.recenterForOptions(tl, "#q-pinned", 160, 180, RECENTER_TIME);
+
+  // PHASE 3 - Options reveal - Step 2 joins the stack
+  apt.morphToStack(tl, "#card-step2 .solution-card", "#stack-step2 .stack-card", RECENTER_TIME);
+  apt.stackLineGrow(tl, "#line-1-2", RECENTER_TIME);
+  apt.fadeIn(tl, "#options-reveal", 72.5);
+  apt.optionsStagger(tl, ".opt-btn", 72.9);
+  apt.correctPulse(tl, ".opt-btn.correct", 74.3);
+
+  // END FADE
+  const END_FADE_TIME = 75.86; // NARR_END 75.259 + 0.6
+  apt.fadeOut(tl, "#root > div", END_FADE_TIME, 1.2);
+
+  tl.set({}, {}, 78); // END_FADE_TIME 75.86 + 1.2 + 0.2
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines["root"] = tl;
+</script>
+</body>
+</html>

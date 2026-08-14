@@ -1,0 +1,20 @@
+[00:00.10 -> 00:01.18]  So welcome back again.
+[00:01.74 -> 00:03.58]  It's time to solve one more problem.
+[00:04.12 -> 00:06.32]  Now, in this problem, we need to find sine square
+[00:06.68 -> 00:07.58]  30 degree plus
+[00:08.12 -> 00:08.52]  cos
+[00:09.08 -> 00:10.04]  square 30 degree.
+[00:10.66 -> 00:13.34]  Here, both sine and cos have the same angle,
+[00:13.84 -> 00:14.82]  which is 30 degree.
+[00:15.66 -> 00:16.94]  Whenever the angle is the same,
+[00:17.36 -> 00:18.48]  we can use the identity
+[00:19.26 -> 00:20.34]  sine square theta
+[00:20.94 -> 00:24.60]  plus cos square theta is equal to one.
+[00:25.30 -> 00:25.92]  So directly,
+[00:26.62 -> 00:31.28]  sine square 30 degree plus cos square 30 degree is equal to one.
+[00:31.86 -> 00:34.70]  We do not need to find the values of sine 30 degree and cos
+[00:35.26 -> 00:36.28]  30 degree separately.
+[00:37.16 -> 00:37.50]  Hence,
+[00:37.92 -> 00:39.60]  the required answer is one.
+[00:40.18 -> 00:41.72]  So the correct option is
+[00:42.06 -> 00:42.14]  C.
